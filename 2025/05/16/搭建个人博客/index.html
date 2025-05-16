@@ -32,10 +32,11 @@
 <meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E8%AE%BF%E9%97%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.png">
 <meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Couldflare%E5%8A%A0%E9%80%9F.png">
 <meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%88%86%E9%85%8D%E5%9F%9F%E5%90%8D.png">
-<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/utterances.png">
-<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/giscus%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%BC%80%E5%90%AFcomments%E5%8A%9F%E8%83%BD.png">
+<meta property="og:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/giscus%E9%85%8D%E7%BD%AE.png">
 <meta property="article:published_time" content="2025-05-16T05:14:37.000Z">
-<meta property="article:modified_time" content="2025-05-16T14:10:45.303Z">
+<meta property="article:modified_time" content="2025-05-16T15:02:15.398Z">
 <meta property="article:author" content="执妄">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Node_js%E5%AE%98%E7%BD%91.png">
@@ -231,7 +232,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          875 字
+          925 字
         
       </span>
     
@@ -318,7 +319,8 @@
 <p>创建之后，编辑博客目录下的<code>./source/about/index.md</code>，添加<code>layout</code>属性：</p>
 <figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs mel">title: <span class="hljs-keyword">about</span><br><span class="hljs-keyword">layout</span>: <span class="hljs-keyword">about</span><br></code></pre></td></tr></table></figure>
 
-<h1 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h1><p>使用<a target="_blank" rel="noopener" href="https://github.com/apps/utterances">utterances插件</a>添加评论功能，点击<code>Install</code>进行安装，然后选择对应的仓库即可：<br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/utterances.png" srcset="/img/loading.gif" lazyload alt="utterances"><br>然后在对应的Github仓库，点击设置，找到features下面的Discussion选项，并勾选：<br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD.png" srcset="/img/loading.gif" lazyload alt="添加评论功能"></p>
+<h1 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h1><p>原本想要使用<a target="_blank" rel="noopener" href="https://github.com/apps/utterances">utterances插件</a>添加评论功能，但一直无法加载，于是更换为giscus。首先进入<a target="_blank" rel="noopener" href="https://github.com/apps/giscus">giscus</a>，点击<code>Install</code>进行安装，然后选择对应的仓库即可，这里我已经安装过了，不再展示。</p>
+<p>接着点击<a target="_blank" rel="noopener" href="https://giscus.app/zh-CN">giscus配置</a>，输入你的仓库地址即可生成对应的信息，根据生成信息修改对应的配置文件：<br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/giscus%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE.png" srcset="/img/loading.gif" lazyload alt="giscus仓库设置"><br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%BC%80%E5%90%AFcomments%E5%8A%9F%E8%83%BD.png" srcset="/img/loading.gif" lazyload alt="开启comments功能"><br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/giscus%E9%85%8D%E7%BD%AE.png" srcset="/img/loading.gif" lazyload alt="giscus配置"></p>
 <p>接着修改<code>fluid</code>文件夹下的<code>_config.yml</code>文件，填入以下内容：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">post:</span><br>  <span class="hljs-attr">comments:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">type:</span> <span class="hljs-string">utterances</span><br><br><span class="hljs-attr">utterances:</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">GitHub用户名/GitHub用户名.github.io</span><br>  <span class="hljs-attr">issue_term:</span> <span class="hljs-string">title</span><br>  <span class="hljs-attr">label:</span> <span class="hljs-string">utterances</span><br>  <span class="hljs-attr">theme:</span> <span class="hljs-string">github-light</span><br>  <span class="hljs-attr">theme_dark:</span> <span class="hljs-string">github-dark</span><br>  <span class="hljs-attr">crossorigin:</span> <span class="hljs-string">anonymous</span>    <br></code></pre></td></tr></table></figure>
 <p>最后重新发布服务，博客添加评论功能成功。</p>
