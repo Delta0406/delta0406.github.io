@@ -19,21 +19,22 @@
   <meta name="author" content="执妄">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="前言递增运算符分为前置和后置两种，下面的代码块中分别展示了两种递增运算符。其中，等式1展示了前置递增运算符，变量a首先进行递增操作，其值变为1，再赋值给变量b，此时b的值为1。等式2展示了后置运算符，变量a在递增前值为1，先复制给变量b，b的值此时为1，再对a进行递增操作，将a的值增加到2。 1234int a &#x3D; 0;int b &#x3D; 1;int b &#x3D; ++a; # 等式1int b &#x3D; a++">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://delta0406.github.io/2025/05/16/hello-world/index.html">
+<meta property="og:title" content="递增运算符重载">
+<meta property="og:url" content="https://delta0406.github.io/2025/05/17/%E9%80%92%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD/index.html">
 <meta property="og:site_name" content="执妄的个人博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="前言递增运算符分为前置和后置两种，下面的代码块中分别展示了两种递增运算符。其中，等式1展示了前置递增运算符，变量a首先进行递增操作，其值变为1，再赋值给变量b，此时b的值为1。等式2展示了后置运算符，变量a在递增前值为1，先复制给变量b，b的值此时为1，再对a进行递增操作，将a的值增加到2。 1234int a &#x3D; 0;int b &#x3D; 1;int b &#x3D; ++a; # 等式1int b &#x3D; a++">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-05-16T04:51:49.966Z">
-<meta property="article:modified_time" content="2025-05-16T04:51:49.966Z">
+<meta property="article:published_time" content="2025-05-17T14:31:50.000Z">
+<meta property="article:modified_time" content="2025-05-17T14:57:15.782Z">
 <meta property="article:author" content="执妄">
+<meta property="article:tag" content="c++">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hello World - 执妄的个人博客</title>
+  <title>递增运算符重载 - 执妄的个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -212,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="递增运算符重载"></span>
           
         </div>
 
@@ -223,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-05-16 12:51" pubdate>
-          2025年5月16日 下午
+        <time datetime="2025-05-17 22:31" pubdate>
+          2025年5月17日 晚上
         </time>
       </span>
     
@@ -235,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          18 字
+          744 字
         
       </span>
     
@@ -246,7 +247,7 @@
         
         
         
-          1 分钟
+          7 分钟
         
       </span>
     
@@ -292,25 +293,36 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello World</h1>
+            <h1 id="seo-header">递增运算符重载</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>递增运算符分为前置和后置两种，下面的代码块中分别展示了两种递增运算符。其中，等式1展示了前置递增运算符，变量a首先进行递增操作，其值变为1，再赋值给变量b，此时b的值为1。等式2展示了后置运算符，变量a在递增前值为1，先复制给变量b，b的值此时为1，再对a进行递增操作，将a的值增加到2。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-type">int</span> a = <span class="hljs-number">0</span>;<br><span class="hljs-type">int</span> b = <span class="hljs-number">1</span>;<br><span class="hljs-type">int</span> b = ++a; # 等式<span class="hljs-number">1</span><br><span class="hljs-type">int</span> b = a++; # 等式<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+<h1 id="重载递增运算符"><a href="#重载递增运算符" class="headerlink" title="重载递增运算符"></a>重载递增运算符</h1><h2 id="创建自己的整形类"><a href="#创建自己的整形类" class="headerlink" title="创建自己的整形类"></a>创建自己的整形类</h2><p>为了重载递增运算符，我们需要创建一个自己的整形类<code>MyInteger</code>，其包含一个<code>int</code>类型的成员变量<code>num</code>。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MyInteger</span><br>&#123;<br><br><span class="hljs-keyword">public</span>:<br>	<span class="hljs-built_in">MyInteger</span>()<br>	&#123;<br>		num = <span class="hljs-number">0</span>;<br>	&#125;<br><br><span class="hljs-keyword">private</span>:<br>	<span class="hljs-type">int</span> num;<br>&#125;;<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
+<h2 id="重载前置递增运算符"><a href="#重载前置递增运算符" class="headerlink" title="重载前置递增运算符"></a>重载前置递增运算符</h2><p>前置递增运算符先进行递增操作，再进行赋值操作。其递增后的结果需要返回给函数，因此应当将返回值的类型设置为引用类型，即<code>MyInteger&amp;</code>，返回的是当前对象。重载的前置递增运算符如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs C++">MyInteger&amp; <span class="hljs-keyword">operator</span>++()<br>&#123;<br>    num++;<br>    <span class="hljs-keyword">return</span> *<span class="hljs-keyword">this</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
+<h2 id="重载后置递增运算符"><a href="#重载后置递增运算符" class="headerlink" title="重载后置递增运算符"></a>重载后置递增运算符</h2><p>后置递增运算符先进行赋值操作，再进行递增操作。其返回的是递增前的结果，因此应当拷贝递增前的对象，再对原对象进行递增操作，将拷贝结果作为函数返回值。重载的后置递增运算符如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs C++">MyInteger <span class="hljs-keyword">operator</span>++(<span class="hljs-type">int</span>)<br>&#123;<br>    MyInteger temp = *<span class="hljs-keyword">this</span>;<br>    num++;<br>    <span class="hljs-keyword">return</span> temp;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="重载输出运算符"><a href="#重载输出运算符" class="headerlink" title="重载输出运算符"></a>重载输出运算符</h2><p>为了验证重载后的递增运算符的有效性，我们重载输出运算符，以输出实验结果。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs C++">ostream&amp; <span class="hljs-keyword">operator</span>&lt;&lt;(ostream&amp; cout, MyInteger myInt)<br>&#123;<br>	cout &lt;&lt; myInt.num;<br>	<span class="hljs-keyword">return</span> cout;<br>&#125;<br></code></pre></td></tr></table></figure>
 
+<h2 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h2><p>首先使用如下代码块测试前置递增运算符的实验结果：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test1</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	MyInteger myInt;<br>	cout &lt;&lt; ++myInt &lt;&lt; endl; <span class="hljs-comment">// 调用前置递增运算符</span><br>	cout &lt;&lt; myInt &lt;&lt; endl;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>输出结果如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">1<br>1<br></code></pre></td></tr></table></figure>
+<p>使用如下代码测试后置递增运算符的实验结果：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test2</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	MyInteger myInt;<br>	cout &lt;&lt; myInt++ &lt;&lt; endl; <span class="hljs-comment">// 调用后置递增运算符</span><br>	cout &lt;&lt; myInt &lt;&lt; endl;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>输出结果如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">0<br>1<br></code></pre></td></tr></table></figure>
+<p>实验结果表明重载成功。</p>
+<h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">MyInteger</span><br>&#123;<br><br>	<span class="hljs-keyword">friend</span> ostream&amp; <span class="hljs-keyword">operator</span>&lt;&lt;(ostream&amp; cout, MyInteger myInt);<br><br><span class="hljs-keyword">public</span>:<br>	<span class="hljs-built_in">MyInteger</span>()<br>	&#123;<br>		num = <span class="hljs-number">0</span>;<br>	&#125;<br><br>	<span class="hljs-comment">// 前置递增运算符</span><br>	MyInteger&amp; <span class="hljs-keyword">operator</span>++()<br>	&#123;<br>		++num;<br>		<span class="hljs-keyword">return</span> *<span class="hljs-keyword">this</span>;<br>	&#125;<br><br>	<span class="hljs-comment">// 后置递增运算符</span><br>	MyInteger <span class="hljs-keyword">operator</span>++(<span class="hljs-type">int</span>)<br>	&#123;<br>		MyInteger temp = *<span class="hljs-keyword">this</span>; <span class="hljs-comment">// 先保存当前对象的状态</span><br>		num++;<br>		<span class="hljs-keyword">return</span> temp; <span class="hljs-comment">// 返回递增前的对象</span><br>	&#125;<br><br><span class="hljs-keyword">private</span>:<br>	<span class="hljs-type">int</span> num;<br>&#125;;<br><br><span class="hljs-comment">// 重载输出运算符</span><br>ostream&amp; <span class="hljs-keyword">operator</span>&lt;&lt;(ostream&amp; cout, MyInteger myInt)<br>&#123;<br>	cout &lt;&lt; myInt.num;<br>	<span class="hljs-keyword">return</span> cout;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test1</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	MyInteger myInt;<br>	cout &lt;&lt; ++myInt &lt;&lt; endl; <span class="hljs-comment">// 调用前置递增运算符</span><br>	cout &lt;&lt; myInt &lt;&lt; endl;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test2</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	MyInteger myInt;<br>	cout &lt;&lt; myInt++ &lt;&lt; endl; <span class="hljs-comment">// 调用后置递增运算符</span><br>	cout &lt;&lt; myInt &lt;&lt; endl;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	<span class="hljs-built_in">test2</span>();<br>	<span class="hljs-built_in">system</span>(<span class="hljs-string">&quot;pause&quot;</span>);<br><br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -318,6 +330,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/c/" class="category-chain-item">c++</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/c/" class="print-no-link">#c++</a>
+      
+    </div>
   
 </div>
 
@@ -327,8 +367,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>https://delta0406.github.io/2025/05/16/hello-world/</div>
+      <div>递增运算符重载</div>
+      <div>https://delta0406.github.io/2025/05/17/递增运算符重载/</div>
     </div>
     <div class="license-meta">
       
@@ -340,7 +380,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年5月16日</div>
+          <div>2025年5月17日</div>
         </div>
       
       
@@ -372,15 +412,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/05/16/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="搭建个人博客">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">搭建个人博客</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2025/05/16/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="搭建个人博客">
+                        <span class="hidden-mobile">搭建个人博客</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
