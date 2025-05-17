@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://delta0406.github.io/tags/index.html</loc>
+    <loc>https://delta0406.github.io/tags/</loc>
     
     <lastmod>2025-05-16</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://delta0406.github.io/categories/index.html</loc>
+    <loc>https://delta0406.github.io/categories/</loc>
     
     <lastmod>2025-05-16</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://delta0406.github.io/about/index.html</loc>
+    <loc>https://delta0406.github.io/about/</loc>
     
     <lastmod>2025-05-16</lastmod>
     
@@ -56,13 +56,6 @@
 
   
   <url>
-    <loc>https://delta0406.github.io/tags/c/</loc>
-    <lastmod>2025-05-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://delta0406.github.io/tags/fluid/</loc>
     <lastmod>2025-05-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -76,17 +69,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://delta0406.github.io/tags/c/</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://delta0406.github.io/categories/c/</loc>
+    <loc>https://delta0406.github.io/categories/%E5%85%B6%E4%BB%96/</loc>
     <lastmod>2025-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://delta0406.github.io/categories/%E5%85%B6%E4%BB%96/</loc>
+    <loc>https://delta0406.github.io/categories/c/</loc>
     <lastmod>2025-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
