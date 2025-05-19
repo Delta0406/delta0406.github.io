@@ -19,24 +19,35 @@
   <meta name="author" content="执妄">
   <meta name="keywords" content="">
   
-    <meta name="description" content="前言递增运算符分为前置和后置两种，下面的代码块中分别展示了两种递增运算符。其中，等式1展示了前置递增运算符，变量a首先进行递增操作，其值变为1，再赋值给变量b，此时b的值为1。等式2展示了后置运算符，变量a在递增前值为1，先复制给变量b，b的值此时为1，再对a进行递增操作，将a的值增加到2。 1234int a &#x3D; 0;int b &#x3D; 1;int b &#x3D; ++a; # 等式1int b &#x3D; a++">
+    <meta name="description" content="Hexo环境配置hexo是一个静态博客框架，借助它可以帮助我们将Markdown编写的博客渲染成静态HTML页面。 安装Node.jshexo是基于Node.js的，因此我们在安装hexo之前需要安装Node.js和npm，再通过npm安装hexo。直接打开Node.js官网，下载Node.js软件进行安装。Node.js安装的同时会自动安装node和npm两个工具，使用如下命令检查是否安装成功：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="递增运算符重载">
-<meta property="og:url" content="https://delta0406.github.io/2025/05/17/%E9%80%92%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD/">
+<meta property="og:title" content="搭建个人博客">
+<meta property="og:url" content="https://delta0406.github.io/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
 <meta property="og:site_name" content="执妄的个人博客">
-<meta property="og:description" content="前言递增运算符分为前置和后置两种，下面的代码块中分别展示了两种递增运算符。其中，等式1展示了前置递增运算符，变量a首先进行递增操作，其值变为1，再赋值给变量b，此时b的值为1。等式2展示了后置运算符，变量a在递增前值为1，先复制给变量b，b的值此时为1，再对a进行递增操作，将a的值增加到2。 1234int a &#x3D; 0;int b &#x3D; 1;int b &#x3D; ++a; # 等式1int b &#x3D; a++">
+<meta property="og:description" content="Hexo环境配置hexo是一个静态博客框架，借助它可以帮助我们将Markdown编写的博客渲染成静态HTML页面。 安装Node.jshexo是基于Node.js的，因此我们在安装hexo之前需要安装Node.js和npm，再通过npm安装hexo。直接打开Node.js官网，下载Node.js软件进行安装。Node.js安装的同时会自动安装node和npm两个工具，使用如下命令检查是否安装成功：">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-05-17T14:31:50.000Z">
-<meta property="article:modified_time" content="2025-05-17T14:57:15.782Z">
+<meta property="og:image" content="https://delta0406.github.io/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Node_js%E5%AE%98%E7%BD%91.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%BF%AB%E9%80%9F%E8%AE%BE%E7%BD%AEGithub%E4%BB%93%E5%BA%93.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/hexo%E9%85%8D%E7%BD%AE.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E8%AE%BF%E9%97%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Couldflare%E5%8A%A0%E9%80%9F.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%88%86%E9%85%8D%E5%9F%9F%E5%90%8D.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/giscus%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%BC%80%E5%90%AFcomments%E5%8A%9F%E8%83%BD.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/giscus%E9%85%8D%E7%BD%AE.png">
+<meta property="article:published_time" content="2025-05-16T05:14:37.000Z">
+<meta property="article:modified_time" content="2025-05-17T15:55:21.051Z">
 <meta property="article:author" content="执妄">
-<meta property="article:tag" content="c++">
+<meta property="article:tag" content="fluid">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://delta0406.github.io/images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Node_js%E5%AE%98%E7%BD%91.png">
   
   
   
     <meta name="google-site-verification" content="fHGgGYx4CCLMgmWi9s89Pa1tns-wnmdX-oik721kJUc" />
   
-  <title>递增运算符重载 - 执妄的个人博客</title>
+  <title>搭建个人博客 - 执妄的个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -215,7 +226,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="递增运算符重载"></span>
+            <span id="subtitle" data-typed-text="搭建个人博客"></span>
           
         </div>
 
@@ -226,8 +237,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-05-17 22:31" pubdate>
-          2025年5月17日 晚上
+        <time datetime="2025-05-16 13:14" pubdate>
+          2025年5月16日 下午
         </time>
       </span>
     
@@ -238,7 +249,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          744 字
+          925 字
         
       </span>
     
@@ -249,7 +260,7 @@
         
         
         
-          7 分钟
+          8 分钟
         
       </span>
     
@@ -295,36 +306,52 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">递增运算符重载</h1>
+            <h1 id="seo-header">搭建个人博客</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>递增运算符分为前置和后置两种，下面的代码块中分别展示了两种递增运算符。其中，等式1展示了前置递增运算符，变量a首先进行递增操作，其值变为1，再赋值给变量b，此时b的值为1。等式2展示了后置运算符，变量a在递增前值为1，先复制给变量b，b的值此时为1，再对a进行递增操作，将a的值增加到2。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-type">int</span> a = <span class="hljs-number">0</span>;<br><span class="hljs-type">int</span> b = <span class="hljs-number">1</span>;<br><span class="hljs-type">int</span> b = ++a; # 等式<span class="hljs-number">1</span><br><span class="hljs-type">int</span> b = a++; # 等式<span class="hljs-number">2</span><br></code></pre></td></tr></table></figure>
+                <h1 id="Hexo环境配置"><a href="#Hexo环境配置" class="headerlink" title="Hexo环境配置"></a>Hexo环境配置</h1><p>hexo是一个静态博客框架，借助它可以帮助我们将Markdown编写的博客渲染成静态HTML页面。</p>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>hexo是基于Node.js的，因此我们在安装hexo之前需要安装Node.js和npm，再通过npm安装hexo。直接打开<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn">Node.js官网</a>，下载Node.js软件进行安装。<br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Node_js%E5%AE%98%E7%BD%91.png" srcset="/img/loading.gif" lazyload alt="Node.js官网"><br>Node.js安装的同时会自动安装node和npm两个工具，使用如下命令检查是否安装成功：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">node -v<br></code></pre></td></tr></table></figure>
+<p>如果能成功输出版本号，则安装成功。使用如下命令查看npm是否安装成功：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm -v<br></code></pre></td></tr></table></figure>
 
-<h1 id="重载递增运算符"><a href="#重载递增运算符" class="headerlink" title="重载递增运算符"></a>重载递增运算符</h1><h2 id="创建自己的整形类"><a href="#创建自己的整形类" class="headerlink" title="创建自己的整形类"></a>创建自己的整形类</h2><p>为了重载递增运算符，我们需要创建一个自己的整形类<code>MyInteger</code>，其包含一个<code>int</code>类型的成员变量<code>num</code>。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MyInteger</span><br>&#123;<br><br><span class="hljs-keyword">public</span>:<br>	<span class="hljs-built_in">MyInteger</span>()<br>	&#123;<br>		num = <span class="hljs-number">0</span>;<br>	&#125;<br><br><span class="hljs-keyword">private</span>:<br>	<span class="hljs-type">int</span> num;<br>&#125;;<br></code></pre></td></tr></table></figure>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>使用npm进行安装。首先将npm替换为国内源：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm config <span class="hljs-built_in">set</span> registry https://registry.npmmirror.com <br></code></pre></td></tr></table></figure>
+<p>接着使用如下命令安装hexo：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install -g hexo-cli<br></code></pre></td></tr></table></figure>
+<p>hexo安装完成后，执行如下命令对博客所在文件夹进行初始化：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo init 博客所在文件夹的路径<br></code></pre></td></tr></table></figure>
+<p>进入博客所在文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> 博客所在文件夹的路径<br></code></pre></td></tr></table></figure>
+<p>然后安装相关依赖包：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install<br></code></pre></td></tr></table></figure>
+<p>hexo环境配置完成！</p>
+<h1 id="hexo管理博客的方法"><a href="#hexo管理博客的方法" class="headerlink" title="hexo管理博客的方法"></a>hexo管理博客的方法</h1><p>执行如下两条命令，运行hexo服务：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate<br>hexo server<br></code></pre></td></tr></table></figure>
 
-<h2 id="重载前置递增运算符"><a href="#重载前置递增运算符" class="headerlink" title="重载前置递增运算符"></a>重载前置递增运算符</h2><p>前置递增运算符先进行递增操作，再进行赋值操作。其递增后的结果需要返回给函数，因此应当将返回值的类型设置为引用类型，即<code>MyInteger&amp;</code>，返回的是当前对象。重载的前置递增运算符如下：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs C++">MyInteger&amp; <span class="hljs-keyword">operator</span>++()<br>&#123;<br>    num++;<br>    <span class="hljs-keyword">return</span> *<span class="hljs-keyword">this</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h1 id="利用Github-Pages托管博客"><a href="#利用Github-Pages托管博客" class="headerlink" title="利用Github Pages托管博客"></a>利用Github Pages托管博客</h1><p>我们希望能够在线浏览博客，因此将博客托管到Github仓库。</p>
+<h2 id="将博客托管到Github"><a href="#将博客托管到Github" class="headerlink" title="将博客托管到Github"></a>将博客托管到Github</h2><p>在Github上创建一个项目，项目名设置为<code>你的Github用户名.githun.io</code>。<br>创建完成后Github会给出快速设置仓库的指令，如下图所示。依次执行图中的指令，将其中<code>git add README.md</code>命令替换为<code>git add .</code>。<br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%BF%AB%E9%80%9F%E8%AE%BE%E7%BD%AEGithub%E4%BB%93%E5%BA%93.png" srcset="/img/loading.gif" lazyload alt="快速设置Github仓库"></p>
+<h2 id="使用Github-Pages部署博客"><a href="#使用Github-Pages部署博客" class="headerlink" title="使用Github Pages部署博客"></a>使用Github Pages部署博客</h2><p>这一步需要修改hexo的配置文件，在你的博客所在文件夹下打开<code>_config.yml</code>配置文件，修改type配置项，具体修改如下图所示。其中<code>repository</code>需要修改为你自己的地址：<br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/hexo%E9%85%8D%E7%BD%AE.png" srcset="/img/loading.gif" lazyload alt="hexo配置"><br>最后执行<code>npm install hexo-deployer-git --save</code>命令，安装插件简化部署流程。</p>
+<p>使用<code>hexo new post 文章标题</code>命令可以在<code>source/_post</code>文件夹下生成博客的Markdown文件，用于博客的撰写。写完后，可以使用如下命令将博客发布到Github Pages上。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean <span class="hljs-comment"># 清楚缓存</span><br>hexo generate <span class="hljs-comment"># 生成渲染</span><br>hexo deploy <span class="hljs-comment"># 部署到Github Pages上</span><br></code></pre></td></tr></table></figure>
+<p>发布完成后，可以在<code>https://github用户名.github.io/</code>网址上访问在线博客。<br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E8%AE%BF%E9%97%AE%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.png" srcset="/img/loading.gif" lazyload alt="访问个人博客"></p>
+<h1 id="使用Cloudflare加速访问"><a href="#使用Cloudflare加速访问" class="headerlink" title="使用Cloudflare加速访问"></a>使用Cloudflare加速访问</h1><p>国内访问Github非常不稳定，因此使用Cloudflare代理进行加速。首先打开<a target="_blank" rel="noopener" href="https://www.cloudflare.com/zh-cn/">Cloudflare</a>，在左侧找到Workers和Pages，切换到Pages栏，选择导入现有Git存储库，选择我们的博客仓库授权即可：<br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Couldflare%E5%8A%A0%E9%80%9F.png" srcset="/img/loading.gif" lazyload alt="Couldflare加速.png"><br>部署完成后，点击继续处理项目。下图中红框位置即为分配的域名：<br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%88%86%E9%85%8D%E5%9F%9F%E5%90%8D.png" srcset="/img/loading.gif" lazyload alt="分配域名"></p>
+<h1 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h1><p>以Fluid主题为例，首先下载<a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid?tab=readme-ov-file">Fluid主题最新release版本</a>。然后将其解压到themes目录下，并将解压后的文件夹命名为<code>fluid</code>。<br>修改<code>_config.yml</code>文件：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">theme:</span> <span class="hljs-string">fluid</span> <span class="hljs-comment"># 指定主题</span><br><br><span class="hljs-attr">language:</span> <span class="hljs-string">zh-CN</span> <span class="hljs-comment"># 指定语言</span><br></code></pre></td></tr></table></figure>
+<p>创建关于页：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new page about<br></code></pre></td></tr></table></figure>
+<p>创建之后，编辑博客目录下的<code>./source/about/index.md</code>，添加<code>layout</code>属性：</p>
+<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs mel">title: <span class="hljs-keyword">about</span><br><span class="hljs-keyword">layout</span>: <span class="hljs-keyword">about</span><br></code></pre></td></tr></table></figure>
 
-<h2 id="重载后置递增运算符"><a href="#重载后置递增运算符" class="headerlink" title="重载后置递增运算符"></a>重载后置递增运算符</h2><p>后置递增运算符先进行赋值操作，再进行递增操作。其返回的是递增前的结果，因此应当拷贝递增前的对象，再对原对象进行递增操作，将拷贝结果作为函数返回值。重载的后置递增运算符如下：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs C++">MyInteger <span class="hljs-keyword">operator</span>++(<span class="hljs-type">int</span>)<br>&#123;<br>    MyInteger temp = *<span class="hljs-keyword">this</span>;<br>    num++;<br>    <span class="hljs-keyword">return</span> temp;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h1 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h1><p>原本想要使用<a target="_blank" rel="noopener" href="https://github.com/apps/utterances">utterances插件</a>添加评论功能，但一直无法加载，于是更换为giscus。首先进入<a target="_blank" rel="noopener" href="https://github.com/apps/giscus">giscus</a>，点击<code>Install</code>进行安装，然后选择对应的仓库即可，这里我已经安装过了，不再展示。</p>
+<p>接着点击<a target="_blank" rel="noopener" href="https://giscus.app/zh-CN">giscus配置</a>，输入你的仓库地址即可生成对应的信息，根据生成信息修改对应的配置文件：<br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/giscus%E4%BB%93%E5%BA%93%E8%AE%BE%E7%BD%AE.png" srcset="/img/loading.gif" lazyload alt="giscus仓库设置"><br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/%E5%BC%80%E5%90%AFcomments%E5%8A%9F%E8%83%BD.png" srcset="/img/loading.gif" lazyload alt="开启comments功能"><br><img src="/./images/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/giscus%E9%85%8D%E7%BD%AE.png" srcset="/img/loading.gif" lazyload alt="giscus配置"></p>
+<p>接着修改<code>fluid</code>文件夹下的<code>_config.yml</code>文件，填入以下内容：</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">post:</span><br>  <span class="hljs-attr">comments:</span><br>    <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span><br>    <span class="hljs-attr">type:</span> <span class="hljs-string">utterances</span><br><br><span class="hljs-attr">utterances:</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">GitHub用户名/GitHub用户名.github.io</span><br>  <span class="hljs-attr">issue_term:</span> <span class="hljs-string">title</span><br>  <span class="hljs-attr">label:</span> <span class="hljs-string">utterances</span><br>  <span class="hljs-attr">theme:</span> <span class="hljs-string">github-light</span><br>  <span class="hljs-attr">theme_dark:</span> <span class="hljs-string">github-dark</span><br>  <span class="hljs-attr">crossorigin:</span> <span class="hljs-string">anonymous</span>    <br></code></pre></td></tr></table></figure>
+<p>最后重新发布服务，博客添加评论功能成功。</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://tyxiaoming.xin/2025/01/21/%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%8D%9A%E5%AE%A2/">搭建免费个人博客：Cloudflare+GitHub+Hexo Fluid</a></p>
 
-<h2 id="重载输出运算符"><a href="#重载输出运算符" class="headerlink" title="重载输出运算符"></a>重载输出运算符</h2><p>为了验证重载后的递增运算符的有效性，我们重载输出运算符，以输出实验结果。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs C++">ostream&amp; <span class="hljs-keyword">operator</span>&lt;&lt;(ostream&amp; cout, MyInteger myInt)<br>&#123;<br>	cout &lt;&lt; myInt.num;<br>	<span class="hljs-keyword">return</span> cout;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<h2 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h2><p>首先使用如下代码块测试前置递增运算符的实验结果：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test1</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	MyInteger myInt;<br>	cout &lt;&lt; ++myInt &lt;&lt; endl; <span class="hljs-comment">// 调用前置递增运算符</span><br>	cout &lt;&lt; myInt &lt;&lt; endl;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>输出结果如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">1<br>1<br></code></pre></td></tr></table></figure>
-<p>使用如下代码测试后置递增运算符的实验结果：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test2</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	MyInteger myInt;<br>	cout &lt;&lt; myInt++ &lt;&lt; endl; <span class="hljs-comment">// 调用后置递增运算符</span><br>	cout &lt;&lt; myInt &lt;&lt; endl;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>输出结果如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">0<br>1<br></code></pre></td></tr></table></figure>
-<p>实验结果表明重载成功。</p>
-<h2 id="完整代码"><a href="#完整代码" class="headerlink" title="完整代码"></a>完整代码</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><code class="hljs C++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">MyInteger</span><br>&#123;<br><br>	<span class="hljs-keyword">friend</span> ostream&amp; <span class="hljs-keyword">operator</span>&lt;&lt;(ostream&amp; cout, MyInteger myInt);<br><br><span class="hljs-keyword">public</span>:<br>	<span class="hljs-built_in">MyInteger</span>()<br>	&#123;<br>		num = <span class="hljs-number">0</span>;<br>	&#125;<br><br>	<span class="hljs-comment">// 前置递增运算符</span><br>	MyInteger&amp; <span class="hljs-keyword">operator</span>++()<br>	&#123;<br>		++num;<br>		<span class="hljs-keyword">return</span> *<span class="hljs-keyword">this</span>;<br>	&#125;<br><br>	<span class="hljs-comment">// 后置递增运算符</span><br>	MyInteger <span class="hljs-keyword">operator</span>++(<span class="hljs-type">int</span>)<br>	&#123;<br>		MyInteger temp = *<span class="hljs-keyword">this</span>; <span class="hljs-comment">// 先保存当前对象的状态</span><br>		num++;<br>		<span class="hljs-keyword">return</span> temp; <span class="hljs-comment">// 返回递增前的对象</span><br>	&#125;<br><br><span class="hljs-keyword">private</span>:<br>	<span class="hljs-type">int</span> num;<br>&#125;;<br><br><span class="hljs-comment">// 重载输出运算符</span><br>ostream&amp; <span class="hljs-keyword">operator</span>&lt;&lt;(ostream&amp; cout, MyInteger myInt)<br>&#123;<br>	cout &lt;&lt; myInt.num;<br>	<span class="hljs-keyword">return</span> cout;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test1</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	MyInteger myInt;<br>	cout &lt;&lt; ++myInt &lt;&lt; endl; <span class="hljs-comment">// 调用前置递增运算符</span><br>	cout &lt;&lt; myInt &lt;&lt; endl;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test2</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	MyInteger myInt;<br>	cout &lt;&lt; myInt++ &lt;&lt; endl; <span class="hljs-comment">// 调用后置递增运算符</span><br>	cout &lt;&lt; myInt &lt;&lt; endl;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>	<span class="hljs-built_in">test2</span>();<br>	<span class="hljs-built_in">system</span>(<span class="hljs-string">&quot;pause&quot;</span>);<br><br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -342,7 +369,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/c/" class="category-chain-item">c++</a>
+  <a href="/categories/%E5%85%B6%E4%BB%96/" class="category-chain-item">其他</a>
   
   
 
@@ -357,7 +384,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/c/" class="print-no-link">#c++</a>
+        <a href="/tags/fluid/" class="print-no-link">#fluid</a>
+      
+        <a href="/tags/hexo/" class="print-no-link">#hexo</a>
       
     </div>
   
@@ -369,8 +398,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>递增运算符重载</div>
-      <div>https://delta0406.github.io/2025/05/17/递增运算符重载/</div>
+      <div>搭建个人博客</div>
+      <div>https://delta0406.github.io/搭建个人博客/</div>
     </div>
     <div class="license-meta">
       
@@ -382,7 +411,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年5月17日</div>
+          <div>2025年5月16日</div>
         </div>
       
       
@@ -414,15 +443,15 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/%E9%80%92%E5%A2%9E%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD/" title="递增运算符重载">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">递增运算符重载</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2025/05/16/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="搭建个人博客">
-                        <span class="hidden-mobile">搭建个人博客</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
