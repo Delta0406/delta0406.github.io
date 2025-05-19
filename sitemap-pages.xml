@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://delta0406.github.io/categories/index.html</loc>
-    <lastmod>2025-05-16T15:13:54.635Z</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>https://delta0406.github.io/tags/index.html</loc>
     <lastmod>2025-05-16T15:15:23.416Z</lastmod>
     <changefreq>monthly</changefreq>
@@ -15,6 +9,12 @@
   <url>
     <loc>https://delta0406.github.io/about/index.html</loc>
     <lastmod>2025-05-16T13:07:28.165Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://delta0406.github.io/categories/index.html</loc>
+    <lastmod>2025-05-16T15:13:54.635Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
