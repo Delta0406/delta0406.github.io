@@ -21,29 +21,24 @@
   <meta name="author" content="执妄">
   <meta name="keywords" content="执妄, 博客, C++, python, software, algorithm">
   
-    <meta name="description" content="前言C++程序编译过程主要分为以下四个阶段：  预处理（Preprocessing）：在编译器真正编译源代码之前对代码进行处理，这个阶段由预处理器完成，主要处理以#开头的预处理指令。 编译（Compilation）：将预处理后的C++源代码转换成汇编代码。 汇编（Assemble）：将编译器生成的汇编代码转换为目标机器能够理解的机器代码。 链接（Linking）：将多个目标文件和库文件（如标准库、">
+    <meta name="description" content="前言C++程序中使用头文件并不是强制的，但其是一种非常重要且实用的编程组织方式，目的是提高可维护性、可重用性和编译效率。 头文件和源文件的定义 头文件（.h或.hpp）：主要用于声明类、函数、常量、宏等。头文件不会生成目标代码（.o或obj文件）。 源文件（.cpp）：用于实现函数和类中的具体功能，其会被编译器编译成目标文件。  为什么需要头文件.cpp文件在编译时不需要利用其他文件，其独立编译成">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++程序编译过程">
-<meta property="og:url" content="https://delta0406.github.io/2025/05/22/C-%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/">
+<meta property="og:title" content="为什么需要头文件？">
+<meta property="og:url" content="https://delta0406.github.io/2025/05/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%A4%B4%E6%96%87%E4%BB%B6%EF%BC%9F/">
 <meta property="og:site_name" content="执妄的博客">
-<meta property="og:description" content="前言C++程序编译过程主要分为以下四个阶段：  预处理（Preprocessing）：在编译器真正编译源代码之前对代码进行处理，这个阶段由预处理器完成，主要处理以#开头的预处理指令。 编译（Compilation）：将预处理后的C++源代码转换成汇编代码。 汇编（Assemble）：将编译器生成的汇编代码转换为目标机器能够理解的机器代码。 链接（Linking）：将多个目标文件和库文件（如标准库、">
+<meta property="og:description" content="前言C++程序中使用头文件并不是强制的，但其是一种非常重要且实用的编程组织方式，目的是提高可维护性、可重用性和编译效率。 头文件和源文件的定义 头文件（.h或.hpp）：主要用于声明类、函数、常量、宏等。头文件不会生成目标代码（.o或obj文件）。 源文件（.cpp）：用于实现函数和类中的具体功能，其会被编译器编译成目标文件。  为什么需要头文件.cpp文件在编译时不需要利用其他文件，其独立编译成">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://delta0406.github.io/images/C++%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/%E7%94%9F%E6%88%90%E9%A2%84%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6%E8%AE%BE%E7%BD%AE.png">
-<meta property="og:image" content="https://delta0406.github.io/images/C++%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/main%E9%A2%84%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6.png">
-<meta property="og:image" content="https://delta0406.github.io/images/C++%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/%E8%BE%93%E5%87%BA%E6%B1%87%E7%BC%96%E6%96%87%E4%BB%B6%E8%AE%BE%E7%BD%AE.png">
-<meta property="og:image" content="https://delta0406.github.io/images/C++%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/main%E6%B1%87%E7%BC%96%E6%96%87%E4%BB%B6.png">
-<meta property="article:published_time" content="2025-05-22T07:46:48.000Z">
-<meta property="article:modified_time" content="2025-05-23T02:44:31.576Z">
+<meta property="article:published_time" content="2025-05-23T02:54:05.000Z">
+<meta property="article:modified_time" content="2025-05-23T09:18:06.466Z">
 <meta property="article:author" content="执妄">
 <meta property="article:tag" content="c++">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://delta0406.github.io/images/C++%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/%E7%94%9F%E6%88%90%E9%A2%84%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6%E8%AE%BE%E7%BD%AE.png">
   
   
   
     <meta name="google-site-verification" content="fHGgGYx4CCLMgmWi9s89Pa1tns-wnmdX-oik721kJUc" />
   
-  <title>C++程序编译过程 - 执妄的博客</title>
+  <title>为什么需要头文件？ - 执妄的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -222,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="C++程序编译过程"></span>
+            <span id="subtitle" data-typed-text="为什么需要头文件？"></span>
           
         </div>
 
@@ -233,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-05-22 15:46" pubdate>
-          2025年5月22日 下午
+        <time datetime="2025-05-23 10:54" pubdate>
+          2025年5月23日 上午
         </time>
       </span>
     
@@ -245,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          1.3k 字
         
       </span>
     
@@ -256,7 +251,7 @@
         
         
         
-          9 分钟
+          11 分钟
         
       </span>
     
@@ -302,43 +297,40 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">C++程序编译过程</h1>
+            <h1 id="seo-header">为什么需要头文件？</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>C++程序编译过程主要分为以下四个阶段：</p>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>C++程序中使用头文件并不是强制的，但其是一种非常重要且实用的编程组织方式，目的是提高可维护性、可重用性和编译效率。</p>
+<h1 id="头文件和源文件的定义"><a href="#头文件和源文件的定义" class="headerlink" title="头文件和源文件的定义"></a>头文件和源文件的定义</h1><ul>
+<li>头文件（<code>.h</code>或<code>.hpp</code>）：主要用于声明类、函数、常量、宏等。头文件不会生成目标代码（<code>.o</code>或<code>obj</code>文件）。</li>
+<li>源文件（<code>.cpp</code>）：用于实现函数和类中的具体功能，其会被编译器编译成目标文件。</li>
+</ul>
+<h1 id="为什么需要头文件"><a href="#为什么需要头文件" class="headerlink" title="为什么需要头文件"></a>为什么需要头文件</h1><p><code>.cpp</code>文件在编译时不需要利用其他文件，其独立编译成目标文件。之后再通过一次链接，实现对其他文件中内容的调用。例如对文件<code>a.cpp</code>和文件<code>b.cpp</code>，<code>b.cpp</code>中使用到了<code>a.cpp</code>的<code>void a()</code>函数，在编译时<code>b.cpp</code>不需要事先知道<code>a.cpp</code>中<code>void a()</code>函数的定义，两个文件分别进行编译，编译成目标文件之后再链接，得到可执行文件。这是因为C++在编译阶段会为<code>.cpp</code>文件生成符号表，利用其在别的文件中查找所需的内容。因此，在<code>b.cpp</code>中声明<code>void a()</code>函数，编译时将其存放到<code>b.cpp</code> 的符号表（Symbol Table）中，就可以实现<code>a.cpp</code>中<code>void a()</code>函数的调用。</p>
+<p>通过上述编译模式，我们只需要在一个文件中定义所需的函数和类，在其他文件中声明对应的函数和类即可。但是这样需要记住所有函数和类的名字，且代码冗余。</p>
+<p>头文件就是用来解决上述问题的，其不会被编译。我们将所有的函数声明全部放到头文件中，当一个 <code>.cpp</code>文件需要它们时，就可以通过宏命令<code>#include</code>将它们的内容合并到<code>.cpp</code>文件中，当<code>.cpp</code>文件被编译时，这些被包含进去的头文件就可以提供函数的声明。</p>
+<p><strong><code>#include</code>是一个C语言的宏命令，其在预编译阶段将其后所写的文件名完整替换为这个文件中的内容。</strong></p>
+<h1 id="头文件中应该写什么？"><a href="#头文件中应该写什么？" class="headerlink" title="头文件中应该写什么？"></a>头文件中应该写什么？</h1><p>头文件可能被多个<code>.cpp</code>文件使用，而定义只能有一次，所以头文件中只能包含变量、函数或类的声明，而不能存放它们的定义。该规则有以下三个例外：</p>
 <ol>
-<li>预处理（Preprocessing）：在编译器真正编译源代码之前对代码进行处理，这个阶段由预处理器完成，主要处理以<code>#</code>开头的预处理指令。</li>
-<li>编译（Compilation）：将预处理后的C++源代码转换成汇编代码。</li>
-<li>汇编（Assemble）：将编译器生成的汇编代码转换为目标机器能够理解的机器代码。</li>
-<li>链接（Linking）：将多个目标文件和库文件（如标准库、第三方库）合并成一个可执行文件。</li>
+<li><p>头文件中可以写<code>const</code>对象的定义<br><code>const</code>默认具有内部链接性，因此不会暴露给链接器。每个<code>.cpp</code>文件都会创建一份<code>const</code>对象的副本，互不影响，因此不会产生冲突。<br>同理，<code>static</code>对象的定义也可以放进头文件。</p>
+<blockquote>
+<p>链接性：指的是一个名字（变量、函数等）在多个源文件中的可见性。</p>
+<p>无链接性：名字只在当前作用域中有效（如局部变量）</p>
+<p>内部链接性：名字只在当前翻译单元（<code>.cpp</code>文件）中可见</p>
+<p>外部链接性：名字可以被其他<code>.cpp</code>文件引用和共享</p>
+</blockquote>
+</li>
+<li><p>头文件中可以写内联（inline）函数的定义<br>C++规定内联函数可以在程序中多次定义，编译器会在每个使用点内联替换函数体，或者产生一个局部副本，因此链接器不会因为重复定义报错。</p>
+</li>
+<li><p>头文件中可以写类的定义<br>类定义需要被多个源文件看到，因此可以将其写在头文件中，但函数体的实现通过写在<code>.cpp</code>文件中。</p>
+</li>
 </ol>
-<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>首先介绍示例代码，总共包含三个文件<code>main.cpp</code>、<code>my_math.h</code>和<code>my_math.cpp</code>。</p>
-<p><code>main.cpp</code>代码如下：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&quot;my_math.h&quot;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>	<span class="hljs-type">int</span> a = <span class="hljs-number">10</span>;<br>	<span class="hljs-type">int</span> b = <span class="hljs-number">20</span>;<br>	<span class="hljs-type">int</span> s = demo::<span class="hljs-built_in">sum</span>(a, b);<br>	cout &lt;&lt; <span class="hljs-string">&quot;s = &quot;</span> &lt;&lt; s &lt;&lt; endl;<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<p><code>my_math.h</code>代码如下：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">ifndef</span> MY_MATH_H</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> MY_MATH_H</span><br><br><span class="hljs-keyword">namespace</span> demo &#123;<br>	<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">sum</span><span class="hljs-params">(<span class="hljs-type">int</span> a, <span class="hljs-type">int</span> b)</span> </span>&#123;<br>		<span class="hljs-keyword">return</span> a + b;<br>	&#125;<br>&#125;<br><span class="hljs-meta">#<span class="hljs-keyword">endif</span></span><br></code></pre></td></tr></table></figure>
-
-<p><code>my_math.cpp</code>代码如下：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&quot;my_math.h&quot;</span></span><br><br><span class="hljs-keyword">namespace</span> demo &#123;<br>	<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">sum</span><span class="hljs-params">(<span class="hljs-type">int</span> a, <span class="hljs-type">int</span> b)</span> </span>&#123;<br>		<span class="hljs-keyword">return</span> a + b;<br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
-
-<h2 id="预处理"><a href="#预处理" class="headerlink" title="预处理"></a>预处理</h2><p>预处理阶段主要处理以<code>#</code>开头的代码行，例如对宏做展开、对include的文件做展开、条件编译选项判断、清理注释等。预处理后的文件以<code>.i</code>和<code>.ii</code>结尾。</p>
-<p>在Visual Studio中可以在项目的属性中将下图两个字段设置为是，以生成预处理文件：<br><img src="/./images/C++%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/%E7%94%9F%E6%88%90%E9%A2%84%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" srcset="/img/loading.gif" lazyload alt="生成预处理文件设置"><br><strong>注意：设置了预处理到文件之后将不在生成可执行文件，Linker将无法找到要链接的可编译目标obj文件，要想生成可执行文件需要将预处理到文件重新设置为否。</strong></p>
-<p>设置完毕后，生成解决方案，即可在项目文件夹（项目文件夹&#x2F;项目文件名&#x2F;x64&#x2F;Debug）中找到对应的.i文件，下图展示了<code>main.i</code>文件。从图中可以看出简单的代码经过预处理后展开成了几万行的代码。<br><img src="/./images/C++%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/main%E9%A2%84%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6.png" srcset="/img/loading.gif" lazyload alt="main预处理文件"></p>
-<h2 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h2><p>编译器（如g++、clang++等）使用预处理的输出结果作为输入，生成与平台相关的汇编代码，文件以<code>.s</code>或<code>.asm</code>结尾。</p>
-<p>在Visual Studio中，右键项目，进入属性。在左侧配置属性，选择C&#x2F;C++中的输出文件。接着找到选项汇编程序输出，将其更改为带源代码的程序集，即可在<code>项目文件夹/项目文件名/x64/Debug</code>文件夹下得到汇编文件。<br><img src="/./images/C++%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/%E8%BE%93%E5%87%BA%E6%B1%87%E7%BC%96%E6%96%87%E4%BB%B6%E8%AE%BE%E7%BD%AE.png" srcset="/img/loading.gif" lazyload alt="输出汇编文件设置"><br><img src="/./images/C++%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/main%E6%B1%87%E7%BC%96%E6%96%87%E4%BB%B6.png" srcset="/img/loading.gif" lazyload alt="main汇编文件"></p>
-<h2 id="汇编"><a href="#汇编" class="headerlink" title="汇编"></a>汇编</h2><p>汇编将编译阶段产生的汇编代码转换为目标代码，通常以<code>.o</code>、<code>.obj</code>或<code>.out</code>结尾。</p>
-<p>C++程序在生成解决方案时会自动生成目标代码，代码位于<code>项目文件夹/项目文件名/x64/Debug</code>文件夹下。</p>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>链接阶段将目标文件和库文件合并成一个可执行文件或库文件。在链接的过程中，链接器会解决外部符号引用（即函数和变量的调用），并将它们链接到正确的地址。该阶段的输出为以<code>.exe</code>结尾的文件。</p>
-<h1 id="理解类模板成员函数生成的时机"><a href="#理解类模板成员函数生成的时机" class="headerlink" title="理解类模板成员函数生成的时机"></a>理解类模板成员函数生成的时机</h1><p>模板本质上是编译期的代码生成机制。</p>
-<p>接下来给出一个模版类的范例，以更好地理解类模版成员函数的生成机制：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person1</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">showPerson1</span><span class="hljs-params">()</span> </span>&#123;<br>        cout &lt;&lt; <span class="hljs-string">&quot;Person1 show&quot;</span> &lt;&lt; endl;<br>    &#125;<br>&#125;;<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Person2</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">showPerson2</span><span class="hljs-params">()</span> </span>&#123;<br>        cout &lt;&lt; <span class="hljs-string">&quot;Person2 show&quot;</span> &lt;&lt; endl;<br>    &#125;<br>&#125;;<br><br><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">class</span> <span class="hljs-title class_">T</span>&gt;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">MyClass</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    T obj;<br><br><br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">fun1</span><span class="hljs-params">()</span> </span>&#123;<br>        obj.<span class="hljs-built_in">showPerson1</span>();<br>    &#125;<br><br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">fun2</span><span class="hljs-params">()</span> </span>&#123;<br>        obj.<span class="hljs-built_in">showPerson2</span>();<br>    &#125;<br>&#125;;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test01</span><span class="hljs-params">()</span> </span>&#123;<br>    MyClass&lt;Person&gt; m;<br><br>    m.<span class="hljs-built_in">fun1</span>(); <span class="hljs-comment">// 编译成功</span><br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test02</span><span class="hljs-params">()</span> </span>&#123;<br>    MyClass&lt;Person&gt; m;<br><br>    m.<span class="hljs-built_in">fun1</span>();<br><br>    m.<span class="hljs-built_in">fun2</span>(); <span class="hljs-comment">// 编译失败</span><br>&#125;<br></code></pre></td></tr></table></figure>
-<p>当我们调用<code>test01()</code>时，编译器在编译阶段发现用<code>MyClass&lt;Person&gt;</code>类进行了实例化，并调用了<code>showPerson1()</code>函数，会为<code>Person</code>类型生成<code>MyClass&lt;Person&gt;::showPerson1()</code>的代码。而<code>showPerson2()</code>没有被调用，因此编译器不会为其生成代码，也不会参与后续的汇编和链接阶段。</p>
-<p><strong>这样设计的好处：可以避免不必要的代码生成，节省资源。</strong></p>
-<p>以<code>MyClass&lt;T&gt;</code></p>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Applicaton/article/details/127437265?spm=1001.2101.3001.6650.3&utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~Ctr-3-127437265-blog-145368757.235%5Ev43%5Epc_blog_bottom_relevance_base3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~Ctr-3-127437265-blog-145368757.235%5Ev43%5Epc_blog_bottom_relevance_base3&utm_relevant_index=3">visual Studio 如何查看预处理后生成的代码C&#x2F;C++</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/549996872">C&#x2F;C++程序编译过程为什么要分为四个步骤？</a></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">// MyClass.h（头文件） —— 声明</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">MyClass</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-built_in">MyClass</span>();<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">sayHello</span><span class="hljs-params">()</span></span>;<br><span class="hljs-keyword">private</span>:<br>    <span class="hljs-type">int</span> number;<br>&#125;;<br><br><span class="hljs-comment">// MyClass.cpp（源文件） —— 实现</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&quot;MyClass.h&quot;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><br>MyClass::<span class="hljs-built_in">MyClass</span>() : <span class="hljs-built_in">number</span>(<span class="hljs-number">0</span>) &#123;&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">MyClass::sayHello</span><span class="hljs-params">()</span> </span>&#123;<br>    std::cout &lt;&lt; <span class="hljs-string">&quot;Hello from MyClass!&quot;</span> &lt;&lt; std::endl;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p><strong>此外，类内定义的成员函数也可以写在头文件中，因此类内定的成员函数默认是内联的。而模版类必须放到头文件中定义函数体，因为模板是在编译阶段实例化的，编译器在看到模板使用时，必须能看到完整的定义（包括函数体）才能生成代码。</strong></p>
+<h1 id="头文件中的保护措施"><a href="#头文件中的保护措施" class="headerlink" title="头文件中的保护措施"></a>头文件中的保护措施</h1><p>上述三个例外情况导致头文件可能存在定义，虽然这些定义可以在多个源文件中出现，但在一个源文件中只能出现一次。如果<code>a.h</code>中定义了类A，<code>b.h</code>中定义了类B，且类B的定义依赖了类A，则<code>b.h</code>中包含了<code>a.h</code>。一个源文件，如果同时用到了类A和类B，将<code>a.h</code>和<code>b.h</code>包含进来，则类A会被重复定义，导致程序报错，无法通过编译。</p>
+<p>解决办法就是通过<code>#ifndef...#ifdef...#endif</code>条件编译使得编译器可以根据头文件名是否被定义，再决定要不要继续编译该头文件后续的内容。</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/cpp-header.html">理解C++中的头文件和源文件的作用</a></p>
 
                 
               </div>
@@ -384,8 +376,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>C++程序编译过程</div>
-      <div>https://delta0406.github.io/2025/05/22/C-程序编译过程/</div>
+      <div>为什么需要头文件？</div>
+      <div>https://delta0406.github.io/2025/05/23/为什么需要头文件？/</div>
     </div>
     <div class="license-meta">
       
@@ -397,7 +389,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年5月22日</div>
+          <div>2025年5月23日</div>
         </div>
       
       
@@ -429,18 +421,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/05/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%A4%B4%E6%96%87%E4%BB%B6%EF%BC%9F/" title="为什么需要头文件？">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">为什么需要头文件？</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/05/21/%E6%A8%A1%E6%9D%BF/" title="模板">
-                        <span class="hidden-mobile">模板</span>
+                      <a href="/2025/05/22/C-%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/" title="C++程序编译过程">
+                        <span class="hidden-mobile">C++程序编译过程</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

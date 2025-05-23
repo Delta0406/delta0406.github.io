@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>为什么需要头文件？</title>
+    <link href="/2025/05/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%A4%B4%E6%96%87%E4%BB%B6%EF%BC%9F/"/>
+    <url>/2025/05/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%A4%B4%E6%96%87%E4%BB%B6%EF%BC%9F/</url>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>C++程序中使用头文件并不是强制的，但其是一种非常重要且实用的编程组织方式，目的是提高可维护性、可重用性和编译效率。</p><h1 id="头文件和源文件的定义"><a href="#头文件和源文件的定义" class="headerlink" title="头文件和源文件的定义"></a>头文件和源文件的定义</h1><ul><li>头文件（<code>.h</code>或<code>.hpp</code>）：主要用于声明类、函数、常量、宏等。头文件不会生成目标代码（<code>.o</code>或<code>obj</code>文件）。</li><li>源文件（<code>.cpp</code>）：用于实现函数和类中的具体功能，其会被编译器编译成目标文件。</li></ul><h1 id="为什么需要头文件"><a href="#为什么需要头文件" class="headerlink" title="为什么需要头文件"></a>为什么需要头文件</h1><p><code>.cpp</code>文件在编译时不需要利用其他文件，其独立编译成目标文件。之后再通过一次链接，实现对其他文件中内容的调用。例如对文件<code>a.cpp</code>和文件<code>b.cpp</code>，<code>b.cpp</code>中使用到了<code>a.cpp</code>的<code>void a()</code>函数，在编译时<code>b.cpp</code>不需要事先知道<code>a.cpp</code>中<code>void a()</code>函数的定义，两个文件分别进行编译，编译成目标文件之后再链接，得到可执行文件。这是因为C++在编译阶段会为<code>.cpp</code>文件生成符号表，利用其在别的文件中查找所需的内容。因此，在<code>b.cpp</code>中声明<code>void a()</code>函数，编译时将其存放到<code>b.cpp</code> 的符号表（Symbol Table）中，就可以实现<code>a.cpp</code>中<code>void a()</code>函数的调用。</p><p>通过上述编译模式，我们只需要在一个文件中定义所需的函数和类，在其他文件中声明对应的函数和类即可。但是这样需要记住所有函数和类的名字，且代码冗余。</p><p>头文件就是用来解决上述问题的，其不会被编译。我们将所有的函数声明全部放到头文件中，当一个 <code>.cpp</code>文件需要它们时，就可以通过宏命令<code>#include</code>将它们的内容合并到<code>.cpp</code>文件中，当<code>.cpp</code>文件被编译时，这些被包含进去的头文件就可以提供函数的声明。</p><p><strong><code>#include</code>是一个C语言的宏命令，其在预编译阶段将其后所写的文件名完整替换为这个文件中的内容。</strong></p><h1 id="头文件中应该写什么？"><a href="#头文件中应该写什么？" class="headerlink" title="头文件中应该写什么？"></a>头文件中应该写什么？</h1><p>头文件可能被多个<code>.cpp</code>文件使用，而定义只能有一次，所以头文件中只能包含变量、函数或类的声明，而不能存放它们的定义。该规则有以下三个例外：</p><ol><li><p>头文件中可以写<code>const</code>对象的定义<br><code>const</code>默认具有内部链接性，因此不会暴露给链接器。每个<code>.cpp</code>文件都会创建一份<code>const</code>对象的副本，互不影响，因此不会产生冲突。<br>同理，<code>static</code>对象的定义也可以放进头文件。</p><blockquote><p>链接性：指的是一个名字（变量、函数等）在多个源文件中的可见性。</p><p>无链接性：名字只在当前作用域中有效（如局部变量）</p><p>内部链接性：名字只在当前翻译单元（<code>.cpp</code>文件）中可见</p><p>外部链接性：名字可以被其他<code>.cpp</code>文件引用和共享</p></blockquote></li><li><p>头文件中可以写内联（inline）函数的定义<br>C++规定内联函数可以在程序中多次定义，编译器会在每个使用点内联替换函数体，或者产生一个局部副本，因此链接器不会因为重复定义报错。</p></li><li><p>头文件中可以写类的定义<br>类定义需要被多个源文件看到，因此可以将其写在头文件中，但函数体的实现通过写在<code>.cpp</code>文件中。</p></li></ol><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">// MyClass.h（头文件） —— 声明</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">MyClass</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-built_in">MyClass</span>();<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">sayHello</span><span class="hljs-params">()</span></span>;<br><span class="hljs-keyword">private</span>:<br>    <span class="hljs-type">int</span> number;<br>&#125;;<br><br><span class="hljs-comment">// MyClass.cpp（源文件） —— 实现</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&quot;MyClass.h&quot;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><br>MyClass::<span class="hljs-built_in">MyClass</span>() : <span class="hljs-built_in">number</span>(<span class="hljs-number">0</span>) &#123;&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">MyClass::sayHello</span><span class="hljs-params">()</span> </span>&#123;<br>    std::cout &lt;&lt; <span class="hljs-string">&quot;Hello from MyClass!&quot;</span> &lt;&lt; std::endl;<br>&#125;<br></code></pre></td></tr></table></figure><p><strong>此外，类内定义的成员函数也可以写在头文件中，因此类内定的成员函数默认是内联的。而模版类必须放到头文件中定义函数体，因为模板是在编译阶段实例化的，编译器在看到模板使用时，必须能看到完整的定义（包括函数体）才能生成代码。</strong></p><h1 id="头文件中的保护措施"><a href="#头文件中的保护措施" class="headerlink" title="头文件中的保护措施"></a>头文件中的保护措施</h1><p>上述三个例外情况导致头文件可能存在定义，虽然这些定义可以在多个源文件中出现，但在一个源文件中只能出现一次。如果<code>a.h</code>中定义了类A，<code>b.h</code>中定义了类B，且类B的定义依赖了类A，则<code>b.h</code>中包含了<code>a.h</code>。一个源文件，如果同时用到了类A和类B，将<code>a.h</code>和<code>b.h</code>包含进来，则类A会被重复定义，导致程序报错，无法通过编译。</p><p>解决办法就是通过<code>#ifndef...#ifdef...#endif</code>条件编译使得编译器可以根据头文件名是否被定义，再决定要不要继续编译该头文件后续的内容。</p><h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a href="https://www.runoob.com/w3cnote/cpp-header.html">理解C++中的头文件和源文件的作用</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>c++基础</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>c++</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>C++程序编译过程</title>
     <link href="/2025/05/22/C-%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/"/>
     <url>/2025/05/22/C-%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/</url>
@@ -13,10 +38,16 @@
     
     <categories>
       
-      <category>c++</category>
+      <category>c++基础</category>
       
     </categories>
     
+    
+    <tags>
+      
+      <tag>c++</tag>
+      
+    </tags>
     
   </entry>
   
@@ -32,14 +63,14 @@
     
     <categories>
       
-      <category>c++</category>
+      <category>c++基础</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>模板</tag>
+      <tag>c++</tag>
       
     </tags>
     
@@ -57,7 +88,7 @@
     
     <categories>
       
-      <category>c++</category>
+      <category>c++基础</category>
       
     </categories>
     
