@@ -21,15 +21,15 @@
   <meta name="author" content="执妄">
   <meta name="keywords" content="执妄, 博客, C++, python, software, algorithm">
   
-    <meta name="description" content="前言C++程序中使用头文件并不是强制的，但其是一种非常重要且实用的编程组织方式，目的是提高可维护性、可重用性和编译效率。 头文件和源文件的定义 头文件（.h或.hpp）：主要用于声明类、函数、常量、宏等。头文件不会生成目标代码（.o或obj文件）。 源文件（.cpp）：用于实现函数和类中的具体功能，其会被编译器编译成目标文件。  为什么需要头文件.cpp文件在编译时不需要利用其他文件，其独立编译成">
+    <meta name="description" content="前言extern是一个修饰变量或函数的关键字，用于说明修饰的符号具有外部链接性。通过使用extern关键字，可以引用其他源文件中的变量和函数，实现模块化编程和代码重用。 extern的用法修饰变量一般情况下，在一个源文件中定义的变量和函数只能被源文件中的函数调用，但是C++程序会有许多源文件，为了在本源文件中使用其他文件的变量，C++提供了extern关键字。在使用其他源文件中的全局变量时，只需要">
 <meta property="og:type" content="article">
-<meta property="og:title" content="为什么需要头文件？">
-<meta property="og:url" content="https://delta0406.github.io/2025/05/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%A4%B4%E6%96%87%E4%BB%B6%EF%BC%9F/">
+<meta property="og:title" content="extern关键字">
+<meta property="og:url" content="https://delta0406.github.io/2025/05/24/extern%E5%85%B3%E9%94%AE%E5%AD%97/">
 <meta property="og:site_name" content="执妄的博客">
-<meta property="og:description" content="前言C++程序中使用头文件并不是强制的，但其是一种非常重要且实用的编程组织方式，目的是提高可维护性、可重用性和编译效率。 头文件和源文件的定义 头文件（.h或.hpp）：主要用于声明类、函数、常量、宏等。头文件不会生成目标代码（.o或obj文件）。 源文件（.cpp）：用于实现函数和类中的具体功能，其会被编译器编译成目标文件。  为什么需要头文件.cpp文件在编译时不需要利用其他文件，其独立编译成">
+<meta property="og:description" content="前言extern是一个修饰变量或函数的关键字，用于说明修饰的符号具有外部链接性。通过使用extern关键字，可以引用其他源文件中的变量和函数，实现模块化编程和代码重用。 extern的用法修饰变量一般情况下，在一个源文件中定义的变量和函数只能被源文件中的函数调用，但是C++程序会有许多源文件，为了在本源文件中使用其他文件的变量，C++提供了extern关键字。在使用其他源文件中的全局变量时，只需要">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-05-23T02:54:05.000Z">
-<meta property="article:modified_time" content="2025-05-23T09:36:31.007Z">
+<meta property="article:published_time" content="2025-05-24T08:02:16.000Z">
+<meta property="article:modified_time" content="2025-05-24T08:51:43.278Z">
 <meta property="article:author" content="执妄">
 <meta property="article:tag" content="c++">
 <meta name="twitter:card" content="summary_large_image">
@@ -38,7 +38,7 @@
   
     <meta name="google-site-verification" content="fHGgGYx4CCLMgmWi9s89Pa1tns-wnmdX-oik721kJUc" />
   
-  <title>为什么需要头文件？ - 执妄的博客</title>
+  <title>extern关键字 - 执妄的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -217,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="为什么需要头文件？"></span>
+            <span id="subtitle" data-typed-text="extern关键字"></span>
           
         </div>
 
@@ -228,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-05-23 10:54" pubdate>
-          2025年5月23日 上午
+        <time datetime="2025-05-24 16:02" pubdate>
+          2025年5月24日 下午
         </time>
       </span>
     
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          845 字
         
       </span>
     
@@ -251,7 +251,7 @@
         
         
         
-          12 分钟
+          8 分钟
         
       </span>
     
@@ -297,46 +297,26 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">为什么需要头文件？</h1>
+            <h1 id="seo-header">extern关键字</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>C++程序中使用头文件并不是强制的，但其是一种非常重要且实用的编程组织方式，目的是提高可维护性、可重用性和编译效率。</p>
-<h1 id="头文件和源文件的定义"><a href="#头文件和源文件的定义" class="headerlink" title="头文件和源文件的定义"></a>头文件和源文件的定义</h1><ul>
-<li>头文件（<code>.h</code>或<code>.hpp</code>）：主要用于声明类、函数、常量、宏等。头文件不会生成目标代码（<code>.o</code>或<code>obj</code>文件）。</li>
-<li>源文件（<code>.cpp</code>）：用于实现函数和类中的具体功能，其会被编译器编译成目标文件。</li>
-</ul>
-<h1 id="为什么需要头文件"><a href="#为什么需要头文件" class="headerlink" title="为什么需要头文件"></a>为什么需要头文件</h1><p><code>.cpp</code>文件在编译时不需要利用其他文件，其独立编译成目标文件。之后再通过一次链接，实现对其他文件中内容的调用。例如对文件<code>a.cpp</code>和文件<code>b.cpp</code>，<code>b.cpp</code>中使用到了<code>a.cpp</code>的<code>void a()</code>函数，在编译时<code>b.cpp</code>不需要事先知道<code>a.cpp</code>中<code>void a()</code>函数的定义，两个文件分别进行编译，编译成目标文件之后再链接，得到可执行文件。这是因为C++在编译阶段会为<code>.cpp</code>文件生成符号表，利用其在别的文件中查找所需的内容。因此，在<code>b.cpp</code>中声明<code>void a()</code>函数，编译时将其存放到<code>b.cpp</code> 的符号表（Symbol Table）中，就可以实现<code>a.cpp</code>中<code>void a()</code>函数的调用。</p>
-<p>通过上述编译模式，我们只需要在一个文件中定义所需的函数和类，在其他文件中声明对应的函数和类即可。但是这样需要记住所有函数和类的名字，且代码冗余。</p>
-<p>头文件就是用来解决上述问题的，其不会被编译。我们将所有的函数声明全部放到头文件中，当一个 <code>.cpp</code>文件需要它们时，就可以通过宏命令<code>#include</code>将它们的内容合并到<code>.cpp</code>文件中，当<code>.cpp</code>文件被编译时，这些被包含进去的头文件就可以提供函数的声明。</p>
-<p><strong><code>#include</code>是一个C语言的宏命令，其在预编译阶段将其后所写的文件名完整替换为这个文件中的内容。</strong></p>
-<h1 id="头文件中应该写什么？"><a href="#头文件中应该写什么？" class="headerlink" title="头文件中应该写什么？"></a>头文件中应该写什么？</h1><p>头文件可能被多个<code>.cpp</code>文件使用，而定义只能有一次，所以头文件中只能包含变量、函数或类的声明，而不能存放它们的定义。该规则有以下三个例外：</p>
-<ol>
-<li><p>头文件中可以写<code>const</code>对象的定义<br><code>const</code>默认具有内部链接性，因此不会暴露给链接器。每个<code>.cpp</code>文件都会创建一份<code>const</code>对象的副本，互不影响，因此不会产生冲突。<br>同理，<code>static</code>对象的定义也可以放进头文件。</p>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>extern是一个修饰变量或函数的关键字，用于说明修饰的符号具有外部链接性。通过使用extern关键字，可以引用其他源文件中的变量和函数，实现模块化编程和代码重用。</p>
+<h1 id="extern的用法"><a href="#extern的用法" class="headerlink" title="extern的用法"></a>extern的用法</h1><h2 id="修饰变量"><a href="#修饰变量" class="headerlink" title="修饰变量"></a>修饰变量</h2><p>一般情况下，在一个源文件中定义的变量和函数只能被源文件中的函数调用，但是C++程序会有许多源文件，为了在本源文件中使用其他文件的变量，C++提供了extern关键字。在使用其他源文件中的全局变量时，只需要在本源文件中使用extern关键字来声明这个变量即可。示例如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-comment">// 在test1.cpp源文件中定义全局变量a、b、c</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&quot;test1.h&quot;</span></span><br><br><span class="hljs-type">int</span> a = <span class="hljs-number">1</span>, b = <span class="hljs-number">2</span>;<br><span class="hljs-type">char</span> c = <span class="hljs-string">&#x27;c&#x27;</span>;<br><br><span class="hljs-comment">// 在test1.h中声明变量a、b、c</span><br><span class="hljs-meta">#<span class="hljs-keyword">pragma</span> once</span><br><br><span class="hljs-keyword">extern</span> <span class="hljs-type">int</span> a, b;<br><span class="hljs-keyword">extern</span> <span class="hljs-type">char</span> c;<br><br><span class="hljs-comment">//在test2.cpp源文件中要使用test1.cpp源文件中的全局变量a、b、c</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&quot;test1.h&quot;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>	cout &lt;&lt; <span class="hljs-string">&quot;a = &quot;</span> &lt;&lt; a &lt;&lt; endl;<br>	cout &lt;&lt; <span class="hljs-string">&quot;b = &quot;</span> &lt;&lt; b &lt;&lt; endl;<br>	cout &lt;&lt; <span class="hljs-string">&quot;c = &quot;</span> &lt;&lt; c &lt;&lt; endl;<br><br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>编译器不会为<code>test2.cpp</code>源文件中的全局变量a、b、c分配内存空间，而是直接使用<code>test1.cpp</code>中的全局变量a、b、c。如果在<code>test2.cpp</code>中修改a、b、c的值，<code>test1.cpp</code>中变量的值也会发生改变。</p>
 <blockquote>
-<p>链接性：指的是一个名字（变量、函数等）在多个源文件中的可见性。</p>
-<p>无链接性：名字只在当前作用域中有效（如局部变量）</p>
-<p>内部链接性：名字只在当前翻译单元（<code>.cpp</code>文件）中可见</p>
-<p>外部链接性：名字可以被其他<code>.cpp</code>文件引用和共享</p>
+<p>在<code>test1.cpp</code>中&#96;#include “test1.h”是为了防止声明与定义不一致，让编译器自动检查声明和定义的一致性。</p>
 </blockquote>
-</li>
-<li><p>头文件中可以写内联（inline）函数的定义<br>C++规定内联函数可以在程序中多次定义，编译器会在每个使用点内联替换函数体，或者产生一个局部副本，因此链接器不会因为重复定义报错。</p>
-</li>
-<li><p>头文件中可以写类的定义<br>类定义需要被多个源文件看到，因此可以将其写在头文件中，但函数体的实现通过写在<code>.cpp</code>文件中。</p>
-</li>
-</ol>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">// MyClass.h（头文件） —— 声明</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">MyClass</span> &#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-built_in">MyClass</span>();<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">sayHello</span><span class="hljs-params">()</span></span>;<br><span class="hljs-keyword">private</span>:<br>    <span class="hljs-type">int</span> number;<br>&#125;;<br><br><span class="hljs-comment">// MyClass.cpp（源文件） —— 实现</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&quot;MyClass.h&quot;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><br>MyClass::<span class="hljs-built_in">MyClass</span>() : <span class="hljs-built_in">number</span>(<span class="hljs-number">0</span>) &#123;&#125;<br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">MyClass::sayHello</span><span class="hljs-params">()</span> </span>&#123;<br>    std::cout &lt;&lt; <span class="hljs-string">&quot;Hello from MyClass!&quot;</span> &lt;&lt; std::endl;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p><strong>此外，类内定义的成员函数也可以写在头文件中，因此类内定的成员函数默认是内联的。而模版类必须放到头文件中定义函数体，因为模板是在编译阶段实例化的，编译器在看到模板使用时，必须能看到完整的定义（包括函数体）才能生成代码。</strong></p>
-<h1 id="头文件中的保护措施"><a href="#头文件中的保护措施" class="headerlink" title="头文件中的保护措施"></a>头文件中的保护措施</h1><p>上述三个例外情况导致头文件可能存在定义，虽然这些定义可以在多个源文件中出现，但在一个源文件中只能出现一次。如果<code>a.h</code>中定义了类A，<code>b.h</code>中定义了类B，且类B的定义依赖了类A，则<code>b.h</code>中包含了<code>a.h</code>。一个源文件，如果同时用到了类A和类B，将<code>a.h</code>和<code>b.h</code>包含进来，则类A会被重复定义，导致程序报错，无法通过编译。</p>
-<p>解决办法就是通过<code>#pragma once</code>或<code>#ifndef...#define...#endif</code>条件编译使得编译器可以根据头文件名是否被定义，再决定要不要继续编译该头文件后续的内容。</p>
-<h1 id="pragma-once和-ifndef-define-endif的区别"><a href="#pragma-once和-ifndef-define-endif的区别" class="headerlink" title="#pragma once和#ifndef...#define...#endif的区别"></a><code>#pragma once</code>和<code>#ifndef...#define...#endif</code>的区别</h1><h2 id="pragma-once"><a href="#pragma-once" class="headerlink" title="#pragma once"></a><code>#pragma once</code></h2><p><code>#pragma once</code>是非标准但广泛支持的预处理指令，用于指示编译器文件头在单个文件的编译过程中只能出现一次。</p>
-<p>优点：不需要生成唯一的宏名，简单。</p>
-<p>缺点：不是C++标准的一部分，在某些旧的或特定的编译器中可能不被支持。</p>
-<h2 id="宏定义-ifndef-define-endif"><a href="#宏定义-ifndef-define-endif" class="headerlink" title="宏定义#ifndef...#define...#endif"></a>宏定义<code>#ifndef...#define...#endif</code></h2><p><code>#ifndef...#define...#endif</code>通过检查特定的宏是否已被定义来避免重复定义问题。</p>
-<p>优点：是C++标准的一部分，在所有C+编译器中都是可用的。</p>
-<p>缺点：需要为每个头文件生成一个唯一的宏名。</p>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/cpp-header.html">理解C++中的头文件和源文件的作用</a></p>
+<h2 id="修饰函数"><a href="#修饰函数" class="headerlink" title="修饰函数"></a>修饰函数</h2><p>与修饰变量类似，extern修饰函数，可以用于在一个文件中引用另一个文件中定义的函数。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-comment">// 文件1: main.cpp</span><br><span class="hljs-function"><span class="hljs-keyword">extern</span> <span class="hljs-type">void</span> <span class="hljs-title">print_message</span><span class="hljs-params">()</span></span>;  <span class="hljs-comment">// 声明一个外部函数</span><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-built_in">print_message</span>();  <span class="hljs-comment">// 调用外部函数</span><br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><br><span class="hljs-comment">// 文件2: print.cpp</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">print_message</span><span class="hljs-params">()</span> </span>&#123;  <span class="hljs-comment">// 定义一个函数</span><br>    std::cout &lt;&lt; <span class="hljs-string">&quot;Hello, World!&quot;</span> &lt;&lt; std::endl;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>在这个例子中，我们在 print.cpp 文件中定义了一个函数 print_message，然后在 main.cpp 文件中通过 extern 关键字声明了同名的外部函数 print_message，从而使其可以在 main.cpp 文件中调用。</p>
+<h2 id="extern-“C”"><a href="#extern-“C”" class="headerlink" title="extern “C”"></a>extern “C”</h2><p>extern和”C”配合使用，可以解决C++代码和C代码之间的链接问题。</p>
+<p>由于C++支持函数重载，所以在编译阶段，编译器会对函数名进行改编（mangling），以区分具有相同名字但参数类型不同的函数。然而，C 语言不支持函数重载，也就没有这个改编过程。因此，如果我们想在 C++ 代码中调用 C 代码，或者在 C 代码中调用 C++ 代码，就需要用到 extern “C”。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-comment">// 文件1: main.cpp (C++代码)</span><br><span class="hljs-keyword">extern</span> <span class="hljs-string">&quot;C&quot;</span> <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">print_message</span><span class="hljs-params">()</span></span>;  <span class="hljs-comment">// 使用 extern &quot;C&quot; 声明一个外部函数</span><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br>    <span class="hljs-built_in">print_message</span>();  <span class="hljs-comment">// 调用外部函数</span><br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><br><span class="hljs-comment">// 文件2: print.c (C代码)</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;stdio.h&gt;</span></span><br><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">print_message</span><span class="hljs-params">()</span> </span>&#123;  <span class="hljs-comment">// 定义一个函数</span><br>    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello, World!\n&quot;</span>);<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>这个例子和前一个例子类似，但有一个重要的区别：print.c 是用 C 语言编写的，而 main.cpp 是用 C++ 编写的。因此，我们需要用 extern “C” 来声明 print_message 函数，以确保 C++ 编译器能正确链接到 C 语言编写的 print_message 函数。</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://www.51cto.com/article/768503.html">深入理解 C++ 中的 extern 关键字</a></p>
 
                 
               </div>
@@ -382,8 +362,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>为什么需要头文件？</div>
-      <div>https://delta0406.github.io/2025/05/23/为什么需要头文件？/</div>
+      <div>extern关键字</div>
+      <div>https://delta0406.github.io/2025/05/24/extern关键字/</div>
     </div>
     <div class="license-meta">
       
@@ -395,7 +375,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年5月23日</div>
+          <div>2025年5月24日</div>
         </div>
       
       
@@ -427,18 +407,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/05/24/extern%E5%85%B3%E9%94%AE%E5%AD%97/" title="extern关键字">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">extern关键字</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/05/22/C-%E7%A8%8B%E5%BA%8F%E7%BC%96%E8%AF%91%E8%BF%87%E7%A8%8B/" title="C++程序编译过程">
-                        <span class="hidden-mobile">C++程序编译过程</span>
+                      <a href="/2025/05/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%A4%B4%E6%96%87%E4%BB%B6%EF%BC%9F/" title="为什么需要头文件？">
+                        <span class="hidden-mobile">为什么需要头文件？</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

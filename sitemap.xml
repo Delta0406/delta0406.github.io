@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://delta0406.github.io/2025/05/24/extern%E5%85%B3%E9%94%AE%E5%AD%97/</loc>
+    
+    <lastmod>2025-05-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://delta0406.github.io/2025/05/23/%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81%E5%A4%B4%E6%96%87%E4%BB%B6%EF%BC%9F/</loc>
     
     <lastmod>2025-05-23</lastmod>
@@ -76,7 +85,7 @@
 
   <url>
     <loc>https://delta0406.github.io/</loc>
-    <lastmod>2025-05-23</lastmod>
+    <lastmod>2025-05-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -84,21 +93,21 @@
   
   <url>
     <loc>https://delta0406.github.io/tags/c/</loc>
-    <lastmod>2025-05-23</lastmod>
+    <lastmod>2025-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://delta0406.github.io/tags/fluid/</loc>
-    <lastmod>2025-05-23</lastmod>
+    <lastmod>2025-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://delta0406.github.io/tags/hexo/</loc>
-    <lastmod>2025-05-23</lastmod>
+    <lastmod>2025-05-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
