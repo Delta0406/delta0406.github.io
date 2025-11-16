@@ -245,13 +245,74 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/2025/10/22/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94std-allocator/" target="_self">
+        <a href="/2025/11/13/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94malloc-free/" target="_self">
+          C++内存管理机制——malloc_free
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/11/13/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94malloc-free/" target="_self">
+        <div>
+          VC6 VS VC10VC6内存分配下面的图片展示了VC6内存分配的调用栈，操作系统会调用mainCRTStartup()做一些准备工作，然后才会调用程序编写者的main()函数。在_heap_alloc_base()函数中，如果申请的内存大小小于_shb_threshold，则会通过_sbh_alloc_block(size)申请内存，否则通过操作系统的HeapAlloc()申请内存。  SBH
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2025-11-13 21:29" pubdate>
+              2025-11-13
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/c-%E5%9F%BA%E7%A1%80/" class="category-chain-item">c++基础</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/">#内存管理</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2025/10/22/C++%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94std-allocator/" target="_self">
           C++内存管理机制——std::allocator
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/10/22/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94std-allocator/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/2025/10/22/C++%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94std-allocator/" target="_self">
         <div>
           mallocvc6.0 malloc 上图展示了VC6.0中malloc()函数分配的内存。vc6.0的malloc()是一定会携带cookie的，且固定占用8个字节。蓝色部分是申请的内存，假定为12个字节，表示为16进制下的0xC。debug heder和tail由灰色的块组成，每个块4个字节，因此共占32+4个字节。上下cookie占用4*2个字节。上述所有信息共占据0xC+(32+4)+4*
         </div>
@@ -783,69 +844,6 @@
             <i class="iconfont icon-tags"></i>
             
               <a href="/tags/Modern-C/">#Modern C++</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2025/06/09/%E7%B1%BB%E5%9E%8B%E6%8E%A8%E5%AF%BC%E2%80%94%E2%80%94auto%E4%B8%8Edecltype/" target="_self">
-          类型推导——auto与decltype
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2025/06/09/%E7%B1%BB%E5%9E%8B%E6%8E%A8%E5%AF%BC%E2%80%94%E2%80%94auto%E4%B8%8Edecltype/" target="_self">
-        <div>
-          前言编码时必须明确变量的类型会降低编码的效率，并使代码变得冗长。因此，C++提供了auto和decltype这两个关键字来实现类型的推导。 auto基本语法auto的基本语法如下： 1auto variable_name = expression; 编译器可以根据expression的类型来自动推导出variable_name的类型。 使用示例auto比较常见的用法是推导迭代起来类型的推导： 12
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2025-06-09 09:25" pubdate>
-              2025-06-09
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/c-%E5%9F%BA%E7%A1%80/" class="category-chain-item">c++基础</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Modern-C/">#Modern C++</a>
-            
-              <a href="/tags/%E7%B1%BB%E5%9E%8B%E6%8E%A8%E5%AF%BC/">#类型推导</a>
             
           </div>
         
