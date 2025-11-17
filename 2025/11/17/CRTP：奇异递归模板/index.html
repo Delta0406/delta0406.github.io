@@ -21,29 +21,24 @@
   <meta name="author" content="执妄">
   <meta name="keywords" content="执妄, 博客, C++, python, software, algorithm">
   
-    <meta name="description" content="VC6 VS VC10VC6内存分配下面的图片展示了VC6内存分配的调用栈，操作系统会调用mainCRTStartup()做一些准备工作，然后才会调用程序编写者的main()函数。在_heap_alloc_base()函数中，如果申请的内存大小小于_shb_threshold，则会通过_sbh_alloc_block(size)申请内存，否则通过操作系统的HeapAlloc()申请内存。  SBH">
+    <meta name="description" content="前言CRTP（Curiously Recurring Template Pattern），奇异递归模板是一种特征的模板技术，其特征为：  基类是一个模版类 派生类继承该基类时，将派生类自身作为模板参数传递给基类  CRTP范例CRTP的一个范例如下，Base类通过static_cast将基类指针转换为派生类。由于没有动态类型检查，这个过程是不一定安全的。但Base&lt;Derived&gt;是利">
 <meta property="og:type" content="article">
-<meta property="og:title" content="C++内存管理机制——malloc_free">
-<meta property="og:url" content="https://delta0406.github.io/2025/11/13/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94malloc-free/">
+<meta property="og:title" content="CRTP：奇异递归模板">
+<meta property="og:url" content="https://delta0406.github.io/2025/11/17/CRTP%EF%BC%9A%E5%A5%87%E5%BC%82%E9%80%92%E5%BD%92%E6%A8%A1%E6%9D%BF/">
 <meta property="og:site_name" content="执妄的博客">
-<meta property="og:description" content="VC6 VS VC10VC6内存分配下面的图片展示了VC6内存分配的调用栈，操作系统会调用mainCRTStartup()做一些准备工作，然后才会调用程序编写者的main()函数。在_heap_alloc_base()函数中，如果申请的内存大小小于_shb_threshold，则会通过_sbh_alloc_block(size)申请内存，否则通过操作系统的HeapAlloc()申请内存。  SBH">
+<meta property="og:description" content="前言CRTP（Curiously Recurring Template Pattern），奇异递归模板是一种特征的模板技术，其特征为：  基类是一个模版类 派生类继承该基类时，将派生类自身作为模板参数传递给基类  CRTP范例CRTP的一个范例如下，Base类通过static_cast将基类指针转换为派生类。由于没有动态类型检查，这个过程是不一定安全的。但Base&lt;Derived&gt;是利">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_98.jpg">
-<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_99.jpg">
-<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_100.jpg">
-<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_101.jpg">
-<meta property="article:published_time" content="2025-11-13T13:29:05.000Z">
-<meta property="article:modified_time" content="2025-11-16T14:07:40.952Z">
+<meta property="article:published_time" content="2025-11-17T12:40:27.000Z">
+<meta property="article:modified_time" content="2025-11-17T13:23:36.490Z">
 <meta property="article:author" content="执妄">
-<meta property="article:tag" content="内存管理">
+<meta property="article:tag" content="奇异递归模板">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_98.jpg">
   
   
   
     <meta name="google-site-verification" content="fHGgGYx4CCLMgmWi9s89Pa1tns-wnmdX-oik721kJUc" />
   
-  <title>C++内存管理机制——malloc_free - 执妄的博客</title>
+  <title>CRTP：奇异递归模板 - 执妄的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -222,7 +217,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="C++内存管理机制——malloc_free"></span>
+            <span id="subtitle" data-typed-text="CRTP：奇异递归模板"></span>
           
         </div>
 
@@ -233,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-11-13 21:29" pubdate>
-          2025年11月13日 晚上
+        <time datetime="2025-11-17 20:40" pubdate>
+          2025年11月17日 晚上
         </time>
       </span>
     
@@ -245,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          222 字
+          795 字
         
       </span>
     
@@ -256,7 +251,7 @@
         
         
         
-          2 分钟
+          7 分钟
         
       </span>
     
@@ -302,18 +297,37 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">C++内存管理机制——malloc_free</h1>
+            <h1 id="seo-header">CRTP：奇异递归模板</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="VC6-VS-VC10"><a href="#VC6-VS-VC10" class="headerlink" title="VC6 VS VC10"></a>VC6 VS VC10</h1><h2 id="VC6内存分配"><a href="#VC6内存分配" class="headerlink" title="VC6内存分配"></a>VC6内存分配</h2><p>下面的图片展示了VC6内存分配的调用栈，操作系统会调用<code>mainCRTStartup()</code>做一些准备工作，然后才会调用程序编写者的<code>main()</code>函数。在<code>_heap_alloc_base()</code>函数中，如果申请的内存大小小于<code>_shb_threshold</code>，则会通过<code>_sbh_alloc_block(size)</code>申请内存，否则通过操作系统的<code>HeapAlloc()</code>申请内存。</p>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>CRTP（Curiously Recurring Template Pattern），奇异递归模板是一种特征的模板技术，其特征为：</p>
+<ul>
+<li>基类是一个模版类</li>
+<li>派生类继承该基类时，将派生类自身作为模板参数传递给基类</li>
+</ul>
+<h1 id="CRTP范例"><a href="#CRTP范例" class="headerlink" title="CRTP范例"></a>CRTP范例</h1><p>CRTP的一个范例如下，<code>Base</code>类通过<code>static_cast</code>将基类指针转换为派生类。由于没有动态类型检查，这个过程是不一定安全的。但<code>Base&lt;Derived&gt;</code>是利用子类信息生成的，即<code>static_cast</code>是一定绑定到<code>Derived</code>上的，不会出现错误。此外，<code>static_cast</code>执行的前提是<code>Derived</code>必须是<code>Base&lt;Derived&gt;</code>的子类，这就保证了模板参数<code>T</code>的实参和<code>Base</code>之间的继承关系，因此转换能够保证安全。</p>
 <blockquote>
-<p>SBH: Small Block Heap<br><img src="/../images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_98.jpg" srcset="/img/loading.gif" lazyload alt="VC6内存分配调用栈"></p>
+<p><code>static_cast</code>不安全是因为它不会做动态类型判断，但它要求两者之间的继承关系在编译期已知。<br>CRTP能够在模板实例化时固定继承关系 </p>
 </blockquote>
-<h2 id="VC10内存分配"><a href="#VC10内存分配" class="headerlink" title="VC10内存分配"></a>VC10内存分配</h2><p>VC10则无论什么大小，都通过系统的<code>HeapAlloc()</code>来申请内存。这是否意味着VC6的设计没有意义了呢？并不是，只是这些操作由操作系统来完成了。<br><img src="/../images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_99.jpg" srcset="/img/loading.gif" lazyload alt="VC10内存分配调用栈"></p>
-<h1 id="SBH之始——-heap-init-和-sbh-heap-init"><a href="#SBH之始——-heap-init-和-sbh-heap-init" class="headerlink" title="SBH之始——_heap_init()和_sbh_heap_init()"></a>SBH之始——<code>_heap_init()</code>和<code>_sbh_heap_init()</code></h1><p><code>_heap_init()</code>是crt的第一个动作，它会通过<code>HeapCreate()</code>向操作系统申请一块大内存，接着，调用<code>_sbh_heap_init()</code>进行初始化，从之前分配的<code>_crtheap</code>中申请16个<code>HEADER</code>大小的内存空间。<br><img src="/../images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_100.jpg" srcset="/img/loading.gif" lazyload alt="_heap_init()和_sbh_heap_init()"><br><img src="/../images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_101.jpg" srcset="/img/loading.gif" lazyload alt="HEADER结构"></p>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1d3h5zFEjL?spm_id_from=333.788.videopod.sections&vd_source=cb2ffbc722372d15094f9eebc2c1e0a4">侯捷-C++内存管理机制</a></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-comment">// 基类是模板类</span><br><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Base</span><br>&#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-keyword">virtual</span> ~<span class="hljs-built_in">Base</span>() &#123;&#125;<br> <br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">()</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">auto</span> t = <span class="hljs-built_in">static_cast</span>&lt;T *&gt;(<span class="hljs-keyword">this</span>))<br>        &#123;<br>            t-&gt;<span class="hljs-built_in">op</span>();<br>        &#125;<br>    &#125;<br>&#125;;<br> <br><span class="hljs-comment">// 派生类Derived继承自Base，并以自身作为模板参数传递给基类</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Derived</span> : <span class="hljs-keyword">public</span> Base&lt;Derived&gt;<br>&#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">op</span><span class="hljs-params">()</span></span><br><span class="hljs-function">    </span>&#123;<br>        std::cout &lt;&lt; <span class="hljs-string">&quot;Derived::op()&quot;</span> &lt;&lt; std::endl;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
+
+<h1 id="CRTP的用法"><a href="#CRTP的用法" class="headerlink" title="CRTP的用法"></a>CRTP的用法</h1><h2 id="静态多态"><a href="#静态多态" class="headerlink" title="静态多态"></a>静态多态</h2><p>多态是指同一个方法在基类和不同的派生类之间有不同的行为。CRTP中每个派生类继承的基类随着模板参数的不同而不同，将虚函数调用转换为函数指针的调用，能够避免通过指针查找虚函数表的开销，提高计算效率。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Base</span><br>&#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-built_in">Base</span>() &#123;&#125;<br>    <span class="hljs-keyword">virtual</span> ~<span class="hljs-built_in">Base</span>() &#123;&#125;<br> <br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">()</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">auto</span> t = <span class="hljs-built_in">static_cast</span>&lt;T *&gt;(<span class="hljs-keyword">this</span>))<br>        &#123;<br>            t-&gt;<span class="hljs-built_in">op</span>();<br>        &#125;<br>    &#125;<br>&#125;;<br> <br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Derived1</span> : <span class="hljs-keyword">public</span> Base&lt;Derived1&gt;<br>&#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-built_in">Derived1</span>() &#123;&#125;<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">op</span><span class="hljs-params">()</span></span><br><span class="hljs-function">    </span>&#123;<br>        std::cout &lt;&lt; <span class="hljs-string">&quot;Derived1::op()&quot;</span> &lt;&lt; std::endl;<br>    &#125;<br>&#125;;<br> <br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Derived2</span> : <span class="hljs-keyword">public</span> Base&lt;Derived2&gt;<br>&#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-built_in">Derived2</span>() &#123;&#125;<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">op</span><span class="hljs-params">()</span></span><br><span class="hljs-function">    </span>&#123;<br>        std::cout &lt;&lt; <span class="hljs-string">&quot;Derived2::op()&quot;</span> &lt;&lt; std::endl;<br>    &#125;<br>&#125;;<br> <br><span class="hljs-comment">// 辅助函数：完成静态分发</span><br><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> DerivedClass&gt;</span><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">helperFunc</span><span class="hljs-params">(Base&lt;DerivedClass&gt;&amp; d)</span></span><br><span class="hljs-function"></span>&#123;<br>    d.<span class="hljs-built_in">func</span>();<br>&#125;<br> <br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-type">int</span> argc, <span class="hljs-type">char</span>* argv[])</span> </span><br><span class="hljs-function"></span>&#123;<br>    Derived1 d1;<br>    Derived2 d2;<br>    <span class="hljs-built_in">helperFunc</span>(d1);<br>    <span class="hljs-built_in">helperFunc</span>(d2);<br> <br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<p>运行结果：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">Derived1::op()<br>Derived2::op()<br></code></pre></td></tr></table></figure>
+
+<h2 id="颠倒继承"><a href="#颠倒继承" class="headerlink" title="颠倒继承"></a>颠倒继承</h2><blockquote>
+<p>通过父类向子类添加功能。</p>
+</blockquote>
+<p>我们以<code>InternalQueueBase</code>类为例，展示颠倒继承的作用。<code>InternalQueueBase</code>内部实现了一个<code>Node</code>类，它的<code>next</code>和<code>prev</code>函数利用颠倒继承和<code>reinterpret_cast</code>的强制类型转换，让父类获得了返回子类指针的能力，从而让子类通过继承拥有了对应的能力。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> LockType, <span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">InternalQueueBase</span> &#123;<br> <span class="hljs-keyword">public</span>:<br>  <span class="hljs-keyword">struct</span> <span class="hljs-title class_">Node</span> &#123;<br>   <span class="hljs-keyword">public</span>:<br>    <span class="hljs-built_in">Node</span>() : <span class="hljs-built_in">parent_queue</span>(<span class="hljs-literal">NULL</span>), <span class="hljs-built_in">next_node</span>(<span class="hljs-literal">NULL</span>), <span class="hljs-built_in">prev_node</span>(<span class="hljs-literal">NULL</span>) &#123;&#125;<br>    <span class="hljs-keyword">virtual</span> ~<span class="hljs-built_in">Node</span>() &#123;&#125;<br><br>    <span class="hljs-comment">/// Returns the Next/Prev node or NULL if this is the end/front.</span><br>    <span class="hljs-function">T* <span class="hljs-title">next</span><span class="hljs-params">()</span> <span class="hljs-type">const</span> </span>&#123;<br>      <span class="hljs-function">boost::lock_guard&lt;LockType&gt; <span class="hljs-title">lock</span><span class="hljs-params">(parent_queue-&gt;lock_)</span></span>;<br>      <span class="hljs-keyword">return</span> <span class="hljs-built_in">reinterpret_cast</span>&lt;T*&gt;(next_node);<br>    &#125;<br>    <span class="hljs-function">T* <span class="hljs-title">prev</span><span class="hljs-params">()</span> <span class="hljs-type">const</span> </span>&#123;<br>      <span class="hljs-function">boost::lock_guard&lt;LockType&gt; <span class="hljs-title">lock</span><span class="hljs-params">(parent_queue-&gt;lock_)</span></span>;<br>      <span class="hljs-keyword">return</span> <span class="hljs-built_in">reinterpret_cast</span>&lt;T*&gt;(prev_node);<br>    &#125;<br><br>   <span class="hljs-keyword">private</span>:<br>    <span class="hljs-keyword">friend</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">InternalQueueBase</span>&lt;LockType, T&gt;;<br><br>    Node* next_node;<br>    Node* prev_node;<br>  &#125;;<br></code></pre></td></tr></table></figure>
+
+<p>这里的<code>Block</code>通过<code>CRTP</code>的方式继承了<code>InternalQueue&lt;Block&gt;::Node</code>，于是自动成为线程安全的<code>Queue</code>中的节点，而<code>Block</code>类的<code>next</code>和<code>prev</code>方法可以自动返回指向<code>Block</code>的指针。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Block</span> : <span class="hljs-keyword">public</span> InternalQueue&lt;Block&gt;::Node &#123;<br>   <span class="hljs-keyword">public</span>:<br>       <span class="hljs-comment">// A null dtor to pass codestyle check</span><br>       ~<span class="hljs-built_in">Block</span>() &#123;&#125;<br></code></pre></td></tr></table></figure>
+
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_21107433/article/details/123145236">【C++】CRTP：奇异递归模板模式</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/happenlee/p/13278640.html">C++雾中风景14:CRTP, 模板的黑魔法</a></p>
 
                 
               </div>
@@ -332,7 +346,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/c-%E5%9F%BA%E7%A1%80/" class="category-chain-item">c++基础</a>
+  <a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="category-chain-item">设计模式</a>
   
   
 
@@ -347,7 +361,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/" class="print-no-link">#内存管理</a>
+        <a href="/tags/%E5%A5%87%E5%BC%82%E9%80%92%E5%BD%92%E6%A8%A1%E6%9D%BF/" class="print-no-link">#奇异递归模板</a>
       
     </div>
   
@@ -359,8 +373,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>C++内存管理机制——malloc_free</div>
-      <div>https://delta0406.github.io/2025/11/13/C-内存管理机制——malloc-free/</div>
+      <div>CRTP：奇异递归模板</div>
+      <div>https://delta0406.github.io/2025/11/17/CRTP：奇异递归模板/</div>
     </div>
     <div class="license-meta">
       
@@ -372,7 +386,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年11月13日</div>
+          <div>2025年11月17日</div>
         </div>
       
       
@@ -404,9 +418,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/11/17/CRTP%EF%BC%9A%E5%A5%87%E5%BC%82%E9%80%92%E5%BD%92%E6%A8%A1%E6%9D%BF/" title="CRTP：奇异递归模板">
+                      <a href="/2025/11/17/%E4%BD%BF%E7%94%A8CRTP%E5%AE%9E%E7%8E%B0%E4%B8%8A%E4%B8%8B%E6%96%87%E9%99%90%E5%80%BC/" title="使用CRTP实现上下文限值">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">CRTP：奇异递归模板</span>
+                        <span class="hidden-mobile">使用CRTP实现上下文限值</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -414,8 +428,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/10/22/C++%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94std-allocator/" title="C++内存管理机制——std::allocator">
-                        <span class="hidden-mobile">C++内存管理机制——std::allocator</span>
+                      <a href="/2025/11/13/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94malloc-free/" title="C++内存管理机制——malloc_free">
+                        <span class="hidden-mobile">C++内存管理机制——malloc_free</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
