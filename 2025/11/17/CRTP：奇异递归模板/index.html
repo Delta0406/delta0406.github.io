@@ -29,7 +29,7 @@
 <meta property="og:description" content="前言CRTP（Curiously Recurring Template Pattern），奇异递归模板是一种特征的模板技术，其特征为：  基类是一个模版类 派生类继承该基类时，将派生类自身作为模板参数传递给基类  CRTP范例CRTP的一个范例如下，Base类通过static_cast将基类指针转换为派生类。由于没有动态类型检查，这个过程是不一定安全的。但Base&lt;Derived&gt;是利">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-11-17T12:40:27.000Z">
-<meta property="article:modified_time" content="2025-11-17T13:23:36.490Z">
+<meta property="article:modified_time" content="2025-11-19T13:26:38.032Z">
 <meta property="article:author" content="执妄">
 <meta property="article:tag" content="奇异递归模板">
 <meta name="twitter:card" content="summary_large_image">
@@ -240,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          795 字
+          817 字
         
       </span>
     
@@ -319,7 +319,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">Derived1::op()<br>Derived2::op()<br></code></pre></td></tr></table></figure>
 
 <h2 id="颠倒继承"><a href="#颠倒继承" class="headerlink" title="颠倒继承"></a>颠倒继承</h2><blockquote>
-<p>通过父类向子类添加功能。</p>
+<p>通过父类向子类添加功能：可以从子类中获取信息，在父类中统一实现某个功能</p>
 </blockquote>
 <p>我们以<code>InternalQueueBase</code>类为例，展示颠倒继承的作用。<code>InternalQueueBase</code>内部实现了一个<code>Node</code>类，它的<code>next</code>和<code>prev</code>函数利用颠倒继承和<code>reinterpret_cast</code>的强制类型转换，让父类获得了返回子类指针的能力，从而让子类通过继承拥有了对应的能力。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> LockType, <span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">InternalQueueBase</span> &#123;<br> <span class="hljs-keyword">public</span>:<br>  <span class="hljs-keyword">struct</span> <span class="hljs-title class_">Node</span> &#123;<br>   <span class="hljs-keyword">public</span>:<br>    <span class="hljs-built_in">Node</span>() : <span class="hljs-built_in">parent_queue</span>(<span class="hljs-literal">NULL</span>), <span class="hljs-built_in">next_node</span>(<span class="hljs-literal">NULL</span>), <span class="hljs-built_in">prev_node</span>(<span class="hljs-literal">NULL</span>) &#123;&#125;<br>    <span class="hljs-keyword">virtual</span> ~<span class="hljs-built_in">Node</span>() &#123;&#125;<br><br>    <span class="hljs-comment">/// Returns the Next/Prev node or NULL if this is the end/front.</span><br>    <span class="hljs-function">T* <span class="hljs-title">next</span><span class="hljs-params">()</span> <span class="hljs-type">const</span> </span>&#123;<br>      <span class="hljs-function">boost::lock_guard&lt;LockType&gt; <span class="hljs-title">lock</span><span class="hljs-params">(parent_queue-&gt;lock_)</span></span>;<br>      <span class="hljs-keyword">return</span> <span class="hljs-built_in">reinterpret_cast</span>&lt;T*&gt;(next_node);<br>    &#125;<br>    <span class="hljs-function">T* <span class="hljs-title">prev</span><span class="hljs-params">()</span> <span class="hljs-type">const</span> </span>&#123;<br>      <span class="hljs-function">boost::lock_guard&lt;LockType&gt; <span class="hljs-title">lock</span><span class="hljs-params">(parent_queue-&gt;lock_)</span></span>;<br>      <span class="hljs-keyword">return</span> <span class="hljs-built_in">reinterpret_cast</span>&lt;T*&gt;(prev_node);<br>    &#125;<br><br>   <span class="hljs-keyword">private</span>:<br>    <span class="hljs-keyword">friend</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">InternalQueueBase</span>&lt;LockType, T&gt;;<br><br>    Node* next_node;<br>    Node* prev_node;<br>  &#125;;<br></code></pre></td></tr></table></figure>
