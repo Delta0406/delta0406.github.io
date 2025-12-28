@@ -1,0 +1,826 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/head_photo.jpg">
+  <link rel="icon" href="/img/head_photo.jpg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="执妄">
+  <meta name="keywords" content="执妄, 博客, C++, python, software, algorithm">
+  
+    <meta name="description" content="VC6 VS VC10VC6内存分配下面的图片展示了VC6内存分配的调用栈，操作系统会调用mainCRTStartup()做一些准备工作，然后才会调用程序编写者的main()函数。在_heap_alloc_base()函数中，如果申请的内存大小小于_shb_threshold，则会通过_sbh_alloc_block(size)申请内存，否则通过操作系统的HeapAlloc()申请内存。  SBH">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++内存管理机制——malloc_free">
+<meta property="og:url" content="https://delta0406.github.io/2025/11/13/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94malloc-free/">
+<meta property="og:site_name" content="执妄的博客">
+<meta property="og:description" content="VC6 VS VC10VC6内存分配下面的图片展示了VC6内存分配的调用栈，操作系统会调用mainCRTStartup()做一些准备工作，然后才会调用程序编写者的main()函数。在_heap_alloc_base()函数中，如果申请的内存大小小于_shb_threshold，则会通过_sbh_alloc_block(size)申请内存，否则通过操作系统的HeapAlloc()申请内存。  SBH">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_98.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_99.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_100.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_101.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_102.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_103.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_104.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_105.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_106.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_107.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_108.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_109.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_110.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_111.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_112.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_113.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_114.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_115.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_116.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_117.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_118.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_119.jpg">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_120.jpg">
+<meta property="article:published_time" content="2025-11-13T13:29:05.000Z">
+<meta property="article:modified_time" content="2025-11-23T14:31:14.539Z">
+<meta property="article:author" content="执妄">
+<meta property="article:tag" content="内存管理">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_98.jpg">
+  
+  
+  
+    <meta name="google-site-verification" content="fHGgGYx4CCLMgmWi9s89Pa1tns-wnmdX-oik721kJUc" />
+  
+  <title>C++内存管理机制——malloc_free - 执妄的博客</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"delta0406.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"D6FxKXgtxACMXQhZTdzJ55Xd-gzGzoHsz","app_key":"hIwtLCKxBEHmu5lCKqRTdE4u","server_url":"https://d6fxkxgt.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":true},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2025-05-16T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+
+<body>
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>执妄的博客</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://bing.com/th?id=OHR.SpringequinoxY25_ZH-CN1635828827_1920x1080.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="C++内存管理机制——malloc_free"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-11-13 21:29" pubdate>
+          2025年11月13日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.3k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          20 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">C++内存管理机制——malloc_free</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="VC6-VS-VC10"><a href="#VC6-VS-VC10" class="headerlink" title="VC6 VS VC10"></a>VC6 VS VC10</h1><h2 id="VC6内存分配"><a href="#VC6内存分配" class="headerlink" title="VC6内存分配"></a>VC6内存分配</h2><p>下面的图片展示了VC6内存分配的调用栈，操作系统会调用<code>mainCRTStartup()</code>做一些准备工作，然后才会调用程序编写者的<code>main()</code>函数。在<code>_heap_alloc_base()</code>函数中，如果申请的内存大小小于<code>_shb_threshold</code>，则会通过<code>_sbh_alloc_block(size)</code>申请内存，否则通过操作系统的<code>HeapAlloc()</code>申请内存。</p>
+<blockquote>
+<p>SBH: Small Block Heap</p>
+</blockquote>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_98.jpg" srcset="/img/loading.gif" lazyload alt="VC6内存分配调用栈"></p>
+<h2 id="VC10内存分配"><a href="#VC10内存分配" class="headerlink" title="VC10内存分配"></a>VC10内存分配</h2><p>VC10则无论什么大小，都通过系统的<code>HeapAlloc()</code>来申请内存。这是否意味着VC6的设计没有意义了呢？并不是，只是这些操作由操作系统来完成了。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_99.jpg" srcset="/img/loading.gif" lazyload alt="VC10内存分配调用栈"></p>
+<h2 id="SBH之始——-heap-init-和-sbh-heap-init"><a href="#SBH之始——-heap-init-和-sbh-heap-init" class="headerlink" title="SBH之始——_heap_init()和_sbh_heap_init()"></a>SBH之始——<code>_heap_init()</code>和<code>_sbh_heap_init()</code></h2><p><code>_heap_init()</code>是crt的第一个动作，它会通过<code>HeapCreate()</code>向操作系统申请一块大内存，接着，调用<code>_sbh_heap_init()</code>进行初始化，从之前分配的<code>_crtheap</code>中申请16个<code>HEADER</code>大小的内存空间。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_100.jpg" srcset="/img/loading.gif" lazyload alt="_heap_init()和_sbh_heap_init()"><br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_101.jpg" srcset="/img/loading.gif" lazyload alt="HEADER结构"></p>
+<h1 id="VC6内存管理"><a href="#VC6内存管理" class="headerlink" title="VC6内存管理"></a>VC6内存管理</h1><h2 id="ioinit"><a href="#ioinit" class="headerlink" title="_ioinit()"></a>_ioinit()</h2><h3 id="malloc-crt"><a href="#malloc-crt" class="headerlink" title="_malloc_crt()"></a>_malloc_crt()</h3><p><code>_ioinit()</code>内部调用<code>_malloc_crt(IOINFO_ARRAY_ELTS * sizeof(ioinfo))</code>分配内存。如果当前不是<code>_DEBUG</code>模式，则<code>_malloc_crt</code>就对应<code>malloc</code>，否则对应<code>_malloc_dbg</code>。申请的这块内存大小为<code>32*8=256</code>（<code>IOINFO_ARRAY_ELTS</code>是32，<code>ioinfo</code>结构体本身是6，但会被对齐到8），在16进制时表示为<code>100</code>。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_102.jpg" srcset="/img/loading.gif" lazyload alt="_ioinit()"></p>
+<h3 id="heap-alloc-dbg"><a href="#heap-alloc-dbg" class="headerlink" title="_heap_alloc_dbg()"></a>_heap_alloc_dbg()</h3><p><code>_heap_alloc_dbg()</code>则会在分配内存的基础上添加debug信息构建内存块，内存块的结构如下图所示。每个内存块的大小为<code>sizeof(_CrtMemBlockHeader)+nSize+nNoMansLandSize</code>。header部分是<code>_CrtMemBlockHeader</code>，包含指向上一个内存块和下一个内存块的指针，调用方的文件名，调用的代码行、申请的内存大小等debug信息。<code>nSize</code>是申请的内存大小，即上一小节提到的<code>256</code>。申请内存区域上下被无人区<code>nNoMansLandSize</code>包围，无人区写入的内容是固定的，用于判断是否越界。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_103.jpg" srcset="/img/loading.gif" lazyload alt="_heap_alloc_dbg()1"><br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_104.jpg" srcset="/img/loading.gif" lazyload alt="_heap_alloc_dbg()2"></p>
+<h3 id="heap-alloc-base"><a href="#heap-alloc-base" class="headerlink" title="_heap_alloc_base()"></a>_heap_alloc_base()</h3><p>这里会对申请内存大小做一次判断，如果小于等于<code>__sbh_threshold</code>，则调用<code>_sbh_alloc_block(size)</code>分配内存。否则，通过操作系统的<code>HeapAlloc()</code>申请内存。<code>__sbh_threshold</code>的值为1016，因为此时的size还不是完整内存块的大小，后续还会加上<code>cookie</code>，而我们知道<code>cookie</code>的大小为8。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_105.jpg" srcset="/img/loading.gif" lazyload alt="_heap_alloc_base()"></p>
+<h3 id="sbh-alloc-block"><a href="#sbh-alloc-block" class="headerlink" title="__sbh_alloc_block()"></a>__sbh_alloc_block()</h3><p>到这个阶段，才开始为内存块加上<code>cookie</code>，并通过<code>BYTES_PER_PARA</code>做16字节的对齐。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_106.jpg" srcset="/img/loading.gif" lazyload alt="__sbh_alloc_block()"></p>
+<h3 id="sbh-alloc-new-region"><a href="#sbh-alloc-new-region" class="headerlink" title="__sbh_alloc_new_region()"></a>__sbh_alloc_new_region()</h3><p>一个<code>header</code>将会申请真正的内存，并在将来分割出去。分割出来的块有大有小，为了对其做管理。会<code>new</code>出来一块<code>region</code>，<code>region</code>中有32个<code>group</code>，每个<code>group</code>是大小为64的双向链表。<code>BITVEC</code>是<code>unsigned integer</code>，<code>region</code>中有32组<code>bitvGroup</code>，一组是64位（32+32）。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_107.jpg" srcset="/img/loading.gif" lazyload alt="__sbh_alloc_new_region"></p>
+<h3 id="shb-alloc-new-group"><a href="#shb-alloc-new-group" class="headerlink" title="__shb_alloc_new_group()"></a>__shb_alloc_new_group()</h3><p>对于申请到的1MB的大内存块，将其分为32个<code>group</code>，每个<code>group</code>大小为<code>1024/32=32K</code>。每个<code>group</code>还可以细分为8块，每块大小为<code>4k</code>，称之为<code>page</code>。单个<code>page</code>中用两块存放内容为<code>0xfffffff</code>的内存标记包含的区域，图中4080是两块<code>0xffffffff</code>中间的区域大小，而两块<code>0xffffffff</code>是8个字节，<code>4096-8=4088</code>，为了做16个字节的对齐，将其中8位留作保留位，剩下的4080供使用。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_108.jpg" srcset="/img/loading.gif" lazyload alt="__sbh_alloc_new_group()"></p>
+<p>当前阶段是初始化阶段，8个<code>page</code>是直接由<code>group</code>链表中的最后一组来管理的，这组链表用来管理超过<code>1k</code>的内存。<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_109.jpg" srcset="/img/loading.gif" lazyload alt="__sbh_alloc_new_group()_page"></p>
+<h3 id="切割"><a href="#切割" class="headerlink" title="切割"></a>切割</h3><p><code>_ioinit()</code>申请了256（16进制表示为100）字节的内存，加上debug信息和<code>cookie</code>，共计<code>130</code>字节。<code>crt</code>会根据需求申请对应的内存块，并向其中写入debug信息，其中<code>00000002</code>是<code>nBlockUse</code>的值，表示这是<code>_CRT_BLOCK</code>，main函数结束前应检查<code>_NORMAL_BLOCK</code>是否还有使用的，而不是所有<code>BLOCK</code>。系统会返回实际可填充的<code>fill 0xcd</code>的地址给调用方。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_110.jpg" srcset="/img/loading.gif" lazyload alt="切割"></p>
+<h2 id="SBH行为分析"><a href="#SBH行为分析" class="headerlink" title="SBH行为分析"></a>SBH行为分析</h2><h3 id="首次分配"><a href="#首次分配" class="headerlink" title="首次分配"></a>首次分配</h3><p>首次分配是为<code>_ioinit()</code>进行分配，申请的内存大小为<code>100h</code>，加上debug信息和<code>cookie</code>后，共计<code>130h</code>，<code>130h</code>在<code>header</code>中对应编号为18的链表（链表对应的内存块大小为<code>19*16=304</code>，<code>(304+15)/16-1=18</code>）。最开始初始化的时候，已经有16个<code>HEADER</code>了，编号为0的<code>HEADER</code>会开始处理，使用<code>p=VirtualAlloc(0, 1Mb, MEM_RESERVE,...)</code>申请1Mb的内存，这里的内存是虚拟内存，0表示不指定位置，<code>MEM_RESERVE</code>表示保留地址空间。接着，使用<code>HeapAlloc(crtheap, sizeof(REGION))</code>分配<code>Region</code>所需的内存，包括其管理的<code>Group</code>。<code>Group0</code>指向一个大小为64的链表，然后从1Mb的预备内存中获取32k的内存，其中有8个<code>page</code>。用指针将<code>page</code>串起来，用<code>Group0</code>管理链表的最后一对指针进行管理（前面提到过<code>page</code>大小超过1k，使用最后一堆指针进行管理）。这32k的内存是通过<code>VirtualAlloc(addr, 32Kb, MEM_COMMIT,...)</code>获取的，其中<code>MEM_COMMIT</code>表示真的分配物理内存。接下来在<code>page1</code>中为调用方分配内存，并返回可填充的地址。<code>Region</code>中的<code>bitvGroup</code>共有32组，对应着<code>Group</code>中的64个链表，哪一条链表有区块哪一条对应的bit就被置为1，因此只有最后一位bit被置为1。因为<code>Group0</code>当前正在被使用，因此<code>indGroupUse</code>值为0。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_111.jpg" srcset="/img/loading.gif" lazyload alt="SBH行为分析——首次分配"></p>
+<h3 id="第2次及第3次，分配"><a href="#第2次及第3次，分配" class="headerlink" title="第2次及第3次，分配"></a>第2次及第3次，分配</h3><p>第二次分配是为<code>_crtGetEnvironmentStringA</code>分配内存，该内存的大小由设置的环境变量决定，图中示例为加上debug等信息后240。<code>240h=256*2+4*16=576</code>，<code>(576+15)/16-1=35</code>，因此去<code>bitvGroup</code>中查询第35号链表是否已经分配了。没有分配，能够找到最近的已经分配的是最后一个链表，因此去最后一个链表中分配内存。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_112.jpg" srcset="/img/loading.gif" lazyload alt="SBH行为分析——第2次，分配"><br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_113.jpg" srcset="/img/loading.gif" lazyload alt="SBH行为分析——第3次，分配"></p>
+<h3 id="第15次，释放"><a href="#第15次，释放" class="headerlink" title="第15次，释放"></a>第15次，释放</h3><p>假设第15次进行释放操作，此时会先归还<code>_crtGetEnvironmentStringA</code>得到的240h的内存，因为这个节点已经处理完环境变量了，在没有执行<code>main()</code>之前就会归还这部分内存。</p>
+<p><code>240h/10h</code>结果是十进位的36，因此会归还到编号为35的链表。内存两端的<code>0x00000241</code>会被修改为<code>0x00000240</code>，表示这块内存已经被free了。并将内存块从数据转变成嵌入式指针，由35号链表进行管理，35号链表对应的bit位被置为1。 前14次都是分配，<code>cntEntries</code>值为14，此时也要减1变成13。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_114.jpg" srcset="/img/loading.gif" lazyload alt="SBH行为分析——第15次，释放"></p>
+<h3 id="第16次，分配"><a href="#第16次，分配" class="headerlink" title="第16次，分配"></a>第16次，分配</h3><p>第16次，申请<code>b0</code>大小的内存。向右找到最近的已分配内存的链表——35号链表，为其分配内存，240h的内存还剩190h为空闲，<code>190h/10h=25</code>，因此应当放到编号为24的链表中管理。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_115.jpg" srcset="/img/loading.gif" lazyload alt="SBH行为分析——第16次，分配"></p>
+<h3 id="第n次，分配"><a href="#第n次，分配" class="headerlink" title="第n次，分配"></a>第n次，分配</h3><p><code>Group0</code>内存使用情况用<code>02000014 00000000</code>表示。申请230h的内存，如恰好存在可以分配的链表则标志位应为<code>00000000 20000000</code>，因此<code>Group0</code>无法满足要求。开始使用<code>Group1</code>，<code>indGroupUse</code>值变更为1。</p>
+<blockquote>
+<p>图中<code>00000000 20000000</code>中每个数字由4个二进制位组成，8个0就是<code>4*8=32</code>，2为<code>0010</code>，因此<code>00000000 20000000</code>就对应34号链表。</p>
+</blockquote>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_116.jpg" srcset="/img/loading.gif" lazyload alt="SBH行为分析——第n次，分配"></p>
+<h3 id="区块合并"><a href="#区块合并" class="headerlink" title="区块合并"></a>区块合并</h3><p>下图展示了区块合并的过程，当前计划回收灰色的区块，其内存大小为300h。在将其回收时，<code>free(ptr)</code>中<code>ptr</code>应当指向的是可填充位置的首地址，可以通过读其上4个字节的<code>cookie</code>获取到这块内存的大小，然后加上内存大小跳转到下一块内存的<code>cookie</code>，检查下一块内存是否为空，如果是则将两块内存合并，直到下一个块内存不为空。接着，检查其上方的内存，如果为空则合并，直至不为空。将合并后的内存交由对应的链表进行管理。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_117.jpg" srcset="/img/loading.gif" lazyload alt="区块合并"></p>
+<h2 id="free-p"><a href="#free-p" class="headerlink" title="free(p)"></a>free(p)</h2><p><code>SBH</code>会维护一个<code>__sbh_pHeaderList</code>指向<code>Header</code>表格，而通过单个header可以找到对应的<code>1Mb</code>内存，可以直接计算地址是否在该内存中，通过这种方式我们可以定位到p在哪个<code>Header</code>内。至于<code>Group</code>，则通过<code>(p-Header)/32Kb</code>定位。定位所在的<code>free_list</code>则是通过读<code>cookie</code>知道自身内存大小，然后计算应该位于哪块<code>free_list</code>。</p>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_118.jpg" srcset="/img/loading.gif" lazyload alt="free(p)"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
+<li><p>为什么要把内存分成这么多段，并且用<code>group</code>进行管理？<br>如果只用一个<code>group</code>进行管理，则切割成大大小小的块之后，则回收时需要全部为空才能回收，减小粒度之后更容易回收。</p>
+</li>
+<li><p>如何判断全回收<br>通过<code>cntEntries</code>记录malloc和free的次数，malloc之后就加1，free之后就减1，这样就无需遍历链表，实现快速判断是否需要全回收。</p>
+</li>
+</ol>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_119.jpg" srcset="/img/loading.gif" lazyload alt="分段与全回收"></p>
+<ol start="3">
+<li><p>为什么8个<code>Page</code>都为空之后不进行合并再回收？<br>因为<code>SBH</code>不是立即回收，它会保留一段时间，等到下次全回收的时候再回收，这样可以减少向系统申请内存的开销。维持原有的链表结构，可以更快的利用内存。</p>
+</li>
+<li><p>如何延缓全回收的动作？<br>在<code>__sbh_heap_init()</code>时将<code>__sbh_pHeaderScan</code>值置为NULL了，该指针指向一个全回收<code>Group</code>所属的<code>Header</code>，这个<code>Group</code>原本应该被释放，但暂时保留了。当有第二个全回收的<code>Group</code>时，才释放这个<code>Defer Group</code>，将新出现的全回收<code>Group</code>设为<code>Defer</code>。如果尚未出现第二个全回收而又从<code>Defer Group</code>中取出block完成分配，则<code>Defer</code>指针会被置为NULL，即该<code>Group</code>会再次投入使用，不会被全回收。<code>__sbh_indGroupDefer</code>是索引，指出<code>Region</code>中哪个<code>Group</code>是<code>Defer</code>。</p>
+</li>
+</ol>
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E6%9A%82%E5%AD%98/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_120.jpg" srcset="/img/loading.gif" lazyload alt="全回收策略"></p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1d3h5zFEjL?spm_id_from=333.788.videopod.sections&vd_source=cb2ffbc722372d15094f9eebc2c1e0a4">侯捷-C++内存管理机制</a></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/c-%E5%9F%BA%E7%A1%80/" class="category-chain-item">c++基础</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/" class="print-no-link">#内存管理</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>C++内存管理机制——malloc_free</div>
+      <div>https://delta0406.github.io/2025/11/13/C-内存管理机制——malloc-free/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>执妄</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年11月13日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/11/17/CRTP%EF%BC%9A%E5%A5%87%E5%BC%82%E9%80%92%E5%BD%92%E6%A8%A1%E6%9D%BF/" title="CRTP：奇异递归模板">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">CRTP：奇异递归模板</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/10/22/C++%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94std-allocator/" title="C++内存管理机制——std::allocator">
+                        <span class="hidden-mobile">C++内存管理机制——std::allocator</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+    <div id="giscus" class="giscus"></div>
+    <script type="text/javascript">
+      Fluid.utils.loadComments('#giscus', function() {
+        var options = {"repo":"Delta0406/delta0406.github.io","repo-id":"R_kgDOOq7EyQ","category":"Announcements","category-id":"DIC_kwDOOq7Eyc4CqOOd","theme-light":"light","theme-dark":"dark","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"top","lang":"zh-CN"};
+        var attributes = {};
+        for (let option in options) {
+          if (!option.startsWith('theme-')) {
+            var key = option.startsWith('data-') ? option : 'data-' + option;
+            attributes[key] = options[option];
+          }
+        }
+        var light = 'light';
+        var dark = 'dark';
+        window.GiscusThemeLight = light;
+        window.GiscusThemeDark = dark;
+        attributes['data-theme'] = document.documentElement.getAttribute('data-user-color-scheme') === 'dark' ? dark : light;
+        for (let attribute in attributes) {
+          var value = attributes[attribute];
+          if (value === undefined || value === null || value === '') {
+            delete attributes[attribute];
+          }
+        }
+        var s = document.createElement('script');
+        s.setAttribute('src', 'https://giscus.app/client.js');
+        s.setAttribute('crossorigin', 'anonymous');
+        for (let attribute in attributes) {
+          s.setAttribute(attribute, attributes[attribute]);
+        }
+        var ss = document.getElementsByTagName('script');
+        var e = ss.length > 0 ? ss[ss.length - 1] : document.head || document.documentElement;
+        e.parentNode.insertBefore(s, e.nextSibling);
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>

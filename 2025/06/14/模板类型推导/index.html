@@ -1,0 +1,805 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/head_photo.jpg">
+  <link rel="icon" href="/img/head_photo.jpg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="执妄">
+  <meta name="keywords" content="执妄, 博客, C++, python, software, algorithm">
+  
+    <meta name="description" content="前言类型推导使得程序员从冗杂的类型名拼写上解放出来，本篇文章将详细介绍模型类型推导的规则。 模板类型推导的规则考虑如下函数模版： 123template&lt;typename T&gt;void f(ParamType param);f(expr); 在编译期间，编译器使用expr进行两个类型的推导：T和ParamType。其中，ParamType通常包含一些修饰，从而通常与T是不同的类型。T的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="模板类型推导">
+<meta property="og:url" content="https://delta0406.github.io/2025/06/14/%E6%A8%A1%E6%9D%BF%E7%B1%BB%E5%9E%8B%E6%8E%A8%E5%AF%BC/">
+<meta property="og:site_name" content="执妄的博客">
+<meta property="og:description" content="前言类型推导使得程序员从冗杂的类型名拼写上解放出来，本篇文章将详细介绍模型类型推导的规则。 模板类型推导的规则考虑如下函数模版： 123template&lt;typename T&gt;void f(ParamType param);f(expr); 在编译期间，编译器使用expr进行两个类型的推导：T和ParamType。其中，ParamType通常包含一些修饰，从而通常与T是不同的类型。T的">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-06-14T00:46:53.000Z">
+<meta property="article:modified_time" content="2025-06-14T05:46:17.889Z">
+<meta property="article:author" content="执妄">
+<meta property="article:tag" content="Modern C++">
+<meta property="article:tag" content="类型推导">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+    <meta name="google-site-verification" content="fHGgGYx4CCLMgmWi9s89Pa1tns-wnmdX-oik721kJUc" />
+  
+  <title>模板类型推导 - 执妄的博客</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"delta0406.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"D6FxKXgtxACMXQhZTdzJ55Xd-gzGzoHsz","app_key":"hIwtLCKxBEHmu5lCKqRTdE4u","server_url":"https://d6fxkxgt.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":true},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2025-05-16T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+
+<body>
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>执妄的博客</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://bing.com/th?id=OHR.SpringequinoxY25_ZH-CN1635828827_1920x1080.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="模板类型推导"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-06-14 08:46" pubdate>
+          2025年6月14日 早上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.2k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          10 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">模板类型推导</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>类型推导使得程序员从冗杂的类型名拼写上解放出来，本篇文章将详细介绍模型类型推导的规则。</p>
+<h1 id="模板类型推导的规则"><a href="#模板类型推导的规则" class="headerlink" title="模板类型推导的规则"></a>模板类型推导的规则</h1><p>考虑如下函数模版：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;</span><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">f</span><span class="hljs-params">(ParamType param)</span></span>;<br><span class="hljs-built_in">f</span>(expr);<br></code></pre></td></tr></table></figure>
+<p>在编译期间，编译器使用<code>expr</code>进行两个类型的推导：<code>T</code>和<code>ParamType</code>。其中，<code>ParamType</code>通常包含一些修饰，从而通常与<code>T</code>是不同的类型。<code>T</code>的类型推导不仅取决于<code>expr</code>的类型，也被<code>ParamType</code>决定，可以将其分为三种情况：</p>
+<ul>
+<li><code>ParamType</code>是一个指针或引用，但不是通用引用</li>
+<li><code>ParamType</code>是一个通用引用</li>
+<li><code>ParamType</code>既不是指针也不是引用<br>下面分别介绍三种情况下的类型推导规则</li>
+</ul>
+<h2 id="情况一：ParamType是一个指针或引用，但不是通用引用"><a href="#情况一：ParamType是一个指针或引用，但不是通用引用" class="headerlink" title="情况一：ParamType是一个指针或引用，但不是通用引用"></a>情况一：<code>ParamType</code>是一个指针或引用，但不是通用引用</h2><p>在该情况下，类型推导按照如下规则进行：</p>
+<ul>
+<li>如果<code>expr</code>的类型是一个引用，忽略引用部分</li>
+<li><code>expr</code>的类型与<code>ParamType</code>进行模式匹配决定<code>T</code><br>对于如下模板示例：</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">f</span><span class="hljs-params">(T&amp; param)</span></span><br></code></pre></td></tr></table></figure>
+<p>则类型推导结果如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-type">int</span> x = <span class="hljs-number">27</span>;          <span class="hljs-comment">// x是int</span><br><span class="hljs-type">const</span> <span class="hljs-type">int</span> cx = x;    <span class="hljs-comment">// cx是const int</span><br><span class="hljs-type">const</span> <span class="hljs-type">int</span>&amp; rx = x;   <span class="hljs-comment">// rx是指向const int变量x的引用</span><br><br><span class="hljs-built_in">f</span>(x);  <span class="hljs-comment">// T是int，param类型是int&amp;</span><br><span class="hljs-built_in">f</span>(cx); <span class="hljs-comment">// T是const int，param是const int&amp;</span><br><span class="hljs-built_in">f</span>(rx); <span class="hljs-comment">// T是const int，param是const int&amp;</span><br></code></pre></td></tr></table></figure>
+<p>从上述结果中可以看出，<strong><code>const</code>对象作为实参传递给<code>T&amp;</code>形参时，<code>const</code>会被保留为<code>T</code>的一部分</strong>。</p>
+<p>如果<code>param</code>是一个指针，对应的情况与引用基本一致：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">f</span><span class="hljs-params">(T* param)</span></span><br><span class="hljs-function"></span><br><span class="hljs-function"><span class="hljs-type">int</span> x </span>= <span class="hljs-number">27</span>;          <span class="hljs-comment">// x是int类型</span><br><span class="hljs-type">const</span> <span class="hljs-type">int</span> *px = &amp;x;  <span class="hljs-comment">// px是指向const int变量的指针</span><br><br><span class="hljs-built_in">f</span>(&amp;x); <span class="hljs-comment">// T是int，param是int*</span><br><span class="hljs-built_in">f</span>(px); <span class="hljs-comment">// T是const int，param是const int*</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="情况二：ParamType是一个通用引用"><a href="#情况二：ParamType是一个通用引用" class="headerlink" title="情况二：ParamType是一个通用引用"></a>情况二：<code>ParamType</code>是一个通用引用</h2><p>该情况的形式如下：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">f</span><span class="hljs-params">(T&amp;&amp; param)</span></span><br></code></pre></td></tr></table></figure>
+<p>对应的类型推导规则有以下几点：</p>
+<ul>
+<li>如果<code>expr</code>是左值，<code>T</code>和<code>ParamType</code>都会被推导为左值引用。</li>
+<li>如果<code>expr</code>是右值，使用情况一的推导规则（<code>T</code>保留<code>const</code>属性和基本类型，<code>param</code>是右值引用）<br>下面给出对应的示例：</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">f</span><span class="hljs-params">(T&amp;&amp; param)</span></span><br><span class="hljs-function"></span><br><span class="hljs-function"><span class="hljs-type">int</span> x </span>= <span class="hljs-number">27</span>;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> cx = x;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span>&amp; rx = cx;<br><br><span class="hljs-built_in">f</span>(x);  <span class="hljs-comment">// x是左值，T是int&amp;，param也是int&amp;</span><br><span class="hljs-built_in">f</span>(cx); <span class="hljs-comment">// cx是左值，所以T是const int&amp;，param也是const int&amp;</span><br><span class="hljs-built_in">f</span>(rx); <span class="hljs-comment">// rx是左值，所以T是const int&amp;，param也是const int&amp;</span><br><span class="hljs-built_in">f</span>(<span class="hljs-number">27</span>); <span class="hljs-comment">// 27是右值，所以T是int，param类型是int&amp;&amp;</span><br></code></pre></td></tr></table></figure>
+
+<h2 id="情况三：ParamType既不是指针也不是引用"><a href="#情况三：ParamType既不是指针也不是引用" class="headerlink" title="情况三：ParamType既不是指针也不是引用"></a>情况三：<code>ParamType</code>既不是指针也不是引用</h2><p>该情况下通过传值的方式处理：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">f</span><span class="hljs-params">(T param)</span></span><br></code></pre></td></tr></table></figure>
+<p>对应如下规则：</p>
+<ul>
+<li>如果<code>expr</code>的类型是一个引用，忽略这个引用部分</li>
+<li>如果忽略<code>expr</code>的引用性之后，<code>expr</code>是一个<code>const</code>，那么再忽略<code>const</code>。如果是<code>volatile</code>，也忽略<code>volatile</code>。<br>下面给出对应的示例：</li>
+</ul>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-type">int</span> x = <span class="hljs-number">27</span>;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span> cx = x;<br><span class="hljs-type">const</span> <span class="hljs-type">int</span>&amp; rx = cx;<br><br><span class="hljs-built_in">f</span>(x);  <span class="hljs-comment">// T和param的类型都是int</span><br><span class="hljs-built_in">f</span>(cx); <span class="hljs-comment">// T和param的类型都是int</span><br><span class="hljs-built_in">f</span>(rx); <span class="hljs-comment">// T和param的类型都是int</span><br></code></pre></td></tr></table></figure>
+<p>该情况下，<code>param</code>是传入对象的拷贝，不影响传入对象。</p>
+<p>一个例外情况是传入的是指向常量的常量指针，此时指针指向数据的常量性会被保留，而指针本身的常量性会被忽略：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">f</span><span class="hljs-params">(T param)</span></span><br><span class="hljs-function"></span><br><span class="hljs-function"><span class="hljs-type">const</span> <span class="hljs-type">char</span>* <span class="hljs-type">const</span> ptr </span>= <span class="hljs-string">&quot;Fun with pointers&quot;</span>; <span class="hljs-comment">// ptr是指向常量的常量指针</span><br><span class="hljs-built_in">f</span>(ptr); <span class="hljs-comment">// param是const char*</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="数组实参"><a href="#数组实参" class="headerlink" title="数组实参"></a>数组实参</h1><p>我们知道数组在某些上下文中会退化为指向它的第一个元素的指针，给出如下示例：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-type">const</span> <span class="hljs-type">char</span> name[] = <span class="hljs-string">&quot;J. P. Briggs&quot;</span>;<br><span class="hljs-type">const</span> <span class="hljs-type">char</span> * ptrToName = name;<br></code></pre></td></tr></table></figure>
+<p>在该示例中，<code>name</code>的类型为<code>const char[13]</code>，而<code>ptrToName</code>的类型为<code>const char*</code>，但编译器允许数组退化为指针。</p>
+<p>将数组作为实参传递给模版：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;</span><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">f</span><span class="hljs-params">(T param)</span></span>;                        <span class="hljs-comment">//传值形参的模板</span><br><br><span class="hljs-built_in">f</span>(name); <span class="hljs-comment">// T被推导为const char*                             </span><br></code></pre></td></tr></table></figure>
+<p>有没有办法让<code>T</code>推导为数组，而不是指针呢？答案是使用传引用模板：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">f</span><span class="hljs-params">(T&amp; param)</span></span>;<br><br><span class="hljs-built_in">f</span>(name);<br></code></pre></td></tr></table></figure>
+<p>此时T会被推导为真正的数组<code>const char[13]</code>，形参类型为<code>const char (&amp;)char[13]</code>。</p>
+<p>我们可以根据这一性质创建一个模板函数推导数组的大小：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> T, std::<span class="hljs-type">size_t</span> N&gt;<br><span class="hljs-function"><span class="hljs-keyword">constexpr</span> std::<span class="hljs-type">size_t</span> <span class="hljs-title">arraySize</span><span class="hljs-params">(T (&amp;)[N])</span> <span class="hljs-keyword">noexcept</span> </span>&#123;<br>    <span class="hljs-keyword">return</span> N;<br>&#125;<br><br><span class="hljs-type">int</span> keyVals[] = &#123;<span class="hljs-number">1</span>, <span class="hljs-number">3</span>, <span class="hljs-number">7</span>, <span class="hljs-number">9</span>, <span class="hljs-number">11</span>, <span class="hljs-number">22</span>, <span class="hljs-number">35</span>&#125;;<br><br><span class="hljs-type">int</span> mappedVals[<span class="hljs-built_in">arraySize</span>(keyVals)]; <span class="hljs-comment">// 使用一个数组的大小声明另一个数组</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="函数实参"><a href="#函数实参" class="headerlink" title="函数实参"></a>函数实参</h1><p>函数类型也会退化为函数指针，对于数组类型的推导可以应用到函数类型退化到函数指针上来：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">someFunc</span><span class="hljs-params">(<span class="hljs-type">int</span>, <span class="hljs-type">double</span>)</span></span>;         <span class="hljs-comment">//someFunc是一个函数，</span><br>                                    <span class="hljs-comment">//类型是void(int, double)</span><br><br><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;</span><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">f1</span><span class="hljs-params">(T param)</span></span>;                   <span class="hljs-comment">//传值给f1</span><br><br><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;</span><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">f2</span><span class="hljs-params">(T &amp; param)</span></span>;                 <span class="hljs-comment">//传引用给f2</span><br><br><span class="hljs-built_in">f1</span>(someFunc);                       <span class="hljs-comment">//param被推导为指向函数的指针，</span><br>                                    <span class="hljs-comment">//类型是void(*)(int, double)</span><br><span class="hljs-built_in">f2</span>(someFunc);                       <span class="hljs-comment">//param被推导为指向函数的引用，</span><br>                                    <span class="hljs-comment">//类型是void(&amp;)(int, double)</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://cntransgroup.github.io/EffectiveModernCppChinese/1.DeducingTypes/item1.html">类型推导</a></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/c-%E5%9F%BA%E7%A1%80/" class="category-chain-item">c++基础</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Modern-C/" class="print-no-link">#Modern C++</a>
+      
+        <a href="/tags/%E7%B1%BB%E5%9E%8B%E6%8E%A8%E5%AF%BC/" class="print-no-link">#类型推导</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>模板类型推导</div>
+      <div>https://delta0406.github.io/2025/06/14/模板类型推导/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>执妄</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年6月14日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/09/01/%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/" title="工厂模式">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">工厂模式</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/06/11/move%E4%B8%8Eforward/" title="std::move与std::forward">
+                        <span class="hidden-mobile">std::move与std::forward</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+    <div id="giscus" class="giscus"></div>
+    <script type="text/javascript">
+      Fluid.utils.loadComments('#giscus', function() {
+        var options = {"repo":"Delta0406/delta0406.github.io","repo-id":"R_kgDOOq7EyQ","category":"Announcements","category-id":"DIC_kwDOOq7Eyc4CqOOd","theme-light":"light","theme-dark":"dark","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"top","lang":"zh-CN"};
+        var attributes = {};
+        for (let option in options) {
+          if (!option.startsWith('theme-')) {
+            var key = option.startsWith('data-') ? option : 'data-' + option;
+            attributes[key] = options[option];
+          }
+        }
+        var light = 'light';
+        var dark = 'dark';
+        window.GiscusThemeLight = light;
+        window.GiscusThemeDark = dark;
+        attributes['data-theme'] = document.documentElement.getAttribute('data-user-color-scheme') === 'dark' ? dark : light;
+        for (let attribute in attributes) {
+          var value = attributes[attribute];
+          if (value === undefined || value === null || value === '') {
+            delete attributes[attribute];
+          }
+        }
+        var s = document.createElement('script');
+        s.setAttribute('src', 'https://giscus.app/client.js');
+        s.setAttribute('crossorigin', 'anonymous');
+        for (let attribute in attributes) {
+          s.setAttribute(attribute, attributes[attribute]);
+        }
+        var ss = document.getElementsByTagName('script');
+        var e = ss.length > 0 ? ss[ss.length - 1] : document.head || document.documentElement;
+        e.parentNode.insertBefore(s, e.nextSibling);
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>

@@ -1,0 +1,840 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/head_photo.jpg">
+  <link rel="icon" href="/img/head_photo.jpg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="执妄">
+  <meta name="keywords" content="执妄, 博客, C++, python, software, algorithm">
+  
+    <meta name="description" content="内存分配的每个层面C++的内存管理方式有如下四种，一般不直接使用操作系统的API进行管理，以尽可能避免与特定操作系统绑定。 四种内存操作方法的特性如下： new&#x2F;detele expression内存申请通过new进行内存申请的过程：  通过operator new()操作分配一个目标类型大小的内存，图中为Complex的大小。 通过static_cast将得到的内存块强制转化为目标类型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++内存管理机制——primitives">
+<meta property="og:url" content="https://delta0406.github.io/2025/10/19/C++%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94primitives/">
+<meta property="og:site_name" content="执妄的博客">
+<meta property="og:description" content="内存分配的每个层面C++的内存管理方式有如下四种，一般不直接使用操作系统的API进行管理，以尽可能避免与特定操作系统绑定。 四种内存操作方法的特性如下： new&#x2F;detele expression内存申请通过new进行内存申请的过程：  通过operator new()操作分配一个目标类型大小的内存，图中为Complex的大小。 通过static_cast将得到的内存块强制转化为目标类型">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E5%9B%9B%E7%A7%8D%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E6%96%B9%E5%BC%8F.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E5%9B%9B%E7%A7%8D%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E6%96%B9%E6%B3%95%E7%89%B9%E6%80%A7.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/new_expression.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/delete_expression.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/array_new.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/array_new&array_delete.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/placement_new.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/cpp_memory_allocation_ways.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/container_memory_allocation_ways.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/global_operator_new_override.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/local_operator_new_override.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/local_operator_new_array_override.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/per-class-allocator1.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/per-class-allocator1-test.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/per-class-allocator2.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/per-class-allocator2-test.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/static-allocator1.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/static-allocator2.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/static-allocator-result.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/macro-static-allocate.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/macro-static-allocate-result.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/global_allocator.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/def_new_handler.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/new_handler.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/default_delete1.png">
+<meta property="og:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/defualt_delete2.png">
+<meta property="article:published_time" content="2025-10-19T14:27:04.000Z">
+<meta property="article:modified_time" content="2025-11-15T10:04:01.513Z">
+<meta property="article:author" content="执妄">
+<meta property="article:tag" content="内存管理">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://delta0406.github.io/images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E5%9B%9B%E7%A7%8D%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E6%96%B9%E5%BC%8F.png">
+  
+  
+  
+    <meta name="google-site-verification" content="fHGgGYx4CCLMgmWi9s89Pa1tns-wnmdX-oik721kJUc" />
+  
+  <title>C++内存管理机制——primitives - 执妄的博客</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"delta0406.github.io","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"D6FxKXgtxACMXQhZTdzJ55Xd-gzGzoHsz","app_key":"hIwtLCKxBEHmu5lCKqRTdE4u","server_url":"https://d6fxkxgt.lc-cn-n1-shared.com","path":"window.location.pathname","ignore_local":true},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2025-05-16T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.3.0"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+
+
+<body>
+  
+
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>执妄的博客</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://bing.com/th?id=OHR.SpringequinoxY25_ZH-CN1635828827_1920x1080.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="C++内存管理机制——primitives"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2025-10-19 22:27" pubdate>
+          2025年10月19日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          3.3k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          28 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">C++内存管理机制——primitives</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="内存分配的每个层面"><a href="#内存分配的每个层面" class="headerlink" title="内存分配的每个层面"></a>内存分配的每个层面</h1><p>C++的内存管理方式有如下四种，一般不直接使用操作系统的API进行管理，以尽可能避免与特定操作系统绑定。<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E5%9B%9B%E7%A7%8D%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E6%96%B9%E5%BC%8F.png" srcset="/img/loading.gif" lazyload alt="四种内存分配方式"></p>
+<p>四种内存操作方法的特性如下：<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/%E5%9B%9B%E7%A7%8D%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E6%96%B9%E6%B3%95%E7%89%B9%E6%80%A7.png" srcset="/img/loading.gif" lazyload alt="四种内存分配方法特性"></p>
+<h1 id="new-detele-expression"><a href="#new-detele-expression" class="headerlink" title="new&#x2F;detele expression"></a>new&#x2F;detele expression</h1><h2 id="内存申请"><a href="#内存申请" class="headerlink" title="内存申请"></a>内存申请</h2><p>通过new进行内存申请的过程：</p>
+<ol>
+<li>通过operator new()操作分配一个目标类型大小的内存，图中为Complex的大小。</li>
+<li>通过static_cast将得到的内存块强制转化为目标类型指针，这里是Complex*。</li>
+<li>调用目标类型的构造方法（注意：直接通过pc-&gt;Complex::Complex(1,2)这样的方法调用构造函数只有编译器可以做，用户这样做将产生错误）。<blockquote>
+<p>operator new()操作的内部调用了malloc()函数<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/new_expression.png" srcset="/img/loading.gif" lazyload alt="new expression"></p>
+</blockquote>
+</li>
+</ol>
+<h2 id="内存释放"><a href="#内存释放" class="headerlink" title="内存释放"></a>内存释放</h2><p>通过delete进行内存释放的过程：</p>
+<ol>
+<li>调用对象的析构函数</li>
+<li>通过operator delete释放内存，其内部使用的是free()函数<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/delete_expression.png" srcset="/img/loading.gif" lazyload alt="delete expression"></li>
+</ol>
+<h1 id="Array-new"><a href="#Array-new" class="headerlink" title="Array new"></a>Array new</h1><p>array new内存分配的过程：</p>
+<ol>
+<li>编译器分配一块内存，内存的首部cookie记录了对象内存分配的信息，首部后面紧跟着3个连续的对象内存</li>
+<li>为每个对象内存调用构造函数<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/array_new.png" srcset="/img/loading.gif" lazyload alt="array new"><br>释放内存时，需要使用delete[]。如果使用delete，则只会调用第一个对象的析构函数，不会调用所有对象的析构函数。上图中的<code>new string[3]</code>是一个例子，只使用delete，将会导致只调用str[0]的析构函数，str[1]、str[2]的析构函数不会被调用，此时就会出现问题。</li>
+</ol>
+<p>数组对象的创建与析构过程如下：<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/array_new&array_delete.png" srcset="/img/loading.gif" lazyload alt="array new &amp; array delete"></p>
+<blockquote>
+<p>构造函数调用顺序是按照构建对象来的，但是析构函数执行是按照相反的顺序。</p>
+</blockquote>
+<h1 id="placement-new"><a href="#placement-new" class="headerlink" title="placement new"></a>placement new</h1><p>placement new的语法为：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">new</span> (address) <span class="hljs-built_in">Type</span>(constructor_args...);<br></code></pre></td></tr></table></figure>
+<p>表示在address这块已有的内存上调用Type的构造函数。示例如下：<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/placement_new.png" srcset="/img/loading.gif" lazyload alt="placement_new"></p>
+<blockquote>
+<p>没有placement delete，因为placement new没有分配新内存。</p>
+</blockquote>
+<h1 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h1><h2 id="C-内存分配的途径"><a href="#C-内存分配的途径" class="headerlink" title="C++内存分配的途径"></a>C++内存分配的途径</h2><p>C++内存分配的途径如下图所示，没有重载会走路线二。如果类中重载了operator new()，那么会走路线一。但最终都会调用系统的::operator new()函数。<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/cpp_memory_allocation_ways.png" srcset="/img/loading.gif" lazyload alt="c++内存分配的途径"></p>
+<p>容器中的内存分配途径如下图所示，容器通过std::allocator实现内存的分配与回收，最终也是调用的::operator new()函数。<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/container_memory_allocation_ways.png" srcset="/img/loading.gif" lazyload alt="容器内存分配途径"></p>
+<h2 id="重载new和delete"><a href="#重载new和delete" class="headerlink" title="重载new和delete"></a>重载new和delete</h2><h3 id="重载-operator-new-operator-delete"><a href="#重载-operator-new-operator-delete" class="headerlink" title="重载::operator new&#x2F;::operator delete"></a>重载::operator new&#x2F;::operator delete</h3><p>使用内联函数重载::operator new和::operator delete：<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/global_operator_new_override.png" srcset="/img/loading.gif" lazyload alt="重载::operator new&#x2F;::operator delete"></p>
+<h3 id="重载operator-new-operator-delete"><a href="#重载operator-new-operator-delete" class="headerlink" title="重载operator new&#x2F;operator delete"></a>重载operator new&#x2F;operator delete</h3><p>如果是在类中重载operator new()方法，该方法可以有多种形式，但是函数参数列表第一个参数必须是size_t类型变量。对于operator delete()，第一个参数必须是void*类型，第二参数size_t是可选项，可以去掉。<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/local_operator_new_override.png" srcset="/img/loading.gif" lazyload alt="重载operator new&#x2F;operator delete"></p>
+<h3 id="重载operator-new-operator-delete-1"><a href="#重载operator-new-operator-delete-1" class="headerlink" title="重载operator new[]&#x2F;operator delete[]"></a>重载operator new[]&#x2F;operator delete[]</h3><p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/local_operator_new_array_override.png" srcset="/img/loading.gif" lazyload alt="重载operator new[]&#x2F;operator delete[]"></p>
+<h2 id="测试案例"><a href="#测试案例" class="headerlink" title="测试案例"></a>测试案例</h2><h3 id="测试一"><a href="#测试一" class="headerlink" title="测试一"></a>测试一</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;cstddef&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-keyword">namespace</span> jj06<br>&#123;<br><br>	<span class="hljs-keyword">class</span> <span class="hljs-title class_">Foo</span><br>	&#123;<br>	<span class="hljs-keyword">public</span>:<br>		<span class="hljs-type">int</span> _id;<br>		<span class="hljs-type">long</span> _data;<br>		string _str;<br><br>	<span class="hljs-keyword">public</span>:<br>		<span class="hljs-function"><span class="hljs-type">static</span> <span class="hljs-type">void</span>* <span class="hljs-keyword">operator</span> <span class="hljs-title">new</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size)</span></span>;<br>		<span class="hljs-function"><span class="hljs-type">static</span> <span class="hljs-type">void</span>  <span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-type">void</span>* deadObject, <span class="hljs-type">size_t</span> size)</span></span>;<br>		<span class="hljs-type">static</span> <span class="hljs-type">void</span>* <span class="hljs-keyword">operator</span> <span class="hljs-keyword">new</span>[](<span class="hljs-type">size_t</span> size);<br>		<span class="hljs-type">static</span> <span class="hljs-type">void</span>  <span class="hljs-keyword">operator</span> <span class="hljs-keyword">delete</span>[](<span class="hljs-type">void</span>* deadObject, <span class="hljs-type">size_t</span> size);<br><br>		<span class="hljs-built_in">Foo</span>() : _id(<span class="hljs-number">0</span>)      &#123; cout &lt;&lt; <span class="hljs-string">&quot;default ctor. this=&quot;</span> &lt;&lt; <span class="hljs-keyword">this</span> &lt;&lt; <span class="hljs-string">&quot; id=&quot;</span> &lt;&lt; _id &lt;&lt; endl; &#125;<br>		<span class="hljs-built_in">Foo</span>(<span class="hljs-type">int</span> i) : _id(i) &#123; cout &lt;&lt; <span class="hljs-string">&quot;ctor. this=&quot;</span> &lt;&lt; <span class="hljs-keyword">this</span> &lt;&lt; <span class="hljs-string">&quot; id=&quot;</span> &lt;&lt; _id &lt;&lt; endl; &#125;<br>		<span class="hljs-comment">//virtual </span><br>		~<span class="hljs-built_in">Foo</span>()              &#123; cout &lt;&lt; <span class="hljs-string">&quot;dtor. this=&quot;</span> &lt;&lt; <span class="hljs-keyword">this</span> &lt;&lt; <span class="hljs-string">&quot; id=&quot;</span> &lt;&lt; _id &lt;&lt; endl; &#125;<br><br>		<span class="hljs-comment">//不加 virtual dtor, sizeof = 12, new Foo[5] =&gt; operator new[]() 的 size 參數是 64, </span><br>		<span class="hljs-comment">//加了 virtual dtor, sizeof = 16, new Foo[5] =&gt; operator new[]() 的 size 參數是 84, </span><br>		<span class="hljs-comment">//上述二例，多出來的 4 可能就是個 size_t 欄位用來放置 array size. </span><br>	&#125;;<br><br>	<span class="hljs-function"><span class="hljs-type">void</span>* Foo::<span class="hljs-keyword">operator</span> <span class="hljs-title">new</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size)</span></span><br><span class="hljs-function">	</span>&#123;<br>		Foo* p = (Foo*)<span class="hljs-built_in">malloc</span>(size);<br>		cout &lt;&lt; <span class="hljs-string">&quot;Foo::operator new(), size=&quot;</span> &lt;&lt; size &lt;&lt; <span class="hljs-string">&quot;\t  return: &quot;</span> &lt;&lt; p &lt;&lt; endl;<br><br>		<span class="hljs-keyword">return</span> p;<br>	&#125;<br><br>	<span class="hljs-function"><span class="hljs-type">void</span> Foo::<span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-type">void</span>* pdead, <span class="hljs-type">size_t</span> size)</span></span><br><span class="hljs-function">	</span>&#123;<br>		cout &lt;&lt; <span class="hljs-string">&quot;Foo::operator delete(), pdead= &quot;</span> &lt;&lt; pdead &lt;&lt; <span class="hljs-string">&quot;  size= &quot;</span> &lt;&lt; size &lt;&lt; endl;<br>		<span class="hljs-built_in">free</span>(pdead);<br>	&#125;<br><br>	<span class="hljs-type">void</span>* Foo::<span class="hljs-keyword">operator</span> <span class="hljs-keyword">new</span>[](<span class="hljs-type">size_t</span> size)<br>	&#123;<br>		Foo* p = (Foo*)<span class="hljs-built_in">malloc</span>(size);  <span class="hljs-comment">//crash, 問題可能出在這兒 </span><br>		cout &lt;&lt; <span class="hljs-string">&quot;Foo::operator new[](), size=&quot;</span> &lt;&lt; size &lt;&lt; <span class="hljs-string">&quot;\t  return: &quot;</span> &lt;&lt; p &lt;&lt; endl;<br><br>		<span class="hljs-keyword">return</span> p;<br>	&#125;<br><br>	<span class="hljs-type">void</span> Foo::<span class="hljs-keyword">operator</span> <span class="hljs-keyword">delete</span>[](<span class="hljs-type">void</span>* pdead, <span class="hljs-type">size_t</span> size)<br>	&#123;<br>		cout &lt;&lt; <span class="hljs-string">&quot;Foo::operator delete[](), pdead= &quot;</span> &lt;&lt; pdead &lt;&lt; <span class="hljs-string">&quot;  size= &quot;</span> &lt;&lt; size &lt;&lt; endl;<br><br>		<span class="hljs-built_in">free</span>(pdead);<br>	&#125;<br><br>	<span class="hljs-comment">//-------------	</span><br>	<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test_overload_operator_new_and_array_new</span><span class="hljs-params">()</span></span><br><span class="hljs-function">	</span>&#123;<br>		cout &lt;&lt; <span class="hljs-string">&quot;\ntest_overload_operator_new_and_array_new().......... \n&quot;</span>;<br><br>		cout &lt;&lt; <span class="hljs-string">&quot;sizeof(Foo)= &quot;</span> &lt;&lt; <span class="hljs-built_in">sizeof</span>(Foo) &lt;&lt; endl;<br><br>		&#123;<br>			Foo* p = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Foo</span>(<span class="hljs-number">7</span>);<br>			<span class="hljs-keyword">delete</span> p;<br><br>			Foo* pArray = <span class="hljs-keyword">new</span> Foo[<span class="hljs-number">5</span>];	<span class="hljs-comment">//無法給 array elements 以 initializer </span><br>			<span class="hljs-keyword">delete</span>[] pArray;<br>		&#125;<br><br>		&#123;<br>			cout &lt;&lt; <span class="hljs-string">&quot;testing global expression ::new and ::new[] \n&quot;</span>;<br>			<span class="hljs-comment">// 這會繞過 overloaded new(), delete(), new[](), delete[]() </span><br>			<span class="hljs-comment">// 但當然 ctor, dtor 都會被正常呼叫.  </span><br><br>			Foo* p = ::<span class="hljs-keyword">new</span> <span class="hljs-built_in">Foo</span>(<span class="hljs-number">7</span>);<br>			::<span class="hljs-keyword">delete</span> p;<br><br>			Foo* pArray = ::<span class="hljs-keyword">new</span> Foo[<span class="hljs-number">5</span>];<br>			::<span class="hljs-keyword">delete</span>[] pArray;<br>		&#125;<br>	&#125;<br>&#125; <span class="hljs-comment">//namespace</span><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span></span><br><span class="hljs-function"></span>&#123;<br>	jj06::<span class="hljs-built_in">test_overload_operator_new_and_array_new</span>();<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="测试二"><a href="#测试二" class="headerlink" title="测试二"></a>测试二</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;vector&gt;</span>  <span class="hljs-comment">//for test</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;cstddef&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-keyword">namespace</span> jj07<br>&#123;<br><br>	<span class="hljs-keyword">class</span> <span class="hljs-title class_">Bad</span> &#123; &#125;;<br>	<span class="hljs-keyword">class</span> <span class="hljs-title class_">Foo</span><br>	&#123;<br>	<span class="hljs-keyword">public</span>:<br>		<span class="hljs-built_in">Foo</span>() &#123; cout &lt;&lt; <span class="hljs-string">&quot;Foo::Foo()&quot;</span> &lt;&lt; endl; &#125;<br>		<span class="hljs-built_in">Foo</span>(<span class="hljs-type">int</span>) &#123;<br>			cout &lt;&lt; <span class="hljs-string">&quot;Foo::Foo(int)&quot;</span> &lt;&lt; endl;<br>			<span class="hljs-comment">// throw Bad();  </span><br>		&#125;<br><br>		<span class="hljs-comment">//(1) 這個就是一般的 operator new() 的重載 </span><br>		<span class="hljs-function"><span class="hljs-type">void</span>* <span class="hljs-keyword">operator</span> <span class="hljs-title">new</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size)</span></span>&#123;<br>			cout &lt;&lt; <span class="hljs-string">&quot;operator new(size_t size), size= &quot;</span> &lt;&lt; size &lt;&lt; endl;<br>			<span class="hljs-keyword">return</span> <span class="hljs-built_in">malloc</span>(size);<br>		&#125;<br><br>		<span class="hljs-comment">//(2) 這個就是標準庫已經提供的 placement new() 的重載 (形式)</span><br>		<span class="hljs-comment">//    (所以我也模擬 standard placement new 的動作, just return ptr) </span><br>		<span class="hljs-function"><span class="hljs-type">void</span>* <span class="hljs-keyword">operator</span> <span class="hljs-title">new</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size, <span class="hljs-type">void</span>* start)</span></span>&#123;<br>			cout &lt;&lt; <span class="hljs-string">&quot;operator new(size_t size, void* start), size= &quot;</span> &lt;&lt; size &lt;&lt; <span class="hljs-string">&quot;  start= &quot;</span> &lt;&lt; start &lt;&lt; endl;<br>			<span class="hljs-keyword">return</span> start;<br>		&#125;<br><br>		<span class="hljs-comment">//(3) 這個才是嶄新的 placement new </span><br>		<span class="hljs-function"><span class="hljs-type">void</span>* <span class="hljs-keyword">operator</span> <span class="hljs-title">new</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size, <span class="hljs-type">long</span> extra)</span></span>&#123;<br>			cout &lt;&lt; <span class="hljs-string">&quot;operator new(size_t size, long extra)  &quot;</span> &lt;&lt; size &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; extra &lt;&lt; endl;<br>			<span class="hljs-keyword">return</span> <span class="hljs-built_in">malloc</span>(size + extra);<br>		&#125;<br><br>		<span class="hljs-comment">//(4) 這又是一個 placement new </span><br>		<span class="hljs-function"><span class="hljs-type">void</span>* <span class="hljs-keyword">operator</span> <span class="hljs-title">new</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size, <span class="hljs-type">long</span> extra, <span class="hljs-type">char</span> init)</span></span>&#123;<br>			cout &lt;&lt; <span class="hljs-string">&quot;operator new(size_t size, long extra, char init)  &quot;</span> &lt;&lt; size &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; extra &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; init &lt;&lt; endl;<br>			<span class="hljs-keyword">return</span> <span class="hljs-built_in">malloc</span>(size + extra);<br>		&#125;<br><br>		<span class="hljs-comment">//(5) 這又是一個 placement new, 但故意寫錯第一參數的 type (它必須是 size_t 以滿足正常的 operator new) </span><br>		<span class="hljs-comment">//!  	void* operator new(long extra, char init) &#123; //[Error] &#x27;operator new&#x27; takes type &#x27;size_t&#x27; (&#x27;unsigned int&#x27;) as first parameter [-fpermissive]</span><br>		<span class="hljs-comment">//!	  	cout &lt;&lt; &quot;op-new(long,char)&quot; &lt;&lt; endl;</span><br>		<span class="hljs-comment">//!    	return malloc(extra);</span><br>		<span class="hljs-comment">//!  	&#125; 	</span><br><br>		<span class="hljs-comment">//以下是搭配上述 placement new 的各個 called placement delete. </span><br>		<span class="hljs-comment">//當 ctor 發出異常，這兒對應的 operator (placement) delete 就會被喚起. </span><br>		<span class="hljs-comment">//應該是要負責釋放其搭檔兄弟 (placement new) 分配所得的 memory.  </span><br>		<span class="hljs-comment">//(1) 這個就是一般的 operator delete() 的重載 </span><br>		<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-type">void</span>*, <span class="hljs-type">size_t</span>)</span></span><br><span class="hljs-function">		</span>&#123;<br>			cout &lt;&lt; <span class="hljs-string">&quot;operator delete(void*,size_t)  &quot;</span> &lt;&lt; endl;<br>		&#125;<br><br>		<span class="hljs-comment">//(2) 這是對應上述的 (2)  </span><br>		<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-type">void</span>*, <span class="hljs-type">void</span>*)</span></span><br><span class="hljs-function">		</span>&#123;<br>			cout &lt;&lt; <span class="hljs-string">&quot;operator delete(void*,void*)  &quot;</span> &lt;&lt; endl;<br>		&#125;<br><br>		<span class="hljs-comment">//(3) 這是對應上述的 (3)  </span><br>		<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-type">void</span>*, <span class="hljs-type">long</span>)</span></span><br><span class="hljs-function">		</span>&#123;<br>			cout &lt;&lt; <span class="hljs-string">&quot;operator delete(void*,long)  &quot;</span> &lt;&lt; endl;<br>		&#125;<br><br>		<span class="hljs-comment">//(4) 這是對應上述的 (4)  </span><br>		<span class="hljs-comment">//如果沒有一一對應, 也不會有任何編譯報錯 </span><br>		<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-type">void</span>*, <span class="hljs-type">long</span>, <span class="hljs-type">char</span>)</span></span><br><span class="hljs-function">		</span>&#123;<br>			cout &lt;&lt; <span class="hljs-string">&quot;operator delete(void*,long,char)  &quot;</span> &lt;&lt; endl;<br>		&#125;<br><br>	<span class="hljs-keyword">private</span>:<br>		<span class="hljs-type">int</span> m_i;<br>	&#125;;<br><br><br>	<span class="hljs-comment">//-------------	</span><br>	<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test_overload_placement_new</span><span class="hljs-params">()</span></span><br><span class="hljs-function">	</span>&#123;<br>		cout &lt;&lt; <span class="hljs-string">&quot;\n\n\ntest_overload_placement_new().......... \n&quot;</span>;<br><br>		Foo start;  <span class="hljs-comment">//Foo::Foo</span><br><br>		Foo* p1 = <span class="hljs-keyword">new</span> Foo;           <span class="hljs-comment">//op-new(size_t)</span><br>		Foo* p2 = <span class="hljs-built_in">new</span> (&amp;start) Foo;  <span class="hljs-comment">//op-new(size_t,void*)</span><br>		Foo* p3 = <span class="hljs-built_in">new</span> (<span class="hljs-number">100</span>) Foo;     <span class="hljs-comment">//op-new(size_t,long)</span><br>		Foo* p4 = <span class="hljs-built_in">new</span> (<span class="hljs-number">100</span>, <span class="hljs-string">&#x27;a&#x27;</span>) Foo; <span class="hljs-comment">//op-new(size_t,long,char)</span><br><br>		Foo* p5 = <span class="hljs-built_in">new</span> (<span class="hljs-number">100</span>) <span class="hljs-built_in">Foo</span>(<span class="hljs-number">1</span>);     <span class="hljs-comment">//op-new(size_t,long)  op-del(void*,long)</span><br>		Foo* p6 = <span class="hljs-built_in">new</span> (<span class="hljs-number">100</span>, <span class="hljs-string">&#x27;a&#x27;</span>) <span class="hljs-built_in">Foo</span>(<span class="hljs-number">1</span>); <span class="hljs-comment">//</span><br>		Foo* p7 = <span class="hljs-built_in">new</span> (&amp;start) <span class="hljs-built_in">Foo</span>(<span class="hljs-number">1</span>);  <span class="hljs-comment">//</span><br>		Foo* p8 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Foo</span>(<span class="hljs-number">1</span>);           <span class="hljs-comment">//</span><br>		<span class="hljs-comment">//VC6 warning C4291: &#x27;void *__cdecl Foo::operator new(unsigned int)&#x27;</span><br>		<span class="hljs-comment">//no matching operator delete found; memory will not be freed if</span><br>		<span class="hljs-comment">//initialization throws an exception</span><br>	&#125;<br>&#125; <span class="hljs-comment">//namespace	</span><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span></span><br><span class="hljs-function"></span>&#123;<br>	jj07::<span class="hljs-built_in">test_overload_placement_new</span>();<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h1 id="pre-class-allocator"><a href="#pre-class-allocator" class="headerlink" title="pre-class allocator"></a>pre-class allocator</h1><p>为每个类设计内存管理工具。</p>
+<h2 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h2><p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/per-class-allocator1.png" srcset="/img/loading.gif" lazyload alt="per-class-allocator1"><br>测试：<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/per-class-allocator1-test.png" srcset="/img/loading.gif" lazyload alt="per-class-allocator1-test"><br>代码：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;cstddef&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-keyword">namespace</span> jj04<br>&#123;<br>	<span class="hljs-comment">//ref. C++Primer 3/e, p.765</span><br>	<span class="hljs-comment">//per-class allocator </span><br><br>	<span class="hljs-keyword">class</span> <span class="hljs-title class_">Screen</span> &#123;<br>	<span class="hljs-keyword">public</span>:<br>		<span class="hljs-built_in">Screen</span>(<span class="hljs-type">int</span> x) : <span class="hljs-built_in">i</span>(x) &#123; &#125;;<br>		<span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">get</span><span class="hljs-params">()</span> </span>&#123; <span class="hljs-keyword">return</span> i; &#125;<br><br>		<span class="hljs-function"><span class="hljs-type">void</span>* <span class="hljs-keyword">operator</span> <span class="hljs-title">new</span><span class="hljs-params">(<span class="hljs-type">size_t</span>)</span></span>;<br>		<span class="hljs-function"><span class="hljs-type">void</span>  <span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-type">void</span>*, <span class="hljs-type">size_t</span>)</span></span>;	<span class="hljs-comment">//(2)</span><br>		<span class="hljs-comment">//! void  operator delete(void*);			//(1) 二擇一. 若(1)(2)並存,會有很奇怪的報錯 (摸不著頭緒) </span><br><br>	<span class="hljs-keyword">private</span>:<br>		Screen* next;<br>		<span class="hljs-type">static</span> Screen* freeStore;<br>		<span class="hljs-type">static</span> <span class="hljs-type">const</span> <span class="hljs-type">int</span> screenChunk;<br>	<span class="hljs-keyword">private</span>:<br>		<span class="hljs-type">int</span> i;<br>	&#125;;<br>	Screen* Screen::freeStore = <span class="hljs-number">0</span>;<br>	<span class="hljs-type">const</span> <span class="hljs-type">int</span> Screen::screenChunk = <span class="hljs-number">24</span>;<br><br>	<span class="hljs-function"><span class="hljs-type">void</span>* Screen::<span class="hljs-keyword">operator</span> <span class="hljs-title">new</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size)</span></span><br><span class="hljs-function">	</span>&#123;<br>		Screen *p;<br>		<span class="hljs-keyword">if</span> (!freeStore) &#123;<br>			<span class="hljs-comment">//linked list 是空的，所以攫取一大塊 memory</span><br>			<span class="hljs-comment">//以下呼叫的是 global operator new</span><br>			<span class="hljs-type">size_t</span> chunk = screenChunk * size;<br>			freeStore = p =<br>				<span class="hljs-built_in">reinterpret_cast</span>&lt;Screen*&gt;(<span class="hljs-keyword">new</span> <span class="hljs-type">char</span>[chunk]);<br>			<span class="hljs-comment">//將分配得來的一大塊 memory 當做 linked list 般小塊小塊串接起來</span><br>			<span class="hljs-keyword">for</span> (; p != &amp;freeStore[screenChunk - <span class="hljs-number">1</span>]; ++p)<br>				p-&gt;next = p + <span class="hljs-number">1</span>;<br>			p-&gt;next = <span class="hljs-number">0</span>;<br>		&#125;<br>		p = freeStore;<br>		freeStore = freeStore-&gt;next;<br>		<span class="hljs-keyword">return</span> p;<br>	&#125;<br><br><br>	<span class="hljs-comment">//! void Screen::operator delete(void *p)		//(1)</span><br>	<span class="hljs-function"><span class="hljs-type">void</span> Screen::<span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-type">void</span> *p, <span class="hljs-type">size_t</span>)</span>	<span class="hljs-comment">//(2)二擇一 </span></span><br><span class="hljs-function">	</span>&#123;<br>		<span class="hljs-comment">//將 deleted object 收回插入 free list 前端</span><br>		(<span class="hljs-built_in">static_cast</span>&lt;Screen*&gt;(p))-&gt;next = freeStore;<br>		freeStore = <span class="hljs-built_in">static_cast</span>&lt;Screen*&gt;(p);<br>	&#125;<br><br>	<span class="hljs-comment">//-------------</span><br>	<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test_per_class_allocator_1</span><span class="hljs-params">()</span></span><br><span class="hljs-function">	</span>&#123;<br>		cout &lt;&lt; <span class="hljs-string">&quot;\ntest_per_class_allocator_1().......... \n&quot;</span>;<br><br>		cout &lt;&lt; <span class="hljs-built_in">sizeof</span>(Screen) &lt;&lt; endl;		<span class="hljs-comment">//8	</span><br><br>		<span class="hljs-type">size_t</span> <span class="hljs-type">const</span> N = <span class="hljs-number">100</span>;<br>		Screen* p[N];<br><br>		<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i&lt; N; ++i)<br>			p[i] = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Screen</span>(i);<br><br>		<span class="hljs-comment">//輸出前 10 個 pointers, 用以比較其間隔 </span><br>		<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i&lt; <span class="hljs-number">10</span>; ++i)<br>			cout &lt;&lt; p[i] &lt;&lt; endl;<br><br>		<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i&lt; N; ++i)<br>			<span class="hljs-keyword">delete</span> p[i];<br>	&#125;<br>&#125; <span class="hljs-comment">//namespace</span><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span></span><br><span class="hljs-function"></span>&#123;<br>	jj04::<span class="hljs-built_in">test_per_class_allocator_1</span>();<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>内存池本质上是分配了一大块内存，然后将该内存分割为多个小块通过链表拼接起来，所以物理上不一定连续，但是逻辑上是连续的。</p>
+</blockquote>
+<h2 id="示例2"><a href="#示例2" class="headerlink" title="示例2"></a>示例2</h2><p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/per-class-allocator2.png" srcset="/img/loading.gif" lazyload alt="per-class-allocator2"><br>测试：<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/per-class-allocator2-test.png" srcset="/img/loading.gif" lazyload alt="per-class-allocator2-test"><br>代码：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;cstddef&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-keyword">namespace</span> jj05<br>&#123;<br>	<span class="hljs-comment">//ref. Effective C++ 2e, item10</span><br>	<span class="hljs-comment">//per-class allocator </span><br><br>	<span class="hljs-keyword">class</span> <span class="hljs-title class_">Airplane</span> &#123;   <span class="hljs-comment">//支援 customized memory management</span><br>	<span class="hljs-keyword">private</span>:<br>		<span class="hljs-keyword">struct</span> <span class="hljs-title class_">AirplaneRep</span> &#123;<br>			<span class="hljs-type">unsigned</span> <span class="hljs-type">long</span> miles;<br>			<span class="hljs-type">char</span> type;<br>		&#125;;<br>	<span class="hljs-keyword">private</span>:<br>		<span class="hljs-keyword">union</span> &#123;<br>			AirplaneRep rep;  <span class="hljs-comment">//此針對 used object</span><br>			Airplane* next;   <span class="hljs-comment">//此針對 free list</span><br>		&#125;;<br>	<span class="hljs-keyword">public</span>:<br>		<span class="hljs-function"><span class="hljs-type">unsigned</span> <span class="hljs-type">long</span> <span class="hljs-title">getMiles</span><span class="hljs-params">()</span> </span>&#123; <span class="hljs-keyword">return</span> rep.miles; &#125;<br>		<span class="hljs-function"><span class="hljs-type">char</span> <span class="hljs-title">getType</span><span class="hljs-params">()</span> </span>&#123; <span class="hljs-keyword">return</span> rep.type; &#125;<br>		<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">set</span><span class="hljs-params">(<span class="hljs-type">unsigned</span> <span class="hljs-type">long</span> m, <span class="hljs-type">char</span> t)</span></span><br><span class="hljs-function">		</span>&#123;<br>			rep.miles = m;<br>			rep.type = t;<br>		&#125;<br>	<span class="hljs-keyword">public</span>:<br>		<span class="hljs-function"><span class="hljs-type">static</span> <span class="hljs-type">void</span>* <span class="hljs-keyword">operator</span> <span class="hljs-title">new</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size)</span></span>;<br>		<span class="hljs-function"><span class="hljs-type">static</span> <span class="hljs-type">void</span>  <span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-type">void</span>* deadObject, <span class="hljs-type">size_t</span> size)</span></span>;<br>	<span class="hljs-keyword">private</span>:<br>		<span class="hljs-type">static</span> <span class="hljs-type">const</span> <span class="hljs-type">int</span> BLOCK_SIZE;<br>		<span class="hljs-type">static</span> Airplane* headOfFreeList;<br>	&#125;;<br><br>	Airplane* Airplane::headOfFreeList;<br>	<span class="hljs-type">const</span> <span class="hljs-type">int</span> Airplane::BLOCK_SIZE = <span class="hljs-number">512</span>;<br><br>	<span class="hljs-function"><span class="hljs-type">void</span>* Airplane::<span class="hljs-keyword">operator</span> <span class="hljs-title">new</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size)</span></span><br><span class="hljs-function">	</span>&#123;<br>		<span class="hljs-comment">//如果大小錯誤，轉交給 ::operator new()</span><br>		<span class="hljs-keyword">if</span> (size != <span class="hljs-built_in">sizeof</span>(Airplane))<br>		<span class="hljs-keyword">return</span> ::<span class="hljs-keyword">operator</span> <span class="hljs-built_in">new</span>(size);<br><br>		Airplane* p = headOfFreeList;<br><br>		<span class="hljs-comment">//如果 p 有效，就把list頭部移往下一個元素</span><br>		<span class="hljs-keyword">if</span> (p)<br>			headOfFreeList = p-&gt;next;<br>		<span class="hljs-keyword">else</span> &#123;<br>			<span class="hljs-comment">//free list 已空。配置一塊夠大記憶體，</span><br>			<span class="hljs-comment">//令足夠容納 BLOCK_SIZE 個 Airplanes</span><br>			Airplane* newBlock = <span class="hljs-built_in">static_cast</span>&lt;Airplane*&gt;<br>				(::<span class="hljs-keyword">operator</span> <span class="hljs-built_in">new</span>(BLOCK_SIZE * <span class="hljs-built_in">sizeof</span>(Airplane)));<br>			<span class="hljs-comment">//組成一個新的 free list：將小區塊串在一起，但跳過 </span><br>			<span class="hljs-comment">//#0 元素，因為要將它傳回給呼叫者。</span><br>			<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">1</span>; i &lt; BLOCK_SIZE - <span class="hljs-number">1</span>; ++i)<br>				newBlock[i].next = &amp;newBlock[i + <span class="hljs-number">1</span>];<br>			newBlock[BLOCK_SIZE - <span class="hljs-number">1</span>].next = <span class="hljs-number">0</span>; <span class="hljs-comment">//以null結束</span><br><br>			<span class="hljs-comment">// 將 p 設至頭部，將 headOfFreeList 設至</span><br>			<span class="hljs-comment">// 下一個可被運用的小區塊。</span><br>			p = newBlock;<br>			headOfFreeList = &amp;newBlock[<span class="hljs-number">1</span>];<br>		&#125;<br>		<span class="hljs-keyword">return</span> p;<br>	&#125;<br><br>	<span class="hljs-comment">// operator delete 接獲一塊記憶體。</span><br>	<span class="hljs-comment">// 如果它的大小正確，就把它加到 free list 的前端</span><br>	<span class="hljs-function"><span class="hljs-type">void</span> Airplane::<span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-type">void</span>* deadObject,</span></span><br><span class="hljs-params"><span class="hljs-function">		<span class="hljs-type">size_t</span> size)</span></span><br><span class="hljs-function">	</span>&#123;<br>		<span class="hljs-keyword">if</span> (deadObject == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span>;<br>		<span class="hljs-keyword">if</span> (size != <span class="hljs-built_in">sizeof</span>(Airplane)) &#123;<br>			::<span class="hljs-function"><span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(deadObject)</span></span>;<br>			<span class="hljs-keyword">return</span>;<br>		&#125;<br><br>		Airplane *carcass =<br>			<span class="hljs-built_in">static_cast</span>&lt;Airplane*&gt;(deadObject);<br><br>		carcass-&gt;next = headOfFreeList;<br>		headOfFreeList = carcass;<br>	&#125;<br><br>	<span class="hljs-comment">//-------------</span><br>	<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test_per_class_allocator_2</span><span class="hljs-params">()</span></span><br><span class="hljs-function">	</span>&#123;<br>		cout &lt;&lt; <span class="hljs-string">&quot;\ntest_per_class_allocator_2().......... \n&quot;</span>;<br><br>		cout &lt;&lt; <span class="hljs-built_in">sizeof</span>(Airplane) &lt;&lt; endl;    <span class="hljs-comment">//8</span><br><br>		<span class="hljs-type">size_t</span> <span class="hljs-type">const</span> N = <span class="hljs-number">100</span>;<br>		Airplane* p[N];<br><br>		<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i&lt; N; ++i)<br>			p[i] = <span class="hljs-keyword">new</span> Airplane;<br><br><br>		<span class="hljs-comment">//隨機測試 object 正常否 </span><br>		p[<span class="hljs-number">1</span>]-&gt;<span class="hljs-built_in">set</span>(<span class="hljs-number">1000</span>, <span class="hljs-string">&#x27;A&#x27;</span>);<br>		p[<span class="hljs-number">5</span>]-&gt;<span class="hljs-built_in">set</span>(<span class="hljs-number">2000</span>, <span class="hljs-string">&#x27;B&#x27;</span>);<br>		p[<span class="hljs-number">9</span>]-&gt;<span class="hljs-built_in">set</span>(<span class="hljs-number">500000</span>, <span class="hljs-string">&#x27;C&#x27;</span>);<br>		cout &lt;&lt; p[<span class="hljs-number">1</span>] &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; p[<span class="hljs-number">1</span>]-&gt;<span class="hljs-built_in">getType</span>() &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; p[<span class="hljs-number">1</span>]-&gt;<span class="hljs-built_in">getMiles</span>() &lt;&lt; endl;<br>		cout &lt;&lt; p[<span class="hljs-number">5</span>] &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; p[<span class="hljs-number">5</span>]-&gt;<span class="hljs-built_in">getType</span>() &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; p[<span class="hljs-number">5</span>]-&gt;<span class="hljs-built_in">getMiles</span>() &lt;&lt; endl;<br>		cout &lt;&lt; p[<span class="hljs-number">9</span>] &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; p[<span class="hljs-number">9</span>]-&gt;<span class="hljs-built_in">getType</span>() &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; p[<span class="hljs-number">9</span>]-&gt;<span class="hljs-built_in">getMiles</span>() &lt;&lt; endl;<br><br>		<span class="hljs-comment">//輸出前 10 個 pointers, 用以比較其間隔 </span><br>		<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i&lt; <span class="hljs-number">10</span>; ++i)<br>			cout &lt;&lt; p[i] &lt;&lt; endl;<br><br>		<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i&lt; N; ++i)<br>			<span class="hljs-keyword">delete</span> p[i];<br>	&#125;<br>&#125; <span class="hljs-comment">//namespace</span><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span></span><br><span class="hljs-function"></span>&#123;<br>	jj05::<span class="hljs-built_in">test_per_class_allocator_2</span>();<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>union(联合体):所有成员共享同一块内存，大小&#x3D;最大成员大小（加上可能的补充）<br>使用union保存链表元素的next指针，这样可以节省空间。delete时，没有直接删除目标元素，而是将它作为下一个可以分配的内存空间。 </p>
+</blockquote>
+<h1 id="static-allocator"><a href="#static-allocator" class="headerlink" title="static allocator"></a>static allocator</h1><p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/static-allocator1.png" srcset="/img/loading.gif" lazyload alt="static-allocator1"><br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/static-allocator2.png" srcset="/img/loading.gif" lazyload alt="static-allocator2"><br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/static-allocator-result.png" srcset="/img/loading.gif" lazyload alt="static-allocator-result"><br>代码：</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;cstddef&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;complex&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><br><span class="hljs-keyword">namespace</span> jj09<br>&#123;<br><br>	<span class="hljs-keyword">class</span> <span class="hljs-title class_">allocator</span><br>	&#123;<br>	<span class="hljs-keyword">private</span>:<br>		<span class="hljs-keyword">struct</span> <span class="hljs-title class_">obj</span> &#123;<br>			<span class="hljs-keyword">struct</span> <span class="hljs-title class_">obj</span>* next;  <span class="hljs-comment">//embedded pointer</span><br>		&#125;;<br>	<span class="hljs-keyword">public</span>:<br>		<span class="hljs-function"><span class="hljs-type">void</span>* <span class="hljs-title">allocate</span><span class="hljs-params">(<span class="hljs-type">size_t</span>)</span></span>;<br>		<span class="hljs-function"><span class="hljs-type">void</span>  <span class="hljs-title">deallocate</span><span class="hljs-params">(<span class="hljs-type">void</span>*, <span class="hljs-type">size_t</span>)</span></span>;<br>		<span class="hljs-function"><span class="hljs-type">void</span>  <span class="hljs-title">check</span><span class="hljs-params">()</span></span>;<br><br>	<span class="hljs-keyword">private</span>:<br>		obj* freeStore = <span class="hljs-literal">nullptr</span>;<br>		<span class="hljs-type">const</span> <span class="hljs-type">int</span> CHUNK = <span class="hljs-number">5</span>; <span class="hljs-comment">//小一點方便觀察 </span><br>	&#125;;<br><br>	<span class="hljs-function"><span class="hljs-type">void</span>* <span class="hljs-title">allocator::allocate</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size)</span></span><br><span class="hljs-function">	</span>&#123;<br>		obj* p;<br><br>		<span class="hljs-keyword">if</span> (!freeStore) &#123;<br>			<span class="hljs-comment">//linked list 是空的，所以攫取一大塊 memory</span><br>			<span class="hljs-type">size_t</span> chunk = CHUNK * size;<br>			freeStore = p = (obj*)<span class="hljs-built_in">malloc</span>(chunk);<br><br>			<span class="hljs-comment">//cout &lt;&lt; &quot;empty. malloc: &quot; &lt;&lt; chunk &lt;&lt; &quot;  &quot; &lt;&lt; p &lt;&lt; endl;</span><br><br>			<span class="hljs-comment">//將分配得來的一大塊當做 linked list 般小塊小塊串接起來</span><br>			<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; (CHUNK - <span class="hljs-number">1</span>); ++i)	&#123;  <span class="hljs-comment">//沒寫很漂亮, 不是重點無所謂.  </span><br>				p-&gt;next = (obj*)((<span class="hljs-type">char</span>*)p + size);<br>				p = p-&gt;next;<br>			&#125;<br>			p-&gt;next = <span class="hljs-literal">nullptr</span>;  <span class="hljs-comment">//last       </span><br>		&#125;<br>		p = freeStore;<br>		freeStore = freeStore-&gt;next;<br><br>		<span class="hljs-comment">//cout &lt;&lt; &quot;p= &quot; &lt;&lt; p &lt;&lt; &quot;  freeStore= &quot; &lt;&lt; freeStore &lt;&lt; endl;</span><br><br>		<span class="hljs-keyword">return</span> p;<br>	&#125;<br>	<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">allocator::deallocate</span><span class="hljs-params">(<span class="hljs-type">void</span>* p, <span class="hljs-type">size_t</span>)</span></span><br><span class="hljs-function">	</span>&#123;<br>		<span class="hljs-comment">//將 deleted object 收回插入 free list 前端</span><br>		((obj*)p)-&gt;next = freeStore;<br>		freeStore = (obj*)p;<br>	&#125;<br>	<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">allocator::check</span><span class="hljs-params">()</span></span><br><span class="hljs-function">	</span>&#123;<br>		obj* p = freeStore;<br>		<span class="hljs-type">int</span> count = <span class="hljs-number">0</span>;<br><br>		<span class="hljs-keyword">while</span> (p) &#123;<br>			cout &lt;&lt; p &lt;&lt; endl;<br>			p = p-&gt;next;<br>			count++;<br>		&#125;<br>		cout &lt;&lt; count &lt;&lt; endl;<br>	&#125;<br>	<span class="hljs-comment">//--------------</span><br><br>	<span class="hljs-keyword">class</span> <span class="hljs-title class_">Foo</span> &#123;<br>	<span class="hljs-keyword">public</span>:<br>		<span class="hljs-type">long</span> L;<br>		string str;<br>		<span class="hljs-type">static</span> allocator myAlloc;<br>	<span class="hljs-keyword">public</span>:<br>		<span class="hljs-built_in">Foo</span>(<span class="hljs-type">long</span> l) : <span class="hljs-built_in">L</span>(l) &#123;  &#125;<br>		<span class="hljs-function"><span class="hljs-type">static</span> <span class="hljs-type">void</span>* <span class="hljs-keyword">operator</span> <span class="hljs-title">new</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size)</span></span><br><span class="hljs-function">		</span>&#123; <span class="hljs-keyword">return</span> myAlloc.<span class="hljs-built_in">allocate</span>(size); &#125;<br>		<span class="hljs-function"><span class="hljs-type">static</span> <span class="hljs-type">void</span>  <span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-type">void</span>* pdead, <span class="hljs-type">size_t</span> size)</span></span><br><span class="hljs-function">		</span>&#123;<br>			<span class="hljs-keyword">return</span> myAlloc.<span class="hljs-built_in">deallocate</span>(pdead, size);<br>		&#125;<br>	&#125;;<br>	allocator Foo::myAlloc;<br><br><br>	<span class="hljs-keyword">class</span> <span class="hljs-title class_">Goo</span> &#123;<br>	<span class="hljs-keyword">public</span>:<br>		complex&lt;<span class="hljs-type">double</span>&gt; c;<br>		string str;<br>		<span class="hljs-type">static</span> allocator myAlloc;<br>	<span class="hljs-keyword">public</span>:<br>		<span class="hljs-built_in">Goo</span>(<span class="hljs-type">const</span> complex&lt;<span class="hljs-type">double</span>&gt;&amp; x) : <span class="hljs-built_in">c</span>(x) &#123;  &#125;<br>		<span class="hljs-function"><span class="hljs-type">static</span> <span class="hljs-type">void</span>* <span class="hljs-keyword">operator</span> <span class="hljs-title">new</span><span class="hljs-params">(<span class="hljs-type">size_t</span> size)</span></span><br><span class="hljs-function">		</span>&#123; <span class="hljs-keyword">return</span> myAlloc.<span class="hljs-built_in">allocate</span>(size); &#125;<br>		<span class="hljs-function"><span class="hljs-type">static</span> <span class="hljs-type">void</span>  <span class="hljs-keyword">operator</span> <span class="hljs-title">delete</span><span class="hljs-params">(<span class="hljs-type">void</span>* pdead, <span class="hljs-type">size_t</span> size)</span></span><br><span class="hljs-function">		</span>&#123;<br>			<span class="hljs-keyword">return</span> myAlloc.<span class="hljs-built_in">deallocate</span>(pdead, size);<br>		&#125;<br>	&#125;;<br>	allocator Goo::myAlloc;<br><br>	<span class="hljs-comment">//-------------	</span><br>	<span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">test_static_allocator_3</span><span class="hljs-params">()</span></span><br><span class="hljs-function">	</span>&#123;<br>		cout &lt;&lt; <span class="hljs-string">&quot;\n\n\ntest_static_allocator().......... \n&quot;</span>;<br><br>		&#123;<br>			Foo* p[<span class="hljs-number">100</span>];<br><br>			cout &lt;&lt; <span class="hljs-string">&quot;sizeof(Foo)= &quot;</span> &lt;&lt; <span class="hljs-built_in">sizeof</span>(Foo) &lt;&lt; endl;<br>			<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i&lt;<span class="hljs-number">23</span>; ++i) &#123;	<span class="hljs-comment">//23,任意數, 隨意看看結果 </span><br>				p[i] = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Foo</span>(i);<br>				cout &lt;&lt; p[i] &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; p[i]-&gt;L &lt;&lt; endl;<br>			&#125;<br>			<span class="hljs-comment">//Foo::myAlloc.check();</span><br><br>			<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i&lt;<span class="hljs-number">23</span>; ++i) &#123;<br>				<span class="hljs-keyword">delete</span> p[i];<br>			&#125;<br>			<span class="hljs-comment">//Foo::myAlloc.check();</span><br>		&#125;<br><br>		&#123;<br>			Goo* p[<span class="hljs-number">100</span>];<br><br>			cout &lt;&lt; <span class="hljs-string">&quot;sizeof(Goo)= &quot;</span> &lt;&lt; <span class="hljs-built_in">sizeof</span>(Goo) &lt;&lt; endl;<br>			<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i&lt;<span class="hljs-number">17</span>; ++i) &#123;	<span class="hljs-comment">//17,任意數, 隨意看看結果 </span><br>				p[i] = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Goo</span>(<span class="hljs-built_in">complex</span>&lt;<span class="hljs-type">double</span>&gt;(i, i));<br>				cout &lt;&lt; p[i] &lt;&lt; <span class="hljs-string">&#x27; &#x27;</span> &lt;&lt; p[i]-&gt;c &lt;&lt; endl;<br>			&#125;<br>			<span class="hljs-comment">//Goo::myAlloc.check();</span><br><br>			<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i&lt;<span class="hljs-number">17</span>; ++i) &#123;<br>				<span class="hljs-keyword">delete</span> p[i];<br>			&#125;<br>			<span class="hljs-comment">//Goo::myAlloc.check();	</span><br>		&#125;<br>	&#125;<br>&#125; <span class="hljs-comment">//namespace	</span><br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-type">void</span>)</span></span><br><span class="hljs-function"></span>&#123;<br>	jj09::<span class="hljs-built_in">test_static_allocator_3</span>();<br>	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/macro-static-allocate.png" srcset="/img/loading.gif" lazyload alt="macro-static-allocate"><br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/macro-static-allocate-result.png" srcset="/img/loading.gif" lazyload alt="macro-static-allocate-result"></p>
+<h1 id="global-allocator"><a href="#global-allocator" class="headerlink" title="global allocator"></a>global allocator</h1><p>上面自定义的分配器使用一条链表来管理内存，而标准库却用了多条链表来进行管理：<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/global_allocator.png" srcset="/img/loading.gif" lazyload alt="global_allocator"></p>
+<h1 id="new-handler"><a href="#new-handler" class="headerlink" title="new handler"></a>new handler</h1><p>如果用户申请内存时，因为系统原因或申请内存过大导致失败，这是将抛出异常。operator new()函数内部将会调用_calnewh()函数，这个函数通过左边的typedef传入，可以根据需要自己编写handler处理函数来处理该问题。一般有两种方案处理：</p>
+<ul>
+<li>让更多的Memory可用</li>
+<li>直接abort()或exit()<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/def_new_handler.png" srcset="/img/loading.gif" lazyload alt="def_new_handler"><br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/new_handler.png" srcset="/img/loading.gif" lazyload alt="new_handler"></li>
+</ul>
+<h1 id="default和-delete"><a href="#default和-delete" class="headerlink" title="&#x3D;default和&#x3D;delete"></a>&#x3D;default和&#x3D;delete</h1><p>有默认版本的函数有：</p>
+<ul>
+<li>拷贝构造函数</li>
+<li>拷贝赋值函数</li>
+<li>析构函数<br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/default_delete1.png" srcset="/img/loading.gif" lazyload alt="default_delete1"><br><img src="/./images/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/defualt_delete2.png" srcset="/img/loading.gif" lazyload alt="default_delete2"></li>
+</ul>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://github.com/hujiese/CPP-Memory-Management/tree/master">CPP-Memory-Management</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1d3h5zFEjL?spm_id_from=333.788.videopod.sections&vd_source=cb2ffbc722372d15094f9eebc2c1e0a4">侯捷-C++内存管理机制</a></p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/c-%E5%9F%BA%E7%A1%80/" class="category-chain-item">c++基础</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/" class="print-no-link">#内存管理</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>C++内存管理机制——primitives</div>
+      <div>https://delta0406.github.io/2025/10/19/C++内存管理机制——primitives/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>执妄</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2025年10月19日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2025/10/22/C++%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94std-allocator/" title="C++内存管理机制——std::allocator">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">C++内存管理机制——std::allocator</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2025/09/24/explicit%E5%85%B3%E9%94%AE%E5%AD%97/" title="explicit关键字">
+                        <span class="hidden-mobile">explicit关键字</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+    <div id="giscus" class="giscus"></div>
+    <script type="text/javascript">
+      Fluid.utils.loadComments('#giscus', function() {
+        var options = {"repo":"Delta0406/delta0406.github.io","repo-id":"R_kgDOOq7EyQ","category":"Announcements","category-id":"DIC_kwDOOq7Eyc4CqOOd","theme-light":"light","theme-dark":"dark","mapping":"pathname","reactions-enabled":1,"emit-metadata":0,"input-position":"top","lang":"zh-CN"};
+        var attributes = {};
+        for (let option in options) {
+          if (!option.startsWith('theme-')) {
+            var key = option.startsWith('data-') ? option : 'data-' + option;
+            attributes[key] = options[option];
+          }
+        }
+        var light = 'light';
+        var dark = 'dark';
+        window.GiscusThemeLight = light;
+        window.GiscusThemeDark = dark;
+        attributes['data-theme'] = document.documentElement.getAttribute('data-user-color-scheme') === 'dark' ? dark : light;
+        for (let attribute in attributes) {
+          var value = attributes[attribute];
+          if (value === undefined || value === null || value === '') {
+            delete attributes[attribute];
+          }
+        }
+        var s = document.createElement('script');
+        s.setAttribute('src', 'https://giscus.app/client.js');
+        s.setAttribute('crossorigin', 'anonymous');
+        for (let attribute in attributes) {
+          s.setAttribute(attribute, attributes[attribute]);
+        }
+        var ss = document.getElementsByTagName('script');
+        var e = ss.length > 0 ? ss[ss.length - 1] : document.head || document.documentElement;
+        e.parentNode.insertBefore(s, e.nextSibling);
+      });
+    </script>
+    <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</body>
+</html>
