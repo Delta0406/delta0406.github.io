@@ -106,7 +106,7 @@ theme: fluid
 deploy:
   type: git
   repository: 
-    github: git@github.com:Delta0406/delta0406.github.io.git,main
+    github: git@github.com:Delta0406/delta0406.github.io.git,gh-pages
     gitee: git@gitee.com:iscanoe/iscanoe.gitee.io.git,main
 
 # Plugins:
