@@ -52,23 +52,17 @@ jobs:
         run: |
           npm install
 
-      - name: Deploy Hexo
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Build Hexo
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
           npx hexo clean
           npx hexo generate
-          
-          cd public
-          git init
-          # 显式重命名当前分支为 main，确保推送时对应关系明确
-          git checkout -b main
-          touch .nojekyll
-          git add .
-          git commit -m "Site updated by GitHub Actions"
-          
-          # 推送本地的 main 到远程的 gh-pages
-          git push -f "https://${GH_TOKEN}@github.com/Delta0406/Delta0406.github.io.git" main:gh-pages
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 告诉 GitHub 把 Hexo 生成的 public 文件夹打包上传
+          path: 'public/'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
