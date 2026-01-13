@@ -105,9 +105,9 @@ theme: fluid
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: 
-    github: git@github.com:Delta0406/delta0406.github.io.git,gh-pages
-    gitee: git@gitee.com:iscanoe/iscanoe.gitee.io.git,main
+  repo: https://github.com/Delta0406/Delta0406.github.io.git
+  branch: gh-pages
+    
 
 # Plugins:
 # - hexo-generator-sitemap
