@@ -54,11 +54,23 @@ jobs:
 
       - name: Deploy Hexo
         env:
-          # 此处必须与 _config.yml 中的 deploy 配置配合
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          # 确认一下主题目录是否存在（用于日志排查）
-          ls -d themes/fluid/layout
+          # 1. 配置 Git 身份（必须有，否则无法 Commit）
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 2. 生成静态文件
           npx hexo clean
           npx hexo generate
-          npx hexo deploy
+          
+          # 3. 强制推送 public 文件夹到 gh-pages 分支
+          cd public
+          git init
+          touch .nojekyll  # 禁用 GitHub 自带的 Jekyll 渲染，防止 404
+          git add .
+          git commit -m "Site updated by GitHub Actions"
+          
+          # 4. 关键：在 URL 中直接嵌入 TOKEN 解决权限和超时问题
+          # 注意：这里的仓库地址要改成你自己的真实地址
+          git push -f "https://${GH_TOKEN}@github.com/Delta0406/Delta0406.github.io.git" master:gh-pages
