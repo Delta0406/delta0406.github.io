@@ -57,6 +57,8 @@ jobs:
           # 此处必须与 _config.yml 中的 deploy 配置配合
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          # 确认一下主题目录是否存在（用于日志排查）
+          ls -d themes/fluid/layout
           npx hexo clean
           npx hexo generate
           npx hexo deploy
