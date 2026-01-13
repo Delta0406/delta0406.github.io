@@ -1,0 +1,62 @@
+name: Auto Spider and Hexo Deploy
+
+on:
+  schedule:
+    # 每天北京时间上午 8:00 运行 (UTC 0:00)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 允许在 GitHub 页面手动点击运行
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 检出源代码
+      - name: Checkout Source
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }} # 使用自定义 Token 以允许 Action 触发后续流程
+
+      # 2. 安装 Python 环境并运行爬虫
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests jieba
+
+      - name: Run Job Spider
+        # 根据你截图中的目录结构运行脚本
+        run: python py_scripts/crawler.py
+
+      # 3. 将生成的 JSON 数据提交回仓库 (保证源码分支也有数据)
+      - name: Commit Updated Data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add source/api/jobs_data.json
+          # 只有文件变化时才 commit，防止流程报错
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update jobs_data.json [skip ci]" && git push)
+
+      # 4. 安装 Node.js 并生成/部署 Hexo
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm' # 开启缓存加快速度
+
+      - name: Install Hexo Dependencies
+        run: |
+          npm install
+
+      - name: Deploy Hexo
+        env:
+          # 此处必须与 _config.yml 中的 deploy 配置配合
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          npx hexo clean
+          npx hexo generate
+          npx hexo deploy

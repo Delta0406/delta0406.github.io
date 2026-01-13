@@ -1,0 +1,17 @@
+# 依赖库
+node_modules/
+jspm_packages/
+
+# Hexo 编译生成的静态网页
+public/
+.deploy_git/
+
+# 运行日志和临时文件
+*.log
+db.json
+.DS_Store
+Thumbs.db
+
+# 爬虫可能产生的临时文件
+__pycache__/
+.pytest_cache/
