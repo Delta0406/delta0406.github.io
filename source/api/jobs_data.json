@@ -2786,16 +2786,8 @@
   ],
   "cloud": [
     {
-      "name": "技术",
-      "value": 131
-    },
-    {
       "name": "AI",
       "value": 124
-    },
-    {
-      "name": "学习",
-      "value": 103
     },
     {
       "name": "LINUX",
@@ -2806,27 +2798,7 @@
       "value": 53
     },
     {
-      "name": "熟练掌握",
-      "value": 47
-    },
-    {
-      "name": "基础",
-      "value": 43
-    },
-    {
-      "name": "服务",
-      "value": 43
-    },
-    {
-      "name": "架构",
-      "value": 41
-    },
-    {
       "name": "数据结构",
-      "value": 40
-    },
-    {
-      "name": "独立",
       "value": 40
     },
     {
@@ -2842,52 +2814,8 @@
       "value": 38
     },
     {
-      "name": "推理",
-      "value": 37
-    },
-    {
-      "name": "游戏",
-      "value": 37
-    },
-    {
-      "name": "原理",
-      "value": 36
-    },
-    {
-      "name": "常用",
-      "value": 36
-    },
-    {
-      "name": "计算机",
-      "value": 36
-    },
-    {
       "name": "AGENT",
       "value": 36
-    },
-    {
-      "name": "计算机相关",
-      "value": 35
-    },
-    {
-      "name": "理解",
-      "value": 35
-    },
-    {
-      "name": "项目",
-      "value": 35
-    },
-    {
-      "name": "方向",
-      "value": 35
-    },
-    {
-      "name": "至少",
-      "value": 35
-    },
-    {
-      "name": "使用",
-      "value": 35
     },
     {
       "name": "GO",
@@ -2902,12 +2830,84 @@
       "value": 31
     },
     {
-      "name": "优秀",
+      "name": "智能",
       "value": 30
+    },
+    {
+      "name": "解决问题",
+      "value": 29
+    },
+    {
+      "name": "责任心",
+      "value": 29
+    },
+    {
+      "name": "深入",
+      "value": 28
+    },
+    {
+      "name": "工程",
+      "value": 28
+    },
+    {
+      "name": "解决",
+      "value": 28
+    },
+    {
+      "name": "平台",
+      "value": 28
+    },
+    {
+      "name": "分布式系统",
+      "value": 28
+    },
+    {
+      "name": "一种",
+      "value": 27
+    },
+    {
+      "name": "深度",
+      "value": 27
+    },
+    {
+      "name": "意识",
+      "value": 27
+    },
+    {
+      "name": "LLM",
+      "value": 27
+    },
+    {
+      "name": "协议",
+      "value": 26
+    },
+    {
+      "name": "业务",
+      "value": 25
+    },
+    {
+      "name": "复杂",
+      "value": 25
+    },
+    {
+      "name": "微信",
+      "value": 24
+    },
+    {
+      "name": "性能",
+      "value": 24
+    },
+    {
+      "name": "精神",
+      "value": 24
+    },
+    {
+      "name": "JAVA",
+      "value": 24
     }
   ],
   "stats": {
     "total": 121,
-    "update_time": "2026-01-13 23:17:33"
+    "update_time": "2026-01-13 23:44:17"
   }
 }
