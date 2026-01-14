@@ -12,6 +12,11 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    # 必须添加以下权限声明，才能让 actions/deploy-pages 有权发布
+    permissions:
+      contents: write   # 允许提交爬虫数据回仓库
+      pages: write      # 允许部署到 GitHub Pages
+      id-token: write   # 允许 OIDC 身份验证
 
     steps:
       # 1. 检出源代码
