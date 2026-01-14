@@ -1,3 +1,8 @@
+---
+title: 大厂招聘看板  # 直接写你想显示的中文
+layout: layout
+---
+
 <style>
     /* 保持你原有的样式，增加详情页微调 */
     #wordCloud { margin: 20px 0; text-align: center; line-height: 2; padding: 15px; background: rgba(0,0,0,0.02); border-radius: 12px; min-height: 50px; }

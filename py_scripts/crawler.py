@@ -7,6 +7,9 @@ import jieba
 from collections import Counter
 
 
+KEYWORDS_LIST = ["agent", "后台", "后端", "AI"]
+
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
     "Referer": "https://careers.tencent.com/jobdesc.html"
@@ -67,11 +70,11 @@ def get_tencent_jobs_single_keyword(keyword, all_jobs_container, category_id="40
         print(f"关键词 {keyword} 列表抓取失败: {e}")
 
 
-def get_tencent_jobs_all_keywords(all_jobs_container):
+def get_tencent_jobs_all_keywords(all_jobs_container, keywords_list):
     """
     调度函数：遍历关键词列表，共用外部传入的 all_jobs_container
     """
-    keywords_list = ["agent", "后台", "后端", "AI"]
+
     for kw in keywords_list:
         get_tencent_jobs_single_keyword(kw, all_jobs_container)
         # 关键词间歇，防止被封
@@ -102,7 +105,8 @@ def generate_word_cloud(jobs_list):
                 '了解', '训练', '设计', '熟悉掌握', '语言', '研发', '精通', '框架', '良好', '算法',
                 '后台', '分析', '编程', '工程师', '具备', '理解', '优秀', '项目', '方向', '至少', '游戏',
                 '独立', '技术', '常用', '计算机相关', '使用', '计算机', '学习', '基础', '熟练掌握', '推理',
-                '原理', '架构', '服务'}
+                '原理', '架构', '服务', '数据', '性能', '精神', '业务', '复杂', '一种', '平台', '意识',
+                '工程', '解决', '合作', '深入', '责任心'}
     
     # 合并中英文结果
     final_word_list = []
@@ -128,7 +132,7 @@ if __name__ == "__main__":
     all_data_pool = {} 
     
     # 抓取腾讯全量关键词
-    get_tencent_jobs_all_keywords(all_data_pool)
+    get_tencent_jobs_all_keywords(all_data_pool, KEYWORDS_LIST)
     
     # 转换为列表用于统计和词云
     final_jobs_list = list(all_data_pool.values())
