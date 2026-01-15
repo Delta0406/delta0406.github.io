@@ -1,6 +1,5 @@
 ---
 title: 大厂招聘看板  # 直接写你想显示的中文
-layout: layout
 ---
 
 <style>
