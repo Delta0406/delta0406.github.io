@@ -784,29 +784,6 @@
     },
     {
       "Id": 0,
-      "PostId": "1722494723274317824",
-      "RecruitPostId": 100914,
-      "RecruitPostName": "腾讯云CDN后台研发工程师",
-      "CountryName": "中国",
-      "LocationName": "长沙",
-      "BGName": "TEG",
-      "ComCode": "YUNZHI",
-      "ComName": "腾讯云智研发子公司",
-      "ProductName": "",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责腾讯云CDN业务的后台服务研发、体验优化、数据分析；\r\n2.负责腾讯云CDN融合调度系统的设计开发；\r\n3.负责视频类业务终端到后台的全链条性能分析和优化。",
-      "LastUpdateTime": "2026年01月15日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1722494723274317824",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1722494723274317824",
-      "Requirement": "1.熟悉短视频业务流程，对播放器、推荐流、传输协议、CDN流量调度、播放体验优化等相关方向之一有深度经验；\r\n2.熟悉C++或者GO，熟悉抓包分析、客户端逆向、nginx等高并发软件架构者优先；\r\n3.熟悉常见的数据库、查询工具和分析工具，具备技术BI工作经验；\r\n4.熟悉CDN工作原理，具备大型分布式运营平台研发经验者优先；\r\n5.具有良好的学习能力、沟通能力、服务理念和合作精神，对于项目有owner意识，能够独立承担项目的架构，设计和开发。"
-    },
-    {
-      "Id": 0,
       "PostId": "1997870537241677824",
       "RecruitPostId": 116440,
       "RecruitPostName": "终端安全后台研发工程师",
@@ -827,6 +804,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1997870537241677824",
       "Requirement": "1.计算机相关专业本科及以上学历，3年以上后台方向开发经验；\r\n2.熟练使用 Go / Java / Python / C++ 中至少一门编程语言，具备扎实的工程化素养；\r\n3.深入理解计算机原理，有扎实的数据结构和算法基础，熟悉常用后台开发技术，包括但不限于数据库、消息队列、缓存、微服务等；\r\n4.有大规模、高并发系统的设计和开发经验，能独立完成系统的设计及开发，并能持续对系统架构进行改造和优化。"
+    },
+    {
+      "Id": 0,
+      "PostId": "1722494723274317824",
+      "RecruitPostId": 100914,
+      "RecruitPostName": "腾讯云CDN后台研发工程师",
+      "CountryName": "中国",
+      "LocationName": "长沙",
+      "BGName": "TEG",
+      "ComCode": "YUNZHI",
+      "ComName": "腾讯云智研发子公司",
+      "ProductName": "",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责腾讯云CDN业务的后台服务研发、体验优化、数据分析；\r\n2.负责腾讯云CDN融合调度系统的设计开发；\r\n3.负责视频类业务终端到后台的全链条性能分析和优化。",
+      "LastUpdateTime": "2026年01月15日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1722494723274317824",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1722494723274317824",
+      "Requirement": "1.熟悉短视频业务流程，对播放器、推荐流、传输协议、CDN流量调度、播放体验优化等相关方向之一有深度经验；\r\n2.熟悉C++或者GO，熟悉抓包分析、客户端逆向、nginx等高并发软件架构者优先；\r\n3.熟悉常见的数据库、查询工具和分析工具，具备技术BI工作经验；\r\n4.熟悉CDN工作原理，具备大型分布式运营平台研发经验者优先；\r\n5.具有良好的学习能力、沟通能力、服务理念和合作精神，对于项目有owner意识，能够独立承担项目的架构，设计和开发。"
     },
     {
       "Id": 0,
@@ -2908,6 +2908,6 @@
   ],
   "stats": {
     "total": 121,
-    "update_time": "2026-01-15 15:12:35"
+    "update_time": "2026-01-16 01:51:36"
   }
 }
