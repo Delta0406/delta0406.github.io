@@ -692,6 +692,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1953842122331414528",
+      "RecruitPostId": 114014,
+      "RecruitPostName": "《穿越火线：虹》后台开发",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "CFH-手游APP",
+      "CategoryName": "技术",
+      "Responsibility": "1. 负责大规模游戏服务器集群的架构设计、开发、优化和维护；\r\n2. 负责登录、匹配、任务、推荐等游戏服务的需求分析、设计、开发和维护；\r\n3. 提升服务的可扩展性、高可用、开发/运行效率，工具开发，数据分析、调优等；\r\n4. 负责射击游戏对战AI开发，UE的对战服务器调度、性能和体验优化等。",
+      "LastUpdateTime": "2026年02月06日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1953842122331414528",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1953842122331414528",
+      "Requirement": "1. 精通Go/C++/Rust的一种或多种，基础扎实，熟悉Linux下服务开发、命令、调试分析工具等；\r\n2. 熟悉TCP/IP、各类数据库原理，有网络编程、数据库编程经验；\r\n3. 具备大型项目、大规模高可用微服务架构、设计、开发经验；\r\n4. 具备较强的分析和解决问题能力，认可游戏行业，易于沟通协作，有较强的优化意识、自驱力；\r\n5. 有UE引擎、射击游戏服务相关开发、优化经验优先。"
+    },
+    {
+      "Id": 0,
       "PostId": "2009886871232077824",
       "RecruitPostId": 117226,
       "RecruitPostName": "SLG-java后台服务器开发",
@@ -781,29 +804,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1967860587270660096",
       "Requirement": "1.本科及以上学历，计算机相关专业，3年以上工作经验，具备扎实的数据结构和算法功底，较强的逻辑思维以及良好的分析解决问题的能力；\r\n2.熟悉Golang/C/C++语言，熟悉常用RPC，缓存，消息中间件等，了解原理和机制，并在实际生产系统有过实践；\r\n3.具备海量数据处理/企业安全系统/云原生开发/跨平台开发 研发经验者优先；\r\n4.具备良好的沟通能力，工作有责任心，积极主动。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1953842122331414528",
-      "RecruitPostId": 114014,
-      "RecruitPostName": "《穿越火线：虹》后台开发",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "CFH-手游APP",
-      "CategoryName": "技术",
-      "Responsibility": "1. 负责大规模游戏服务器集群的架构设计、开发、优化和维护；\r\n2. 负责登录、匹配、任务、推荐等游戏服务的需求分析、设计、开发和维护；\r\n3. 提升服务的可扩展性、高可用、开发/运行效率，工具开发，数据分析、调优等；\r\n4. 负责射击游戏对战AI开发，UE的对战服务器调度、性能和体验优化等。",
-      "LastUpdateTime": "2026年01月07日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1953842122331414528",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1953842122331414528",
-      "Requirement": "1. 精通Go/C++/Rust的一种或多种，基础扎实，熟悉Linux下服务开发、命令、调试分析工具等；\r\n2. 熟悉TCP/IP、各类数据库原理，有网络编程、数据库编程经验；\r\n3. 具备大型项目、大规模高可用微服务架构、设计、开发经验；\r\n4. 具备较强的分析和解决问题能力，认可游戏行业，易于沟通协作，有较强的优化意识、自驱力；\r\n5. 有UE引擎、射击游戏服务相关开发、优化经验优先。"
     },
     {
       "Id": 0,
@@ -1669,7 +1669,7 @@
       "ProductName": "自研芯片-云架平",
       "CategoryName": "技术",
       "Responsibility": "1.负责大规模数字芯片（SoC/ASIC）模块级或顶层级从Netlist到GDSII的​​全流程物理实现​​，包括但不限于Floorplan、Power Planning、Placement、CTS、Routing、Timing Closure等；\r\n2.进行​​时序分析与收敛​​（STA），处理复杂时序场景（OCV, LVF, MC），并执行Timing ECO；\r\n3.进行​​功耗完整性（IR/EM）和信号完整性（SI）分析及优化​​，确保芯片性能、功耗和面积（PPA）目标达成；\r\n4.完成​​物理验证​​（DRC, LVS, ERC, ANT）并主导相关问题的解决；\r\n5.与前端设计、验证团队​​紧密协作​​，参与芯片规格定义和设计优化，协助解决前后端集成问题；\r\n6.​​开发或优化​​后端设计流程与脚本，提升设计效率和质量；\r\n7.编写相关技术文档，支持流片（Tapout）和数据交付。",
-      "LastUpdateTime": "2026年01月28日",
+      "LastUpdateTime": "2026年02月06日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1972206494699114496",
       "SourceID": 1,
       "IsCollect": false,
@@ -2954,6 +2954,6 @@
   ],
   "stats": {
     "total": 123,
-    "update_time": "2026-02-06 02:10:30"
+    "update_time": "2026-02-07 02:06:25"
   }
 }
