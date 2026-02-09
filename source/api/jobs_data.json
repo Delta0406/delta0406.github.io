@@ -347,29 +347,6 @@
     },
     {
       "Id": 0,
-      "PostId": "1934984932162117632",
-      "RecruitPostId": 112765,
-      "RecruitPostName": "微信读书/微信输入法-大模型应用研发工程师-文本方向",
-      "CountryName": "中国",
-      "LocationName": "北京",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "微信读书",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责基于大模型的文本内容理解和生成任务在业务上的落地工作：；\r\n2.参与微信读书、微信输入法的 AI 应用的持续探索和落地；\r\n3.参与长上下文任务的推理优化、索引构建、复杂语义理解以及内容理解的工程落地和优化，负责 AI 应用系统及其数据工程链路的构建和维护；\r\n4.基于大模型，优化现有的开发和数据链路，提升研发效率；\r\n5.参与新技术调研以及探索，包括大模型相关的工程算法的探索和逻辑，并且参与项目特定方向的重点、难点开发工作。",
-      "LastUpdateTime": "2026年01月20日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1934984932162117632",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1934984932162117632",
-      "Requirement": "1.熟悉 C++/Golang 等一种或多种编程语言；扎实的系统开发和数据结构功底；\r\n2.对大模型（LLM、 LVM 等）、Agent 等技术以及大模型部署有基本的了解和认识；\r\n3.对后台研发常用的开源组件，如 Mysql，Redis，Kafka 等，有一定应用经验；\r\n4.具有良好的工程素养。包括但不限于文档撰写能力、单元测试能力、版本管理能力，以及良好的沟通表达能力、工作认真负责，能够保持开放、持续学习，善于发现问题，具备良好的团队合作精神等。"
-    },
-    {
-      "Id": 0,
       "PostId": "1934984838532694016",
       "RecruitPostId": 112764,
       "RecruitPostName": "微信秒剪-大模型后端研发工程师-多模态方向",
@@ -390,6 +367,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1934984838532694016",
       "Requirement": "1.熟悉 C++/Golang 等一种或多种编程语言；扎实的系统开发和数据结构功底；\r\n2.对语言大模型、多模态大模型、Agent 等技术以及大模型部署有基本的了解和认识；\r\n3.对后台研发常用的开源组件，如 Mysql，Redis，Kafka 等，有一定应用经验；\r\n4.具有良好的工程素养。包括但不限于文档撰写能力、单元测试能力、版本管理能力，以及良好的沟通表达能力、工作认真负责，能够保持开放、持续学习，善于发现问题，具备良好的团队合作精神等。"
+    },
+    {
+      "Id": 0,
+      "PostId": "1934984932162117632",
+      "RecruitPostId": 112765,
+      "RecruitPostName": "微信读书/微信输入法-大模型应用研发工程师-文本方向",
+      "CountryName": "中国",
+      "LocationName": "北京",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "微信读书",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责基于大模型的文本内容理解和生成任务在业务上的落地工作：；\r\n2.参与微信读书、微信输入法的 AI 应用的持续探索和落地；\r\n3.参与长上下文任务的推理优化、索引构建、复杂语义理解以及内容理解的工程落地和优化，负责 AI 应用系统及其数据工程链路的构建和维护；\r\n4.基于大模型，优化现有的开发和数据链路，提升研发效率；\r\n5.参与新技术调研以及探索，包括大模型相关的工程算法的探索和逻辑，并且参与项目特定方向的重点、难点开发工作。",
+      "LastUpdateTime": "2026年01月20日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1934984932162117632",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1934984932162117632",
+      "Requirement": "1.熟悉 C++/Golang 等一种或多种编程语言；扎实的系统开发和数据结构功底；\r\n2.对大模型（LLM、 LVM 等）、Agent 等技术以及大模型部署有基本的了解和认识；\r\n3.对后台研发常用的开源组件，如 Mysql，Redis，Kafka 等，有一定应用经验；\r\n4.具有良好的工程素养。包括但不限于文档撰写能力、单元测试能力、版本管理能力，以及良好的沟通表达能力、工作认真负责，能够保持开放、持续学习，善于发现问题，具备良好的团队合作精神等。"
     },
     {
       "Id": 0,
@@ -1589,6 +1589,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1936112113181392896",
+      "RecruitPostId": 112847,
+      "RecruitPostName": "微信视频号-推荐后台开发工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "视频号短视频",
+      "CategoryName": "技术",
+      "Responsibility": "1.主要负责微信视频号推荐样本相关后台的开发和优化，为模型训练提供正确、高效、实时的样本；\n2.支持视频号推荐及合作业务的超大规模样本处理，进行架构设计和通用性能优化，提升系统的稳定性和吞吐量；\n3.深入研究训练样本的特征拼接、数据处理及数据传输链路，提高样本处理的实时性，降低资源消耗。",
+      "LastUpdateTime": "2026年02月09日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1936112113181392896",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1936112113181392896",
+      "Requirement": "1.计算机相关专业本科及以上学历，具备2年及以上后台开发经验；\r\n2.熟悉Linux开发环境，熟练掌握C++开发技能，熟悉数据结构和算法；\r\n3.熟练掌握至少一门脚本语言（如Shell/Python等）；\r\n4.具备良好的团队合作精神和沟通能力。"
+    },
+    {
+      "Id": 0,
       "PostId": "1948926367043264512",
       "RecruitPostId": 113673,
       "RecruitPostName": "腾讯云CodeBuddy-智能体后台开发工程师",
@@ -1632,29 +1655,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1959981540716994560",
       "Requirement": "1.本科以上学历，计算机相关专业；\n2.需要熟悉C/C++编译类语言, 有2年或以上服务端开发经验；\n3.有短视频/直播等业务开发经验者优先；\n4.有海量服务开发、网络通信优化、计算性能优化经验者优先；\n5.有类OI/ACM-ICPC竞赛背景优先；\n6.希望你热爱编程，喜欢钻研技术，愿意深入思考，接受挑战。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1996780324880801792",
-      "RecruitPostId": 116402,
-      "RecruitPostName": "应用宝-广告后台专家-架构师方向",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "PCG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "应用宝",
-      "CategoryName": "技术",
-      "Responsibility": "1.  负责移动广告系统后台架构和链路优化，提升系统稳定性和商业变现效率；\n2.  负责PC商业生态系统架构设计与能力规划，包括服务性能、链路耗时、迭代效率等优化；\n3.  与运营/产品团队紧密配合，做好需求和项目管理，协调多模块团队，确保项目落地并达成业务目标；\n4.  研究前沿技术（如AI广告），主导技术预研与创新方案落地。\n\n",
-      "LastUpdateTime": "2026年01月15日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1996780324880801792",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "五年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1996780324880801792",
-      "Requirement": "1.  计算机及相关专业本科以上学历，编程能力强，熟练掌握c++/golang中一门语言，6年以上工作经验 ；\n2.  具备优秀的系统规划能力、架构设计能力、项目管理能力 ；\n3.  有软件广告商业化从业经验优先。"
     },
     {
       "Id": 0,
@@ -1876,7 +1876,7 @@
       "ProductName": "腾讯云",
       "CategoryName": "技术",
       "Responsibility": "1.按需参与海外刷掌支付平台后端模块的开发与单元测试，按时交付高质量代码；\r\n2.参与刷掌设备管控系统的设计与开发；\r\n3.根据设计文档或需求完成接口实现、数据库操作与中间件集成（MySQL、Redis、Kafka 等）；\r\n4.与内部开发/测试/SRE 协作完成联调与上线准备，及时修复线上/联调问题；\r\n5.遵守代码规范，提交清晰的开发与变更说明，配合代码评审与版本管理（Git）；\r\n6.按需编写接口文档与简单的技术文档，配合完成任务验收。",
-      "LastUpdateTime": "2026年01月29日",
+      "LastUpdateTime": "2026年02月09日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1976672886357905408",
       "SourceID": 1,
       "IsCollect": false,
@@ -2256,6 +2256,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1773304136457003008",
+      "RecruitPostId": 104087,
+      "RecruitPostName": "AI硬件加速解决方案架构师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责AI训练、推理场景硬件加速解决方案设计和落地；\r\n2.深入理解大模型、推荐应用场景，分析工作负载并建模；\r\n3.整合内外资源，并协同编译、应用框架，进行软硬一体化解决方案设计和开发。",
+      "LastUpdateTime": "2026年02月09日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1773304136457003008",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1773304136457003008",
+      "Requirement": "1.本科及以上学历，5年以上相关工作经验；\r\n2.深入理解上层软件到底层芯片整个技术栈，熟悉 CPU、GPU、NPU、各种加速卡以及IO/网络，并具备架构能力；\r\n3.熟悉硬件产品研发周期，了解但不限于服务端系统级、板级、芯片级不同周期的研发和生产流程，能高效牵引内、外部合作团队；\r\n4.熟悉大模型、推荐等应用场景，熟悉业界解决方案，并有过加速方案设计及落地经验；\r\n5.有很强的项目把控及推进能力，能够清晰地规划和拆解团队目标，并具备hands on能力；\r\n6.符合以下要求其中一条或以上：；\r\n7.熟悉NIC/RDMA等内核网络协议栈和驱动设计实现，熟悉计算机网络，了解集合通信库（如: NCCL）和相关算法(如: AllReduce)的设计实现与性能分析优化；\r\n8.熟悉GPU、NPU计算加速卡卡间互联技术，包括互联应用场景，互联接口和互联组网。熟悉业界典型的互联方案；\r\n9.熟悉CXL等内存一致性协议及应用场景，有相关异构架构设计经验者优先；\r\n10.熟悉计算机体系结构，硬件设计和实现，熟悉ARM/RISC-V SOC体系架构；\r\n11.熟悉PCIe、DDR、存储系统等总线和相关协议。"
+    },
+    {
+      "Id": 0,
       "PostId": "1987342542588497920",
       "RecruitPostId": 115901,
       "RecruitPostName": "元宝搜索部-AI搜索算法专家",
@@ -2299,29 +2322,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2004441758305509376",
       "Requirement": "1.计算机科学、人工智能或数学专业硕士及以上学历，1-3年机器学习或深度学习、LLM/VLM相关开发经验，熟悉经典模型和优化算法；\n2.扎实的机器学习基础和LLM底层核心架构；\n3.具备一定大语言模型应用的模型微调和优化经验，如幻觉问题解决思路提炼和有效落地；\n4.熟悉Linux开发环境和Python语言，了解PyTorch/TensorFlow框架；\n5.良好的沟通能力和团队协作精神，能够清晰表达复杂技术概念，具备解决复杂问题的能力，善于创新思考，喜欢游戏并具备一定游戏经验。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1773304136457003008",
-      "RecruitPostId": 104087,
-      "RecruitPostName": "AI硬件加速解决方案架构师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责AI训练、推理场景硬件加速解决方案设计和落地；\r\n2.深入理解大模型、推荐应用场景，分析工作负载并建模；\r\n3.整合内外资源，并协同编译、应用框架，进行软硬一体化解决方案设计和开发。",
-      "LastUpdateTime": "2026年01月12日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1773304136457003008",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1773304136457003008",
-      "Requirement": "1.本科及以上学历，5年以上相关工作经验；\r\n2.深入理解上层软件到底层芯片整个技术栈，熟悉 CPU、GPU、NPU、各种加速卡以及IO/网络，并具备架构能力；\r\n3.熟悉硬件产品研发周期，了解但不限于服务端系统级、板级、芯片级不同周期的研发和生产流程，能高效牵引内、外部合作团队；\r\n4.熟悉大模型、推荐等应用场景，熟悉业界解决方案，并有过加速方案设计及落地经验；\r\n5.有很强的项目把控及推进能力，能够清晰地规划和拆解团队目标，并具备hands on能力；\r\n6.符合以下要求其中一条或以上：；\r\n7.熟悉NIC/RDMA等内核网络协议栈和驱动设计实现，熟悉计算机网络，了解集合通信库（如: NCCL）和相关算法(如: AllReduce)的设计实现与性能分析优化；\r\n8.熟悉GPU、NPU计算加速卡卡间互联技术，包括互联应用场景，互联接口和互联组网。熟悉业界典型的互联方案；\r\n9.熟悉CXL等内存一致性协议及应用场景，有相关异构架构设计经验者优先；\r\n10.熟悉计算机体系结构，硬件设计和实现，熟悉ARM/RISC-V SOC体系架构；\r\n11.熟悉PCIe、DDR、存储系统等总线和相关协议。"
     },
     {
       "Id": 0,
@@ -2837,7 +2837,7 @@
     },
     {
       "name": "LINUX",
-      "value": 62
+      "value": 63
     },
     {
       "name": "扎实",
@@ -2848,11 +2848,11 @@
       "value": 41
     },
     {
-      "name": "网络",
-      "value": 40
+      "name": "PYTHON",
+      "value": 41
     },
     {
-      "name": "PYTHON",
+      "name": "网络",
       "value": 40
     },
     {
@@ -2865,7 +2865,7 @@
     },
     {
       "name": "数据结构",
-      "value": 37
+      "value": 38
     },
     {
       "name": "解决问题",
@@ -2885,7 +2885,7 @@
     },
     {
       "name": "GOLANG",
-      "value": 28
+      "value": 27
     },
     {
       "name": "JAVA",
@@ -2896,11 +2896,15 @@
       "value": 25
     },
     {
+      "name": "微信",
+      "value": 25
+    },
+    {
       "name": "一门",
       "value": 24
     },
     {
-      "name": "微信",
+      "name": "环境",
       "value": 24
     },
     {
@@ -2914,10 +2918,6 @@
     {
       "name": "一定",
       "value": 24
-    },
-    {
-      "name": "环境",
-      "value": 23
     },
     {
       "name": "机器",
@@ -2954,6 +2954,6 @@
   ],
   "stats": {
     "total": 123,
-    "update_time": "2026-02-08 02:39:12"
+    "update_time": "2026-02-09 02:25:53"
   }
 }
