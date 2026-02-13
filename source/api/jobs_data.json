@@ -48,6 +48,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2019372240872833024",
+      "RecruitPostId": 117760,
+      "RecruitPostName": "元宝搜索部-Agent算法工程师",
+      "CountryName": "中国",
+      "LocationName": "北京",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "搜索-元宝",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责VLM Agent核心能力研发，包括但不限于多模态理解（图像/视频+文本）、指令遵循、自主规划、工具调用、记忆机制设计，实现Agent在特定场景的端到端自主决策与执行能力；\r\n2.参与VLM模型的微调、适配与优化，结合Agent业务场景需求，提升模型的需求理解、工具使用和推理总结能力，提升跨模态交互流畅度和视觉理解精度等；\r\n3.负责 VLM 基础模型能力的边界探索，研究基于强化学习的视觉推理增强技术，优化模型架构与推理策略，持续提升模型在细粒度视觉感知、复杂 UI 理解与跨模态逻辑对齐等高难度任务上的表现，探索 VLM 的 Scaling Law 新路径；\r\n4.结合业务场景，梳理Agent应用需求，推动VLM Agent从原型验证到产品化落地，迭代优化产品体验；\r\n5.跟进VLM与AI Agent领域前沿技术（如复杂任务规划、Think with images、RL 等），开展技术预研与创新，将前沿技术转化为实际业务价值。",
+      "LastUpdateTime": "2026年02月13日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2019372240872833024",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2019372240872833024",
+      "Requirement": "1.硕士及以上学历，计算机科学、人工智能、机器学习、计算机视觉、自然语言处理等相关专业；\r\n2.具备扎实的计算机基础，熟悉数据结构、算法、操作系统、分布式计算等核心知识，具备良好的编码能力（Python为主），代码风格规范；\r\n3.具备较强的问题解决能力、自驱力与学习能力，能快速跟进前沿技术，抗压性强，具备良好的跨团队沟通与协作能力。"
+    },
+    {
+      "Id": 0,
       "PostId": "2018933445673254912",
       "RecruitPostId": 117736,
       "RecruitPostName": "元宝搜索部-Agent算法工程师（深圳）",
@@ -968,6 +991,52 @@
     },
     {
       "Id": 0,
+      "PostId": "1811226147589988352",
+      "RecruitPostId": 106499,
+      "RecruitPostName": "存储业务后台研发工程师",
+      "CountryName": "中国",
+      "LocationName": "成都",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "",
+      "CategoryName": "技术",
+      "Responsibility": "1.参与对象存储业务后台组件的研发工作，包括：负载均衡调度，高并发接入模块研发，访问高可用设计，计费系统等；\r\n2.参与对象存储访问日志，数据特征分析引擎的设计和开发，提供多种数据源的连接，建模，分析，并根据分析结果进行数据调度；\r\n3.参与对象存储增值业务功能的开发，满足客户对存储的多样化管理需求。",
+      "LastUpdateTime": "2026年02月13日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1811226147589988352",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1811226147589988352",
+      "Requirement": "1.熟悉 Linux 开发环境，熟练掌握一门编程语言（C++/Java/Golang等），熟悉数据结构与算法，熟悉IO，多线程和网络技术；\r\n2.熟悉分布式系统，有大型业务后台和大数据领域开发经验者优先；\r\n3.具备良好的团队合作精神，沟通能力，遇到问题有研究的热情和快速学习的能力。"
+    },
+    {
+      "Id": 0,
+      "PostId": "1663716624777093120",
+      "RecruitPostId": 97131,
+      "RecruitPostName": "雾计算(PCDN)后台开发工程师",
+      "CountryName": "中国",
+      "LocationName": "长沙",
+      "BGName": "TEG",
+      "ComCode": "YUNZHI",
+      "ComName": "腾讯云智研发子公司",
+      "ProductName": "",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责雾计算(PCDN) 调度系统的设计开发与功能迭代；\r\n2.负责雾计算(PCDN) 分发系统的设计开发与功能迭代；\r\n3.负责雾计算(PCDN) 的数据传输优化和性能调优。",
+      "LastUpdateTime": "2026年02月12日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1663716624777093120",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1663716624777093120",
+      "Requirement": "1.1年以上linux后台开发经验，熟悉C++或者GO，具备独立模块开发能力；\r\n2.熟悉TCP/IP协议，有一定的网络开发经验，熟悉HTTP、P2P、QUIC协议优先；\r\n3.有CDN/PCDN工作经验者优先；\r\n4.具备良好的逻辑思维能力和快速学习能力，优秀的沟通和团队合作能力；\r\n5.注：该岗位为腾讯集团子公司编制。"
+    },
+    {
+      "Id": 0,
       "PostId": "1966418821166292992",
       "RecruitPostId": 114795,
       "RecruitPostName": "腾讯会议-后台开发工程师",
@@ -1103,52 +1172,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1722494723274317824",
       "Requirement": "1.熟悉短视频业务流程，对播放器、推荐流、传输协议、CDN流量调度、播放体验优化等相关方向之一有深度经验；\r\n2.熟悉C++或者GO，熟悉抓包分析、客户端逆向、nginx等高并发软件架构者优先；\r\n3.熟悉常见的数据库、查询工具和分析工具，具备技术BI工作经验；\r\n4.熟悉CDN工作原理，具备大型分布式运营平台研发经验者优先；\r\n5.具有良好的学习能力、沟通能力、服务理念和合作精神，对于项目有owner意识，能够独立承担项目的架构，设计和开发。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1811226147589988352",
-      "RecruitPostId": 106499,
-      "RecruitPostName": "存储业务后台研发工程师",
-      "CountryName": "中国",
-      "LocationName": "成都",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "",
-      "CategoryName": "技术",
-      "Responsibility": "1.参与对象存储业务后台组件的研发工作，包括：负载均衡调度，高并发接入模块研发，访问高可用设计，计费系统等；\r\n2.参与对象存储访问日志，数据特征分析引擎的设计和开发，提供多种数据源的连接，建模，分析，并根据分析结果进行数据调度；\r\n3.参与对象存储增值业务功能的开发，满足客户对存储的多样化管理需求。",
-      "LastUpdateTime": "2026年01月10日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1811226147589988352",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1811226147589988352",
-      "Requirement": "1.熟悉 Linux 开发环境，熟练掌握一门编程语言（C++/Java/Golang等），熟悉数据结构与算法，熟悉IO，多线程和网络技术；\r\n2.熟悉分布式系统，有大型业务后台和大数据领域开发经验者优先；\r\n3.具备良好的团队合作精神，沟通能力，遇到问题有研究的热情和快速学习的能力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1663716624777093120",
-      "RecruitPostId": 97131,
-      "RecruitPostName": "雾计算(PCDN)后台开发工程师",
-      "CountryName": "中国",
-      "LocationName": "长沙",
-      "BGName": "TEG",
-      "ComCode": "YUNZHI",
-      "ComName": "腾讯云智研发子公司",
-      "ProductName": "",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责雾计算(PCDN) 调度系统的设计开发与功能迭代；\r\n2.负责雾计算(PCDN) 分发系统的设计开发与功能迭代；\r\n3.负责雾计算(PCDN) 的数据传输优化和性能调优。",
-      "LastUpdateTime": "2026年01月09日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1663716624777093120",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1663716624777093120",
-      "Requirement": "1.1年以上linux后台开发经验，熟悉C++或者GO，具备独立模块开发能力；\r\n2.熟悉TCP/IP协议，有一定的网络开发经验，熟悉HTTP、P2P、QUIC协议优先；\r\n3.有CDN/PCDN工作经验者优先；\r\n4.具备良好的逻辑思维能力和快速学习能力，优秀的沟通和团队合作能力；\r\n5.注：该岗位为腾讯集团子公司编制。"
     },
     {
       "Id": 0,
@@ -2647,6 +2670,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1922126152059707392",
+      "RecruitPostId": 111958,
+      "RecruitPostName": "腾讯地图-地图出行领域AI算法专家",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯地图APP",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责地图出行领域大语言模型（LLM）的设计、训练、调优与评估，结合地图出行场景需求进行模型优化创新；\n2.架构设计合理的AI架构，解决地图出行场景中的业务和技术挑战；\n3.持续跟踪并分析AI大模型领域业届进展，探索技术突破方向，指导团队技术发展路径。",
+      "LastUpdateTime": "2026年02月13日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1922126152059707392",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "五年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1922126152059707392",
+      "Requirement": "1.计算机科学、人工智能、数学或相关专业硕士及以上学历，5年以上NLP/语言大模型研发经验；\n2.主导参与过成熟大模型项目，有大语言模型领域全球领先企业工作经验优先；\n3.精通Transformer模型及其变种原理与架构，熟悉预训练、微调、对齐、模型蒸馏、量化等技术，熟悉PPO及GRPO等策略优化算法，具备强化学习训练经验优先；\n4.熟练掌握Python，熟悉PyTorch/TensorFlow等框架，具备大规模分布式训练经验；\n5.对技术保持高昂的热忱，具备优秀的分析问题和解决问题的能力，能够引领团队完成技术攻关。"
+    },
+    {
+      "Id": 0,
       "PostId": "2018311586535604224",
       "RecruitPostId": 117707,
       "RecruitPostName": "元宝搜索部-AI搜索召回算法工程师",
@@ -2762,29 +2808,6 @@
     },
     {
       "Id": 0,
-      "PostId": "1922126152059707392",
-      "RecruitPostId": 111958,
-      "RecruitPostName": "腾讯地图-地图出行领域AI算法专家",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "腾讯地图APP",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责地图出行领域大语言模型（LLM）的设计、训练、调优与评估，结合地图出行场景需求进行模型优化创新；\n2.架构设计合理的AI架构，解决地图出行场景中的业务和技术挑战；\n3.持续跟踪并分析AI大模型领域业届进展，探索技术突破方向，指导团队技术发展路径。",
-      "LastUpdateTime": "2026年01月16日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1922126152059707392",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "五年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1922126152059707392",
-      "Requirement": "1.计算机科学、人工智能、数学或相关专业硕士及以上学历，5年以上NLP/语言大模型研发经验；\n2.主导参与过成熟大模型项目，有大语言模型领域全球领先企业工作经验优先；\n3.精通Transformer模型及其变种原理与架构，熟悉预训练、微调、对齐、模型蒸馏、量化等技术，熟悉PPO及GRPO等策略优化算法，具备强化学习训练经验优先；\n4.熟练掌握Python，熟悉PyTorch/TensorFlow等框架，具备大规模分布式训练经验；\n5.对技术保持高昂的热忱，具备优秀的分析问题和解决问题的能力，能够引领团队完成技术攻关。"
-    },
-    {
-      "Id": 0,
       "PostId": "1995782398633205760",
       "RecruitPostId": 116346,
       "RecruitPostName": "AI Infra强化学习工程师​-(深圳)or(北京)or",
@@ -2818,27 +2841,27 @@
     },
     {
       "name": "扎实",
-      "value": 59
+      "value": 60
     },
     {
       "name": "AGENT",
-      "value": 46
+      "value": 47
     },
     {
       "name": "网络",
       "value": 43
     },
     {
-      "name": "数据库",
-      "value": 40
-    },
-    {
       "name": "PYTHON",
-      "value": 40
+      "value": 41
     },
     {
       "name": "数据结构",
-      "value": 39
+      "value": 40
+    },
+    {
+      "name": "数据库",
+      "value": 40
     },
     {
       "name": "GO",
@@ -2865,16 +2888,16 @@
       "value": 28
     },
     {
+      "name": "机器",
+      "value": 27
+    },
+    {
       "name": "落地",
       "value": 27
     },
     {
       "name": "深度",
       "value": 27
-    },
-    {
-      "name": "机器",
-      "value": 26
     },
     {
       "name": "专业本科",
@@ -2893,16 +2916,16 @@
       "value": 25
     },
     {
+      "name": "较强",
+      "value": 24
+    },
+    {
       "name": "环境",
       "value": 24
     },
     {
       "name": "微信",
       "value": 24
-    },
-    {
-      "name": "较强",
-      "value": 23
     },
     {
       "name": "一定",
@@ -2921,16 +2944,16 @@
       "value": 21
     },
     {
-      "name": "MYSQL",
+      "name": "操作系统",
       "value": 21
     },
     {
-      "name": "操作系统",
-      "value": 20
+      "name": "代码",
+      "value": 21
     }
   ],
   "stats": {
-    "total": 122,
-    "update_time": "2026-02-12 02:25:23"
+    "total": 123,
+    "update_time": "2026-02-13 02:26:44"
   }
 }
