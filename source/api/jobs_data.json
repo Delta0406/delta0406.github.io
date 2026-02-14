@@ -2,29 +2,6 @@
   "jobs": [
     {
       "Id": 0,
-      "PostId": "2016726997581058048",
-      "RecruitPostId": 117627,
-      "RecruitPostName": "元宝-Agent架构工程师",
-      "CountryName": "中国",
-      "LocationName": "北京",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "元宝",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责元宝在线产品的 Agent 系统整体架构设计与演进，包括Agent Runtime、Tool/Memory/Context 抽象、多 Agent 协作模式、Human-in-the-loop等；\r\n2.与算法/产品/业务高频密切合作，结合产品功能、模型能力边界与架构约束，实现 Agent 产品的整体架构方案设计；\r\n3.持续探索、研究并引入新的框架和 Agent 技术范式。",
-      "LastUpdateTime": "2026年02月04日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2016726997581058048",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2016726997581058048",
-      "Requirement": "1.本科及以上，计算机/自动化/AI 等相关背景，具备扎实工程基础；\r\n2.熟练至少一门主流语言（Python / TypeScript / Go 等），能熟练使用主流ai coding工具；\r\n3.了解 LLM 与 Agent 基本技术原理和常见范式；\r\n4.具备良好的产品sense和团队沟通协作能力。"
-    },
-    {
-      "Id": 0,
       "PostId": "2016726999816626176",
       "RecruitPostId": 117628,
       "RecruitPostName": "元宝-Agent架构工程师",
@@ -44,6 +21,29 @@
       "RequireWorkYearsName": "两年以上工作经验",
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2016726999816626176",
+      "Requirement": "1.本科及以上，计算机/自动化/AI 等相关背景，具备扎实工程基础；\r\n2.熟练至少一门主流语言（Python / TypeScript / Go 等），能熟练使用主流ai coding工具；\r\n3.了解 LLM 与 Agent 基本技术原理和常见范式；\r\n4.具备良好的产品sense和团队沟通协作能力。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2016726997581058048",
+      "RecruitPostId": 117627,
+      "RecruitPostName": "元宝-Agent架构工程师",
+      "CountryName": "中国",
+      "LocationName": "北京",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "元宝",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责元宝在线产品的 Agent 系统整体架构设计与演进，包括Agent Runtime、Tool/Memory/Context 抽象、多 Agent 协作模式、Human-in-the-loop等；\r\n2.与算法/产品/业务高频密切合作，结合产品功能、模型能力边界与架构约束，实现 Agent 产品的整体架构方案设计；\r\n3.持续探索、研究并引入新的框架和 Agent 技术范式。",
+      "LastUpdateTime": "2026年02月04日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2016726997581058048",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2016726997581058048",
       "Requirement": "1.本科及以上，计算机/自动化/AI 等相关背景，具备扎实工程基础；\r\n2.熟练至少一门主流语言（Python / TypeScript / Go 等），能熟练使用主流ai coding工具；\r\n3.了解 LLM 与 Agent 基本技术原理和常见范式；\r\n4.具备良好的产品sense和团队沟通协作能力。"
     },
     {
@@ -761,6 +761,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1967860587270660096",
+      "RecruitPostId": 114850,
+      "RecruitPostName": "后台开发高级工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "研发效能（企业IT部）",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责安全产品后台的模块架构设计、开发和维护工作；\r\n2.负责对现行系统的性能优化及数据库优化；\r\n3.借助公司DevOps平台，制定并落实团队研效质量工具、标准和流程，保障业务高可用。",
+      "LastUpdateTime": "2026年02月13日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1967860587270660096",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "五年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1967860587270660096",
+      "Requirement": "1.本科及以上学历，计算机相关专业，3年以上工作经验，具备扎实的数据结构和算法功底，较强的逻辑思维以及良好的分析解决问题的能力；\r\n2.熟悉Golang/C/C++语言，熟悉常用RPC，缓存，消息中间件等，了解原理和机制，并在实际生产系统有过实践；\r\n3.具备海量数据处理/企业安全系统/云原生开发/跨平台开发 研发经验者优先；\r\n4.具备良好的沟通能力，工作有责任心，积极主动。"
+    },
+    {
+      "Id": 0,
       "PostId": "1953842122331414528",
       "RecruitPostId": 114014,
       "RecruitPostName": "《穿越火线：虹》后台开发",
@@ -850,29 +873,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2003468876297428992",
       "Requirement": "1.本科及以上学历，计算机相关专业背景，基础知识扎实；\n2.熟练掌握Golang，愿意学习新技术；\n3.熟悉mysql、redis、es、mongo等存储，及常见的消息中间件；\n4.熟悉TCP/IP与HTTP等网络协议；\n5.有海量服务、高性能、分布式系统设计、开发经验者优先；\n6.具备良好的沟通表达能力及团队协作精神、有较强的主动性、责任心与执行能力，具备良好的分析、解决问题能力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1967860587270660096",
-      "RecruitPostId": 114850,
-      "RecruitPostName": "后台开发高级工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "研发效能（企业IT部）",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责安全产品后台的模块架构设计、开发和维护工作；\r\n2.负责对现行系统的性能优化及数据库优化；\r\n3.借助公司DevOps平台，制定并落实团队研效质量工具、标准和流程，保障业务高可用。",
-      "LastUpdateTime": "2026年01月14日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1967860587270660096",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "五年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1967860587270660096",
-      "Requirement": "1.本科及以上学历，计算机相关专业，3年以上工作经验，具备扎实的数据结构和算法功底，较强的逻辑思维以及良好的分析解决问题的能力；\r\n2.熟悉Golang/C/C++语言，熟悉常用RPC，缓存，消息中间件等，了解原理和机制，并在实际生产系统有过实践；\r\n3.具备海量数据处理/企业安全系统/云原生开发/跨平台开发 研发经验者优先；\r\n4.具备良好的沟通能力，工作有责任心，积极主动。"
     },
     {
       "Id": 0,
@@ -2129,7 +2129,7 @@
       "ProductName": "运营管理（运营管理部）",
       "CategoryName": "技术",
       "Responsibility": "1.负责公司整体AI平台架构设计和AI工程化技术。通过AI基础设施和软硬件协同优化来提升公司大模型训练和推理的效率。负责前沿异构计算芯片、大模型推理优化、大规模训练的技术演进跟踪和落地。",
-      "LastUpdateTime": "2025年12月08日",
+      "LastUpdateTime": "2026年02月13日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1989222729840218112",
       "SourceID": 1,
       "IsCollect": false,
@@ -2256,6 +2256,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1977659186384887808",
+      "RecruitPostId": 115279,
+      "RecruitPostName": "运营规划工程师-AI&GPU方向",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "公共",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责异构/AI产品的技术架构分析与对比，深入剖析技术细节，挖掘成本优化空间；\r\n2.负责GPU利用率效能优化，通过装箱策略、调度策略优化及软硬协同技术持续优化平台成本与效能；\r\n3.负责持续跟踪AI芯片/AI行业技术发展趋势，探索分析领域技术发展，参与异构类机型规划和生命周期管理；\r\n4.参与跨部门的联合项目管理工作。",
+      "LastUpdateTime": "2026年02月13日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1977659186384887808",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1977659186384887808",
+      "Requirement": "1.计算机相关专业硕士及以上学历，有互联网产品或云平台的后台开发经验；\r\n2.有云计算、虚拟化、GPU及K8S运维、开发或开源软件维护经验者优先；\r\n3.有高并发、高可靠、大规模的后台服务系统架构设计经验者优先；\r\n4.工作踏实、积极主动、能够承受一定的工作压力；\r\n5.具有良好的分析、研究和解决问题能力，具备较强的沟通表达、团队协作和项目管理能力。"
+    },
+    {
+      "Id": 0,
       "PostId": "1945294237776060416",
       "RecruitPostId": 113409,
       "RecruitPostName": "视频AI技术专家(深圳/北京)",
@@ -2299,29 +2322,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1913967083469774848",
       "Requirement": "1.精通传统CV算法、深度学习和机器学习，精通前沿的AI框架（CNN、Transformer、Diffusion、VAE）和训练框架；\n2.具备TVM/ONNXRuntime/TensorRT/vllm等推理框架实战经验，精通CUDA编程及硬件加速原理；\n3.已经深耕工业界多年并有成功的AI视频产品经验，或在学术界有深厚的学术成果；\n4.良好的团队协作和沟通能力，能够引导和激励团队成员；\n5.对AI视频技术有强烈热情和前瞻性，愿意在这个领域深入研究和创新。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1977659186384887808",
-      "RecruitPostId": 115279,
-      "RecruitPostName": "运营规划工程师-AI&GPU方向",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "公共",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责异构/AI产品的技术架构分析与对比，深入剖析技术细节，挖掘成本优化空间；\r\n2.负责GPU利用率效能优化，通过装箱策略、调度策略优化及软硬协同技术持续优化平台成本与效能；\r\n3.负责持续跟踪AI芯片/AI行业技术发展趋势，探索分析领域技术发展，参与异构类机型规划和生命周期管理；\r\n4.参与跨部门的联合项目管理工作。",
-      "LastUpdateTime": "2026年01月14日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1977659186384887808",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1977659186384887808",
-      "Requirement": "1.计算机相关专业硕士及以上学历，有互联网产品或云平台的后台开发经验；\r\n2.有云计算、虚拟化、GPU及K8S运维、开发或开源软件维护经验者优先；\r\n3.有高并发、高可靠、大规模的后台服务系统架构设计经验者优先；\r\n4.工作踏实、积极主动、能够承受一定的工作压力；\r\n5.具有良好的分析、研究和解决问题能力，具备较强的沟通表达、团队协作和项目管理能力。"
     },
     {
       "Id": 0,
@@ -2578,29 +2578,6 @@
     },
     {
       "Id": 0,
-      "PostId": "1955078217522106368",
-      "RecruitPostId": 114070,
-      "RecruitPostName": "《穿越火线：虹》UE5客户端开发（怪物/AI）",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "CFH-手游APP",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责基于UE5引擎的高品质怪物系统的开发与打磨；\n2.负责玩家扮演怪物的开发制作，包括3C、技能战斗、动画表现、网络同步等工作；\n3.负责AI怪物的开发制作，包括AI行为、导航寻路、技能系统、动画表现、物理模拟等工作；\n4.评估技术方案可行性，推进核心技术方案落地，持续完善怪物框架；\n5.建设完善开发工具链，提高怪物制作管线效率。",
-      "LastUpdateTime": "2026年02月11日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1955078217522106368",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1955078217522106368",
-      "Requirement": "1.熟悉UE开发，有2年及以上游戏客户端开发经验；\n2.熟练使用C++，熟悉TypeScript、Lua等脚本语言，计算机相关基础扎实；\n3.具备良好的沟通能力，优秀的学习能力，善于分析问题、解决问题；\n4.责任心强，对游戏技术有追求；\n5.有UE开发经验、FPS游戏开发经验者优先。"
-    },
-    {
-      "Id": 0,
       "PostId": "1950026512501678080",
       "RecruitPostId": 113715,
       "RecruitPostName": "资深测试开发工程师（AI评测方向）",
@@ -2828,6 +2805,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1995782398633205760",
       "Requirement": "1.算机科学、软件工程、人工智能等相关专业，3 年以上工程化开发经验（含 1 年以上 RL 或深度学习基础设施相关经验）；\r\n2.熟练掌握 Python 编程，具备扎实的工程编码能力，熟悉 C/C++ 者优先（底层优化场景）；\r\n3.深入理解深度学习框架（PyTorch），精通分布式训练原理与实践（FSDP/DeepSpeed/Megatron/Ray 等工具使用经验）；\r\n4.具备强化学习基础，理解 RL 训练流程（智能体、环境、奖励机制、经验回放等核心组件），熟悉主流 RL 框架（Ray、VERL、rllm、Agentlightning）者优先；\r\n5.具备复杂系统设计能力，能独立负责基础设施模块的从 0 到 1 搭建；\r\n6.强问题排查能力，能快速定位训练过程中的工程问题（性能、稳定性、资源瓶颈）；\r\n7.良好的跨团队沟通能力，能准确理解算法需求并转化为工程方案；\r\n8.自驱力强，乐于跟进前沿技术，具备快速学习与落地能力。"
+    },
+    {
+      "Id": 0,
+      "PostId": "1997839366399086592",
+      "RecruitPostId": 116421,
+      "RecruitPostName": "游戏AI-高性能推理系统研发工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "游戏",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责腾讯“开悟”平台的AIGC及LLM的训练/推理支持，参与基于GPU的高性能计算（HPC）项目设计与开发，负责GPU芯片（NVIDIA/AMD等）的底层性能优化与调优；\r\n2.针对大模型推理、训练等场景，优化和扩展vLLM、SGLang等框架的核心模块，提升计算效率与资源利用率；\r\n3.深入分析GPU硬件架构特性（如Tensor Core、显存带宽、通信机制等），设计并实现高性能算子与算法；\r\n4.探索前沿技术方向（如混合专家模型MoE、动态计算图优化等），推动AI工程化落地的效率提升。",
+      "LastUpdateTime": "2025年12月08日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1997839366399086592",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1997839366399086592",
+      "Requirement": "1.熟悉NVIDIA CUDA/AMD ROCm编程，具备GPU内核优化经验（如PTX指令调优、显存带宽优化）；\r\n2.精通Megatron-LM、DeepSpeedI等分布式训练框架，有千亿参数模型并行训练实战经验；\r\n3.熟悉大模型训练全流程优化（数据加载、梯度累积、通信压缩等），能通过Profiling工具定位性能瓶颈；\r\n4.优先条件，有DeepSeek系列模型优化经验（如DualPipe调度、MLA注意力优化）或参与过相关开源项目贡献。"
     }
   ],
   "cloud": [
@@ -2841,7 +2841,7 @@
     },
     {
       "name": "扎实",
-      "value": 60
+      "value": 59
     },
     {
       "name": "AGENT",
@@ -2869,7 +2869,7 @@
     },
     {
       "name": "解决问题",
-      "value": 34
+      "value": 33
     },
     {
       "name": "LLM",
@@ -2954,6 +2954,6 @@
   ],
   "stats": {
     "total": 123,
-    "update_time": "2026-02-13 02:26:44"
+    "update_time": "2026-02-14 02:07:55"
   }
 }
