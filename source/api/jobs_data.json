@@ -968,29 +968,6 @@
     },
     {
       "Id": 0,
-      "PostId": "1892117343690072064",
-      "RecruitPostId": 110053,
-      "RecruitPostName": "WAF高级后台研发工程师 ",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "基础安全-三部",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责WAF系统核心功能的设计、开发和优化，包括流量接入、配置下发、大流量安全策略处理等模块；\r\n2.优化系统性能，解决高并发、低延迟场景下的技术难题（如百万级QPS流量处理）；\r\n3.参与WAF与各种云原生产品集成方案设计与落地；\r\n4.研究新型攻防模式，持续改进防御算法与规则匹配效率；\r\n5.编写技术文档，推动团队代码规范与系统可维护性提升；\r\n6.该岗位base地可open深圳/北京/杭州。",
-      "LastUpdateTime": "2026年01月28日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1892117343690072064",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "五年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1892117343690072064",
-      "Requirement": "1.计算机科学、网络安全或相关专业本科及以上学历，3年以上后台开发经验；\n2.扎实的计算机基础：精通数据结构/算法，熟悉Linux环境及网络编程（TCP/IP/HTTP/HTTPS）；\n3.至少精通一门后台语言（Go/C++/Python），有高并发、分布式系统开发经验；\n4.熟悉Web安全原理，了解常见攻防手段（如OWASP Top 10）及防御方案；\n5.熟悉正则表达式、规则引擎（如YARA）、协议解析等技术细节；\n6.具备良好的系统设计能力，能独立完成模块从设计到落地的全流程。"
-    },
-    {
-      "Id": 0,
       "PostId": "2006255023629160448",
       "RecruitPostId": 116948,
       "RecruitPostName": "云游戏-后台开发工程师",
@@ -1669,7 +1646,7 @@
       "ProductName": "应用宝",
       "CategoryName": "技术",
       "Responsibility": "1.  负责移动广告系统后台架构和链路优化，提升系统稳定性和商业变现效率；\n2.  负责PC商业生态系统架构设计与能力规划，包括服务性能、链路耗时、迭代效率等优化；\n3.  与运营/产品团队紧密配合，做好需求和项目管理，协调多模块团队，确保项目落地并达成业务目标；\n4.  研究前沿技术（如AI广告），主导技术预研与创新方案落地。\n\n",
-      "LastUpdateTime": "2026年02月28日",
+      "LastUpdateTime": "2026年03月01日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1996780324880801792",
       "SourceID": 1,
       "IsCollect": false,
@@ -1770,6 +1747,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2004170771991252992",
       "Requirement": "1.精通 C/C++ 开发语言、常用算法和数据结构；\n2.1 年以上 Linux/Unix 后台开发工作经验；\n3.熟悉 TCP/UDP 协议网络编程编程，了解 shell 脚本；\n4.有大模型使用经验、了解规约编程更佳。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2020752169602547712",
+      "RecruitPostId": 117805,
+      "RecruitPostName": "搜狗输入法-后台开发高级工程师",
+      "CountryName": "中国",
+      "LocationName": "北京",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "输入法",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责搜狗输入法打字内核开发与优化，包括但不限于端/云打字引擎架构升级、核心组件研发等；\r\n2.参与输入法核心逻辑的研发与改进，提升输入准确率和响应速度；\r\n3.与产品经理紧密协作，理解需求并转化为技术方案，推动项目按时高质量交付；\r\n4.持续优化输入法的性能与稳定性，解决用户反馈的问题，提升用户满意度；\r\n5.跟踪行业技术趋势，探索新技术在输入法场景中的应用，推动产品创新。",
+      "LastUpdateTime": "2026年02月24日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2020752169602547712",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "五年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2020752169602547712",
+      "Requirement": "1.计算机相关专业本科及以上学历；\r\n2.熟练掌握C/C++编程语言，具备扎实的数据结构和算法基础；\r\n3.熟悉移动端/PC端多平台开发技术栈，有输入法、搜索引擎等相关经验者优先；\r\n4.具备良好的问题分析与解决能力，能够独立完成复杂功能的开发与调试；\r\n5.有较强的学习能力和责任心，良好的团队协作精神和沟通能力。"
     },
     {
       "Id": 0,
@@ -2440,6 +2440,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2028045000553689088",
+      "RecruitPostId": 118022,
+      "RecruitPostName": "AW项目组-AI产品前端工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "预算专用-AW",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责Web应用核心开发，搭建高质量可复用的前端架构及组件体系；\r\n2.负责前端状态管理与样式系统，保障数据流清晰、界面一致；\r\n3.集成各类复杂交互组件，保障良好用户体验；\r\n4.参与前端游戏相关开发，处理Canvas渲染、触控交互及动画；\r\n5.编写测试、维护组件文档，保障代码质量与可维护性；\r\n6.对接LLM API，参与AI对话界面及Agent工作流前端实现。",
+      "LastUpdateTime": "2026年03月01日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028045000553689088",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2028045000553689088",
+      "Requirement": "1.精通TypeScript、主流前端框架及构建工具，有monorepo架构实践经验；\n2.熟练掌握前端状态管理、样式解决方案，能搭建可复用设计系统；\n3.熟悉HTML5 Canvas/WebGL，有互动内容或小游戏开发经验；\n4.具备良好工程素养，重视代码质量、错误处理、日志规范及国际化；\n5.理解Feature-First架构及DDD分层思想，能实现全链路类型安全；\n6.深度运用AI编程工具，高效驾驭AI辅助工作流，契合团队Vibe Coding核心模式。"
+    },
+    {
+      "Id": 0,
       "PostId": "1773304136457003008",
       "RecruitPostId": 104087,
       "RecruitPostName": "AI硬件加速解决方案架构师",
@@ -2902,14 +2925,14 @@
   "cloud": [
     {
       "name": "AI",
-      "value": 135
-    },
-    {
-      "name": "LINUX",
-      "value": 58
+      "value": 138
     },
     {
       "name": "扎实",
+      "value": 57
+    },
+    {
+      "name": "LINUX",
       "value": 57
     },
     {
@@ -2918,14 +2941,10 @@
     },
     {
       "name": "网络",
-      "value": 42
+      "value": 41
     },
     {
       "name": "数据结构",
-      "value": 40
-    },
-    {
-      "name": "PYTHON",
       "value": 40
     },
     {
@@ -2933,8 +2952,12 @@
       "value": 39
     },
     {
-      "name": "GO",
+      "name": "PYTHON",
       "value": 39
+    },
+    {
+      "name": "GO",
+      "value": 38
     },
     {
       "name": "LLM",
@@ -2949,15 +2972,11 @@
       "value": 30
     },
     {
-      "name": "专业本科",
-      "value": 28
-    },
-    {
       "name": "深度",
-      "value": 28
+      "value": 29
     },
     {
-      "name": "落地",
+      "name": "专业本科",
       "value": 28
     },
     {
@@ -2965,7 +2984,7 @@
       "value": 27
     },
     {
-      "name": "分布式系统",
+      "name": "落地",
       "value": 27
     },
     {
@@ -2977,8 +2996,12 @@
       "value": 26
     },
     {
-      "name": "协议",
+      "name": "分布式系统",
       "value": 26
+    },
+    {
+      "name": "协议",
+      "value": 25
     },
     {
       "name": "JAVA",
@@ -2989,19 +3012,19 @@
       "value": 25
     },
     {
-      "name": "一门",
+      "name": "较强",
       "value": 24
     },
     {
-      "name": "较强",
-      "value": 24
+      "name": "一门",
+      "value": 23
     },
     {
       "name": "掌握",
       "value": 23
     },
     {
-      "name": "计算机科学",
+      "name": "代码",
       "value": 22
     },
     {
@@ -3009,11 +3032,11 @@
       "value": 22
     },
     {
-      "name": "TCP",
-      "value": 22
+      "name": "主流",
+      "value": 21
     },
     {
-      "name": "常见",
+      "name": "计算机科学",
       "value": 21
     },
     {
@@ -3022,7 +3045,7 @@
     }
   ],
   "stats": {
-    "total": 126,
-    "update_time": "2026-03-01 02:29:17"
+    "total": 127,
+    "update_time": "2026-03-02 02:12:37"
   }
 }
