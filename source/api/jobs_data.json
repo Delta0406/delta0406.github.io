@@ -1336,6 +1336,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1948926367043264512",
+      "RecruitPostId": 113673,
+      "RecruitPostName": "智能体-后台开发工程师-CodeBuddy/WorkBuddy",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯云",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责大语言模型后台服务架构设计、开发和维护工作；\n2.参与新技术调研及实际业务场落地，不断提升业务指标；\n3.负责后台系统的性能优化、稳定性、流程建设和研效提升。",
+      "LastUpdateTime": "2026年03月14日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1948926367043264512",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1948926367043264512",
+      "Requirement": "1.大学本科及以上学历，计算机相关专业，相关工作经验3年以上；\n2.熟悉业务系统的高并发、高可用、一致性的解决方案，以及大规模分布式系统设计/开发/运营经验；\n3.具备良好的沟通表达能力及团队协作精神、有较强的主动性、责任心与执行能力，能独立承担任务和有系统进度把控能力。"
+    },
+    {
+      "Id": 0,
       "PostId": "1976943990431440896",
       "RecruitPostId": 115225,
       "RecruitPostName": "《三角洲行动》-后台开发工程师",
@@ -1356,29 +1379,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1976943990431440896",
       "Requirement": "1.精通Go/C/C++的至少一种，基础扎实，具备大型项目开发经验；\n2.具备大规模高可用微服务架构设计开发经验；\n3.熟悉Linux系统、shell命令、调试工具等；\n4.熟悉TCP/IP原理，有网络编程经验；\n5.聪明好学，具备较强的分析和解决问题能力；\n6.热爱游戏行业，易于沟通协作， 自驱力强。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1948926367043264512",
-      "RecruitPostId": 113673,
-      "RecruitPostName": "智能体-后台开发工程师-CodeBuddy/WorkBuddy",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "腾讯云",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责大语言模型后台服务架构设计、开发和维护工作；\n2.参与新技术调研及实际业务场落地，不断提升业务指标；\n3.负责后台系统的性能优化、稳定性、流程建设和研效提升。",
-      "LastUpdateTime": "2026年03月13日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1948926367043264512",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1948926367043264512",
-      "Requirement": "1.大学本科及以上学历，计算机相关专业，相关工作经验3年以上；熟悉Linux操作系统，熟练掌握C/C++、Go、Python；具备扎实的网络编程经验，熟悉TCP/IP、HTTP、RESTful API等网络协议，能够处理复杂的网络通信问题；\r\n2.熟悉业务系统的高并发、高可用、一致性的解决方案，以及大规模分布式系统设计/开发/运营经验；\r\n3.有大语言模型训练、评估、部署、应用等相关经验；熟悉spark、hadoop等大数据处理工具，处理大规模语料；深入了解过triton/vllm/TensorRT-LLM/langchain等项目的代码者优先；\r\n4.具备良好的沟通表达能力及团队协作精神、有较强的主动性、责任心与执行能力，能独立承担任务和有系统进度把控能力。"
     },
     {
       "Id": 0,
@@ -3140,31 +3140,31 @@
     },
     {
       "name": "扎实",
-      "value": 52
-    },
-    {
-      "name": "LINUX",
       "value": 51
     },
     {
+      "name": "LINUX",
+      "value": 50
+    },
+    {
       "name": "PYTHON",
-      "value": 38
+      "value": 37
     },
     {
       "name": "GO",
-      "value": 38
-    },
-    {
-      "name": "LLM",
-      "value": 36
+      "value": 37
     },
     {
       "name": "数据结构",
       "value": 35
     },
     {
-      "name": "网络",
+      "name": "LLM",
       "value": 35
+    },
+    {
+      "name": "网络",
+      "value": 34
     },
     {
       "name": "解决问题",
@@ -3199,16 +3199,16 @@
       "value": 24
     },
     {
-      "name": "工具",
-      "value": 23
-    },
-    {
       "name": "机器",
       "value": 23
     },
     {
       "name": "GOLANG",
       "value": 23
+    },
+    {
+      "name": "工具",
+      "value": 22
     },
     {
       "name": "较强",
@@ -3227,12 +3227,12 @@
       "value": 22
     },
     {
-      "name": "代码",
+      "name": "UE",
       "value": 21
     },
     {
-      "name": "UE",
-      "value": 21
+      "name": "代码",
+      "value": 20
     },
     {
       "name": "掌握",
@@ -3243,16 +3243,16 @@
       "value": 20
     },
     {
-      "name": "TCP",
-      "value": 20
+      "name": "计算机科学",
+      "value": 19
     },
     {
-      "name": "计算机科学",
+      "name": "场景",
       "value": 19
     }
   ],
   "stats": {
     "total": 136,
-    "update_time": "2026-03-14 02:08:10"
+    "update_time": "2026-03-15 02:32:57"
   }
 }
