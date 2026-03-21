@@ -21,24 +21,24 @@
   <meta name="author" content="执妄">
   <meta name="keywords" content="执妄, 博客, C++, python, software, algorithm">
   
-    <meta name="description" content="前言CRTP（Curiously Recurring Template Pattern），奇异递归模板是一种特征的模板技术，其特征为：  基类是一个模版类 派生类继承该基类时，将派生类自身作为模板参数传递给基类  CRTP范例CRTP的一个范例如下，Base类通过static_cast将基类指针转换为派生类。由于没有动态类型检查，这个过程是不一定安全的。但Base&lt;Derived&gt;是利">
-<meta property="og:type" content="article">
-<meta property="og:title" content="CRTP：奇异递归模板">
-<meta property="og:url" content="https://delta0406.github.io/2025/11/17/%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/CRTP%EF%BC%9A%E5%A5%87%E5%BC%82%E9%80%92%E5%BD%92%E6%A8%A1%E6%9D%BF/">
+    <meta property="og:type" content="article">
+<meta property="og:title" content="执妄的博客">
+<meta property="og:url" content="https://delta0406.github.io/2026/03/22/%E6%8A%80%E6%9C%AF/%E5%85%B6%E4%BB%96/%E6%B5%8B%E8%AF%95/">
 <meta property="og:site_name" content="执妄的博客">
-<meta property="og:description" content="前言CRTP（Curiously Recurring Template Pattern），奇异递归模板是一种特征的模板技术，其特征为：  基类是一个模版类 派生类继承该基类时，将派生类自身作为模板参数传递给基类  CRTP范例CRTP的一个范例如下，Base类通过static_cast将基类指针转换为派生类。由于没有动态类型检查，这个过程是不一定安全的。但Base&lt;Derived&gt;是利">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-11-17T12:40:27.000Z">
-<meta property="article:modified_time" content="2026-03-21T15:17:34.919Z">
+<meta property="og:image" content="https://delta0406.github.io/2026/03/22/%E6%8A%80%E6%9C%AF/%E5%85%B6%E4%BB%96/%E6%B5%8B%E8%AF%95/rebase%E7%A4%BA%E4%BE%8B.png">
+<meta property="article:published_time" content="2026-03-21T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-21T16:22:23.609Z">
 <meta property="article:author" content="执妄">
-<meta property="article:tag" content="奇异递归模板">
+<meta property="article:tag" content="执妄, 博客, C++, python, software, algorithm">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://delta0406.github.io/2026/03/22/%E6%8A%80%E6%9C%AF/%E5%85%B6%E4%BB%96/%E6%B5%8B%E8%AF%95/rebase%E7%A4%BA%E4%BE%8B.png">
   
   
   
     <meta name="google-site-verification" content="fHGgGYx4CCLMgmWi9s89Pa1tns-wnmdX-oik721kJUc" />
   
-  <title>CRTP：奇异递归模板 - 执妄的博客</title>
+  <title>执妄的博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -229,7 +229,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="CRTP：奇异递归模板"></span>
+            <span id="subtitle" data-typed-text=""></span>
           
         </div>
 
@@ -240,8 +240,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-11-17 20:40" pubdate>
-          2025年11月17日 晚上
+        <time datetime="2026-03-22 00:00" pubdate>
+          2026年3月22日 凌晨
         </time>
       </span>
     
@@ -252,7 +252,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          817 字
+          0 字
         
       </span>
     
@@ -263,7 +263,7 @@
         
         
         
-          7 分钟
+          1 分钟
         
       </span>
     
@@ -309,37 +309,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">CRTP：奇异递归模板</h1>
+            <h1 id="seo-header"></h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>CRTP（Curiously Recurring Template Pattern），奇异递归模板是一种特征的模板技术，其特征为：</p>
-<ul>
-<li>基类是一个模版类</li>
-<li>派生类继承该基类时，将派生类自身作为模板参数传递给基类</li>
-</ul>
-<h1 id="CRTP范例"><a href="#CRTP范例" class="headerlink" title="CRTP范例"></a>CRTP范例</h1><p>CRTP的一个范例如下，<code>Base</code>类通过<code>static_cast</code>将基类指针转换为派生类。由于没有动态类型检查，这个过程是不一定安全的。但<code>Base&lt;Derived&gt;</code>是利用子类信息生成的，即<code>static_cast</code>是一定绑定到<code>Derived</code>上的，不会出现错误。此外，<code>static_cast</code>执行的前提是<code>Derived</code>必须是<code>Base&lt;Derived&gt;</code>的子类，这就保证了模板参数<code>T</code>的实参和<code>Base</code>之间的继承关系，因此转换能够保证安全。</p>
-<blockquote>
-<p><code>static_cast</code>不安全是因为它不会做动态类型判断，但它要求两者之间的继承关系在编译期已知。<br>CRTP能够在模板实例化时固定继承关系 </p>
-</blockquote>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-comment">// 基类是模板类</span><br><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Base</span><br>&#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-keyword">virtual</span> ~<span class="hljs-built_in">Base</span>() &#123;&#125;<br> <br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">()</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">auto</span> t = <span class="hljs-built_in">static_cast</span>&lt;T *&gt;(<span class="hljs-keyword">this</span>))<br>        &#123;<br>            t-&gt;<span class="hljs-built_in">op</span>();<br>        &#125;<br>    &#125;<br>&#125;;<br> <br><span class="hljs-comment">// 派生类Derived继承自Base，并以自身作为模板参数传递给基类</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Derived</span> : <span class="hljs-keyword">public</span> Base&lt;Derived&gt;<br>&#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">op</span><span class="hljs-params">()</span></span><br><span class="hljs-function">    </span>&#123;<br>        std::cout &lt;&lt; <span class="hljs-string">&quot;Derived::op()&quot;</span> &lt;&lt; std::endl;<br>    &#125;<br>&#125;;<br></code></pre></td></tr></table></figure>
-
-<h1 id="CRTP的用法"><a href="#CRTP的用法" class="headerlink" title="CRTP的用法"></a>CRTP的用法</h1><h2 id="静态多态"><a href="#静态多态" class="headerlink" title="静态多态"></a>静态多态</h2><p>多态是指同一个方法在基类和不同的派生类之间有不同的行为。CRTP中每个派生类继承的基类随着模板参数的不同而不同，将虚函数调用转换为函数指针的调用，能够避免通过指针查找虚函数表的开销，提高计算效率。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Base</span><br>&#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-built_in">Base</span>() &#123;&#125;<br>    <span class="hljs-keyword">virtual</span> ~<span class="hljs-built_in">Base</span>() &#123;&#125;<br> <br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">func</span><span class="hljs-params">()</span></span><br><span class="hljs-function">    </span>&#123;<br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">auto</span> t = <span class="hljs-built_in">static_cast</span>&lt;T *&gt;(<span class="hljs-keyword">this</span>))<br>        &#123;<br>            t-&gt;<span class="hljs-built_in">op</span>();<br>        &#125;<br>    &#125;<br>&#125;;<br> <br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Derived1</span> : <span class="hljs-keyword">public</span> Base&lt;Derived1&gt;<br>&#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-built_in">Derived1</span>() &#123;&#125;<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">op</span><span class="hljs-params">()</span></span><br><span class="hljs-function">    </span>&#123;<br>        std::cout &lt;&lt; <span class="hljs-string">&quot;Derived1::op()&quot;</span> &lt;&lt; std::endl;<br>    &#125;<br>&#125;;<br> <br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Derived2</span> : <span class="hljs-keyword">public</span> Base&lt;Derived2&gt;<br>&#123;<br><span class="hljs-keyword">public</span>:<br>    <span class="hljs-built_in">Derived2</span>() &#123;&#125;<br>    <span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">op</span><span class="hljs-params">()</span></span><br><span class="hljs-function">    </span>&#123;<br>        std::cout &lt;&lt; <span class="hljs-string">&quot;Derived2::op()&quot;</span> &lt;&lt; std::endl;<br>    &#125;<br>&#125;;<br> <br><span class="hljs-comment">// 辅助函数：完成静态分发</span><br><span class="hljs-function"><span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> DerivedClass&gt;</span><br><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">helperFunc</span><span class="hljs-params">(Base&lt;DerivedClass&gt;&amp; d)</span></span><br><span class="hljs-function"></span>&#123;<br>    d.<span class="hljs-built_in">func</span>();<br>&#125;<br> <br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-type">int</span> argc, <span class="hljs-type">char</span>* argv[])</span> </span><br><span class="hljs-function"></span>&#123;<br>    Derived1 d1;<br>    Derived2 d2;<br>    <span class="hljs-built_in">helperFunc</span>(d1);<br>    <span class="hljs-built_in">helperFunc</span>(d2);<br> <br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
-<p>运行结果：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">Derived1::op()<br>Derived2::op()<br></code></pre></td></tr></table></figure>
-
-<h2 id="颠倒继承"><a href="#颠倒继承" class="headerlink" title="颠倒继承"></a>颠倒继承</h2><blockquote>
-<p>通过父类向子类添加功能：可以从子类中获取信息，在父类中统一实现某个功能</p>
-</blockquote>
-<p>我们以<code>InternalQueueBase</code>类为例，展示颠倒继承的作用。<code>InternalQueueBase</code>内部实现了一个<code>Node</code>类，它的<code>next</code>和<code>prev</code>函数利用颠倒继承和<code>reinterpret_cast</code>的强制类型转换，让父类获得了返回子类指针的能力，从而让子类通过继承拥有了对应的能力。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> LockType, <span class="hljs-keyword">typename</span> T&gt;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">InternalQueueBase</span> &#123;<br> <span class="hljs-keyword">public</span>:<br>  <span class="hljs-keyword">struct</span> <span class="hljs-title class_">Node</span> &#123;<br>   <span class="hljs-keyword">public</span>:<br>    <span class="hljs-built_in">Node</span>() : <span class="hljs-built_in">parent_queue</span>(<span class="hljs-literal">NULL</span>), <span class="hljs-built_in">next_node</span>(<span class="hljs-literal">NULL</span>), <span class="hljs-built_in">prev_node</span>(<span class="hljs-literal">NULL</span>) &#123;&#125;<br>    <span class="hljs-keyword">virtual</span> ~<span class="hljs-built_in">Node</span>() &#123;&#125;<br><br>    <span class="hljs-comment">/// Returns the Next/Prev node or NULL if this is the end/front.</span><br>    <span class="hljs-function">T* <span class="hljs-title">next</span><span class="hljs-params">()</span> <span class="hljs-type">const</span> </span>&#123;<br>      <span class="hljs-function">boost::lock_guard&lt;LockType&gt; <span class="hljs-title">lock</span><span class="hljs-params">(parent_queue-&gt;lock_)</span></span>;<br>      <span class="hljs-keyword">return</span> <span class="hljs-built_in">reinterpret_cast</span>&lt;T*&gt;(next_node);<br>    &#125;<br>    <span class="hljs-function">T* <span class="hljs-title">prev</span><span class="hljs-params">()</span> <span class="hljs-type">const</span> </span>&#123;<br>      <span class="hljs-function">boost::lock_guard&lt;LockType&gt; <span class="hljs-title">lock</span><span class="hljs-params">(parent_queue-&gt;lock_)</span></span>;<br>      <span class="hljs-keyword">return</span> <span class="hljs-built_in">reinterpret_cast</span>&lt;T*&gt;(prev_node);<br>    &#125;<br><br>   <span class="hljs-keyword">private</span>:<br>    <span class="hljs-keyword">friend</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">InternalQueueBase</span>&lt;LockType, T&gt;;<br><br>    Node* next_node;<br>    Node* prev_node;<br>  &#125;;<br></code></pre></td></tr></table></figure>
-
-<p>这里的<code>Block</code>通过<code>CRTP</code>的方式继承了<code>InternalQueue&lt;Block&gt;::Node</code>，于是自动成为线程安全的<code>Queue</code>中的节点，而<code>Block</code>类的<code>next</code>和<code>prev</code>方法可以自动返回指向<code>Block</code>的指针。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Block</span> : <span class="hljs-keyword">public</span> InternalQueue&lt;Block&gt;::Node &#123;<br>   <span class="hljs-keyword">public</span>:<br>       <span class="hljs-comment">// A null dtor to pass codestyle check</span><br>       ~<span class="hljs-built_in">Block</span>() &#123;&#125;<br></code></pre></td></tr></table></figure>
-
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/sinat_21107433/article/details/123145236">【C++】CRTP：奇异递归模板模式</a><br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/happenlee/p/13278640.html">C++雾中风景14:CRTP, 模板的黑魔法</a></p>
+                <p><img src="rebase%E7%A4%BA%E4%BE%8B.png" srcset="/img/loading.gif" lazyload alt="rebase示例"></p>
 
                 
               </div>
@@ -348,34 +323,6 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="../../../../../../categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" class="category-chain-item">设计模式</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
-  
-    <div class="post-meta">
-      <i class="iconfont icon-tags"></i>
-      
-        <a href="../../../../../../tags/%E5%A5%87%E5%BC%82%E9%80%92%E5%BD%92%E6%A8%A1%E6%9D%BF/" class="print-no-link">#奇异递归模板</a>
-      
-    </div>
   
 </div>
 
@@ -385,8 +332,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>CRTP：奇异递归模板</div>
-      <div>https://delta0406.github.io/2025/11/17/技术/设计模式/CRTP：奇异递归模板/</div>
+      <div></div>
+      <div>https://delta0406.github.io/2026/03/22/技术/其他/测试/</div>
     </div>
     <div class="license-meta">
       
@@ -398,7 +345,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年11月17日</div>
+          <div>2026年3月22日</div>
         </div>
       
       
@@ -430,18 +377,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="../%E4%BD%BF%E7%94%A8CRTP%E5%AE%9E%E7%8E%B0%E4%B8%8A%E4%B8%8B%E6%96%87%E9%99%90%E5%80%BC/" title="使用CRTP实现上下文限值">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">使用CRTP实现上下文限值</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="../../../../13/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/CPP/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94malloc-free/" title="C++内存管理机制——malloc_free">
-                        <span class="hidden-mobile">C++内存管理机制——malloc_free</span>
+                      <a href="../../../../../../2025/12/18/%E6%8A%80%E6%9C%AF/%E5%85%B6%E4%BB%96/rebase%E5%92%8Cmerge%E7%9A%84%E5%8C%BA%E5%88%AB%E8%AF%A6%E8%A7%A3/" title="rebase和merge的区别详解">
+                        <span class="hidden-mobile">rebase和merge的区别详解</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
