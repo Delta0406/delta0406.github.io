@@ -30,7 +30,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://delta0406.github.io/images/git/rebase%E7%A4%BA%E4%BE%8B.png">
 <meta property="article:published_time" content="2025-12-18T12:10:26.000Z">
-<meta property="article:modified_time" content="2025-12-28T13:51:20.523Z">
+<meta property="article:modified_time" content="2026-03-21T10:52:57.953Z">
 <meta property="article:author" content="执妄">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary_large_image">
@@ -190,6 +190,18 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/jobs" target="_self">
+                <i class="iconfont icon-briefcase"></i>
+                <span>招聘</span>
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
@@ -308,7 +320,7 @@
 <h1 id="合并（merge）"><a href="#合并（merge）" class="headerlink" title="合并（merge）"></a>合并（merge）</h1><p>一个典型的例子是，从节点A开始，团队开发了B和C功能并合并到了主分支，而你在一个特性分支开发了D和F。执行<code>git checkout main</code>命令切换到主分支后，再运行<code>git merge feature</code>将特性分支合并进来。此时，git会创建一个新的提交$\hat{E}$，它将两个分支合并在一起，不对现有提交做任何改动，仅增加一个合并提交声明，此处已将特性分支和主分支合并到一起。这种情况下，原始的分支结构以及所有提交原数据（包括时间戳、作者信息等）都会被完整保留。</p>
 <p>合并虽然保留了所有信息，但是运行<code>git log --oneline --graph</code>命令时，会看到分支和合并点交织成的树状结构，很难理清谁在什么时间做了什么事，以及为什么这么做。此外，还可能看到重复的提交记录、合并噪音或者顺序错乱的提交。</p>
 <h1 id="变基（rebase）"><a href="#变基（rebase）" class="headerlink" title="变基（rebase）"></a>变基（rebase）</h1><p>使用变基可以让所有提交呈直线，易读、易二分、易调试。但是会付出重写提交历史的代价，在共享分支中可能不安全。</p>
-<p>执行<code>git checkout feature</code>命令切换到<code>feature</code>分支，然后运行<code>git rebase main</code>命令将<code>feature</code>变基到<code>main</code>分支上。此时，git会在C提交点之上，将D和E提交作为新的提交重新应用，此时版本提交记录显示为：A-&gt;B-&gt;C-&gt;D-&gt;E，形成一条直线型提交记录。这样做的话，git会创建新的提交记录，而不会复用原有的提交。因此，尽管代码内容可能相同，但经过变基后的提交记录依次是：A-&gt;B-&gt;C-&gt;$\hat{D}$-&gt;$\hat{E}$。$\hat{D}$和$\hat{E}$使用的是新ID，从技术角度看，原始的D和E已不在属于主历史线。<br><img src="/../images/git/rebase%E7%A4%BA%E4%BE%8B.png" srcset="/img/loading.gif" lazyload alt="rebase示例"></p>
+<p>执行<code>git checkout feature</code>命令切换到<code>feature</code>分支，然后运行<code>git rebase main</code>命令将<code>feature</code>变基到<code>main</code>分支上。此时，git会在C提交点之上，将D和E提交作为新的提交重新应用，此时版本提交记录显示为：A-&gt;B-&gt;C-&gt;D-&gt;E，形成一条直线型提交记录。这样做的话，git会创建新的提交记录，而不会复用原有的提交。因此，尽管代码内容可能相同，但经过变基后的提交记录依次是：A-&gt;B-&gt;C-&gt;$\hat{D}$-&gt;$\hat{E}$。$\hat{D}$和$\hat{E}$使用的是新ID，从技术角度看，原始的D和E已不在属于主历史线。<br><img src="/./images/git/rebase%E7%A4%BA%E4%BE%8B.png" srcset="/img/loading.gif" lazyload alt="rebase示例"></p>
 
                 
               </div>
