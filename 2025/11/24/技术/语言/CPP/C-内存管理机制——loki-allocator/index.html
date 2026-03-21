@@ -8,8 +8,8 @@
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/head_photo.jpg">
-  <link rel="icon" href="/img/head_photo.jpg">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../../../../../img/head_photo.jpg">
+  <link rel="icon" href="../../../../../../../img/head_photo.jpg">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -28,19 +28,19 @@
 <meta property="og:site_name" content="执妄的博客">
 <meta property="og:description" content="上中下3个classloki::allocator中包含3个类，从上层至下层分别为SmallObjAllocator、FixedAllocator和Chunk。  ChunkInit是由上层的类来调用的，不会提供给用户。其会申请blockSize * blocks大小的内存，并调用Reset来重置第一块可以使用的的内存索引firstAvailableBlock_为0，可使用的块数量blocksAv">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://delta0406.github.io/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_129.jpg">
-<meta property="og:image" content="https://delta0406.github.io/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_137.jpg">
-<meta property="og:image" content="https://delta0406.github.io/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_138.jpg">
-<meta property="og:image" content="https://delta0406.github.io/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_139.jpg">
-<meta property="og:image" content="https://delta0406.github.io/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_140.jpg">
-<meta property="og:image" content="https://delta0406.github.io/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_141.jpg">
-<meta property="og:image" content="https://delta0406.github.io/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_142.jpg">
+<meta property="og:image" content="https://delta0406.github.io/2025/11/24/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/CPP/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94loki-allocator/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_129.jpg">
+<meta property="og:image" content="https://delta0406.github.io/2025/11/24/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/CPP/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94loki-allocator/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_137.jpg">
+<meta property="og:image" content="https://delta0406.github.io/2025/11/24/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/CPP/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94loki-allocator/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_138.jpg">
+<meta property="og:image" content="https://delta0406.github.io/2025/11/24/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/CPP/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94loki-allocator/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_139.jpg">
+<meta property="og:image" content="https://delta0406.github.io/2025/11/24/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/CPP/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94loki-allocator/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_140.jpg">
+<meta property="og:image" content="https://delta0406.github.io/2025/11/24/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/CPP/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94loki-allocator/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_141.jpg">
+<meta property="og:image" content="https://delta0406.github.io/2025/11/24/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/CPP/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94loki-allocator/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_142.jpg">
 <meta property="article:published_time" content="2025-11-24T11:47:12.000Z">
-<meta property="article:modified_time" content="2026-03-21T15:29:59.526Z">
+<meta property="article:modified_time" content="2026-03-21T15:20:10.858Z">
 <meta property="article:author" content="执妄">
 <meta property="article:tag" content="内存管理">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://delta0406.github.io/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_129.jpg">
+<meta name="twitter:image" content="https://delta0406.github.io/2025/11/24/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/CPP/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94loki-allocator/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_129.jpg">
   
   
   
@@ -70,12 +70,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="../../../../../../../css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="../../../../../../../css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="../../../../../../../css/highlight-dark.css" />
   
 
 
@@ -91,8 +91,8 @@
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="../../../../../../../js/utils.js" ></script>
+  <script  src="../../../../../../../js/color-schema.js" ></script>
   
 
   
@@ -122,7 +122,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="../../../../../../../index.html">
       <strong>执妄的博客</strong>
     </a>
 
@@ -141,7 +141,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
+              <a class="nav-link" href="../../../../../../../index.html" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -153,7 +153,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
+              <a class="nav-link" href="../../../../../../../archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -165,7 +165,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
+              <a class="nav-link" href="../../../../../../../categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -177,7 +177,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
+              <a class="nav-link" href="../../../../../../../tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -189,7 +189,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
+              <a class="nav-link" href="../../../../../../../about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -201,7 +201,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/jobs" target="_self">
+              <a class="nav-link" href="../../../../../../../jobs" target="_self">
                 <i class="iconfont icon-briefcase"></i>
                 <span>招聘</span>
               </a>
@@ -323,28 +323,28 @@
               <div class="markdown-body">
                 
                 <h1 id="上中下3个class"><a href="#上中下3个class" class="headerlink" title="上中下3个class"></a>上中下3个class</h1><p><code>loki::allocator</code>中包含3个类，从上层至下层分别为<code>SmallObjAllocator</code>、<code>FixedAllocator</code>和<code>Chunk</code>。</p>
-<p><img src="/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_129.jpg" srcset="/img/loading.gif" lazyload alt="3 classes"></p>
+<p><img src="%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_129.jpg" srcset="/img/loading.gif" lazyload alt="3 classes"></p>
 <h1 id="Chunk"><a href="#Chunk" class="headerlink" title="Chunk"></a>Chunk</h1><p><code>Init</code>是由上层的类来调用的，不会提供给用户。其会申请<code>blockSize * blocks</code>大小的内存，并调用<code>Reset</code>来重置第一块可以使用的的内存索引<code>firstAvailableBlock_</code>为0，可使用的块数量<code>blocksAvailable_</code>为<code>blocks</code>。随后，将内存块中每个块的最前面的一个字节当做索引，与嵌入式指针类似。<code>Release</code>是用来释放<code>Chunk</code>申请的内存的。</p>
-<p><img src="/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_137.jpg" srcset="/img/loading.gif" lazyload alt="Chunk"></p>
+<p><img src="%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_137.jpg" srcset="/img/loading.gif" lazyload alt="Chunk"></p>
 <p>接下来，探索索引的变化规则。假设当前的编号为<code>5012367...64</code>，通过<code>Chunk::Allocate()</code>申请内存，首先查<code>Chunk</code>的<code>firstAvaliableBlock_</code>，发现第一个可用内存块的索引为4，于是找到图中索引为3的位置，并将其置为使用状态，<code>firstAvaliableBlock_</code>变更为3，<code>blocksAvailable_</code>减1变更为63。</p>
-<p><img src="/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_138.jpg" srcset="/img/loading.gif" lazyload alt="Chunk::Allocate()"></p>
+<p><img src="%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_138.jpg" srcset="/img/loading.gif" lazyload alt="Chunk::Allocate()"></p>
 <p>在执行<code>Deallocate(p, blockSize)</code>前，会先通过遍历找到p属于哪个<code>Chunk</code>，p减去<code>Chunk</code>的首地址，再被除以<code>blockSize</code>即可确定p的位置。然后将p对应的索引设置为<code>firstAvaliableBlock_</code>，<code>blocksAvailable_</code>加1。</p>
-<p><img src="/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_139.jpg" srcset="/img/loading.gif" lazyload alt="Chunk::Deallocate()"></p>
+<p><img src="%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_139.jpg" srcset="/img/loading.gif" lazyload alt="Chunk::Deallocate()"></p>
 <h1 id="FixedAllocator"><a href="#FixedAllocator" class="headerlink" title="FixedAllocator"></a>FixedAllocator</h1><p><code>FixedAllocator</code>的成员如下代码所示，其中<code>allocChunk_</code>指向上一次满足分配的<code>Chunk</code>，<code>deallocChunk_</code>指向上一次释放的<code>Chunk</code>，这也很符合内聚性。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c++">chunks_: vector&lt;Chunk&gt;<br>allocChunk_: Chunk*<br>deallocChunk_: Chunk*<br></code></pre></td></tr></table></figure>
 
 <p><code>FixedAllocator</code>分配时首先判断<code>allocChunk_</code>是否为空或没有可以块，如果是上述情形，则暴力遍历<code>chunks_</code>。如果找到有可用块的<code>Chunk</code>，则让<code>allocChunk</code>指向该<code>Chunk</code>，调用<code>Chunk::Allocate()</code>进行分配。如果没找到，<code>new</code>一个新<code>Chunk</code>挂载在<code>chunks_</code>的末端，并初始化。<code>allocChunk_</code>指向这块新创建的<code>Chunk</code>，<code>deallocChunk_</code>指向<code>chunks_</code>的前端（因为新创建<code>Chunk</code>后，<code>chunks_</code>不一定还在原来的位置，可能被复制到其他位置，如果<code>deallocChunk_</code>指向的位置还是原来的位置可能会出现异常，因此把该指针指向最新的<code>chunks_</code>的前端）。</p>
-<p><img src="/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_140.jpg" srcset="/img/loading.gif" lazyload alt="FixedAllocator"></p>
+<p><img src="%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_140.jpg" srcset="/img/loading.gif" lazyload alt="FixedAllocator"></p>
 <p><code>FixedAllocator</code>释放时首先通过<code>VicinityFind()</code>找到块所在的位置。首先定义<code>lo</code>和<code>hi</code>两个指针，在循环中从<code>deallocChunk_</code>和<code>deallocChunk_ + 1</code>向<code>chunks_</code>的两端进行搜索，直到找到所在的<code>Chunk</code>。</p>
 <p><strong>这里存在一个bug，如果p并非由此系统取得，会跳不出循环</strong></p>
-<p><img src="/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_141.jpg" srcset="/img/loading.gif" lazyload alt="VicinityFind()"></p>
+<p><img src="%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_141.jpg" srcset="/img/loading.gif" lazyload alt="VicinityFind()"></p>
 <p><code>DoDeallocate()</code>会调用<code>deallocChunk_</code>的<code>Deallocate()</code>方法进行回收，并判断其可用内存块数量<code>blockAvailable_</code>是否等于分配的内存块数量<code>numBlocks</code>。如果等于，则进行如下三个判断：</p>
 <ol>
 <li>如果<code>deallocChunk_</code>是<code>chunks_</code>的最后一个区块，且<code>chunks_</code>的大小大于1及<code>deallocChunk_</code>的前一个<code>Chunk</code>所有的区块也为空，则释放<code>chunks_</code>的最后一个区块。</li>
 <li>如果最后一个<code>Chunk</code>的所有块为空，释放最后一个区块，并令<code>allocChunk_=deallocChunk_</code>。</li>
 <li>否则，将<code>deallocChunk_</code>一道<code>chunks_</code>的末端。</li>
 </ol>
-<p><img src="/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_142.jpg" srcset="/img/loading.gif" lazyload alt="DoDeallocate()"></p>
+<p><img src="%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86_142.jpg" srcset="/img/loading.gif" lazyload alt="DoDeallocate()"></p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1d3h5zFEjL?spm_id_from=333.788.videopod.sections&vd_source=cb2ffbc722372d15094f9eebc2c1e0a4">侯捷-C++内存管理机制</a></p>
 
                 
@@ -364,7 +364,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E8%AF%AD%E8%A8%80-CPP/" class="category-chain-item">语言/CPP</a>
+  <a href="../../../../../../../categories/%E8%AF%AD%E8%A8%80-CPP/" class="category-chain-item">语言/CPP</a>
   
   
 
@@ -379,7 +379,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/" class="print-no-link">#内存管理</a>
+        <a href="../../../../../../../tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/" class="print-no-link">#内存管理</a>
       
     </div>
   
@@ -436,7 +436,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/12/18/%E6%8A%80%E6%9C%AF/%E5%85%B6%E4%BB%96/rebase%E5%92%8Cmerge%E7%9A%84%E5%8C%BA%E5%88%AB%E8%AF%A6%E8%A7%A3/" title="rebase和merge的区别详解">
+                      <a href="../../../../../../12/18/%E6%8A%80%E6%9C%AF/%E5%85%B6%E4%BB%96/rebase%E5%92%8Cmerge%E7%9A%84%E5%8C%BA%E5%88%AB%E8%AF%A6%E8%A7%A3/" title="rebase和merge的区别详解">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">rebase和merge的区别详解</span>
                         <span class="visible-mobile">上一篇</span>
@@ -446,7 +446,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/11/17/%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BD%BF%E7%94%A8CRTP%E5%AE%9E%E7%8E%B0%E4%B8%8A%E4%B8%8B%E6%96%87%E9%99%90%E5%80%BC/" title="使用CRTP实现上下文限值">
+                      <a href="../../../../../17/%E6%8A%80%E6%9C%AF/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E4%BD%BF%E7%94%A8CRTP%E5%AE%9E%E7%8E%B0%E4%B8%8A%E4%B8%8B%E6%96%87%E9%99%90%E5%80%BC/" title="使用CRTP实现上下文限值">
                         <span class="hidden-mobile">使用CRTP实现上下文限值</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -645,8 +645,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="../../../../../../../js/events.js" ></script>
+<script  src="../../../../../../../js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -668,7 +668,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="../../../../../../../js/img-lazyload.js" ></script>
   
 
 
@@ -767,9 +767,9 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script defer src="/js/leancloud.js" ></script>
+  <script defer src="../../../../../../../js/leancloud.js" ></script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="../../../../../../../js/local-search.js" ></script>
 
 
 
@@ -777,7 +777,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="../../../../../../../js/boot.js" ></script>
 
 
   

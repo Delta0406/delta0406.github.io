@@ -8,8 +8,8 @@
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/head_photo.jpg">
-  <link rel="icon" href="/img/head_photo.jpg">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../../../../../img/head_photo.jpg">
+  <link rel="icon" href="../../../../../../img/head_photo.jpg">
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
@@ -28,13 +28,13 @@
 <meta property="og:site_name" content="执妄的博客">
 <meta property="og:description" content="引言当你正在开发一个新的功能，准备合并回主分支时，可能会发现存在很多冲突。此时究竟应该用合并还是变基呢？ 合并（merge）一个典型的例子是，从节点A开始，团队开发了B和C功能并合并到了主分支，而你在一个特性分支开发了D和F。执行git checkout main命令切换到主分支后，再运行git merge feature将特性分支合并进来。此时，git会创建一个新的提交$\hat{E}$，它将两">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://delta0406.github.io/rebase%E7%A4%BA%E4%BE%8B.png">
+<meta property="og:image" content="https://delta0406.github.io/2025/12/18/%E6%8A%80%E6%9C%AF/%E5%85%B6%E4%BB%96/rebase%E5%92%8Cmerge%E7%9A%84%E5%8C%BA%E5%88%AB%E8%AF%A6%E8%A7%A3/rebase%E7%A4%BA%E4%BE%8B.png">
 <meta property="article:published_time" content="2025-12-18T12:10:26.000Z">
-<meta property="article:modified_time" content="2026-03-21T15:29:59.364Z">
+<meta property="article:modified_time" content="2026-03-21T15:20:10.854Z">
 <meta property="article:author" content="执妄">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://delta0406.github.io/rebase%E7%A4%BA%E4%BE%8B.png">
+<meta name="twitter:image" content="https://delta0406.github.io/2025/12/18/%E6%8A%80%E6%9C%AF/%E5%85%B6%E4%BB%96/rebase%E5%92%8Cmerge%E7%9A%84%E5%8C%BA%E5%88%AB%E8%AF%A6%E8%A7%A3/rebase%E7%A4%BA%E4%BE%8B.png">
   
   
   
@@ -64,12 +64,12 @@
 <link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
 
 
-<link  rel="stylesheet" href="/css/main.css" />
+<link  rel="stylesheet" href="../../../../../../css/main.css" />
 
 
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  <link id="highlight-css" rel="stylesheet" href="../../../../../../css/highlight.css" />
   
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+    <link id="highlight-css-dark" rel="stylesheet" href="../../../../../../css/highlight-dark.css" />
   
 
 
@@ -85,8 +85,8 @@
       Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
     }
   </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
+  <script  src="../../../../../../js/utils.js" ></script>
+  <script  src="../../../../../../js/color-schema.js" ></script>
   
 
   
@@ -116,7 +116,7 @@
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="../../../../../../index.html">
       <strong>执妄的博客</strong>
     </a>
 
@@ -135,7 +135,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
+              <a class="nav-link" href="../../../../../../index.html" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -147,7 +147,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
+              <a class="nav-link" href="../../../../../../archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -159,7 +159,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
+              <a class="nav-link" href="../../../../../../categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -171,7 +171,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
+              <a class="nav-link" href="../../../../../../tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -183,7 +183,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
+              <a class="nav-link" href="../../../../../../about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -195,7 +195,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/jobs" target="_self">
+              <a class="nav-link" href="../../../../../../jobs" target="_self">
                 <i class="iconfont icon-briefcase"></i>
                 <span>招聘</span>
               </a>
@@ -320,7 +320,7 @@
 <h1 id="合并（merge）"><a href="#合并（merge）" class="headerlink" title="合并（merge）"></a>合并（merge）</h1><p>一个典型的例子是，从节点A开始，团队开发了B和C功能并合并到了主分支，而你在一个特性分支开发了D和F。执行<code>git checkout main</code>命令切换到主分支后，再运行<code>git merge feature</code>将特性分支合并进来。此时，git会创建一个新的提交$\hat{E}$，它将两个分支合并在一起，不对现有提交做任何改动，仅增加一个合并提交声明，此处已将特性分支和主分支合并到一起。这种情况下，原始的分支结构以及所有提交原数据（包括时间戳、作者信息等）都会被完整保留。</p>
 <p>合并虽然保留了所有信息，但是运行<code>git log --oneline --graph</code>命令时，会看到分支和合并点交织成的树状结构，很难理清谁在什么时间做了什么事，以及为什么这么做。此外，还可能看到重复的提交记录、合并噪音或者顺序错乱的提交。</p>
 <h1 id="变基（rebase）"><a href="#变基（rebase）" class="headerlink" title="变基（rebase）"></a>变基（rebase）</h1><p>使用变基可以让所有提交呈直线，易读、易二分、易调试。但是会付出重写提交历史的代价，在共享分支中可能不安全。</p>
-<p>执行<code>git checkout feature</code>命令切换到<code>feature</code>分支，然后运行<code>git rebase main</code>命令将<code>feature</code>变基到<code>main</code>分支上。此时，git会在C提交点之上，将D和E提交作为新的提交重新应用，此时版本提交记录显示为：A-&gt;B-&gt;C-&gt;D-&gt;E，形成一条直线型提交记录。这样做的话，git会创建新的提交记录，而不会复用原有的提交。因此，尽管代码内容可能相同，但经过变基后的提交记录依次是：A-&gt;B-&gt;C-&gt;$\hat{D}$-&gt;$\hat{E}$。$\hat{D}$和$\hat{E}$使用的是新ID，从技术角度看，原始的D和E已不在属于主历史线。<br><img src="/rebase%E7%A4%BA%E4%BE%8B.png" srcset="/img/loading.gif" lazyload alt="rebase示例"></p>
+<p>执行<code>git checkout feature</code>命令切换到<code>feature</code>分支，然后运行<code>git rebase main</code>命令将<code>feature</code>变基到<code>main</code>分支上。此时，git会在C提交点之上，将D和E提交作为新的提交重新应用，此时版本提交记录显示为：A-&gt;B-&gt;C-&gt;D-&gt;E，形成一条直线型提交记录。这样做的话，git会创建新的提交记录，而不会复用原有的提交。因此，尽管代码内容可能相同，但经过变基后的提交记录依次是：A-&gt;B-&gt;C-&gt;$\hat{D}$-&gt;$\hat{E}$。$\hat{D}$和$\hat{E}$使用的是新ID，从技术角度看，原始的D和E已不在属于主历史线。<br><img src="rebase%E7%A4%BA%E4%BE%8B.png" srcset="/img/loading.gif" lazyload alt="rebase示例"></p>
 
                 
               </div>
@@ -339,7 +339,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%85%B6%E4%BB%96/" class="category-chain-item">其他</a>
+  <a href="../../../../../../categories/%E5%85%B6%E4%BB%96/" class="category-chain-item">其他</a>
   
   
 
@@ -354,7 +354,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/git/" class="print-no-link">#git</a>
+        <a href="../../../../../../tags/git/" class="print-no-link">#git</a>
       
     </div>
   
@@ -415,7 +415,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/11/24/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/CPP/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94loki-allocator/" title="C++内存管理机制——loki::allocator">
+                      <a href="../../../../../11/24/%E6%8A%80%E6%9C%AF/%E8%AF%AD%E8%A8%80/CPP/C-%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%9C%BA%E5%88%B6%E2%80%94%E2%80%94loki-allocator/" title="C++内存管理机制——loki::allocator">
                         <span class="hidden-mobile">C++内存管理机制——loki::allocator</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -614,8 +614,8 @@
 
 <script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
 <script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
+<script  src="../../../../../../js/events.js" ></script>
+<script  src="../../../../../../js/plugins.js" ></script>
 
 
   <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
@@ -637,7 +637,7 @@
 
 
   
-    <script  src="/js/img-lazyload.js" ></script>
+    <script  src="../../../../../../js/img-lazyload.js" ></script>
   
 
 
@@ -736,9 +736,9 @@
 
   <script>Fluid.plugins.imageCaption();</script>
 
-  <script defer src="/js/leancloud.js" ></script>
+  <script defer src="../../../../../../js/leancloud.js" ></script>
 
-  <script  src="/js/local-search.js" ></script>
+  <script  src="../../../../../../js/local-search.js" ></script>
 
 
 
@@ -746,7 +746,7 @@
 
 <!-- 主题的启动项，将它保持在最底部 -->
 <!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
+<script  src="../../../../../../js/boot.js" ></script>
 
 
   
