@@ -1,0 +1,49 @@
+name: Hexo Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '_posts/**'
+      - 'source/**'
+      - 'themes/**'
+      - '!**/jobs_data.json'
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install Hexo Dependencies
+        run: npm install
+
+      - name: Build Hexo
+        run: |
+          npx hexo clean
+          npx hexo generate
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'public/'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
