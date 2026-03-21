@@ -8,10 +8,10 @@ publish: true
 
 # 内存分配的每个层面
 C++的内存管理方式有如下四种，一般不直接使用操作系统的API进行管理，以尽可能避免与特定操作系统绑定。
-![四种内存分配方式](./images/内存管理/四种内存分配方式.png)
+![四种内存分配方式](四种内存分配方式.png)
 
 四种内存操作方法的特性如下：
-![四种内存分配方法特性](./images/内存管理/四种内存分配方法特性.png)
+![四种内存分配方法特性](四种内存分配方法特性.png)
 
 # new/detele expression
 ## 内存申请
@@ -20,23 +20,23 @@ C++的内存管理方式有如下四种，一般不直接使用操作系统的AP
 2. 通过static_cast将得到的内存块强制转化为目标类型指针，这里是Complex*。
 3. 调用目标类型的构造方法（注意：直接通过pc->Complex::Complex(1,2)这样的方法调用构造函数只有编译器可以做，用户这样做将产生错误）。
 > operator new()操作的内部调用了malloc()函数
-![new expression](./images/内存管理/new_expression.png)
+![new expression](new_expression.png)
 
 ## 内存释放
 通过delete进行内存释放的过程：
 1. 调用对象的析构函数
 2. 通过operator delete释放内存，其内部使用的是free()函数
-![delete expression](./images/内存管理/delete_expression.png)
+![delete expression](delete_expression.png)
 
 # Array new
 array new内存分配的过程：
 1. 编译器分配一块内存，内存的首部cookie记录了对象内存分配的信息，首部后面紧跟着3个连续的对象内存
 2. 为每个对象内存调用构造函数
-![array new](./images/内存管理/array_new.png)
+![array new](array_new.png)
 释放内存时，需要使用delete[]。如果使用delete，则只会调用第一个对象的析构函数，不会调用所有对象的析构函数。上图中的`new string[3]`是一个例子，只使用delete，将会导致只调用str[0]的析构函数，str[1]、str[2]的析构函数不会被调用，此时就会出现问题。
 
 数组对象的创建与析构过程如下：
-![array new & array delete](./images/内存管理/array_new&array_delete.png)
+![array new & array delete](array_new&array_delete.png)
 > 构造函数调用顺序是按照构建对象来的，但是析构函数执行是按照相反的顺序。
 
 # placement new
@@ -45,28 +45,28 @@ placement new的语法为：
 new (address) Type(constructor_args...);
 ```
 表示在address这块已有的内存上调用Type的构造函数。示例如下：
-![placement_new](./images/内存管理/placement_new.png)
+![placement_new](placement_new.png)
 > 没有placement delete，因为placement new没有分配新内存。
 
 # 重载
 ## C++内存分配的途径
 C++内存分配的途径如下图所示，没有重载会走路线二。如果类中重载了operator new()，那么会走路线一。但最终都会调用系统的::operator new()函数。
-![c++内存分配的途径](./images/内存管理/cpp_memory_allocation_ways.png)
+![c++内存分配的途径](cpp_memory_allocation_ways.png)
 
 容器中的内存分配途径如下图所示，容器通过std::allocator实现内存的分配与回收，最终也是调用的::operator new()函数。
-![容器内存分配途径](./images/内存管理/container_memory_allocation_ways.png)
+![容器内存分配途径](container_memory_allocation_ways.png)
 
 ## 重载new和delete
 ### 重载::operator new/::operator delete
 使用内联函数重载::operator new和::operator delete：
-![重载::operator new/::operator delete](./images/内存管理/global_operator_new_override.png)
+![重载::operator new/::operator delete](global_operator_new_override.png)
 
 ### 重载operator new/operator delete
 如果是在类中重载operator new()方法，该方法可以有多种形式，但是函数参数列表第一个参数必须是size_t类型变量。对于operator delete()，第一个参数必须是void*类型，第二参数size_t是可选项，可以去掉。
-![重载operator new/operator delete](./images/内存管理/local_operator_new_override.png)
+![重载operator new/operator delete](local_operator_new_override.png)
 
 ### 重载operator new[]/operator delete[]
-![重载operator new[]/operator delete[]](./images/内存管理/local_operator_new_array_override.png)
+![重载operator new[]/operator delete[]](local_operator_new_array_override.png)
 
 ## 测试案例
 ### 测试一
@@ -284,9 +284,9 @@ int main(void)
 # pre-class allocator
 为每个类设计内存管理工具。
 ## 示例1
-![per-class-allocator1](./images/内存管理/per-class-allocator1.png)
+![per-class-allocator1](per-class-allocator1.png)
 测试：
-![per-class-allocator1-test](./images/内存管理/per-class-allocator1-test.png)
+![per-class-allocator1-test](per-class-allocator1-test.png)
 代码：
 ```c++
 #include <cstddef>
@@ -376,9 +376,9 @@ int main(void)
 > 内存池本质上是分配了一大块内存，然后将该内存分割为多个小块通过链表拼接起来，所以物理上不一定连续，但是逻辑上是连续的。
 
 ## 示例2
-![per-class-allocator2](./images/内存管理/per-class-allocator2.png)
+![per-class-allocator2](per-class-allocator2.png)
 测试：
-![per-class-allocator2-test](./images/内存管理/per-class-allocator2-test.png)
+![per-class-allocator2-test](per-class-allocator2-test.png)
 代码：
 ```c++
 #include <cstddef>
@@ -509,9 +509,9 @@ int main(void)
 > 使用union保存链表元素的next指针，这样可以节省空间。delete时，没有直接删除目标元素，而是将它作为下一个可以分配的内存空间。 
 
 # static allocator
-![static-allocator1](./images/内存管理/static-allocator1.png)
-![static-allocator2](./images/内存管理/static-allocator2.png)
-![static-allocator-result](./images/内存管理/static-allocator-result.png)
+![static-allocator1](static-allocator1.png)
+![static-allocator2](static-allocator2.png)
+![static-allocator-result](static-allocator-result.png)
 代码：
 ```c++
 #include <cstddef>
@@ -662,27 +662,27 @@ int main(void)
 }
 ```
 
-![macro-static-allocate](./images/内存管理/macro-static-allocate.png)
-![macro-static-allocate-result](./images/内存管理/macro-static-allocate-result.png)
+![macro-static-allocate](macro-static-allocate.png)
+![macro-static-allocate-result](macro-static-allocate-result.png)
 
 # global allocator
 上面自定义的分配器使用一条链表来管理内存，而标准库却用了多条链表来进行管理：
-![global_allocator](./images/内存管理/global_allocator.png)
+![global_allocator](global_allocator.png)
 
 # new handler
 如果用户申请内存时，因为系统原因或申请内存过大导致失败，这是将抛出异常。operator new()函数内部将会调用_calnewh()函数，这个函数通过左边的typedef传入，可以根据需要自己编写handler处理函数来处理该问题。一般有两种方案处理：
 * 让更多的Memory可用
 * 直接abort()或exit()
-![def_new_handler](./images/内存管理/def_new_handler.png)
-![new_handler](./images/内存管理/new_handler.png)
+![def_new_handler](def_new_handler.png)
+![new_handler](new_handler.png)
 
 # =default和=delete
 有默认版本的函数有：
 * 拷贝构造函数
 * 拷贝赋值函数
 * 析构函数
-![default_delete1](./images/内存管理/default_delete1.png)
-![default_delete2](./images/内存管理/defualt_delete2.png)
+![default_delete1](default_delete1.png)
+![default_delete2](defualt_delete2.png)
 
 # 参考
 [CPP-Memory-Management](https://github.com/hujiese/CPP-Memory-Management/tree/master)

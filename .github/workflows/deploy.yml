@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths:
-      - '_posts/**'
-      - 'source/**'
+      - 'source/_posts/**'
+      - 'source/images/**'
       - 'themes/**'
       - '!**/jobs_data.json'
   workflow_dispatch:

@@ -18,5 +18,5 @@ publish: true
 使用变基可以让所有提交呈直线，易读、易二分、易调试。但是会付出重写提交历史的代价，在共享分支中可能不安全。
 
 执行`git checkout feature`命令切换到`feature`分支，然后运行`git rebase main`命令将`feature`变基到`main`分支上。此时，git会在C提交点之上，将D和E提交作为新的提交重新应用，此时版本提交记录显示为：A->B->C->D->E，形成一条直线型提交记录。这样做的话，git会创建新的提交记录，而不会复用原有的提交。因此，尽管代码内容可能相同，但经过变基后的提交记录依次是：A->B->C->$\hat{D}$->$\hat{E}$。$\hat{D}$和$\hat{E}$使用的是新ID，从技术角度看，原始的D和E已不在属于主历史线。
-![rebase示例](./images/git/rebase示例.png)
+![rebase示例](rebase示例.png)
 
