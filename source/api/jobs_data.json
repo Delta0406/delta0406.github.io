@@ -784,6 +784,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1987711767794569216",
+      "RecruitPostId": 115916,
+      "RecruitPostName": "元宝-后台开发工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "元宝",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责元宝AIGC应用（如文本生成、图像生成、音视频对话）的后台系统架构设计与开发，支撑高并发、低延迟的AI应用服务；\r\n2.基于LLM大模型能力场景，推进建设AIGC平台研发落地，支持插件接入&管理、数据飞轮pipeline等平台能力，为AI Agent的研发上线提升效率和质量；\r\n3.负责解决平台和服务在高并发场景下的性能优化，问题定位&解决，保障服务SLA。",
+      "LastUpdateTime": "2026年03月23日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1987711767794569216",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1987711767794569216",
+      "Requirement": "1.计算机专业本科及以上学历 ；\n2.3年及以上后台开发经验，熟悉系统运维的基础知识，能够排查实际问题；\n3.精通GO/C++/Java开发语言中的一种或多种，熟悉常见rpc框架；\n4.熟悉微服务架构、数据库（MySQL/Redis/MongoDB）、消息队列（Kafka/RabbitMQ）及容器化技术（Docker/K8s）；\n5.有流程编排引擎（如Airflow）、LLM应用开发框架（如eino）开发经验优先，能够支持复杂AI Agent的任务链编排与管理；\n6.有责任心，能积极主动推进项目进展，具备团队协作意识和良好的沟通能力。"
+    },
+    {
+      "Id": 0,
       "PostId": "1992786823440654336",
       "RecruitPostId": 116160,
       "RecruitPostName": "元宝-后台开发工程师",
@@ -804,29 +827,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1992786823440654336",
       "Requirement": "1.计算机专业本科及以上学历 ；\r\n2.5年及以上后台开发经验，熟悉系统运维的基础知识，能够排查实际问题；\r\n3.精通GO，C++，Python开发语言中的一种或多种，熟悉常见rpc框架；\r\n4.熟悉微服务架构、数据库（MySQL/Redis/MongoDB）、消息队列（Kafka/RabbitMQ）及容器化技术（Docker/K8s）；\r\n5.有流程编排引擎（如Airflow）、LLM应用开发框架（如eino）开发经验优先，能够支持复杂AI Agent的任务链编排与管理；\r\n6.有责任心，能积极主动推进项目进展，具备团队协作意识，和良好的沟通能力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1987711767794569216",
-      "RecruitPostId": 115916,
-      "RecruitPostName": "元宝-后台开发工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "元宝",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责元宝AIGC应用（如文本生成、图像生成、音视频对话）的后台系统架构设计与开发，支撑高并发、低延迟的AI应用服务；\r\n2.基于LLM大模型能力场景，推进建设AIGC平台研发落地，支持插件接入&管理、数据飞轮pipeline等平台能力，为AI Agent的研发上线提升效率和质量；\r\n3.负责解决平台和服务在高并发场景下的性能优化，问题定位&解决，保障服务SLA。",
-      "LastUpdateTime": "2026年03月13日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1987711767794569216",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1987711767794569216",
-      "Requirement": "1.计算机专业本科及以上学历 ；\n2.3年及以上后台开发经验，熟悉系统运维的基础知识，能够排查实际问题；\n3.精通GO/C++/Java开发语言中的一种或多种，熟悉常见rpc框架；\n4.熟悉微服务架构、数据库（MySQL/Redis/MongoDB）、消息队列（Kafka/RabbitMQ）及容器化技术（Docker/K8s）；\n5.有流程编排引擎（如Airflow）、LLM应用开发框架（如eino）开发经验优先，能够支持复杂AI Agent的任务链编排与管理；\n6.有责任心，能积极主动推进项目进展，具备团队协作意识和良好的沟通能力。"
     },
     {
       "Id": 0,
@@ -2739,29 +2739,6 @@
     },
     {
       "Id": 0,
-      "PostId": "1980368450001981440",
-      "RecruitPostId": 1177866011126718464,
-      "RecruitPostName": "IT Application Developer  (AI-Driven IT Ops)  Intern 106286",
-      "CountryName": "美国",
-      "LocationName": "帕罗奥多",
-      "BGName": "Overseas Functional System",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "",
-      "CategoryName": "技术",
-      "Responsibility": "About the Hiring Team\nTencent Overseas IT has the mission to empower Tencent’s rapid global growth with future ready, global IT platforms, applications and services. We are chartered to lead the Overseas IT strategy, architecture, roadmap and execution. Satisfying our internal/external customers and becoming a world class global IT team are our top aspirations.\n\nWhat the Role Entails\nJoin Tencent’s Overseas IT team to help build the next-generation AI-driven intelligent operations platform. You’ll work with cutting-edge AI, automation, and enterprise integration technologies in a global, fast-paced environment.● Support internal AI application development with RAG (Retrieval-Augmented Generation) and multi-agent workflows\n● Assist in building the enterprise knowledge retrieval layer (document cleaning, embedding pipelines, hybrid search)\n● Contribute to GraphRAG design combining CMDB, dependency topology, and knowledge graph modeling\n● Help integrate enterprise APIs (ServiceNow, Workday, Microsoft Graph, etc.)\n● Participate in testing, CI/CD automation, and performance tuning\n\nWho We Look For\n● Master’s student or recent graduate in Computer Science, Information Systems, or related field\n● Proficient in at least one backend language (Python / Go / Node.js / Java)\n● Familiar with modern frontend frameworks (Next.js / Vue / React) and TypeScript\n● Knowledge of databases (MySQL / PostgreSQL / NoSQL) and Git workflows\n● Understanding or project experience with AI apps, RAG, or agent frameworks\n● Strong communication skills and ability to collaborate in English\nNice-to-Haves● Experience with LangChain, LlamaIndex, or Autogen\n● Familiarity with Kubernetes, Docker, Prometheus, or Grafana\n● Academic research, open-source, or AI project experience\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $28.27 to $60.00 per hour. Actual pay may vary depending on job-related  knowledge, skills, and experience.\nThis position will be eligible for 1 hour of paid sick leave for every 30 hours worked and up to 13 paid holidays throughout the calendar year. Subject to the terms and conditions of the applicable plans then in effect, full-time interns are also eligible to enroll in the Company-sponsored medical plan.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
-      "LastUpdateTime": "2026年03月09日",
-      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/IT-Application-Developer---AI-Driven-IT-Ops---Intern_R106286",
-      "SourceID": 4,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1980368450001981440",
-      "Requirement": "岗位要求详情请见上方岗位职责内说明"
-    },
-    {
-      "Id": 0,
       "PostId": "2029862289435426816",
       "RecruitPostId": 118288,
       "RecruitPostName": "AI运维平台技术架构师",
@@ -3242,6 +3219,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2001215619193790464",
       "Requirement": "1.计算机相关专业，本科及以上学历，5年及以上工作经验 熟悉 Linux 开发环境、熟悉C/C++编程语言，熟练掌握常用算法和数据结构，有搜索/广告/推荐方向业务开发经验，熟练掌握至少一门脚本语言（shell/python等）；\r\n2.熟悉至少一种深度学习相关框架如tensorflow、pytorch等，有底层框架优化且开源经验；具备扎实数学/算法功底，对机器学习、概率统计等算法原理有所了解；\r\n3.有GPU相关优化经验者优先。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2031005596936994816",
+      "RecruitPostId": 118345,
+      "RecruitPostName": "微信-基础架构研发工程师-AI Infra方向",
+      "CountryName": "中国",
+      "LocationName": "广州",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "WXG公共",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责大模型训练框架 GCore (外部开源项目名 WeChat-YATT) 的研发，支持文本、多模态等不同业务场景在预训练、SFT、RLHF、蒸馏等阶段的训练需求；\r\n2.持续优化 GCore 在做 RLHF 训练时的效率，结合具体业务优化 agentic rl 的效率；\r\n3.持续优化 GCore 在做 AIGC 训练（图生文、图生视频）时的性能，支持新算法的探索。",
+      "LastUpdateTime": "2026年03月17日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2031005596936994816",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2031005596936994816",
+      "Requirement": "1.计算机相关专业，本科及以上学历，熟悉至少一门编程语言，善于通过编程解决实际问题；\r\n2.了解常见的深度学习训练框架（如Megatron，VeRL，FSDP) 以及推理框架（如 VLLM、SGLang）；\r\n3.具备良好的沟通能力和团队协作精神，积极主动，勇于接受挑战。"
     }
   ],
   "cloud": [
@@ -3291,6 +3291,14 @@
     },
     {
       "name": "深度",
+      "value": 27
+    },
+    {
+      "name": "一门",
+      "value": 26
+    },
+    {
+      "name": "微信",
       "value": 26
     },
     {
@@ -3298,15 +3306,7 @@
       "value": 26
     },
     {
-      "name": "一门",
-      "value": 25
-    },
-    {
       "name": "落地",
-      "value": 25
-    },
-    {
-      "name": "微信",
       "value": 25
     },
     {
@@ -3334,6 +3334,10 @@
       "value": 23
     },
     {
+      "name": "实际",
+      "value": 23
+    },
+    {
       "name": "代码",
       "value": 22
     },
@@ -3342,16 +3346,12 @@
       "value": 22
     },
     {
-      "name": "实际",
+      "name": "编程语言",
       "value": 22
     },
     {
       "name": "UE",
       "value": 22
-    },
-    {
-      "name": "编程语言",
-      "value": 21
     },
     {
       "name": "RAG",
@@ -3362,12 +3362,12 @@
       "value": 21
     },
     {
-      "name": "协议",
+      "name": "常见",
       "value": 20
     }
   ],
   "stats": {
     "total": 141,
-    "update_time": "2026-03-22 02:30:22"
+    "update_time": "2026-03-23 02:31:17"
   }
 }
