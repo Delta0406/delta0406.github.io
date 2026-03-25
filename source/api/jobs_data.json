@@ -1600,7 +1600,7 @@
       "ProductName": "微信交易平台",
       "CategoryName": "技术",
       "Responsibility": "1.负责微信电商治理功能及系统的研发，保障微信电商体系下的用户安全购物体验及公平合规的商家达人经营环境；\r\n2.持续提升优化架构，提升性能、可用性、扩展性及研发效能等；\r\n3.与产品团队协同，解决具体业务场景的问题。",
-      "LastUpdateTime": "2026年03月20日",
+      "LastUpdateTime": "2026年03月24日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1936827253514149888",
       "SourceID": 1,
       "IsCollect": false,
@@ -2486,6 +2486,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2036387576151175168",
+      "RecruitPostId": 1233885137674428416,
+      "RecruitPostName": "AI Research Scientist-Agentic AI 107209",
+      "CountryName": "新加坡",
+      "LocationName": "新加坡",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "",
+      "CategoryName": "技术",
+      "Responsibility": "Business Unit\nTechnology Engineering Group (TEG) is responsible for supporting the company and its business groups on technology and operational platforms, as well as the construction and operation of R&D management and data centers, TEG provides users with a full range of customer services. As the operator of the largest networking, devices, and data center in Asia,TEG also leads the Tencent Technology Committee in strengthening infrastructure R&D through internal and distributed open source collaboration, constructing new platforms and supporting business innovation.\n\nWhat the Role Entails\n1.Conduct fundamental research on agentic AI problems, including but not limited to the GUI agents, memory and reasoning, reinforcement learning, AI and environment interaction.\n2.Research on long-term ambitious goals, while laying out intermediate milestones.\n3.Publish influential research work on top conferences and journals.\n4.Collaborate on large projects that are strategically prioritized by the lab.\n\nWho We Look For\n1.Work experience in a university, industry, or government lab(s), in a role with primary emphasis on AI research.\n2.Hold a Ph.D. /master degree in computer science, statistics, applied mathematics, data science or other related disciplines.\n3.First-author publications at peer-reviewed AI conferences (e.g. ICLR, ICML).\n4.Knowledge in one of the differentiable programming frameworks, e.g., PyTorch, TensorFlow, JAX.\n5.Knowledge in AI agents.\nGood to have:\n1.Track record of high impact research (e.g. multiple papers with 100+ citations).\n2.Impactful open source projects.\n3.Winner of international academic competitions.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+      "LastUpdateTime": "2026年03月24日",
+      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/AI-Research-Scientist-Agentic-AI_R107209",
+      "SourceID": 4,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2036387576151175168",
+      "Requirement": "岗位要求详情请见上方岗位职责内说明"
+    },
+    {
+      "Id": 0,
       "PostId": "1985607970624524288",
       "RecruitPostId": 1183105531715366912,
       "RecruitPostName": "ゲームAIリサーチインターン｜Game AI Research Intern 106377",
@@ -3265,35 +3288,12 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1989232491273281536",
       "Requirement": "1.本科以上学历，Python/Go/C++ 3年以上开发经验，有算法工程、LLM系统相关经验优先；\r\n2.全面的软件知识结构(操作系统、软件工程、设计模式、数据结构)；\r\n3.具备良好的分析解决问题能力，能独立承担任务和有系统进度把控能力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2001215619193790464",
-      "RecruitPostId": 116657,
-      "RecruitPostName": "微信视频号-大模型ai infra高级工程师",
-      "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "视频号短视频",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责开发模型训练平台，支持超大规模稀疏模型的秒级实时训练与推理；负责开发模型推理平台，支撑数百个模型的复杂环境下的高并发、低延迟、低成本运行和海量资源的实时调度；\r\n2.支撑视频号短视频推荐、直播推荐、红点推荐、图文推荐等大规模、复杂业务矩阵的高效迭代。",
-      "LastUpdateTime": "2026年03月20日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2001215619193790464",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2001215619193790464",
-      "Requirement": "1.计算机相关专业，本科及以上学历，5年及以上工作经验 熟悉 Linux 开发环境、熟悉C/C++编程语言，熟练掌握常用算法和数据结构，有搜索/广告/推荐方向业务开发经验，熟练掌握至少一门脚本语言（shell/python等）；\r\n2.熟悉至少一种深度学习相关框架如tensorflow、pytorch等，有底层框架优化且开源经验；具备扎实数学/算法功底，对机器学习、概率统计等算法原理有所了解；\r\n3.有GPU相关优化经验者优先。"
     }
   ],
   "cloud": [
     {
       "name": "AI",
-      "value": 155
+      "value": 156
     },
     {
       "name": "AGENT",
@@ -3301,23 +3301,19 @@
     },
     {
       "name": "扎实",
-      "value": 54
-    },
-    {
-      "name": "PYTHON",
-      "value": 43
+      "value": 53
     },
     {
       "name": "GO",
       "value": 43
     },
     {
-      "name": "LINUX",
-      "value": 43
+      "name": "PYTHON",
+      "value": 42
     },
     {
-      "name": "数据结构",
-      "value": 34
+      "name": "LINUX",
+      "value": 42
     },
     {
       "name": "数据库",
@@ -3328,16 +3324,16 @@
       "value": 34
     },
     {
+      "name": "数据结构",
+      "value": 33
+    },
+    {
       "name": "专业本科",
       "value": 30
     },
     {
       "name": "智能",
       "value": 28
-    },
-    {
-      "name": "深度",
-      "value": 27
     },
     {
       "name": "网络",
@@ -3349,6 +3345,10 @@
     },
     {
       "name": "落地",
+      "value": 26
+    },
+    {
+      "name": "深度",
       "value": 26
     },
     {
@@ -3364,15 +3364,7 @@
       "value": 25
     },
     {
-      "name": "一门",
-      "value": 24
-    },
-    {
       "name": "工具",
-      "value": 24
-    },
-    {
-      "name": "机器",
       "value": 24
     },
     {
@@ -3380,8 +3372,16 @@
       "value": 24
     },
     {
+      "name": "一门",
+      "value": 23
+    },
+    {
+      "name": "机器",
+      "value": 23
+    },
+    {
       "name": "微信",
-      "value": 24
+      "value": 23
     },
     {
       "name": "代码",
@@ -3404,16 +3404,16 @@
       "value": 22
     },
     {
-      "name": "编程语言",
+      "name": "协议",
       "value": 21
     },
     {
-      "name": "协议",
-      "value": 21
+      "name": "常见",
+      "value": 20
     }
   ],
   "stats": {
     "total": 143,
-    "update_time": "2026-03-24 02:23:55"
+    "update_time": "2026-03-25 02:29:02"
   }
 }
