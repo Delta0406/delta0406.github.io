@@ -2290,7 +2290,7 @@
       "ProductName": "腾讯会议",
       "CategoryName": "技术",
       "Responsibility": "1.负责会议业务后台研发工作；\r\n2.参与/定制会议业务后台的系统架构设计，可用性建设和业务需求；\r\n3.优化团队研发流程，效率提升工具设计与开发。",
-      "LastUpdateTime": "2026年04月01日",
+      "LastUpdateTime": "2026年04月20日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1994244878846021632",
       "SourceID": 1,
       "IsCollect": false,
@@ -3153,6 +3153,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2014232329685458944",
+      "RecruitPostId": 117469,
+      "RecruitPostName": "数据分析工程师-AI产品",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "PCG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "CAI中台",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责业务场景数据分析，洞察业务机会，发现业务问题，为产品迭代提供决策依据；\r\n2.负责用户增长相关数据科学工作，通过ab实验、因果推断等方法，构建科学严谨的评估体系，对业务收益进行评估，并提出优化建议，推动策略优化带来业务增长；\r\n3.负责业务的指标体系搭建，包括数据链路建设，基础数据维护，数据报表构建；\r\n4.探索统计、机器学习、因果推断等方法论，并推动相关方法在业务落地，产生业务影响力。",
+      "LastUpdateTime": "2026年04月20日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2014232329685458944",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2014232329685458944",
+      "Requirement": "1.3-5年以上数据科学相关岗位的工作经验，有Ai行业相关工作经验优先；\n2.数据科学、统计学、应用数学、机器学习、计算机科学等领域专业硕士以上学位；\n3.熟练使用Python/R，有ab实验，因果推断，量化模型，增长/推荐策略分析实践经验优先；\n4.熟悉Hive、Spark等大数据处理环境；\n5.优秀的逻辑思维能力，擅长沟通协作，对有挑战的问题充满热情。"
+    },
+    {
+      "Id": 0,
       "PostId": "1982705847465299968",
       "RecruitPostId": 115586,
       "RecruitPostName": "WeGame游戏平台-AI算法研究",
@@ -3242,29 +3265,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1988341027420921856",
       "Requirement": "岗位要求详情请见上方岗位职责内说明"
-    },
-    {
-      "Id": 0,
-      "PostId": "2014232329685458944",
-      "RecruitPostId": 117469,
-      "RecruitPostName": "数据分析工程师-AI产品",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "PCG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "CAI中台",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责业务场景数据分析，洞察业务机会，发现业务问题，为产品迭代提供决策依据；\r\n2.负责用户增长相关数据科学工作，通过ab实验、因果推断等方法，构建科学严谨的评估体系，对业务收益进行评估，并提出优化建议，推动策略优化带来业务增长；\r\n3.负责业务的指标体系搭建，包括数据链路建设，基础数据维护，数据报表构建；\r\n4.探索统计、机器学习、因果推断等方法论，并推动相关方法在业务落地，产生业务影响力。",
-      "LastUpdateTime": "2026年01月29日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2014232329685458944",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2014232329685458944",
-      "Requirement": "1.3-5年以上数据科学相关岗位的工作经验，有Ai行业相关工作经验优先；\n2.数据科学、统计学、应用数学、机器学习、计算机科学等领域专业硕士以上学位；\n3.熟练使用Python/R，有ab实验，因果推断，量化模型，增长/推荐策略分析实践经验优先；\n4.熟悉Hive、Spark等大数据处理环境；\n5.优秀的逻辑思维能力，擅长沟通协作，对有挑战的问题充满热情。"
     },
     {
       "Id": 0,
@@ -3667,6 +3667,6 @@
   ],
   "stats": {
     "total": 154,
-    "update_time": "2026-04-19 02:53:31"
+    "update_time": "2026-04-20 02:54:40"
   }
 }
