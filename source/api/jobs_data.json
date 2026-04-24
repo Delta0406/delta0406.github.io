@@ -2198,7 +2198,7 @@
       "ProductName": "WXG公共",
       "CategoryName": "技术",
       "Responsibility": "1.负责微信电商的交易保障体系以及平台运营系统的后台开发工作，包括但不限于入驻、商家客服、平台客服、物流、运费险、售后、纠纷、知识库系统等；\r\n2.重点提升微信生态内的用户电商交易体验，确保系统稳定性和高效性；\r\n3.共同参与产品设计，负责新特性的后台系统设计与实现，推动业务功能迭代升级。",
-      "LastUpdateTime": "2026年04月09日",
+      "LastUpdateTime": "2026年04月23日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2014529794737328128",
       "SourceID": 1,
       "IsCollect": false,
@@ -3222,29 +3222,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2014232329685458944",
-      "RecruitPostId": 117469,
-      "RecruitPostName": "数据分析工程师-AI产品",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "PCG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "CAI中台",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责业务场景数据分析，洞察业务机会，发现业务问题，为产品迭代提供决策依据；\r\n2.负责用户增长相关数据科学工作，通过ab实验、因果推断等方法，构建科学严谨的评估体系，对业务收益进行评估，并提出优化建议，推动策略优化带来业务增长；\r\n3.负责业务的指标体系搭建，包括数据链路建设，基础数据维护，数据报表构建；\r\n4.探索统计、机器学习、因果推断等方法论，并推动相关方法在业务落地，产生业务影响力。",
-      "LastUpdateTime": "2026年04月22日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2014232329685458944",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2014232329685458944",
-      "Requirement": "1.3-5年以上数据科学相关岗位的工作经验，有Ai行业相关工作经验优先；\n2.数据科学、统计学、应用数学、机器学习、计算机科学等领域专业硕士以上学位；\n3.熟练使用Python/R，有ab实验，因果推断，量化模型，增长/推荐策略分析实践经验优先；\n4.熟悉Hive、Spark等大数据处理环境；\n5.优秀的逻辑思维能力，擅长沟通协作，对有挑战的问题充满热情。"
-    },
-    {
-      "Id": 0,
       "PostId": "1982705847465299968",
       "RecruitPostId": 115586,
       "RecruitPostName": "WeGame游戏平台-AI算法研究",
@@ -3403,6 +3380,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2043890003045679104",
       "Requirement": "1.硕士及以上学历，7年以上数据相关工作经验，3年以上带项目、或带团队的经验；\r\n2.具备良好的数据挖掘经验，对大数据应用有深入理解，有相关项目成功的经历；\r\n3.优秀的逻辑思维能力，善于分析和解决问题；良好的沟通表达能力与团队协作能力；\r\n4.具备市场分析、竞品分析能力、责任感强。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2047219021216116736",
+      "RecruitPostId": 119590,
+      "RecruitPostName": "腾讯云WeData-Data+AI平台研发专家",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯云-大数据",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责 DATA+AI一体化框架和运行平台的设计、开发与技术演进，建设一体化、更易用、高性价比的数据智能平台；\n2.深度结合AI能力，建设AI原生的数据智能平台,探索和落地GenAI+大数据的融合场景；\n3.解决高可用性、数据一致性等技术难题，主导性能优化与稳定性提升。",
+      "LastUpdateTime": "2026年04月23日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2047219021216116736",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "五年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2047219021216116736",
+      "Requirement": "1.具有扎实的基础知识、系统功底和编程能力，熟练掌握至少一门面向对象编程语言(Java/Python//GO),具备优秀的算法实现和代码优化能力；\r\n2.具备 Data Infra/AI Infra方向的从业经验，参与过一定规模的相关项目研发和运维优先；\r\n3.了解 Data+AI 方向最新前沿动态，了解业界新技术和新方案；\r\n4.具备良好的团队协作能力，沟通能力，以及优秀的分析与解决问题的能力；\r\n5.在同等条件下，通过腾讯云认证或取得同等资格认证的，优先考虑。"
     },
     {
       "Id": 0,
@@ -3592,7 +3592,7 @@
   "cloud": [
     {
       "name": "AI",
-      "value": 171
+      "value": 172
     },
     {
       "name": "AGENT",
@@ -3600,14 +3600,14 @@
     },
     {
       "name": "扎实",
-      "value": 57
-    },
-    {
-      "name": "PYTHON",
-      "value": 47
+      "value": 58
     },
     {
       "name": "GO",
+      "value": 48
+    },
+    {
+      "name": "PYTHON",
       "value": 47
     },
     {
@@ -3647,6 +3647,10 @@
       "value": 30
     },
     {
+      "name": "JAVA",
+      "value": 30
+    },
+    {
       "name": "工具",
       "value": 29
     },
@@ -3659,10 +3663,6 @@
       "value": 29
     },
     {
-      "name": "JAVA",
-      "value": 29
-    },
-    {
       "name": "实际",
       "value": 28
     },
@@ -3671,35 +3671,31 @@
       "value": 28
     },
     {
-      "name": "硕士",
-      "value": 26
+      "name": "一门",
+      "value": 25
     },
     {
       "name": "人工智能",
       "value": 25
     },
     {
-      "name": "机器",
+      "name": "硕士",
       "value": 25
     },
     {
-      "name": "一门",
+      "name": "机器",
+      "value": 24
+    },
+    {
+      "name": "解决问题",
       "value": 24
     },
     {
       "name": "实践经验",
-      "value": 23
-    },
-    {
-      "name": "解决问题",
-      "value": 23
-    },
-    {
-      "name": "领域",
       "value": 22
     },
     {
-      "name": "产品",
+      "name": "领域",
       "value": 21
     },
     {
@@ -3709,10 +3705,14 @@
     {
       "name": "UE",
       "value": 21
+    },
+    {
+      "name": "产品",
+      "value": 20
     }
   ],
   "stats": {
     "total": 156,
-    "update_time": "2026-04-23 02:49:22"
+    "update_time": "2026-04-24 02:50:22"
   }
 }
