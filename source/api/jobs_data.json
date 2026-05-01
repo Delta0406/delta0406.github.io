@@ -1186,7 +1186,7 @@
       "ProductName": "元宝",
       "CategoryName": "技术",
       "Responsibility": "1.负责元宝AIGC应用（如文本生成、图像生成、音视频对话）的后台系统架构设计与开发，支撑高并发、低延迟的AI应用服务；\r\n2.基于LLM大模型能力场景，推进建设AIGC平台研发落地，支持插件接入&管理、数据飞轮pipeline等平台能力，为AI Agent的研发上线提升效率和质量；\r\n3.负责解决平台和服务在高并发场景下的性能优化，问题定位&解决，保障服务SLA。",
-      "LastUpdateTime": "2026年04月28日",
+      "LastUpdateTime": "2026年04月30日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1987711767794569216",
       "SourceID": 1,
       "IsCollect": false,
@@ -2486,6 +2486,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2017120081338851328",
+      "RecruitPostId": 117650,
+      "RecruitPostName": "微信视频号-推荐大模型后台开发工程师-加热系统",
+      "CountryName": "中国",
+      "LocationName": "广州",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "加热",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责微信视频号加热的推荐工程开发与迭代，支持加热功能的推荐侧业务逻辑开发；\r\n2.协同算法、数据同学，推进模型与算法的工程优化与落地，提升加热推荐准确性和商业化收益；\r\n3.优化加热推荐链路的架构与效率，提升系统稳定性、扩展性与性能，保障高并发、低延迟的在线推荐能力；\r\n4.持续跟踪业界前沿技术，探索并引入推荐与广告的新特性，不断提升系统能力与研发效能，打造业界领先的广告推荐系统。",
+      "LastUpdateTime": "2026年04月30日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2017120081338851328",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2017120081338851328",
+      "Requirement": "1.计算机相关专业本科及以上学历，1年以上后端开发或机器学习工程相关经验；\n2.熟悉Linux开发环境，熟悉至少一门编程语言（如C/C++），深入理解数据结构与算法，善于通过编程解决实际问题；\n3.具备良好的问题分析和解决能力，能够独立设计和实现复杂功能模块；\n4.具备良好的团队协作能力和沟通能力，能够与跨职能团队高效合作；积极主动，勇于接受挑战；\n5.有搜索、广告、推荐等相关后台开发经验者优先。"
+    },
+    {
+      "Id": 0,
       "PostId": "1987809143616069632",
       "RecruitPostId": 115939,
       "RecruitPostName": "微信小程序-前端开发工程师",
@@ -2506,29 +2529,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1987809143616069632",
       "Requirement": "1.1年及以上工作经验，本科及或以上学历，计算机或相关专业，熟悉小程序开发及前端开发知识体系；\r\n2.了解小程序框架的原理；至少熟悉一种前端常见框架的原理，有深入理解；\r\n3.有一定的后端开发经验，熟悉 Node.js 开发框架；\r\n4.具备较好的优化意识，有前端性能优化的经验，有前端工程建设经验，有良好的编码规范；\r\n5.有较强的分析问题、解决问题的能力，有良好的沟通协作能力，责任心强，做事主动、热情。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2017120081338851328",
-      "RecruitPostId": 117650,
-      "RecruitPostName": "微信视频号-推荐大模型后台开发工程师-加热系统",
-      "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "加热",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责微信视频号加热的推荐工程开发与迭代，支持加热功能的推荐侧业务逻辑开发；\r\n2.协同算法、数据同学，推进模型与算法的工程优化与落地，提升加热推荐准确性和商业化收益；\r\n3.优化加热推荐链路的架构与效率，提升系统稳定性、扩展性与性能，保障高并发、低延迟的在线推荐能力；\r\n4.持续跟踪业界前沿技术，探索并引入推荐与广告的新特性，不断提升系统能力与研发效能，打造业界领先的广告推荐系统。",
-      "LastUpdateTime": "2026年03月31日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2017120081338851328",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2017120081338851328",
-      "Requirement": "1.计算机相关专业本科及以上学历，1年以上后端开发或机器学习工程相关经验；\n2.熟悉Linux开发环境，熟悉至少一门编程语言（如C/C++），深入理解数据结构与算法，善于通过编程解决实际问题；\n3.具备良好的问题分析和解决能力，能够独立设计和实现复杂功能模块；\n4.具备良好的团队协作能力和沟通能力，能够与跨职能团队高效合作；积极主动，勇于接受挑战；\n5.有搜索、广告、推荐等相关后台开发经验者优先。"
     },
     {
       "Id": 0,
@@ -3667,6 +3667,6 @@
   ],
   "stats": {
     "total": 154,
-    "update_time": "2026-04-30 03:26:49"
+    "update_time": "2026-05-01 03:36:40"
   }
 }
