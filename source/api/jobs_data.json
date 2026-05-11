@@ -2095,29 +2095,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2034975551495766016",
-      "RecruitPostId": 118706,
-      "RecruitPostName": "魔方工作室-后台开发工程师（AIGC产品）",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "AI游戏应用探索孵化项目",
-      "CategoryName": "技术",
-      "Responsibility": "1.参与网站产品或API接口的设计与开发，确保代码的质量和执行效率；\r\n2.根据产品需求进行技术方案选型，承担数据库设计、服务端架构优化工作，提升系统的性能和稳定性；\r\n3.遵循编码规范，编写高可用、高扩展、易维护的后端代码，并进行充分的单元测试；\r\n4.负责数据表结构设计，对慢查询进行优化，保障数据的一致性和安全性；\r\n5.负责线上服务器的日常维护、部署上线，快速响应并处理线上突发故障，及时修复Bug，保障系统稳定运行；\r\n6.撰写相关技术设计文档、接口文档和部署手册，做好知识沉淀；\r\n7.与产品经理、前端开发工程师紧密配合，共同推进项目进度，确保产品按时高质量交付。",
-      "LastUpdateTime": "2026年03月30日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2034975551495766016",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "五年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2034975551495766016",
-      "Requirement": "1.计算机相关专业本科及以上，5年以上后端开发经验；\r\n2.主导负责过中大型项目的实践经验，并成功完成至少一个系统的上线和运营；\r\n3.熟练掌握 Python/Go 等至少一门语言，熟悉常用框架与中间件；\r\n4.熟悉分布式系统、任务调度、消息队列等技术，有高并发系统开发经验；\r\n5.熟练使用 Docker 及 Kubernetes，具备 Linux 环境下快速定位复杂问题的能力；\r\n6.对AI技术有浓厚兴趣，具备出色的自主学习能力、逻辑思维与跨团队沟通协作能力。"
-    },
-    {
-      "Id": 0,
       "PostId": "2030831082567528448",
       "RecruitPostId": 118324,
       "RecruitPostName": "《王者荣耀世界》资深后台开发工程师",
@@ -2276,6 +2253,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1859161690281631744",
       "Requirement": "1.精通C/C++的Linux后台开发；\n2.扎实的算法和数据结构基础；\n3.对操作系统内存管理、进程管理、进程通信等有深入研究；\n4.熟悉业界常见的开源网络框架，熟悉常见的开源网络协议、开源存储系统等优先；\n5.有大数据或AI相关技术研究及实践基础优先。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2036346197547057152",
+      "RecruitPostId": 118788,
+      "RecruitPostName": "混元大模型-后台开发工程师（北京/深圳）",
+      "CountryName": "中国",
+      "LocationName": "北京",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "AI",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责数据采集/蒸馏及相关系统和平台的开发迭代和运维；\n2.负责数据接入/质检自动化Pipeline的设计，建设和维护；\n3.负责团队内AI智能体、Skills、Mcp等工具开发，为团队业务及系统提升迭代效率；\n4.帮助团队攻克各种技术难关，提升全渠道数据获取的效率、质量和能力。",
+      "LastUpdateTime": "2026年04月07日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2036346197547057152",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2036346197547057152",
+      "Requirement": "1.熟悉Python/Go/C++其中一种语言，具备扎实的编码能力；\r\n2.熟悉司内的trpc框架、tke、智研等研效平台，有扎实的后台开发基础和运维经验；\r\n3.对AI领域兴趣浓厚，积极拥抱最新技术，有自建智能体，workflow，openclaw等实践；\r\n4.逻辑清晰，具备出色的分析和解决问题能力，认真负责，需求事项皆可高效落地，沟通顺畅，具备良好的协作能力；\r\n5.具备业务、运营思维，有运营经验，关注业务效果和质量者优先。"
     },
     {
       "Id": 0,
@@ -3383,6 +3383,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2028045000553689088",
+      "RecruitPostId": 118022,
+      "RecruitPostName": "AW项目组-AI产品前端工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "预算专用-AW",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责Web应用核心开发，搭建高质量可复用的前端架构及组件体系；\r\n2.负责前端状态管理与样式系统，保障数据流清晰、界面一致；\r\n3.集成各类复杂交互组件，保障良好用户体验；\r\n4.参与前端游戏相关开发，处理Canvas渲染、触控交互及动画；\r\n5.编写测试、维护组件文档，保障代码质量与可维护性；\r\n6.对接LLM API，参与AI对话界面及Agent工作流前端实现。",
+      "LastUpdateTime": "2026年05月11日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028045000553689088",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2028045000553689088",
+      "Requirement": "1.精通TypeScript、主流前端框架及构建工具，有monorepo架构实践经验；\n2.熟练掌握前端状态管理、样式解决方案，能搭建可复用设计系统；\n3.熟悉HTML5 Canvas/WebGL，有互动内容或小游戏开发经验；\n4.具备良好工程素养，重视代码质量、错误处理、日志规范及国际化；\n5.理解Feature-First架构及DDD分层思想，能实现全链路类型安全；\n6.深度运用AI编程工具，高效驾驭AI辅助工作流，契合团队Vibe Coding核心模式。"
+    },
+    {
+      "Id": 0,
       "PostId": "1831157606756933632",
       "RecruitPostId": 107469,
       "RecruitPostName": "游戏AI-强化学习算法研究员",
@@ -3394,7 +3417,7 @@
       "ProductName": "游戏",
       "CategoryName": "技术",
       "Responsibility": "1.参与腾讯游戏AI的算法研究和应用，包括但不限于强化学习、模仿学习、元学习等，结合游戏场景，提供技术解决方案；\r\n2.强化学习算法应用效果优化，提高强化学习效率和效果，结合游戏场景进行应用；\r\n3.前沿技术的探索，推进强化学习技术在业务场景的应用。",
-      "LastUpdateTime": "2026年05月08日",
+      "LastUpdateTime": "2026年05月11日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1831157606756933632",
       "SourceID": 1,
       "IsCollect": false,
@@ -3521,29 +3544,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2028045000553689088",
-      "RecruitPostId": 118022,
-      "RecruitPostName": "AW项目组-AI产品前端工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "预算专用-AW",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责Web应用核心开发，搭建高质量可复用的前端架构及组件体系；\r\n2.负责前端状态管理与样式系统，保障数据流清晰、界面一致；\r\n3.集成各类复杂交互组件，保障良好用户体验；\r\n4.参与前端游戏相关开发，处理Canvas渲染、触控交互及动画；\r\n5.编写测试、维护组件文档，保障代码质量与可维护性；\r\n6.对接LLM API，参与AI对话界面及Agent工作流前端实现。",
-      "LastUpdateTime": "2026年04月13日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028045000553689088",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2028045000553689088",
-      "Requirement": "1.精通TypeScript、主流前端框架及构建工具，有monorepo架构实践经验；\n2.熟练掌握前端状态管理、样式解决方案，能搭建可复用设计系统；\n3.熟悉HTML5 Canvas/WebGL，有互动内容或小游戏开发经验；\n4.具备良好工程素养，重视代码质量、错误处理、日志规范及国际化；\n5.理解Feature-First架构及DDD分层思想，能实现全链路类型安全；\n6.深度运用AI编程工具，高效驾驭AI辅助工作流，契合团队Vibe Coding核心模式。"
-    },
-    {
-      "Id": 0,
       "PostId": "2034259484288909312",
       "RecruitPostId": 118634,
       "RecruitPostName": "AI 知识管理与评测-技术专家",
@@ -3600,7 +3600,7 @@
     },
     {
       "name": "扎实",
-      "value": 59
+      "value": 61
     },
     {
       "name": "PYTHON",
@@ -3616,7 +3616,7 @@
     },
     {
       "name": "LINUX",
-      "value": 44
+      "value": 43
     },
     {
       "name": "主流",
@@ -3624,7 +3624,7 @@
     },
     {
       "name": "落地",
-      "value": 34
+      "value": 35
     },
     {
       "name": "网络",
@@ -3651,7 +3651,7 @@
       "value": 30
     },
     {
-      "name": "专业本科",
+      "name": "智能",
       "value": 28
     },
     {
@@ -3659,11 +3659,11 @@
       "value": 28
     },
     {
-      "name": "人工智能",
+      "name": "专业本科",
       "value": 27
     },
     {
-      "name": "智能",
+      "name": "人工智能",
       "value": 27
     },
     {
@@ -3671,48 +3671,48 @@
       "value": 26
     },
     {
-      "name": "一门",
-      "value": 25
-    },
-    {
       "name": "硕士",
       "value": 25
     },
     {
       "name": "解决问题",
+      "value": 25
+    },
+    {
+      "name": "一门",
       "value": 24
     },
     {
       "name": "领域",
-      "value": 23
-    },
-    {
-      "name": "产品",
-      "value": 22
-    },
-    {
-      "name": "实践经验",
-      "value": 22
+      "value": 24
     },
     {
       "name": "实际",
       "value": 22
     },
     {
-      "name": "机器",
+      "name": "产品",
       "value": 21
     },
     {
-      "name": "环境",
+      "name": "实践经验",
+      "value": 21
+    },
+    {
+      "name": "机器",
       "value": 21
     },
     {
       "name": "大规模",
       "value": 21
+    },
+    {
+      "name": "环境",
+      "value": 20
     }
   ],
   "stats": {
     "total": 156,
-    "update_time": "2026-05-10 03:31:43"
+    "update_time": "2026-05-11 03:43:21"
   }
 }
