@@ -3026,7 +3026,7 @@
       "ProductName": "运营管理（运营管理部）",
       "CategoryName": "技术",
       "Responsibility": "1.负责公司整体AI平台架构设计和AI工程化技术。通过AI基础设施和软硬件协同优化来提升公司大模型训练和推理的效率。负责前沿异构计算芯片、大模型推理优化、大规模训练的技术演进跟踪和落地。",
-      "LastUpdateTime": "2026年04月15日",
+      "LastUpdateTime": "2026年05月16日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1989222729840218112",
       "SourceID": 1,
       "IsCollect": false,
@@ -3736,6 +3736,6 @@
   ],
   "stats": {
     "total": 157,
-    "update_time": "2026-05-16 03:25:11"
+    "update_time": "2026-05-17 03:39:08"
   }
 }
