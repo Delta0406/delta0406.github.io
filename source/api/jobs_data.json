@@ -25,6 +25,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2016726999816626176",
+      "RecruitPostId": 117628,
+      "RecruitPostName": "元宝-Agent架构工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "元宝",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责元宝在线产品的 Agent 系统整体架构设计与演进，包括Agent Runtime、Tool/Memory/Context 抽象、多 Agent 协作模式、Human-in-the-loop等；\r\n2.与算法/产品/业务高频密切合作，结合产品功能、模型能力边界与架构约束，实现 Agent 产品的整体架构方案设计；\r\n3.持续探索、研究并引入新的框架和 Agent 技术范式。",
+      "LastUpdateTime": "2026年05月18日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2016726999816626176",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2016726999816626176",
+      "Requirement": "1.本科及以上，计算机/自动化/AI 等相关背景，具备扎实工程基础；\r\n2.熟练至少一门主流语言（Python / TypeScript / Go 等），能熟练使用主流ai coding工具；\r\n3.了解 LLM 与 Agent 基本技术原理和常见范式；\r\n4.具备良好的产品sense和团队沟通协作能力。"
+    },
+    {
+      "Id": 0,
       "PostId": "2016726997581058048",
       "RecruitPostId": 117627,
       "RecruitPostName": "元宝-Agent架构工程师",
@@ -44,29 +67,6 @@
       "RequireWorkYearsName": "两年以上工作经验",
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2016726997581058048",
-      "Requirement": "1.本科及以上，计算机/自动化/AI 等相关背景，具备扎实工程基础；\r\n2.熟练至少一门主流语言（Python / TypeScript / Go 等），能熟练使用主流ai coding工具；\r\n3.了解 LLM 与 Agent 基本技术原理和常见范式；\r\n4.具备良好的产品sense和团队沟通协作能力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2016726999816626176",
-      "RecruitPostId": 117628,
-      "RecruitPostName": "元宝-Agent架构工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "元宝",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责元宝在线产品的 Agent 系统整体架构设计与演进，包括Agent Runtime、Tool/Memory/Context 抽象、多 Agent 协作模式、Human-in-the-loop等；\r\n2.与算法/产品/业务高频密切合作，结合产品功能、模型能力边界与架构约束，实现 Agent 产品的整体架构方案设计；\r\n3.持续探索、研究并引入新的框架和 Agent 技术范式。",
-      "LastUpdateTime": "2026年04月29日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2016726999816626176",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2016726999816626176",
       "Requirement": "1.本科及以上，计算机/自动化/AI 等相关背景，具备扎实工程基础；\r\n2.熟练至少一门主流语言（Python / TypeScript / Go 等），能熟练使用主流ai coding工具；\r\n3.了解 LLM 与 Agent 基本技术原理和常见范式；\r\n4.具备良好的产品sense和团队沟通协作能力。"
     },
     {
@@ -1175,6 +1175,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1987711767794569216",
+      "RecruitPostId": 115916,
+      "RecruitPostName": "元宝-后台开发工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "元宝",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责元宝AIGC应用（如文本生成、图像生成、音视频对话）的后台系统架构设计与开发，支撑高并发、低延迟的AI应用服务；\r\n2.基于LLM大模型能力场景，推进建设AIGC平台研发落地，支持插件接入&管理、数据飞轮pipeline等平台能力，为AI Agent的研发上线提升效率和质量；\r\n3.负责解决平台和服务在高并发场景下的性能优化，问题定位&解决，保障服务SLA。",
+      "LastUpdateTime": "2026年05月18日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1987711767794569216",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1987711767794569216",
+      "Requirement": "1.计算机专业本科及以上学历 ；\n2.3年及以上后台开发经验，熟悉系统运维的基础知识，能够排查实际问题；\n3.精通GO/C++/Java开发语言中的一种或多种，熟悉常见rpc框架；\n4.熟悉微服务架构、数据库（MySQL/Redis/MongoDB）、消息队列（Kafka/RabbitMQ）及容器化技术（Docker/K8s）；\n5.有流程编排引擎（如Airflow）、LLM应用开发框架（如eino）开发经验优先，能够支持复杂AI Agent的任务链编排与管理；\n6.有责任心，能积极主动推进项目进展，具备团队协作意识和良好的沟通能力。"
+    },
+    {
+      "Id": 0,
       "PostId": "1992786823440654336",
       "RecruitPostId": 116160,
       "RecruitPostName": "元宝-后台开发工程师",
@@ -1195,29 +1218,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1992786823440654336",
       "Requirement": "1.计算机专业本科及以上学历 ；\r\n2.5年及以上后台开发经验，熟悉系统运维的基础知识，能够排查实际问题；\r\n3.精通GO，C++，Python开发语言中的一种或多种，熟悉常见rpc框架；\r\n4.熟悉微服务架构、数据库（MySQL/Redis/MongoDB）、消息队列（Kafka/RabbitMQ）及容器化技术（Docker/K8s）；\r\n5.有流程编排引擎（如Airflow）、LLM应用开发框架（如eino）开发经验优先，能够支持复杂AI Agent的任务链编排与管理；\r\n6.有责任心，能积极主动推进项目进展，具备团队协作意识，和良好的沟通能力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1987711767794569216",
-      "RecruitPostId": 115916,
-      "RecruitPostName": "元宝-后台开发工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "元宝",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责元宝AIGC应用（如文本生成、图像生成、音视频对话）的后台系统架构设计与开发，支撑高并发、低延迟的AI应用服务；\r\n2.基于LLM大模型能力场景，推进建设AIGC平台研发落地，支持插件接入&管理、数据飞轮pipeline等平台能力，为AI Agent的研发上线提升效率和质量；\r\n3.负责解决平台和服务在高并发场景下的性能优化，问题定位&解决，保障服务SLA。",
-      "LastUpdateTime": "2026年05月11日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1987711767794569216",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1987711767794569216",
-      "Requirement": "1.计算机专业本科及以上学历 ；\n2.3年及以上后台开发经验，熟悉系统运维的基础知识，能够排查实际问题；\n3.精通GO/C++/Java开发语言中的一种或多种，熟悉常见rpc框架；\n4.熟悉微服务架构、数据库（MySQL/Redis/MongoDB）、消息队列（Kafka/RabbitMQ）及容器化技术（Docker/K8s）；\n5.有流程编排引擎（如Airflow）、LLM应用开发框架（如eino）开发经验优先，能够支持复杂AI Agent的任务链编排与管理；\n6.有责任心，能积极主动推进项目进展，具备团队协作意识和良好的沟通能力。"
     },
     {
       "Id": 0,
@@ -2164,6 +2164,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1966029487942553600",
+      "RecruitPostId": 114747,
+      "RecruitPostName": "微信小程序-后台开发工程师-境外方向",
+      "CountryName": "中国",
+      "LocationName": "广州",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "小程序",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责小程序境外能力建设，解决境外使用及来华用户痛点，如境外支付、搜索发现、访问优化、多语言等，同时负责探索更多境外本地化、国际化能力。",
+      "LastUpdateTime": "2026年05月18日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1966029487942553600",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1966029487942553600",
+      "Requirement": "1.本科以上学历，计算机相关专业；\r\n2.具有较强的学习能力，熟悉数据结构和算法；\r\n3.熟悉Linux环境下的C/C++开发；\r\n4.熟练掌握高并发，性能优化，服务稳定性等后台开发常识；\r\n5.有大数据或AI相关技术研究及实践基础优先；\r\n6.有境外相关工作生活经验更佳。"
+    },
+    {
+      "Id": 0,
       "PostId": "2051884459330023424",
       "RecruitPostId": 119786,
       "RecruitPostName": "微信小游戏-后台开发工程师-商业基建",
@@ -2230,29 +2253,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1859161690281631744",
       "Requirement": "1.精通C/C++的Linux后台开发；\n2.扎实的算法和数据结构基础；\n3.对操作系统内存管理、进程管理、进程通信等有深入研究；\n4.熟悉业界常见的开源网络框架，熟悉常见的开源网络协议、开源存储系统等优先；\n5.有大数据或AI相关技术研究及实践基础优先。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1983435797747093504",
-      "RecruitPostId": 115658,
-      "RecruitPostName": "企业微信-数据库后台开发高级工程师",
-      "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "企业微信协作工具SaaS",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责企业微信智能表格公式计算引擎的架构设计、性能优化，为用户提供高性能的实时计算服务；\r\n2.负责计算引擎的架构调优、分布式执行、编译优化、数据结构优化、查询优化、函数优化等一系列深度性能优化，深入了解用户需求，快速解决用户痛点；\r\n3.负责数据库业界前沿的技术探索和落地。",
-      "LastUpdateTime": "2026年04月29日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1983435797747093504",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "五年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1983435797747093504",
-      "Requirement": "1.本科及以上学历，计算机相关专业，有算法调优和数据库研发经验优先；\r\n2.具备优秀的系统架构设计能力，深入理解系统技术细节，善于专研，善于解决疑难问题；\r\n3.深入参与过大数据系统的开发，对大数据处理架构有较深入认知者优先；\r\n4.有编程语言底层运行性能优化经验者优先；\r\n5.有OLAP数据库内核开发经验者优先。"
     },
     {
       "Id": 0,
@@ -2736,6 +2736,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1955829491829985280",
       "Requirement": "1.具备扎实的后端研发功底，熟练掌握 Golang/C++/Python 至少一门语言，对Linux环境下的分布式系统开发与挑战有深刻理解，具备复杂业务系统的设计与落地经验；\n2.具备解决大规模推理服务技术挑战的实践经验，尤其在状态感知的负载均衡、分布式推理的服务编排、长上下文管理或推理服务框架治理等方向有系统设计能力；\n3.具备出色的系统性思考和问题解决能力，能够从性能、成本、稳定性的全局视角进行技术选型与架构决策；\n4.具备以下一项或多项经验者优先：\n1).有AI推理平台核心模块的设计与研发经验；\n2).具备vLLM等主流推理框架的服务集成与性能调优经验，并深入理解其架构原理；\n3).熟悉推理请求调度机制，并具备复杂场景（文本/多模态/流式）的服务设计经验；\n4).有大规模GPU推理集群治理、可观测性体系的实践经验。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2055672494735667200",
+      "RecruitPostId": 120089,
+      "RecruitPostName": "具身智能数据基建工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "Robotics X其他",
+      "CategoryName": "技术",
+      "Responsibility": "1.大规模数据集导入流程建设：设计并实现大规模数据集导入、解析、校验、清洗、去重、格式转换和元信息抽取流程，提升数据从采集到可训练状态的流转效率；\r\n2.数据管理系统建设：负责建设面向多模态、多任务、多版本的数据管理系统，支持数据资产检索、权限管理、数据血缘追踪、质量评估、版本控制、任务关联与实验追踪；\r\n3.训练数据加载基建优化：面向大规模模型训练需求，优化训练数据加载链路，包括数据格式设计、索引构建、缓存策略、分布式读取、吞吐性能优化和稳定性保障；\r\n4.数据自动处理流程建设：搭建自动化数据处理 Pipeline，支持数据预处理、规则校验、质量检测、异常过滤、自动切分、自动打标签、统计分析和可视化监控；\r\n5.数据标注系统建设：设计和开发面向具身智能场景的数据标注系统，支持图像、视频、点云、轨迹、动作序列、语言指令、机器人状态等多模态数据的标注、审核、质检与任务管理；\r\n6.数据质量与效率优化：建立数据质量评估指标体系，推动数据生产、标注、训练使用过程中的效率提升和问题闭环，提升高质量训练数据占比；\r\n7.跨团队协作：与算法、机器人、平台、产品及标注运营团队紧密合作，理解模型训练和机器人任务需求，将业务需求转化为稳定可复用的数据基础设施能力。",
+      "LastUpdateTime": "2026年05月18日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2055672494735667200",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2055672494735667200",
+      "Requirement": "1.计算机及相关专业背景：本科及以上学历，计算机、软件工程、人工智能、机器人、自动化、电子信息、数据科学等相关专业优先；\r\n2.扎实的工程开发能力：熟练掌握 Python / Go / C++ 中至少一种后端开发语言，具备良好的工程编码能力、系统设计能力和问题排查能力；\r\n3.数据工程或平台系统经验：有数据平台、数据中台、机器学习平台、AI Infra、MLOps、数据标注平台、数据湖或大规模数据处理系统建设经验者优先；\r\n4.熟悉大规模数据处理技术：熟悉常见数据处理框架或工具，如 Spark、Flink、Ray、Airflow、Dagster、Kafka、Hive、ClickHouse、PostgreSQL、MongoDB、Redis、对象存储等中的一种或多种；\r\n5.了解机器学习训练数据链路：理解模型训练中的数据准备、数据加载、数据增强、数据采样、数据版本管理、训练集 / 验证集 / 测试集划分等基本流程；\r\n6.具备系统性能优化经验：有大规模文件读写、分布式数据加载、缓存优化、I/O 性能优化、任务调度优化、存储成本优化或高并发系统优化经验者优先。"
     },
     {
       "Id": 0,
@@ -3615,7 +3638,7 @@
   "cloud": [
     {
       "name": "AI",
-      "value": 179
+      "value": 181
     },
     {
       "name": "AGENT",
@@ -3623,18 +3646,18 @@
     },
     {
       "name": "扎实",
-      "value": 60
+      "value": 61
     },
     {
       "name": "GO",
+      "value": 49
+    },
+    {
+      "name": "PYTHON",
       "value": 48
     },
     {
       "name": "主流",
-      "value": 47
-    },
-    {
-      "name": "PYTHON",
       "value": 47
     },
     {
@@ -3643,7 +3666,7 @@
     },
     {
       "name": "LINUX",
-      "value": 42
+      "value": 43
     },
     {
       "name": "落地",
@@ -3651,7 +3674,7 @@
     },
     {
       "name": "数据结构",
-      "value": 34
+      "value": 35
     },
     {
       "name": "微信",
@@ -3662,20 +3685,24 @@
       "value": 33
     },
     {
-      "name": "数据库",
-      "value": 33
+      "name": "工具",
+      "value": 32
     },
     {
       "name": "RAG",
       "value": 32
     },
     {
-      "name": "工具",
-      "value": 31
+      "name": "数据库",
+      "value": 30
     },
     {
       "name": "JAVA",
       "value": 30
+    },
+    {
+      "name": "人工智能",
+      "value": 29
     },
     {
       "name": "深度",
@@ -3686,19 +3713,15 @@
       "value": 28
     },
     {
-      "name": "人工智能",
-      "value": 28
-    },
-    {
       "name": "一门",
       "value": 27
     },
     {
-      "name": "实际",
-      "value": 26
+      "name": "智能",
+      "value": 27
     },
     {
-      "name": "智能",
+      "name": "实际",
       "value": 26
     },
     {
@@ -3714,28 +3737,28 @@
       "value": 24
     },
     {
+      "name": "并发",
+      "value": 23
+    },
+    {
+      "name": "机器",
+      "value": 23
+    },
+    {
+      "name": "大规模",
+      "value": 23
+    },
+    {
       "name": "产品",
       "value": 22
     },
     {
       "name": "实践经验",
       "value": 21
-    },
-    {
-      "name": "并发",
-      "value": 21
-    },
-    {
-      "name": "协议",
-      "value": 21
-    },
-    {
-      "name": "机器",
-      "value": 21
     }
   ],
   "stats": {
-    "total": 157,
-    "update_time": "2026-05-17 03:39:08"
+    "total": 158,
+    "update_time": "2026-05-18 03:54:05"
   }
 }
