@@ -209,6 +209,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2026845083588001792",
+      "RecruitPostId": 117948,
+      "RecruitPostName": "AI应用开发工程师-Agent方向",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "PCG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "QQ",
+      "CategoryName": "技术",
+      "Responsibility": "1.设计并实现社交产品中的 AI Agent 核心系统，包括：任务规划（Planning）、长期记忆系统（Long-term Memory）、意图识别与多 Agent 协同、RAG 架构与效果优化；\r\n2.构建 Agent 基础设施，包括：Durable Execution 长任务执行框架、沙箱与安全执行环境、Skills 编排与 MCP 协议集成；\r\n3.建立模型效果评测与优化飞轮，推动效果持续迭代；\r\n4.跟进主流 Agent 框架并结合业务落地；\r\n5.参与模型推理加速、微调与强化学习等性能优化工作。",
+      "LastUpdateTime": "2026年05月27日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2026845083588001792",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2026845083588001792",
+      "Requirement": "1.深刻理解 Transformer 与 LLM 原理；\r\n2.有Agent实战项目经验；\r\n3.有扎实的编程能力，并熟练使用 AI 进行研发；\r\n4.具备良好的系统设计与工程能力。"
+    },
+    {
+      "Id": 0,
       "PostId": "2030910912042532864",
       "RecruitPostId": 118337,
       "RecruitPostName": "AI量化投研工程师-Agent方向",
@@ -275,29 +298,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2019372240872833024",
       "Requirement": "1.硕士及以上学历，计算机科学、人工智能、机器学习、计算机视觉、自然语言处理等相关专业；\r\n2.具备扎实的计算机基础，熟悉数据结构、算法、操作系统、分布式计算等核心知识，具备良好的编码能力（Python为主），代码风格规范；\r\n3.具备较强的问题解决能力、自驱力与学习能力，能快速跟进前沿技术，抗压性强，具备良好的跨团队沟通与协作能力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2026845083588001792",
-      "RecruitPostId": 117948,
-      "RecruitPostName": "AI应用开发工程师-Agent方向",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "PCG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "QQ",
-      "CategoryName": "技术",
-      "Responsibility": "1.设计并实现社交产品中的 AI Agent 核心系统，包括：任务规划（Planning）、长期记忆系统（Long-term Memory）、意图识别与多 Agent 协同、RAG 架构与效果优化；\r\n2.构建 Agent 基础设施，包括：Durable Execution 长任务执行框架、沙箱与安全执行环境、Skills 编排与 MCP 协议集成；\r\n3.建立模型效果评测与优化飞轮，推动效果持续迭代；\r\n4.跟进主流 Agent 框架并结合业务落地；\r\n5.参与模型推理加速、微调与强化学习等性能优化工作。",
-      "LastUpdateTime": "2026年04月17日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2026845083588001792",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2026845083588001792",
-      "Requirement": "1.深刻理解 Transformer 与 LLM 原理；\r\n2.有Agent实战项目经验；\r\n3.有扎实的编程能力，并熟练使用 AI 进行研发；\r\n4.具备良好的系统设计与工程能力。"
     },
     {
       "Id": 0,
@@ -1152,6 +1152,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2059160518509379584",
+      "RecruitPostId": 120228,
+      "RecruitPostName": "狩-后台开发-UE5 DS后台开发",
+      "CountryName": "中国",
+      "LocationName": "北京",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "SOCH-端手互通",
+      "CategoryName": "技术",
+      "Responsibility": "1.参与《狩》项目专属 DS 架构设计与核心系统研发，主导多人联机玩法的服务端落地、性能优化与安全体系建设；\r\n2.从底层引擎到上层业务全流程把控，打造高可用、高并发、高安全的工业化 DS 服务端。",
+      "LastUpdateTime": "2026年05月26日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2059160518509379584",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2059160518509379584",
+      "Requirement": "1.3年以上UE开发经验，完整参与过中大型多人联机项目全周期开发；\r\n2.精通C++，对内存管理、数据结构与算法有深度理解，具备扎实的编程功底；\r\n3.深入掌握UE核心机制，包括UObject生命周期、GC安全、反射系统及跨语言调用性能边界；\r\n4.具备扎实的计算机系统与网络基础，熟练掌握Linux开发、调试与部署；\r\n5.满足至少一项专项技术要求：服务端Gameplay架构设计、移动同步与权威校验、网络同步机制优化、性能优化与资源裁剪、高可用与稳定性建设。"
+    },
+    {
+      "Id": 0,
       "PostId": "2057315507438268416",
       "RecruitPostId": 10002787,
       "RecruitPostName": "PUBGM后台开发",
@@ -1842,6 +1865,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2054748267383799808",
+      "RecruitPostId": 120018,
+      "RecruitPostName": "微信支付-安全后台开发工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "微信支付",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责微信支付安全服务（人脸组件、权限组件等）的开发和维护工作，满足海量服务下的高可用、高性能等要求；\n2.负责微信支付安全风险管理体系的工程建设，包括DevSecOps、数据安全、办公安全、SoC等的开发和维护，持续打造高安全、高效能的安全治理体系。",
+      "LastUpdateTime": "2026年05月27日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2054748267383799808",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2054748267383799808",
+      "Requirement": "1.熟练掌握Linux系统编程知识，至少熟练掌握C++、Go、Java中的一种开发语言；\n2.本科及以上学历，计算机软件或相关专业，2年及以上工作经验；\n3.优先考虑能力：海量服务系统经验或大型复杂系统系统架构经验；熟悉安全领域知识；\n4.良好的沟通表达能力，具备团队合作精神，考虑问题全面细致，对待工作认真严谨。"
+    },
+    {
+      "Id": 0,
       "PostId": "2052212688720936960",
       "RecruitPostId": 119809,
       "RecruitPostName": "微信支付-后台软件开发工程师",
@@ -2230,29 +2276,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2030831073021292544",
       "Requirement": "1.本科及以上学历，5年以上游戏服务器研发工作经验，精通C/C++开发/设计经验；\r\n2.熟练掌握Linux操作系统下的服务器程序开发，熟练掌握数据库调优、多线程编程、服务器通信等知识点至少一种；\r\n3.对主流引擎UE4、U3D等有熟练使用经验者优先；\r\n4.有 DS开发经验者优先；\r\n5.有成功上线的大型多人在线游戏、开放大世界游戏、大型MMO服务器开发经验优先；\r\n6.对海量、高性能、分布式开发有经验者优先；\r\n7.热爱游戏行业，具备良好的沟通能力、团队协作能力，自驱力强，抗压能力强。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1925750443284234240",
-      "RecruitPostId": 112262,
-      "RecruitPostName": "企业微信邮箱-高级后台开发工程师",
-      "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "企业微信",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责企业微信邮箱基础服务后台开发和维护；\r\n2.深入参与企业微信邮箱的功能迭代需求研发，持续优化系统，维持系统稳定；\r\n3.深度参与后台架构设计与优化。",
-      "LastUpdateTime": "2026年04月27日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1925750443284234240",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1925750443284234240",
-      "Requirement": "1.本科及以上学历，计算机或相关专业；\r\n2.熟悉Linux开发环境，扎实的数据结构和算法功底，有较强的逻辑思维能力，具备快速分析定位问题能力；\r\n3.熟悉TCP/IP网络协议相关知识，熟练掌握C++/Go 等至少一门语言；\r\n4.责任感强、沟通能力良好，能够承担工作压力；\r\n5.在网络框架、存储架构、分布式架构等海量数据处理方面有经验者优先；\r\n6.具备项目管理经验者优先。"
     },
     {
       "Id": 0,
@@ -3038,6 +3061,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2056633439326748672",
+      "RecruitPostId": 120136,
+      "RecruitPostName": "AI渲染研究员",
+      "CountryName": "中国",
+      "LocationName": "上海",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "先锋云算力基础服务",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责多模态游戏资产内容生成与增强相关算法的研发，通过大模型的训练、微调等手段，提升世界模型的清晰度、补全缺失内容；\r\n2.探索多模态大模型与AIGC技术在游戏领域的应用，通过AI技术能力对世界模型进行二次编辑改造；\r\n3.探索和推进有影响力的AI技术研究和在具体业务场景中的应用。",
+      "LastUpdateTime": "2026年05月26日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2056633439326748672",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "不限",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2056633439326748672",
+      "Requirement": "1.数学、计算机、机器学习、人工智能等相关专业硕士研究生及以上学历；\r\n2.精通至少一种技术语言，包括但不限于Python、C/C++等；\r\n3.具有扎实的计算机视觉、计算机图形学或机器学习算法基础；\r\n4.具有多模态大模型的研究和开发经验，具备生成式大模型（如Diffusion Models、GANs）的训练、微调（Fine-tuning）及LoRA/ControlNet等外挂模块的实操经验。"
+    },
+    {
+      "Id": 0,
       "PostId": "2046368359796338688",
       "RecruitPostId": 10002728,
       "RecruitPostName": "Sr. LLM Application Engineer (AI Agents)",
@@ -3058,6 +3104,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2046368359796338688",
       "Requirement": "岗位要求详情请见上方岗位职责内说明"
+    },
+    {
+      "Id": 0,
+      "PostId": "2037101979121119232",
+      "RecruitPostId": 118869,
+      "RecruitPostName": "AI Infra研发工程师",
+      "CountryName": "中国",
+      "LocationName": "上海",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯云",
+      "CategoryName": "技术",
+      "Responsibility": "1.虚拟化平台异构计算方向功能、性能优化；\r\n2.异构计算方向虚拟化能力适配；\r\n3.异构计算方向虚拟化相关软件生态适配；\r\n4.前瞻性技术预研。",
+      "LastUpdateTime": "2026年05月27日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2037101979121119232",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2037101979121119232",
+      "Requirement": "1.3年以上相关工作经验；\r\n2.深入理解KVM虚拟化技术，具备内核开发，性能分析能力，Debug能力；\r\n3.深入理解IOMMU，PCIe，硬件辅助虚拟化技术，熟悉GPU/NPU/DPU相关的技术解决方案；\r\n4.深入理解主流GPU/NPU硬件架构，了解业界发展方向与最新进程；\r\n5.熟悉上层AI方向主流框架，具备硬件调优经验。"
     },
     {
       "Id": 0,
@@ -3103,29 +3172,6 @@
       "RequireWorkYearsName": "三年以上工作经验",
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2037101981088251904",
-      "Requirement": "1.3年以上相关工作经验；\r\n2.深入理解KVM虚拟化技术，具备内核开发，性能分析能力，Debug能力；\r\n3.深入理解IOMMU，PCIe，硬件辅助虚拟化技术，熟悉GPU/NPU/DPU相关的技术解决方案；\r\n4.深入理解主流GPU/NPU硬件架构，了解业界发展方向与最新进程；\r\n5.熟悉上层AI方向主流框架，具备硬件调优经验。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2037101979121119232",
-      "RecruitPostId": 118869,
-      "RecruitPostName": "AI Infra研发工程师",
-      "CountryName": "中国",
-      "LocationName": "上海",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "腾讯云",
-      "CategoryName": "技术",
-      "Responsibility": "1.虚拟化平台异构计算方向功能、性能优化；\r\n2.异构计算方向虚拟化能力适配；\r\n3.异构计算方向虚拟化相关软件生态适配；\r\n4.前瞻性技术预研。",
-      "LastUpdateTime": "2026年04月08日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2037101979121119232",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2037101979121119232",
       "Requirement": "1.3年以上相关工作经验；\r\n2.深入理解KVM虚拟化技术，具备内核开发，性能分析能力，Debug能力；\r\n3.深入理解IOMMU，PCIe，硬件辅助虚拟化技术，熟悉GPU/NPU/DPU相关的技术解决方案；\r\n4.深入理解主流GPU/NPU硬件架构，了解业界发展方向与最新进程；\r\n5.熟悉上层AI方向主流框架，具备硬件调优经验。"
     },
     {
@@ -3615,7 +3661,7 @@
   "cloud": [
     {
       "name": "AI",
-      "value": 175
+      "value": 176
     },
     {
       "name": "AGENT",
@@ -3623,18 +3669,18 @@
     },
     {
       "name": "扎实",
-      "value": 60
+      "value": 62
     },
     {
       "name": "GO",
       "value": 50
     },
     {
-      "name": "主流",
-      "value": 48
+      "name": "PYTHON",
+      "value": 49
     },
     {
-      "name": "PYTHON",
+      "name": "主流",
       "value": 48
     },
     {
@@ -3643,7 +3689,7 @@
     },
     {
       "name": "LINUX",
-      "value": 38
+      "value": 39
     },
     {
       "name": "落地",
@@ -3655,7 +3701,7 @@
     },
     {
       "name": "JAVA",
-      "value": 31
+      "value": 32
     },
     {
       "name": "微信",
@@ -3670,7 +3716,11 @@
       "value": 29
     },
     {
-      "name": "一门",
+      "name": "人工智能",
+      "value": 28
+    },
+    {
+      "name": "深度",
       "value": 28
     },
     {
@@ -3678,11 +3728,7 @@
       "value": 28
     },
     {
-      "name": "人工智能",
-      "value": 27
-    },
-    {
-      "name": "深度",
+      "name": "一门",
       "value": 27
     },
     {
@@ -3694,23 +3740,31 @@
       "value": 27
     },
     {
+      "name": "网络",
+      "value": 26
+    },
+    {
       "name": "并发",
       "value": 25
     },
     {
-      "name": "网络",
-      "value": 25
+      "name": "硕士",
+      "value": 24
+    },
+    {
+      "name": "机器",
+      "value": 24
     },
     {
       "name": "场景",
       "value": 24
     },
     {
-      "name": "硕士",
+      "name": "实践经验",
       "value": 23
     },
     {
-      "name": "实践经验",
+      "name": "安全",
       "value": 23
     },
     {
@@ -3724,18 +3778,10 @@
     {
       "name": "产品",
       "value": 22
-    },
-    {
-      "name": "协议",
-      "value": 22
-    },
-    {
-      "name": "实际",
-      "value": 22
     }
   ],
   "stats": {
-    "total": 157,
-    "update_time": "2026-05-26 03:44:44"
+    "total": 159,
+    "update_time": "2026-05-27 04:01:04"
   }
 }
