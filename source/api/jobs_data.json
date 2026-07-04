@@ -1865,6 +1865,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2014529794737328128",
+      "RecruitPostId": 117479,
+      "RecruitPostName": "微信小店-后台开发工程师-商业基建",
+      "CountryName": "中国",
+      "LocationName": "广州",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "WXG公共",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责微信电商的交易保障体系以及平台运营系统的后台开发工作，包括但不限于入驻、商家客服、平台客服、物流、运费险、售后、纠纷、知识库系统等；\r\n2.重点提升微信生态内的用户电商交易体验，确保系统稳定性和高效性；\r\n3.共同参与产品设计，负责新特性的后台系统设计与实现，推动业务功能迭代升级。",
+      "LastUpdateTime": "2026年07月03日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2014529794737328128",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2014529794737328128",
+      "Requirement": "1.本科及以上学历，计算机相关专业毕业；\r\n2.至少1年以上Linux/Unix后台开发工作经验，熟悉后台开发流程；\r\n3.精通C/C++开发语言，熟练掌握常用算法和数据结构；\r\n4.熟悉TCP/UDP协议网络编程，能够编写shell脚本进行自动化部署和维护；\r\n5.具备高并发、高性能服务系统设计经验及能力，能够独立承担系统设计工作；\r\n6.有海量服务、高性能、分布式系统设计及开发经验者优先考虑；\r\n7.良好的学习能力、沟通能力、团队协作能力，以及分析问题解决问题的能力，责任心强。"
+    },
+    {
+      "Id": 0,
       "PostId": "1925750443284234240",
       "RecruitPostId": 112262,
       "RecruitPostName": "企业微信邮箱-高级后台开发工程师",
@@ -1908,29 +1931,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2043623808224620544",
       "Requirement": "1.精通C++和至少一种数据处理脚本语言，数据结构、算法、网络等基础扎实，熟悉Linux环境下的高新能服务开发、命令、调试分析工具；\r\n2.具备较强的分析、解决问题的能力，认可游戏行业，善于沟通协作，具有较强的探索精神和、优化意识和自驱力；\r\n3.拥有2年以上UE4/UE5相关开发经验，或游戏玩法、BotAI或数据应用相关的开发经验。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2014529794737328128",
-      "RecruitPostId": 117479,
-      "RecruitPostName": "微信小店-后台开发工程师-商业基建",
-      "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "WXG公共",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责微信电商的交易保障体系以及平台运营系统的后台开发工作，包括但不限于入驻、商家客服、平台客服、物流、运费险、售后、纠纷、知识库系统等；\r\n2.重点提升微信生态内的用户电商交易体验，确保系统稳定性和高效性；\r\n3.共同参与产品设计，负责新特性的后台系统设计与实现，推动业务功能迭代升级。",
-      "LastUpdateTime": "2026年06月30日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2014529794737328128",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2014529794737328128",
-      "Requirement": "1.本科及以上学历，计算机相关专业毕业；\r\n2.至少1年以上Linux/Unix后台开发工作经验，熟悉后台开发流程；\r\n3.精通C/C++开发语言，熟练掌握常用算法和数据结构；\r\n4.熟悉TCP/UDP协议网络编程，能够编写shell脚本进行自动化部署和维护；\r\n5.具备高并发、高性能服务系统设计经验及能力，能够独立承担系统设计工作；\r\n6.有海量服务、高性能、分布式系统设计及开发经验者优先考虑；\r\n7.良好的学习能力、沟通能力、团队协作能力，以及分析问题解决问题的能力，责任心强。"
     },
     {
       "Id": 0,
@@ -2647,6 +2647,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2070404615127613440",
+      "RecruitPostId": 120770,
+      "RecruitPostName": "微信读书产品部-AI 应用开发工程师",
+      "CountryName": "中国",
+      "LocationName": "广州",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "微信读书",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责读书产品部新应用的全栈研发,推动 AI 能力在产品中的实际应用；\r\n2.负责读书产品部端侧框架的迭代与建设,探索并引入前沿端侧应用技术；\r\n3.负责基于 AI 的研发工作流搭建,沉淀团队 AI 辅助研发的最佳实践；\r\n4.参与团队技术基础设施建设,善用 AI 编码工具提升研发效率,持续优化端侧工程效能与业务体验。",
+      "LastUpdateTime": "2026年07月03日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2070404615127613440",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2070404615127613440",
+      "Requirement": "1.本科及以上学历,计算机或相关专业;主动了解业界新技术并积极尝试应用；\r\n2.具备全栈开发能力,熟练使用 React、Vue 等一种或多种前端框架,或移动客户端（iOS、Android）相关开发经验；\r\n3.了解 Node.js、Golang 等后端技术;对网络和数据库有一定的理解和实践经验；\r\n4.熟练使用 AI 编码工具辅助开发,并能将其有效融入日常研发流程,显著提升开发效率与质量；\r\n5.有扎实的计算机基础,具备一定的算法思维；\r\n6.有良好的分析和解决问题的能力,有较强的责任心和主动性,能独立负责单一模块的全链路研发落地。"
+    },
+    {
+      "Id": 0,
       "PostId": "2046845259174019072",
       "RecruitPostId": 119550,
       "RecruitPostName": "腾讯视频-AI 原生全栈工程师",
@@ -2818,7 +2841,7 @@
       "ComName": "",
       "ProductName": "",
       "CategoryName": "技术",
-      "Responsibility": "Business Unit\nTencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China.\nTencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 201 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.\nMeanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.\n\nWhat the Role Entails\nAbout Tencent Games\nTencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China. Tencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 200 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.\nMeanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.\nAbout Tencent's Central Technology Platform\nAs the technical backbone of Tencent Games, the Tencent Games Central Technology Platform is dedicated to delivering high-quality technical middle-platform services and pioneering innovation guidance for Tencent Games. We actively explore breakthroughs in applying gaming technologies across commercial products and socially impactful scenarios, driving efficiency in game production and elevating user experiences. Committed to fostering an open technical sharing ecosystem, we empower global game developers through our expertise, tools, and products, accelerating the advancement of gaming technologies worldwide.\nResponsibilities:\nResearch and analyze the latest advancements in gaming AI technologies, including but not limited to AI-driven 2D/3D content generation, intelligent NPCs, AI-assisted coding and AI real time rendering.\nBuild and maintain connections with AI professionals across the gaming industry, tech sector, and academia to stay informed of cutting-edge applications and best practices.\nProvide strategic insights and recommendations on AI technology adoption for Tencent Games' Central Technology Platform.\nInitiate, promote, and manage joint research collaborations with leading universities as needed.\n\nWho We Look For\nKey Qualifications: \nSolid understanding of AI technologies and/or hands-on experience with game development technologies.\nStrong communication, collaboration, and research skills, with the ability to synthesize complex information effectively.\nProficiency in both English and Mandarin for professional communication.\nDeep passion for the evolution and future potential of gaming AI.\nPlus:\nWell-established network with AI experts in the gaming industry, technology sector, or academic research community.\nPublications in top-tier AI or computer vision conferences or journals, such as SIGGRAPH, AAAI, or CVPR.\nEducation & Experience: \nMinimum: BS - Artificial Intelligence, Computer Vision, Computer Science, and related fields. \nPreferred: MS or PhD - Artificial Intelligence, Computer Vision, Computer Science, and related fields. \nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $115,400.00 to $264,000.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
+      "Responsibility": "Business Unit\nTencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China.\nTencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 201 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.\nMeanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.\n\nWhat the Role Entails\nAbout Tencent Games\nTencent Games was established in 2003. We are a leading global platform for game development, operations and publishing, and the largest online game community in China. Tencent Games has developed and operated over 140 games. We provide cross-platform interactive entertainment experience for more than 800 million users in over 200 countries and regions around the world. Honor of Kings, PUBG MOBILE, and League of Legends, are some of our most popular titles around the world.\nMeanwhile, we actively promote the development of esports industry, work with global partners to build an open, collaborative and symbiotic industrial ecology, and create high-quality digital life experiences for players.\nAbout Tencent's Central Technology Platform\nAs the technical backbone of Tencent Games, the Tencent Games Central Technology Platform is dedicated to delivering high-quality technical middle-platform services and pioneering innovation guidance for Tencent Games. We actively explore breakthroughs in applying gaming technologies across commercial products and socially impactful scenarios, driving efficiency in game production and elevating user experiences. Committed to fostering an open technical sharing ecosystem, we empower global game developers through our expertise, tools, and products, accelerating the advancement of gaming technologies worldwide.\nResponsibilities:\nResearch and analyze the latest advancements in gaming AI technologies, including but not limited to AI-driven 2D/3D content generation, intelligent NPCs, AI-assisted coding and AI real time rendering.\nBuild and maintain connections with AI professionals across the gaming industry, tech sector, and academia to stay informed of cutting-edge applications and best practices.\nProvide strategic insights and recommendations on AI technology adoption for Tencent Games' Central Technology Platform.\nInitiate, promote, and manage joint research collaborations with leading universities as needed.\n\nWho We Look For\nKey Qualifications: \nSolid understanding of AI technologies and/or hands-on experience with game development technologies.\nStrong communication, collaboration, and research skills, with the ability to synthesize complex information effectively.\nProficiency in both English and Mandarin for professional communication.\nDeep passion for the evolution and future potential of gaming AI.\nPlus:\nWell-established network with AI experts in the gaming industry, technology sector, or academic research community.\nPublications in top-tier AI or computer vision conferences or journals, such as SIGGRAPH, AAAI, or CVPR.\nEducation & Experience: \nMinimum: BS - Artificial Intelligence, Computer Vision, Computer Science, and related fields. \nPreferred: MS or PhD - Artificial Intelligence, Computer Vision, Computer Science, and related fields. \nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $110,800.00 to $253,400.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
       "LastUpdateTime": "2026年07月02日",
       "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-AI-Strategy-Researcher_R105275-1",
       "SourceID": 4,
@@ -2864,7 +2887,7 @@
       "ComName": "",
       "ProductName": "",
       "CategoryName": "技术",
-      "Responsibility": "Business Unit\nCloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.\n\nWhat the Role Entails\nEnd-to-End Inference Optimization: Lead the optimization of the full inference pipeline for Large Models (LLM, Multimodal); focus on KV Cache storage strategies, Router architecture design, and collaborative operator optimization to maximize throughput and minimize latency.\nHeterogeneous Computing Research: Conduct in-depth research into the underlying inference logic of various hardware accelerators; evaluate architectural suitability for real-time, batch, and streaming inference scenarios to develop standardized optimization schemes.\nInference Framework & Toolchain: Design and implement high-performance inference frameworks; optimize scheduling and memory management to resolve long-tail issues such as communication latency and load imbalance in distributed inference.\nTechnological Innovation: Track global advancements in inference technology (e.g., compiler optimization, model compression, and hardware fusion); drive the productization of emerging technologies within production environments.\nTechnical Leadership: Lead efforts to overcome key technical bottlenecks in inference optimization; design technical roadmaps and mentor team members to build a robust AI inference technical ecosystem.\n\nWho We Look For\nEducation & Experience: Master’s or Ph.D. in Computer Science, Electronic Engineering, AI, or related fields; significant professional experience in AI inference optimization or heterogeneous computing.\nHardware Expertise: Proficient in at least one AI accelerator architecture; deep understanding of underlying principles, instruction sets, and hardware-specific tuning.\nInference Specialization: Mastery of core inference optimization techniques, including multi-level KV Cache management, Quantization, and Intelligent Routing.\nSystems Proficiency: Expert in parallel computing and distributed systems; deep understanding of low-level programming models (e.g., CUDA, Triton) and inference engine architectures.\nFrameworks & Models: Familiar with mainstream deep learning frameworks (e.g., PyTorch, TensorFlow); experience in optimizing ultra-large-scale models is highly preferred.\nIndustry Insight: Stay current with global evolutions in inference technology and computing architectures, with the ability to objectively evaluate different technical paths.\nProfessional Skills: Strong analytical and cross-team collaboration skills, with a proven track record of leading complex inference projects to fruition.\nPreferred Qualifications: Experience in tuning ultra-large-scale inference clusters or driving AI inference productization; high-level publications or core patents in relevant fields are a plus.\n\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $124,800.00 to $235,000.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
+      "Responsibility": "Business Unit\n\nWhat the Role Entails\nEnd-to-End Inference Optimization: Lead the optimization of the full inference pipeline for Large Models (LLM, Multimodal); focus on KV Cache storage strategies, Router architecture design, and collaborative operator optimization to maximize throughput and minimize latency.\nHeterogeneous Computing Research: Conduct in-depth research into the underlying inference logic of various hardware accelerators; evaluate architectural suitability for real-time, batch, and streaming inference scenarios to develop standardized optimization schemes.\nInference Framework & Toolchain: Design and implement high-performance inference frameworks; optimize scheduling and memory management to resolve long-tail issues such as communication latency and load imbalance in distributed inference.\nTechnological Innovation: Track global advancements in inference technology (e.g., compiler optimization, model compression, and hardware fusion); drive the productization of emerging technologies within production environments.\nTechnical Leadership: Lead efforts to overcome key technical bottlenecks in inference optimization; design technical roadmaps and mentor team members to build a robust AI inference technical ecosystem.\n\nWho We Look For\nEducation & Experience: Master’s or Ph.D. in Computer Science, Electronic Engineering, AI, or related fields; significant professional experience in AI inference optimization or heterogeneous computing.\nHardware Expertise: Proficient in at least one AI accelerator architecture; deep understanding of underlying principles, instruction sets, and hardware-specific tuning.\nInference Specialization: Mastery of core inference optimization techniques, including multi-level KV Cache management, Quantization, and Intelligent Routing.\nSystems Proficiency: Expert in parallel computing and distributed systems; deep understanding of low-level programming models (e.g., CUDA, Triton) and inference engine architectures.\nFrameworks & Models: Familiar with mainstream deep learning frameworks (e.g., PyTorch, TensorFlow); experience in optimizing ultra-large-scale models is highly preferred.\nIndustry Insight: Stay current with global evolutions in inference technology and computing architectures, with the ability to objectively evaluate different technical paths.\nProfessional Skills: Strong analytical and cross-team collaboration skills, with a proven track record of leading complex inference projects to fruition.\nPreferred Qualifications: Experience in tuning ultra-large-scale inference clusters or driving AI inference productization; high-level publications or core patents in relevant fields are a plus.\n\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $120,100.00 to $225,700.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
       "LastUpdateTime": "2026年07月02日",
       "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Sr-AI-Inference-Systems-Engineer_R107335",
       "SourceID": 4,
@@ -2887,7 +2910,7 @@
       "ComName": "",
       "ProductName": "",
       "CategoryName": "技术",
-      "Responsibility": "Business Unit\nCloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.\n\nWhat the Role Entails\n1.Architecture Research: Conduct in-depth research into the underlying hardware logic of various AI accelerators; evaluate the power-efficiency ratio and suitability of different heterogeneous architectures in the context of Large Language Model (LLM) inference and training.\n2.Operator & Performance Optimization: Design and optimize high-performance operator libraries for large-scale cloud computing environments; resolve long-tail latency issues in hardware scheduling, memory management, and distributed communication.\n3.Interconnect Architecture Definition: Define the interconnect architecture ; drive the virtualization, standardized access, and efficient pooling of heterogeneous computing resources in the cloud.\n4.Technology Trend Analysis: Monitor global trends in semiconductors and accelerators; perform feasibility studies and experimental validation for the implementation of emerging technologies within cloud infrastructure.\n\nWho We Look For\n1.Education: Master’s or Ph.D. degree in Computer Engineering, Electronic Engineering, Microelectronics, or a related field.\n2.Core Expertise: Expertise in GPGPU architectures or other mainstream AI accelerator architectures.\n3.Programming & Frameworks: Proficient in parallel computing frameworks; deep understanding of low-level operator development languages (e.g., CUDA, Triton).\n4.Network & Distributed Systems: Solid understanding of large-scale distributed systems, cluster topologies (e.g., Fat-tree, Torus), and high-performance network protocols.\n5.Industry Insight: Familiar with the architectural evolution of global leading computing enterprises; ability to objectively analyze the technical pros/cons and engineering challenges of different architectural paths.\n6.Experience: Experience in the application, optimization, or architectural design of ultra-large-scale accelerator clusters is preferred.\n7.Framework Optimization: Experience in the low-level adaptation and performance tuning of mainstream deep learning frameworks (e.g., PyTorch, TensorFlow) is preferred.\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $151,300.00 to $283,800.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
+      "Responsibility": "Business Unit\n\nWhat the Role Entails\n1.Architecture Research: Conduct in-depth research into the underlying hardware logic of various AI accelerators; evaluate the power-efficiency ratio and suitability of different heterogeneous architectures in the context of Large Language Model (LLM) inference and training.\n2.Operator & Performance Optimization: Design and optimize high-performance operator libraries for large-scale cloud computing environments; resolve long-tail latency issues in hardware scheduling, memory management, and distributed communication.\n3.Interconnect Architecture Definition: Define the interconnect architecture ; drive the virtualization, standardized access, and efficient pooling of heterogeneous computing resources in the cloud.\n4.Technology Trend Analysis: Monitor global trends in semiconductors and accelerators; perform feasibility studies and experimental validation for the implementation of emerging technologies within cloud infrastructure.\n\nWho We Look For\n1.Education: Master’s or Ph.D. degree in Computer Engineering, Electronic Engineering, Microelectronics, or a related field.\n2.Core Expertise: Expertise in GPGPU architectures or other mainstream AI accelerator architectures.\n3.Programming & Frameworks: Proficient in parallel computing frameworks; deep understanding of low-level operator development languages (e.g., CUDA, Triton).\n4.Network & Distributed Systems: Solid understanding of large-scale distributed systems, cluster topologies (e.g., Fat-tree, Torus), and high-performance network protocols.\n5.Industry Insight: Familiar with the architectural evolution of global leading computing enterprises; ability to objectively analyze the technical pros/cons and engineering challenges of different architectural paths.\n6.Experience: Experience in the application, optimization, or architectural design of ultra-large-scale accelerator clusters is preferred.\n7.Framework Optimization: Experience in the low-level adaptation and performance tuning of mainstream deep learning frameworks (e.g., PyTorch, TensorFlow) is preferred.\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $145,100.00 to $273,200.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
       "LastUpdateTime": "2026年07月02日",
       "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Sr-Cloud-AI-Infrastructure-Engineer_R107333",
       "SourceID": 4,
@@ -2956,7 +2979,7 @@
       "ComName": "",
       "ProductName": "",
       "CategoryName": "技术",
-      "Responsibility": "Business Unit\nCloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.\n\nWhat the Role Entails\nPlatform Architecture Design: Lead the design and development of Agent-native platforms tailored for R&D availability, environment governance, and AIOps; drive the implementation of generative AI technologies to solve complex engineering challenges.\nKnowledge Engineering: Build and maintain enterprise-grade vertical domain knowledge bases; implement advanced retrieval and integration strategies to empower intelligent agents with specialized domain expertise.\nAI Capability Center: Integrate Large Language Model (LLM) capabilities with internal toolchains and standardized APIs; encapsulate these into reusable intelligent components to establish a centralized AI capability hub, boosting overall R&D and operational efficiency.\n\nWho We Look For\nEducation: Bachelor’s degree or higher in Computer Science, AI, Software Engineering, or a related field.\nCore Experience: Proven experience in LLM application development, with a strong track record in AI Agent architecture or RAG system optimization.\nTechnical Expertise: Deep understanding of AI Agent paradigms, RAG optimization, and standardized tool-use protocols; familiar with the entire pipeline from data processing and vectorization to intelligent generation.\nProfessionalism: Passionate about driving business efficiency through AI; excellent autonomous learning skills, logical thinking, and cross-functional collaboration capabilities.\nPreferred Qualifications\nDomain Knowledge: Background in Cloud Computing, IaaS/PaaS, DevOps automation, or AI-driven R&D efficiency.\nCollaborative Design: Familiar with Multi-Agent System (MAS) design and standardized agent-to-agent communication protocols/orchestration frameworks.\nCommunity Contribution: Active contributor to open-source AI projects or a track record of high-quality technical publications in AI engineering.\nProduction Experience: Proven experience in leading or playing a key role in deploying production-grade AI Agent systems.\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $151,300.00 to $283,800.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
+      "Responsibility": "Business Unit\n\nWhat the Role Entails\nPlatform Architecture Design: Lead the design and development of Agent-native platforms tailored for R&D availability, environment governance, and AIOps; drive the implementation of generative AI technologies to solve complex engineering challenges.\nKnowledge Engineering: Build and maintain enterprise-grade vertical domain knowledge bases; implement advanced retrieval and integration strategies to empower intelligent agents with specialized domain expertise.\nAI Capability Center: Integrate Large Language Model (LLM) capabilities with internal toolchains and standardized APIs; encapsulate these into reusable intelligent components to establish a centralized AI capability hub, boosting overall R&D and operational efficiency.\n\nWho We Look For\nEducation: Bachelor’s degree or higher in Computer Science, AI, Software Engineering, or a related field.\nCore Experience: Proven experience in LLM application development, with a strong track record in AI Agent architecture or RAG system optimization.\nTechnical Expertise: Deep understanding of AI Agent paradigms, RAG optimization, and standardized tool-use protocols; familiar with the entire pipeline from data processing and vectorization to intelligent generation.\nProfessionalism: Passionate about driving business efficiency through AI; excellent autonomous learning skills, logical thinking, and cross-functional collaboration capabilities.\nPreferred Qualifications\nDomain Knowledge: Background in Cloud Computing, IaaS/PaaS, DevOps automation, or AI-driven R&D efficiency.\nCollaborative Design: Familiar with Multi-Agent System (MAS) design and standardized agent-to-agent communication protocols/orchestration frameworks.\nCommunity Contribution: Active contributor to open-source AI projects or a track record of high-quality technical publications in AI engineering.\nProduction Experience: Proven experience in leading or playing a key role in deploying production-grade AI Agent systems.\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $145,100.00 to $273,200.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
       "LastUpdateTime": "2026年07月02日",
       "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Sr-LLM-Application-Engineer--AI-Agents-_R107336",
       "SourceID": 4,
@@ -3219,6 +3242,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2040982129101406208",
       "Requirement": "1.需要熟悉一门编译类语言（C++ 更好），有一年或以上服务端开发经验；\r\n2.有高并发、高可靠的海量服务开发经验者优先；\r\n3.有 Ray等分布式计算框架相关开发经验者优先；\r\n4.有AI应用架构和大模型推理优化相关开发经验者优先；\r\n5.有 OI、ACM-ICPC 参赛背景者优先；\r\n6.希望你热爱编程，喜欢钻研技术，愿意深入思考。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2072882196234027008",
+      "RecruitPostId": 120918,
+      "RecruitPostName": "微信-数据科学-AI业务方向",
+      "CountryName": "中国",
+      "LocationName": "广州",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "微信AI助手",
+      "CategoryName": "技术",
+      "Responsibility": "1.深入参与微信小微等 AI 业务的演变，和业务一起，通过数据科学研究，寻找业务突破口。\n2.负责日常数据的总体埋点设计、监控和归因，深入洞察数据异动原因，为业务迭代提供数据支持。\n3.结合统计、AB test、机器学习、因果推断等方法论，在业务落地，产出业务洞察和建议。\n4.搭建AI评测指标体系，优化AI回复内容。",
+      "LastUpdateTime": "2026年07月03日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2072882196234027008",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2072882196234027008",
+      "Requirement": "1.一年以上数据科学相关岗位的工作经验；\n2.数据科学、统计学、应用数学、机器学习、计算机科学等领域专业本科或以上学位；\n3.熟悉 Hive、Spark 等大数据处理环境，熟练书写 SQL；\n4.熟练使用 Python / R，熟悉常见统计方法，有ab实验，因果推断，量化模型等经验；\n5.有业务分析、AI 产品业务分析、AI 评测实践经验者优先；\n6.具备较好的逻辑思维能力，优秀的沟通协作能力，对有挑战的问题充满热情，充满自驱力，有责任感。"
     },
     {
       "Id": 0,
@@ -3564,35 +3610,12 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2042082934378364928",
       "Requirement": "1.硕士及以上学历，2年以上数据相关工作经验；\r\n2.具备良好的数据挖掘经验，对大数据应用有深入理解，有相关项目成功的经历；\r\n3.优秀的逻辑思维能力，善于分析和解决问题；良好的沟通表达能力与团队协作能力；\r\n4.具备市场分析、竞品分析能力、责任感强。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2055136913035276288",
-      "RecruitPostId": 120053,
-      "RecruitPostName": "AW项目组-AI产品前端工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "预算专用-AW",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责Web应用核心开发，搭建高质量可复用的前端架构及组件体系；\r\n2.负责前端状态管理与样式系统，保障数据流清晰、界面一致；\r\n3.集成各类复杂交互组件，保障良好用户体验；\r\n4.参与前端游戏相关开发，处理Canvas渲染、触控交互及动画；\r\n5.编写测试、维护组件文档，保障代码质量与可维护性；\r\n6.对接LLM API，参与AI对话界面及Agent工作流前端实现。",
-      "LastUpdateTime": "2026年05月25日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2055136913035276288",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2055136913035276288",
-      "Requirement": "1.精通TypeScript、主流前端框架及构建工具，有monorepo架构实践经验；\n2.熟练掌握前端状态管理、样式解决方案，能搭建可复用设计系统；\n3.熟悉HTML5 Canvas/WebGL，有互动内容或小游戏开发经验；\n4.具备良好工程素养，重视代码质量、错误处理、日志规范及国际化；\n5.理解Feature-First架构及DDD分层思想，能实现全链路类型安全；\n6.深度运用AI编程工具，高效驾驭AI辅助工作流，契合团队Vibe Coding核心模式。"
     }
   ],
   "cloud": [
     {
       "name": "AI",
-      "value": 193
+      "value": 195
     },
     {
       "name": "AGENT",
@@ -3600,15 +3623,15 @@
     },
     {
       "name": "扎实",
-      "value": 65
-    },
-    {
-      "name": "主流",
-      "value": 53
+      "value": 66
     },
     {
       "name": "PYTHON",
-      "value": 53
+      "value": 54
+    },
+    {
+      "name": "主流",
+      "value": 52
     },
     {
       "name": "GO",
@@ -3623,20 +3646,20 @@
       "value": 42
     },
     {
-      "name": "落地",
-      "value": 39
-    },
-    {
       "name": "微信",
-      "value": 38
+      "value": 40
     },
     {
-      "name": "工具",
-      "value": 37
+      "name": "落地",
+      "value": 40
     },
     {
       "name": "并发",
       "value": 37
+    },
+    {
+      "name": "工具",
+      "value": 36
     },
     {
       "name": "实际",
@@ -3644,6 +3667,10 @@
     },
     {
       "name": "环境",
+      "value": 33
+    },
+    {
+      "name": "数据库",
       "value": 32
     },
     {
@@ -3651,24 +3678,16 @@
       "value": 31
     },
     {
-      "name": "数据库",
-      "value": 31
+      "name": "网络",
+      "value": 30
+    },
+    {
+      "name": "机器",
+      "value": 29
     },
     {
       "name": "数据结构",
       "value": 29
-    },
-    {
-      "name": "网络",
-      "value": 29
-    },
-    {
-      "name": "深度",
-      "value": 28
-    },
-    {
-      "name": "机器",
-      "value": 28
     },
     {
       "name": "大规模",
@@ -3679,11 +3698,15 @@
       "value": 27
     },
     {
-      "name": "一门",
-      "value": 26
+      "name": "深度",
+      "value": 27
     },
     {
       "name": "专业本科",
+      "value": 27
+    },
+    {
+      "name": "一门",
       "value": 26
     },
     {
@@ -3695,24 +3718,24 @@
       "value": 26
     },
     {
-      "name": "核心",
-      "value": 25
-    },
-    {
-      "name": "管理",
-      "value": 25
-    },
-    {
       "name": "领域",
+      "value": 25
+    },
+    {
+      "name": "核心",
       "value": 24
     },
     {
-      "name": "分布式",
-      "value": 23
+      "name": "流程",
+      "value": 24
+    },
+    {
+      "name": "管理",
+      "value": 24
     }
   ],
   "stats": {
-    "total": 156,
-    "update_time": "2026-07-03 03:26:57"
+    "total": 157,
+    "update_time": "2026-07-04 03:20:10"
   }
 }
