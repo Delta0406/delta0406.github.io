@@ -485,6 +485,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2074485449791029248",
+      "RecruitPostId": 120996,
+      "RecruitPostName": "腾讯AI协作工具- AI Agent研发工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯文档C端",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责腾讯AI协作工具中 AI Agent 核心能力的全链路研发与迭代：Agent 编排框架、工具/技能（Tool/Skill）调用、多轮对话与上下文管理、任务规划与执行闭环，保障多端体验一致；\r\n2.主导 AI 能力与编辑器的深度集成：将生成、改写、总结、问答、自动排版、数据分析等能力无缝嵌入文档/表格/幻灯片的编辑与协作流程；\r\n3.设计并落地 Agent 工程化体系：Prompt 工程、RAG/上下文检索、模型调用链路、效果评测与回归、稳定性与成本优化，持续提升 Agent 的可用性与质量；\r\n4.协同产品、设计、算法及后端团队深度参与需求评审与技术方案设计，推动 AI 功能高质量端到端交付与问题闭环，对核心方向具备 owner 意识；\r\n5.跟踪并落地前沿技术（大模型 Function Calling、MCP、端侧推理、WebAssembly/WebGPU 加速、多模态等），在文档高要求业务场景中完成技术原型验证与规模化落地；\r\n6.牵头协作工具中 AI Agent 的中长期技术规划与架构演进，定义技术标准与评测基线，攻坚体系性难题，培养团队技术梯队并建立技术影响力。",
+      "LastUpdateTime": "2026年07月08日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2074485449791029248",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "不限",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2074485449791029248",
+      "Requirement": "1.本科及以上学历，计算机/软件工程相关专业；经验不限，有大型工具类/协作办公/文档类产品经验者优先；\r\n2.扎实的前端基础，精通 HTML5/CSS3/JavaScript/TypeScript，熟练掌握 React 或 Vue 及其生态，具备良好的工程化能力；\r\n3.对 AI 应用开发有实践或浓厚兴趣：熟悉大模型 API 调用、Prompt 工程、Function Calling / 工具调用、RAG、Agent 编排等至少一类技术，有 LLM 应用落地经验者优先；\r\n4.良好的工程素养与逻辑思维，能独立承担有挑战性的技术任务，跨团队沟通协作能力强，自驱力强、有主人翁意识。"
+    },
+    {
+      "Id": 0,
       "PostId": "2044415716324700160",
       "RecruitPostId": 119383,
       "RecruitPostName": "腾讯云-控制面高级工程师-Agent Infra",
@@ -1129,29 +1152,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2016767263998365696",
-      "RecruitPostId": 117632,
-      "RecruitPostName": "AI研效高级工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "质量管理（公共）",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责研效领域 AI Agent 产品的能力规划、迭代和落地；\n2.通过提示词工程、知识库、Memory 和 Tools 等技术构建 Agent 能力实现业务提质增效；\n3.构建 AI Agent 效果和落地指标体系，通过评测和实验持续迭代和提升 Agent 能力。",
-      "LastUpdateTime": "2026年07月06日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2016767263998365696",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2016767263998365696",
-      "Requirement": "1.本科及以上学历，具备良好的计算机和软件工程技术基础；\n2.沟通能力好, 抽象及逻辑能力强, 对 AI 技术有很强的理解力；\n3.有 AI 大模型创新产品或 AI Agent 构建和落地经验者优先。"
-    },
-    {
-      "Id": 0,
       "PostId": "2059160518509379584",
       "RecruitPostId": 120228,
       "RecruitPostName": "3D动作游戏《狩》-后台开发-UE5 DS后台开发",
@@ -1566,6 +1566,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2041847334320631808",
+      "RecruitPostId": 119150,
+      "RecruitPostName": "元宝数据平台-后台开发工程师",
+      "CountryName": "中国",
+      "LocationName": "西安",
+      "BGName": "CSIG",
+      "ComCode": "YUNZHI",
+      "ComName": "腾讯云智研发子公司",
+      "ProductName": "元宝",
+      "CategoryName": "技术",
+      "Responsibility": "1.支持元宝内部数据服务平台的各项开发工作，保障元宝数据上报质量；\r\n2.备注：此岗位为腾讯集团旗下子公司编制。",
+      "LastUpdateTime": "2026年07月07日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2041847334320631808",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2041847334320631808",
+      "Requirement": "1.计算机相关专业本科及以上学历 ；\r\n2.3年及以上全栈或服务端开发经验；\r\n3.精通GO/C++/Java开发语言中的一种或多种；\r\n4.熟悉数据库（MySQL/Redis/MongoDB）、消息队列（Kafka/RabbitMQ）、大数据组件（Spark/Clickhouse/StarRocks)。"
+    },
+    {
+      "Id": 0,
       "PostId": "2034611270900154368",
       "RecruitPostId": 118678,
       "RecruitPostName": "腾讯云-MaaS高级后台研发工程师",
@@ -1724,29 +1747,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2053684328222863360",
       "Requirement": "1.三年以上手机游戏服务端开发经验；\n2.熟练掌握一门以上的服务端编程语言，比如java/C++/go等；\n3.熟练掌握一种以上的数据库，比如mysql/mongodb等；\n4.熟悉分布式架构，以及高承载优化经验优先；\n5.出色的学习能力，良好的问题分析解决能力，责任心强，有较高的团队协作和任务跟进能力，善于沟通。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2041847334320631808",
-      "RecruitPostId": 119150,
-      "RecruitPostName": "元宝数据平台-后台开发工程师",
-      "CountryName": "中国",
-      "LocationName": "西安",
-      "BGName": "CSIG",
-      "ComCode": "YUNZHI",
-      "ComName": "腾讯云智研发子公司",
-      "ProductName": "元宝",
-      "CategoryName": "技术",
-      "Responsibility": "1.支持元宝内部数据服务平台的各项开发工作，保障元宝数据上报质量；\r\n2.备注：此岗位为腾讯集团旗下子公司编制。",
-      "LastUpdateTime": "2026年05月09日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2041847334320631808",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2041847334320631808",
-      "Requirement": "1.计算机相关专业本科及以上学历 ；\r\n2.3年及以上全栈或服务端开发经验；\r\n3.精通GO/C++/Java开发语言中的一种或多种；\r\n4.熟悉数据库（MySQL/Redis/MongoDB）、消息队列（Kafka/RabbitMQ）、大数据组件（Spark/Clickhouse/StarRocks)。"
     },
     {
       "Id": 0,
@@ -2440,6 +2440,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2074485451019956224",
+      "RecruitPostId": 120997,
+      "RecruitPostName": "全栈开发工程师-腾讯AI协作工具",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯文档C端",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责腾讯AI协作工具企业版的全栈架构设计与持续演进，覆盖多端形态，主导关键技术选型与架构决策，确保后端系统的高可用性、高性能和可扩展性；\r\n2.参与业务需求分析，制定合理的技术方案并高效落地，保障产品功能的稳定迭代；\r\n3.设计和实现高并发、高可靠的后端服务，支持海量用户和数据的安全存储与处理；\r\n4.构建跨端统一工程体系，设计前端核心架构与多端共享逻辑层，沉淀高复用率、可扩展的统一研发方案。",
+      "LastUpdateTime": "2026年07月08日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2074485451019956224",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2074485451019956224",
+      "Requirement": "1.本科及以上计算机相关专业，2 年以上全栈开发经验，具备中大型系统架构设计与迭代实操经验；\r\n2.熟练掌握 Go/Java 任一后端主力开发语言，同时熟悉 TypeScript/JavaScript 任一前端主力开发语言，具备扎实的工程能力；\r\n3.熟悉微服务、缓存、消息、分布式事务、容器编排与自动化部署，有高并发、高可用系统建设经验。"
+    },
+    {
+      "Id": 0,
       "PostId": "1935174073403441152",
       "RecruitPostId": 112774,
       "RecruitPostName": "机器学习平台研发工程师（深圳/北京/上海）",
@@ -2621,6 +2644,75 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2033866878413336576",
       "Requirement": "1.对大型语言模型（LLM）及其应用开发（如RAG、Agent、Function Calling）有深入理解和实践经验；\r\n2.具备优秀的C++语言编程能力和扎实的系统设计能力，熟悉主流Web后端框架与高可用架构；\r\n3.了解LangChain、dify等LLM应用开发框架，并有实际生产项目经验；\r\n4.熟悉服务端基础技术，包括但不限于数据库、消息队列、缓存、容器化等，具备复杂系统的开发和维护能力；\r\n5.具备良好的产品意识、沟通能力和团队协作精神，能高效协同产品、算法与前端团队，将业务需求转化为稳定可靠的技术方案。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2074485456237670400",
+      "RecruitPostId": 120999,
+      "RecruitPostName": "智能体-全栈开发工程师-WorkBuddy",
+      "CountryName": "中国",
+      "LocationName": "武汉",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯云-Codebuddy-C端专用",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责 WorkBuddy 协同模块的全栈架构设计与持续演进，覆盖多端形态，主导关键技术选型与架构决策；\r\n2.设计 AI 原生应用交互与服务架构，包括 LLM 流式渲染、Agent 任务编排、人机协同确认与接管机制、多模态内容渲染及相关服务端支撑能力；\r\n3.构建跨端统一工程体系，设计桌面端核心架构与多端共享逻辑层，沉淀高复用率、可扩展的统一研发方案；\r\n4.推进微服务治理、容器化、CI/CD、可观测性等基础能力落地，提升团队研发效率与系统稳定性；\r\n5.联动产品、算法、运维、安全、客户端等多方团队，输出复用性平台能力与技术实践。",
+      "LastUpdateTime": "2026年07月08日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2074485456237670400",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "五年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2074485456237670400",
+      "Requirement": "1.本科及以上计算机相关专业，5 年以上全栈开发经验，具备中大型系统架构设计与迭代实操经验；\r\n2.熟练掌握 TypeScript/JavaScript，具备扎实的现代前端工程能力；同时熟悉 Go/Java 任一后端主力开发语言，能够适配多技术栈协作；\r\n3.熟悉 Electron 架构，有复杂桌面应用或多端统一架构落地经验，理解桌面端性能、安全、更新发布与跨端复用机制；\r\n4.有 LLM 应用开发经验，理解流式渲染、Agent 交互、MCP 协议、多模态渲染、模型调用链路及相关工程化问题；\r\n5.熟悉微服务、缓存、消息、分布式事务、容器编排与自动化部署，有高并发、高可用系统建设经验。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2074485453297467392",
+      "RecruitPostId": 120998,
+      "RecruitPostName": "智能体-全栈开发工程师-WorkBuddy",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯云-Codebuddy-C端专用",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责 WorkBuddy 协同模块的全栈架构设计与持续演进，覆盖多端形态，主导关键技术选型与架构决策；\r\n2.设计 AI 原生应用交互与服务架构，包括 LLM 流式渲染、Agent 任务编排、人机协同确认与接管机制、多模态内容渲染及相关服务端支撑能力；\r\n3.构建跨端统一工程体系，设计桌面端核心架构与多端共享逻辑层，沉淀高复用率、可扩展的统一研发方案；\r\n4.推进微服务治理、容器化、CI/CD、可观测性等基础能力落地，提升团队研发效率与系统稳定性；\r\n5.联动产品、算法、运维、安全、客户端等多方团队，输出复用性平台能力与技术实践。",
+      "LastUpdateTime": "2026年07月08日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2074485453297467392",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "五年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2074485453297467392",
+      "Requirement": "1.本科及以上计算机相关专业，5 年以上全栈开发经验，具备中大型系统架构设计与迭代实操经验；\r\n2.熟练掌握 TypeScript/JavaScript，具备扎实的现代前端工程能力；同时熟悉 Go/Java 任一后端主力开发语言，能够适配多技术栈协作；\r\n3.熟悉 Electron 架构，有复杂桌面应用或多端统一架构落地经验，理解桌面端性能、安全、更新发布与跨端复用机制；\r\n4.有 LLM 应用开发经验，理解流式渲染、Agent 交互、MCP 协议、多模态渲染、模型调用链路及相关工程化问题；\r\n5.熟悉微服务、缓存、消息、分布式事务、容器编排与自动化部署，有高并发、高可用系统建设经验。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2042427588500160512",
+      "RecruitPostId": 119194,
+      "RecruitPostName": "大数据调度工具开发工程师（DataOps 方向）（深圳/北京）",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "大数据(数据计算平台部)",
+      "CategoryName": "技术",
+      "Responsibility": "1.设计并实现高性能、高可用的分布式任务调度引擎，支持分钟级百万任务调度；\r\n2.构建分布式调度系统的高可用架构，实现故障自动转移与恢复；\r\n3.设计并实现监控告警体系，推动调度系统的可观测性建设；\r\n4.推动代码质量、单元测试和工程规范落地。",
+      "LastUpdateTime": "2026年07月07日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2042427588500160512",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2042427588500160512",
+      "Requirement": "1.职位要求；\n2.计算机相关专业本科及以上学历，3年以上java后端开发经验；\n3.能够独立设计和实现核心模块，有高并发、高可用系统设计经验；\n4.有大数据调度系统开发经验，熟悉至少一种主流调度系统内部原理；\n5.了解大数据生态任务执行，有 Spark、Flink、Hive 等任务提交与监控的实际经验；\n6.优先条件；\n7.有商业级调度产品（如 DataWorks、DataLeap、WeData、Apache DolphinScheduler）开发经验者优先；\n8.熟悉开源调度系统（Airflow、Apache DolphinScheduler、Azkaban）源码者优先；\n9.有任务智能调度、资源优化、成本控制等AIOps相关经验者优先；\n10.熟悉大数据生态，有 Hadoop、Spark、Flink 等组件调优经验者优先。"
     },
     {
       "Id": 0,
@@ -3015,6 +3107,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2016767263998365696",
+      "RecruitPostId": 117632,
+      "RecruitPostName": "AI研效高级工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "质量管理（公共）",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责研效领域 AI Agent 产品的能力规划、迭代和落地；\n2.通过提示词工程、知识库、Memory 和 Tools 等技术构建 Agent 能力实现业务提质增效；\n3.构建 AI Agent 效果和落地指标体系，通过评测和实验持续迭代和提升 Agent 能力。",
+      "LastUpdateTime": "2026年07月06日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2016767263998365696",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2016767263998365696",
+      "Requirement": "1.本科及以上学历，具备良好的计算机和软件工程技术基础；\n2.沟通能力好, 抽象及逻辑能力强, 对 AI 技术有很强的理解力；\n3.有 AI 大模型创新产品或 AI Agent 构建和落地经验者优先。"
+    },
+    {
+      "Id": 0,
       "PostId": "2043574951784640512",
       "RecruitPostId": 10002703,
       "RecruitPostName": "Tencent Cloud - AI Native Cloud Solution Architect (Thailand)",
@@ -3025,7 +3140,7 @@
       "ComName": "",
       "ProductName": "",
       "CategoryName": "技术",
-      "Responsibility": "Business Unit\nCloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.\n\nWhat the Role Entails\nAs a Senior Solution Architect at Tencent Cloud in Thailand, you will play a pivotal role in driving the adoption and success of Tencent Cloud services in the region. This position requires a blend of technical acumen, customer-facing skills, and strategic thinking. You will work closely with clients and partners to understand their needs, develop tailored cloud solutions, and ensure successful implementation. Your expertise will contribute to shaping Tencent Cloud’s product offerings and go-to-market strategies, making a significant impact on the business landscape in Thailand.\n\nWhat You Can Do Here\n1. Accelerate your growth with an international perspective, engage with top-tier Southeast Asia customers, and deeply participate in the most cutting-edge AI needs of the Southeast Asia market and the continuously evolving cloud industry solutions.\n2. Master the latest cloud product capabilities in a full-stack manner — across IaaS, AI, audio/video, security and other product lines. Through project co-building with Southeast Asia customers, continuously improve human-AI collaboration capability and customer project success efficiency.\n3. Work closely with a diverse, excellent team in Southeast Asia, and jointly embark on a rapidly changing high-growth journey.Serve as the customer's technical consulting expert. Lead Tencent Cloud pre-sales analysis, bidding document authoring, and customer solution communication, and strive to obtain support from the customer's technical decision-making level.\nDeeply explore and follow up on the landing of customer needs. Combined with Tencent Cloud public cloud, private cloud, container, big data, audio/video, AI and other product capabilities, design technical solutions for Thailand SVIP customers and follow up on delivery, continuously strengthening differentiated competitive advantages.\nPossess an AI-Native perspective, be proficient in Tencent Cloud AI product knowledge and effectively promote it. Use AI capabilities to complete project POCs and demos, accelerate migration and delivery, and monitor SVIP customer business quality.\nPromote scaled business growth in key markets. On a daily basis, collect real feedback and industry common needs from Thailand customers, and drive continuous iteration and optimization of cloud products and AI tools.\n\nWho We Look For\nBachelor's degree or above; majors in computer science, information technology, telecommunications engineering and other related fields are preferred.\n5+ years of experience in cloud computing pre-sales or solution-related work, covering pre-sales research, bidding document authoring, POC implementation, delivery acceptance, and other project phases.\nFamiliar with mainstream public cloud platforms, such as Tencent Cloud, Alibaba Cloud, AWS, Azure, GCP, etc. Have experience using AI technology to assist and drive projects; familiar with at least one AI Agent application and have effectively applied it in work.\nExtremely strong pressure resistance and resilience. Proactively tackle project technical risks and AI implementation challenges, with no shirking or escaping. Take real business results as the sole orientation, and refuse to stay only at paper-level solutions.\nExcellent cross-cultural communication and collaboration ability; fluent English with no barriers to business communication; adapt to the collaboration rhythm of multi-country teams. Thai language proficiency is preferred.\nStrong proactive collaboration awareness; willing to undertake cross-department collaborative work, with no division of work boundaries, and project success as the core goal.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Thailand-Bangkok",
+      "Responsibility": "Business Unit\nCloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.\n\nWhat the Role Entails\nAs a Senior Solution Architect at Tencent Cloud in Thailand, you will play a pivotal role in driving the adoption and success of Tencent Cloud services in the region. This position requires a blend of technical acumen, customer-facing skills, and strategic thinking. You will work closely with clients and partners to understand their needs, develop tailored cloud solutions, and ensure successful implementation. Your expertise will contribute to shaping Tencent Cloud’s product offerings and go-to-market strategies, making a significant impact on the business landscape in Thailand.\nResponsibilities:\nCollaborate with customers and partners to ensure successful delivery of Tencent Cloud solutions in the assigned markets and beyond.\nUnderstand clients’ needs to develop and implement industrial solutions and relevant cloud product offerings.\nProvide industry and product technical consulting, solution training, and empowerment for the Thailand business.\nContinuously update industrial and product solutions, and work with marketing and business development teams to define and execute Go-to-Market strategies.\nCreate and present solution architecture designs to C-level and senior leaders.\nDevelop and test demos of Tencent Cloud services as needed.\nAnalyze user requirements and collaborate with the product team to drive product strategy to meet business demands.\n\nWho We Look For\nBachelor’s degree or above in Computer Science, Computer Engineering, Information Technology, or equivalent fields.\nMinimum of 5 years of experience in cloud pre-sales and solution architecture, with hands-on experience in developing technical proposals and responding to RFIs/RFPs.\nIn-depth knowledge of public cloud and containerization; familiarity with private cloud and other virtualization platforms is a plus.\nGeneral knowledge in Video Streaming, Big Data, AI, and digital transformation.\nExcellent presentation and communication skills in both English and Thai. Strong proficiency in Chinese Mandarin would be a plus. \nTencent Cloud Certified Solutions Architect or equivalent certifications from other major cloud service providers.\nTOGAF, PMP, and ITIL certifications are highly advantageous.\n#LI-JY1\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Thailand-Bangkok",
       "LastUpdateTime": "2026年07月06日",
       "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Thailand-Bangkok/Tencent-Cloud---Pre-sales-Senior-Solution-Architect--Thailand-_R107272",
       "SourceID": 4,
@@ -3587,43 +3702,20 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2042082934378364928",
       "Requirement": "1.硕士及以上学历，2年以上数据相关工作经验；\r\n2.具备良好的数据挖掘经验，对大数据应用有深入理解，有相关项目成功的经历；\r\n3.优秀的逻辑思维能力，善于分析和解决问题；良好的沟通表达能力与团队协作能力；\r\n4.具备市场分析、竞品分析能力、责任感强。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2055136913035276288",
-      "RecruitPostId": 120053,
-      "RecruitPostName": "AW项目组-AI产品前端工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "预算专用-AW",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责Web应用核心开发，搭建高质量可复用的前端架构及组件体系；\r\n2.负责前端状态管理与样式系统，保障数据流清晰、界面一致；\r\n3.集成各类复杂交互组件，保障良好用户体验；\r\n4.参与前端游戏相关开发，处理Canvas渲染、触控交互及动画；\r\n5.编写测试、维护组件文档，保障代码质量与可维护性；\r\n6.对接LLM API，参与AI对话界面及Agent工作流前端实现。",
-      "LastUpdateTime": "2026年05月25日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2055136913035276288",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2055136913035276288",
-      "Requirement": "1.精通TypeScript、主流前端框架及构建工具，有monorepo架构实践经验；\n2.熟练掌握前端状态管理、样式解决方案，能搭建可复用设计系统；\n3.熟悉HTML5 Canvas/WebGL，有互动内容或小游戏开发经验；\n4.具备良好工程素养，重视代码质量、错误处理、日志规范及国际化；\n5.理解Feature-First架构及DDD分层思想，能实现全链路类型安全；\n6.深度运用AI编程工具，高效驾驭AI辅助工作流，契合团队Vibe Coding核心模式。"
     }
   ],
   "cloud": [
     {
       "name": "AI",
-      "value": 195
+      "value": 196
     },
     {
       "name": "AGENT",
-      "value": 132
+      "value": 136
     },
     {
       "name": "扎实",
-      "value": 67
+      "value": 71
     },
     {
       "name": "主流",
@@ -3635,14 +3727,22 @@
     },
     {
       "name": "GO",
-      "value": 47
+      "value": 50
     },
     {
       "name": "LLM",
-      "value": 46
+      "value": 49
+    },
+    {
+      "name": "落地",
+      "value": 42
     },
     {
       "name": "微信",
+      "value": 41
+    },
+    {
+      "name": "并发",
       "value": 41
     },
     {
@@ -3650,20 +3750,12 @@
       "value": 41
     },
     {
-      "name": "落地",
-      "value": 39
-    },
-    {
       "name": "工具",
-      "value": 37
-    },
-    {
-      "name": "并发",
-      "value": 37
+      "value": 40
     },
     {
       "name": "实际",
-      "value": 33
+      "value": 34
     },
     {
       "name": "数据库",
@@ -3682,6 +3774,10 @@
       "value": 30
     },
     {
+      "name": "JAVA",
+      "value": 30
+    },
+    {
       "name": "机器",
       "value": 29
     },
@@ -3695,7 +3791,7 @@
     },
     {
       "name": "专业本科",
-      "value": 27
+      "value": 28
     },
     {
       "name": "大规模",
@@ -3703,10 +3799,14 @@
     },
     {
       "name": "RAG",
+      "value": 27
+    },
+    {
+      "name": "分布式",
       "value": 26
     },
     {
-      "name": "JAVA",
+      "name": "大型",
       "value": 26
     },
     {
@@ -3714,15 +3814,7 @@
       "value": 25
     },
     {
-      "name": "深度",
-      "value": 25
-    },
-    {
       "name": "核心",
-      "value": 25
-    },
-    {
-      "name": "管理",
       "value": 25
     },
     {
@@ -3730,12 +3822,12 @@
       "value": 25
     },
     {
-      "name": "流程",
+      "name": "深度",
       "value": 24
     }
   ],
   "stats": {
-    "total": 157,
-    "update_time": "2026-07-07 03:34:40"
+    "total": 161,
+    "update_time": "2026-07-08 02:51:06"
   }
 }
