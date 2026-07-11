@@ -853,6 +853,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1976549654753599488",
+      "RecruitPostId": 115181,
+      "RecruitPostName": "企业微信-大模型算法工程师-Agent应用（广州/北京）",
+      "CountryName": "中国",
+      "LocationName": "成都",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "企业微信SaaS",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责构建具备自主决策、协作与工具调用能力的多智能体系统（Multi-Agent System），推动大模型从“对话式AI”向“任务执行体”演进，解决复杂场景下的自动化问题；\n2.深入研究并应用LLM的复杂推理技术（如思维链CoT、思维树ToT），攻克开放式、复杂问题的深度研究模式，赋予Agent独立探索与解决问题的能力；\n3.运用指令微调、强化学习等方法，提升大模型规划、推理与遵循指令的能力，从而提升模型知识边界探索和抗干扰的能力。",
+      "LastUpdateTime": "2026年07月10日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1976549654753599488",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1976549654753599488",
+      "Requirement": "1.计算机、机器学习等相关专业，硕士及以上学历，具备良好的计算机基础和算法基础；\n2.对大模型和Agent有较深入的理解，了解AgentArchitectures/Structures（Multi-Agent、ContextEngineering/Management、ReAct/PlanAct/CodeAct），了解Agent模式、上下文管理等技术，熟悉常见的LLM实施模式、提示工程、评估框架、代理框架和检索框架等；\n3.熟悉模型的Post-training训练技术，能针对特定模型能力问题进行SFT、RL训练优化；\n4.在ACL、EMNLP、NeurIPS等顶尖会议等发表过文章或机器学习优秀开源项目贡献者优先；\n5.该岗位支持base 成都、广州、北京。"
+    },
+    {
+      "Id": 0,
       "PostId": "2027548243965145088",
       "RecruitPostId": 117997,
       "RecruitPostName": "大模型Code/Agent后训练算法研究员-(深圳)or(北京)or",
@@ -873,29 +896,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2027548243965145088",
       "Requirement": "1.计算机、人工智能等相关专业硕士以上学历；\r\n2.有大规模强化学习、大模型Code/Agent研发相关经验者优先；\r\n3.具有扎实的深度学习算法基础，熟悉深度学习框架和分布式训练推理加速，有实操经验者优先；\r\n4.在多模态/CV/NLP等领域顶级会议（期刊）发表过论文、主导/参与业界知名的开源项目者优先；\r\n5.具备极强的学习能力和技术追求，良好的团队合作和沟通能力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1976549654753599488",
-      "RecruitPostId": 115181,
-      "RecruitPostName": "企业微信-大模型算法工程师-Agent应用（广州/北京）",
-      "CountryName": "中国",
-      "LocationName": "成都",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "企业微信SaaS",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责构建具备自主决策、协作与工具调用能力的多智能体系统（Multi-Agent System），推动大模型从“对话式AI”向“任务执行体”演进，解决复杂场景下的自动化问题；\n2.深入研究并应用LLM的复杂推理技术（如思维链CoT、思维树ToT），攻克开放式、复杂问题的深度研究模式，赋予Agent独立探索与解决问题的能力；\n3.运用指令微调、强化学习等方法，提升大模型规划、推理与遵循指令的能力，从而提升模型知识边界探索和抗干扰的能力。",
-      "LastUpdateTime": "2026年06月30日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1976549654753599488",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1976549654753599488",
-      "Requirement": "1.计算机、机器学习等相关专业，硕士及以上学历，具备良好的计算机基础和算法基础；\n2.对大模型和Agent有较深入的理解，了解AgentArchitectures/Structures（Multi-Agent、ContextEngineering/Management、ReAct/PlanAct/CodeAct），了解Agent模式、上下文管理等技术，熟悉常见的LLM实施模式、提示工程、评估框架、代理框架和检索框架等；\n3.熟悉模型的Post-training训练技术，能针对特定模型能力问题进行SFT、RL训练优化；\n4.在ACL、EMNLP、NeurIPS等顶尖会议等发表过文章或机器学习优秀开源项目贡献者优先；\n5.该岗位支持base 成都、广州、北京。"
     },
     {
       "Id": 0,
@@ -1232,7 +1232,7 @@
       "ProductName": "元宝",
       "CategoryName": "技术",
       "Responsibility": "1.负责元宝AIGC应用（如文本生成、图像生成、音视频对话）的后台系统架构设计与开发，支撑高并发、低延迟的AI应用服务；\r\n2.基于LLM大模型能力场景，推进建设AIGC平台研发落地，支持插件接入&管理、数据飞轮pipeline等平台能力，为AI Agent的研发上线提升效率和质量；\r\n3.负责解决平台和服务在高并发场景下的性能优化，问题定位&解决，保障服务SLA。",
-      "LastUpdateTime": "2026年06月29日",
+      "LastUpdateTime": "2026年07月10日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1987711767794569216",
       "SourceID": 1,
       "IsCollect": false,
@@ -2244,7 +2244,7 @@
       "ProductName": "微信AI助手",
       "CategoryName": "技术",
       "Responsibility": "1.负责微信端产品Agent方向的系统建设与开发工作；\r\n2.设计和搭建Agent架构与工作流，优化推理效率，提升产品端体验；\r\n3.接入微信生态体系，支持多种插件与工具能力；\r\n4.持续跟踪AI发展趋势，尤其是大语言模型领域的前沿进展，并将相关成果应用于Agent AI的研发中。",
-      "LastUpdateTime": "2026年06月18日",
+      "LastUpdateTime": "2026年07月10日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2006202335759585280",
       "SourceID": 1,
       "IsCollect": false,
@@ -2969,6 +2969,52 @@
     },
     {
       "Id": 0,
+      "PostId": "2075480215181766656",
+      "RecruitPostId": 1272977777035694080,
+      "RecruitPostName": "Data & AI Analytics Intern 107767",
+      "CountryName": "新加坡",
+      "LocationName": "新加坡",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "",
+      "CategoryName": "技术",
+      "Responsibility": "Business Unit\nWeiXin Group(WXG) is responsible for the construction and operation of the Weixin ecosystem and leveraging Weixin's open platforms such as Official Accounts, Mini Programs, Weixin Pay, WeCom and search function. WXG provides solutions and connectivity for intelligent upgrades across all industries. WXG is also responsible for the development and operation of QQ Mail, WeRead and other products.\n\nWhat the Role Entails\nAbout WeChat\nWith over 1.3 billion users worldwide, WeChat is shaping the future of digital communication by connecting people, services, and businesses across the globe. The WeChat operations team offers a unique opportunity to redefine how users engage with mobile technology while gaining valuable insights into global user behavior and preferences. Based in Singapore, our team is responsible for managing and expanding WeChat’s core product offerings, including messaging and social networking, for users outside the Chinese mainland. Join us in making a meaningful impact by keeping millions of people connected through one of the world's most influential digital platforms.\nAbout the Internship\nWeChat’s internships provide paid, full-time opportunities lasting a minimum of 12 weeks. Interns will be mentored by senior members of the WeChat operations team and work hands-on in developing new projects and product features. By the end of the internship, participants will have gained a deep understanding of WeChat’s values, independently executed data-driven projects, and collaborated effectively across multiple departments, including product, engineering, and legal teams.\n\nWhy Join Us?\nGain hands-on experience with large-scale data in a leading global tech company\nWork with cutting-edge technologies and experienced mentors in a dynamic environment\nBe part of an impact-driven team that shapes digital communication worldwide\nResponsibilities\nAnalyze large-scale datasets to identify business opportunities, detect patterns, and optimize product performance across the platform.\nDevelop data dashboards and visualization tools to track key performance metrics and provide actionable product insights.\nDesign and build scalable data pipelines to support analytics, operational decision-making, and platform security initiatives.\nCollaborate with cross-functional stakeholders (product, engineering, operations, and security teams) to translate analytical findings into business strategies and product improvements.\nLeverage AI-powered tools and technologies (e.g., LLMs, AI copilots, data assistants) to enhance analysis efficiency, automate workflows, and improve decision accuracy while maintaining robust traditional data engineering and analytics practices.\nExplore and integrate AI-driven methodologies to optimize analytical processes, including automated data exploration, report generation, and intelligent insight discovery.\n\nWho We Look For\nRequirements\nCurrently pursuing a Bachelor's or Master's degree in Data Science, Computer Science, Statistics, Mathematics, or a related field.\nStrong experience in data analytics and data engineering, including building data pipelines, statistical analysis, and data visualization.\nProficiency in SQL and Python, with experience working with large-scale data platforms (e.g., Hive, Spark, or similar big data environments).\nExperience building data dashboards and reporting tools (e.g., Tableau, Power BI, Superset, or similar platforms).\nFamiliarity with AI-assisted data analysis tools, including prompt engineering, context engineering, and AI workflow integration.\nExperience with RAG (Retrieval-Augmented Generation), AI agents, MCP frameworks, or similar AI infrastructure is a strong plus.\nStrong problem-solving skills with the ability to break down complex problems into structured analytical approaches.\nExcellent learning ability, curiosity for new technologies, and a strong sense of ownership and self-driven execution.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+      "LastUpdateTime": "2026年07月09日",
+      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Data---AI-Analytics-Intern_R107767",
+      "SourceID": 4,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2075480215181766656",
+      "Requirement": "岗位要求详情请见上方岗位职责内说明"
+    },
+    {
+      "Id": 0,
+      "PostId": "2061649053032296448",
+      "RecruitPostId": 1259146614534897664,
+      "RecruitPostName": "Junior AI Software Engineer 107553",
+      "CountryName": "新加坡",
+      "LocationName": "新加坡",
+      "BGName": "Overseas Functional System",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "",
+      "CategoryName": "技术",
+      "Responsibility": "About the Hiring Team\nTencent Overseas IT has the mission to empower Tencent’s rapid global growth with future ready, global IT platforms, applications and services. We are chartered to lead the Overseas IT strategy, architecture, roadmap and execution. Satisfying our internal/external customers and becoming a world class global IT team are our top aspirations.\n\nWhat the Role Entails\nAbout the Infra and Network Tech team\nThe team is the part of Tencent Overseas IT department and it is responsible for building and maintaining systems for internal  IT and game publishing lines.\nAbout the role\nAs an intern in SRE  team, you will closely collaborate  with teams across departments to build and deploy powerful systems and products that can perform previously impossible tasks and achieve unprecedented levels of performance.\nIn this role, you will design and develop the tools & dashboards required for a variety of cutting-edge technologies and consumer projects and build flexible infrastructure and intuitive UI experiences.\nBesides, you will have chance to participate in researching existing software and machine learning/deep learning model, proposing improvement and industrializing the product.\nAt last you will experience corporate IT operations and maintainance of the corporate systems and cloud-based infrastructure necessary to enable a highly connected and collaborative workforce\n\nWho We Look For\nRequirements:\nStudy computer science, data science, or a related field. \nSkilled in at least one of programming languages (such as Go, Python, Java, Node.js)\nKnowledge of ML frameworks, libraries, data structures, modelling. (such as PyTorch, HuggingFace libs)\nKnowledge of basic networking, linux, cloud provider, container operation. (such as Ubuntu, AWS, K8S)\nExcellent analytical and problem solving skills with a passion for challenging issues. \nGood teamwork spirit and strong communication skills. \nPreferred Qualifications:\nKnowledge of open sourced LLM fined-tunning, AI Infra techniques \nNetwork, GPU and Server hardware enthusiasm\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+      "LastUpdateTime": "2026年07月09日",
+      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/Junior-Site-Reliability-Engineer_R107553",
+      "SourceID": 4,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2061649053032296448",
+      "Requirement": "岗位要求详情请见上方岗位职责内说明"
+    },
+    {
+      "Id": 0,
       "PostId": "2046368365928411136",
       "RecruitPostId": 10002729,
       "RecruitPostName": "Sr. AI Inference Systems Engineer",
@@ -3337,6 +3383,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1788096480758734848",
+      "RecruitPostId": 104954,
+      "RecruitPostName": "光子 AI-游戏数据科学专家",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "公共",
+      "CategoryName": "技术",
+      "Responsibility": "1.利用游戏海量数据，设计和构建游戏大模型，包括但不限于社交网络分析，推荐，异常用户挖掘等，为产品设计研发及运营提供支持；\n2.数据特征算法：负责海量文本&多模态数据（图像，视频，音频，3D）的内容理解（如分类标签体系、embedding表征、Caption生成等），质量检测（低质识别检测、优质美学评价等），去重/聚类分析，数据合成等算法；\n3.关注行业前沿动态，保持行业敏感度，对竞品有专业的研究和分析。",
+      "LastUpdateTime": "2026年07月10日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1788096480758734848",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1788096480758734848",
+      "Requirement": "1.在数据挖掘的一个或多个领域有不错的学术或工业产出；\n2.熟悉大模型分布式训练，调优，调试；\n3.优秀的分析问题和解决问题的能力，对解决具有挑战性的问题充满激情；\n4.有较强的研究能力，在大模型、大数据相关领域的学术期刊、会议上有高质量的学术成果；\n5.责任心强，良好的业务意识，团队合作能力和沟通协调能力。"
+    },
+    {
+      "Id": 0,
       "PostId": "2072882196234027008",
       "RecruitPostId": 120918,
       "RecruitPostName": "微信-数据科学-AI业务方向",
@@ -3357,29 +3426,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2072882196234027008",
       "Requirement": "1.一年以上数据科学相关岗位的工作经验；\n2.数据科学、统计学、应用数学、机器学习、计算机科学等领域专业本科或以上学位；\n3.熟悉 Hive、Spark 等大数据处理环境，熟练书写 SQL；\n4.熟练使用 Python / R，熟悉常见统计方法，有ab实验，因果推断，量化模型等经验；\n5.有业务分析、AI 产品业务分析、AI 评测实践经验者优先；\n6.具备较好的逻辑思维能力，优秀的沟通协作能力，对有挑战的问题充满热情，充满自驱力，有责任感。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1788096480758734848",
-      "RecruitPostId": 104954,
-      "RecruitPostName": "光子 AI-游戏数据科学专家",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "公共",
-      "CategoryName": "技术",
-      "Responsibility": "1.利用游戏海量数据，设计和构建游戏大模型，包括但不限于社交网络分析，推荐，异常用户挖掘等，为产品设计研发及运营提供支持；\n2.数据特征算法：负责海量文本&多模态数据（图像，视频，音频，3D）的内容理解（如分类标签体系、embedding表征、Caption生成等），质量检测（低质识别检测、优质美学评价等），去重/聚类分析，数据合成等算法；\n3.关注行业前沿动态，保持行业敏感度，对竞品有专业的研究和分析。",
-      "LastUpdateTime": "2026年07月02日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1788096480758734848",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1788096480758734848",
-      "Requirement": "1.在数据挖掘的一个或多个领域有不错的学术或工业产出；\n2.熟悉大模型分布式训练，调优，调试；\n3.优秀的分析问题和解决问题的能力，对解决具有挑战性的问题充满激情；\n4.有较强的研究能力，在大模型、大数据相关领域的学术期刊、会议上有高质量的学术成果；\n5.责任心强，良好的业务意识，团队合作能力和沟通协调能力。"
     },
     {
       "Id": 0,
@@ -3633,58 +3679,12 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2067065225080913920",
       "Requirement": "1.AI 相关博士，计算机视觉/深度学习方向；\n2.精通条件生成模型及多人多通道操控技术，熟悉扩散模型原理；\n3.有相机控制、轨迹控制、姿态控制相关项目经验；\n4.理解游戏引擎的输入输出逻辑与帧同步机制；\n5.熟练使用 Python/PyTorch，有可控视频生成或条件生成相关方向论文；\n6.有游戏 AI 或游戏开发经验者优先；\n7.有实时/交互式视频生成项目经验者优先。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2035224448499609600",
-      "RecruitPostId": 118718,
-      "RecruitPostName": "边缘AI推理研发工程师(深圳)",
-      "CountryName": "中国",
-      "LocationName": "北京",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "腾讯云（TEG）",
-      "CategoryName": "技术",
-      "Responsibility": "推理方向：\n1.面向低延迟交互场景打造极致低延迟推理系统，通过调度、传输、计算优化，深度优化端到端推理延迟；\n2.设计开发一站式 Serverless AI 推理平台，结合边缘云 Serverless 生态支持一站式边缘 AI 应用，提升实时语音交互等低延迟 AI 应用场景的用户体验；\n缓存方向：\n1.面向低延迟交互场景打造 KVCache 缓存系统，通过 KVCache 卸载、传输、压缩优化，深度优化端到端推理延迟，提升实时语音交互等低延迟 AI 应用场景的用户体验；\n2.设计开发边缘推理 KVCache 平台，结合边缘云 Serverless 生态支持一站式边缘 AI 应用，通过 KVCache 复用、分层存储、跨请求共享等技术提升推理性能。",
-      "LastUpdateTime": "2026年06月22日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2035224448499609600",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2035224448499609600",
-      "Requirement": "推理方向：\n1.有 AI 推理在工业上大规模落地的经验，熟悉 LLM 的模型架构和常用的推理加速方法；\n2.熟悉 GPU/TPU 架构，并且能根据硬件架构合理设计上层算力调度、推理加速等相关软件栈，充分发挥硬件算力；\n3.熟悉 sglang、vLLM、TensorRT-LLM 等常用推理框架，理解框架的设计和推理加速方法，了解异构芯片的适配过程；\n\n缓存方向：\n1.有 KVCache 优化或 AI 推理在工业上大规模落地的经验，熟悉 LLM 的模型架构和常用的推理加速方法，理解 KVCache 机制对推理性能的影响；\n2.熟悉 SGLang、vLLM、TensorRT-LLM 等常用推理框架，理解框架的 KVCache 设计和推理加速方法；\n3.熟悉低延迟硬盘IO优化和网络传输优化，包括但不限于Linux异步IO框架、RDMA高性能网络传输协议等。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2047219021216116736",
-      "RecruitPostId": 119590,
-      "RecruitPostName": "腾讯云WeData-Data+AI平台研发专家",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "腾讯云-大数据",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责 DATA+AI一体化框架和运行平台的设计、开发与技术演进，建设一体化、更易用、高性价比的数据智能平台；\n2.深度结合AI能力，建设AI原生的数据智能平台,探索和落地GenAI+大数据的融合场景；\n3.解决高可用性、数据一致性等技术难题，主导性能优化与稳定性提升。",
-      "LastUpdateTime": "2026年06月22日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2047219021216116736",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "五年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2047219021216116736",
-      "Requirement": "1.具有扎实的基础知识、系统功底和编程能力，熟练掌握至少一门面向对象编程语言(Java/Python//GO),具备优秀的算法实现和代码优化能力；\r\n2.具备 Data Infra/AI Infra方向的从业经验，参与过一定规模的相关项目研发和运维优先；\r\n3.了解 Data+AI 方向最新前沿动态，了解业界新技术和新方案；\r\n4.具备良好的团队协作能力，沟通能力，以及优秀的分析与解决问题的能力；\r\n5.在同等条件下，通过腾讯云认证或取得同等资格认证的，优先考虑。"
     }
   ],
   "cloud": [
     {
       "name": "AI",
-      "value": 186
+      "value": 182
     },
     {
       "name": "AGENT",
@@ -3692,14 +3692,10 @@
     },
     {
       "name": "扎实",
-      "value": 73
+      "value": 72
     },
     {
       "name": "LLM",
-      "value": 56
-    },
-    {
-      "name": "PYTHON",
       "value": 52
     },
     {
@@ -3707,16 +3703,20 @@
       "value": 51
     },
     {
+      "name": "PYTHON",
+      "value": 51
+    },
+    {
       "name": "GO",
-      "value": 49
+      "value": 48
     },
     {
       "name": "落地",
-      "value": 45
+      "value": 43
     },
     {
       "name": "LINUX",
-      "value": 43
+      "value": 42
     },
     {
       "name": "并发",
@@ -3735,15 +3735,7 @@
       "value": 34
     },
     {
-      "name": "网络",
-      "value": 32
-    },
-    {
       "name": "环境",
-      "value": 31
-    },
-    {
-      "name": "JAVA",
       "value": 31
     },
     {
@@ -3751,7 +3743,11 @@
       "value": 30
     },
     {
-      "name": "大规模",
+      "name": "网络",
+      "value": 30
+    },
+    {
+      "name": "JAVA",
       "value": 30
     },
     {
@@ -3771,6 +3767,10 @@
       "value": 28
     },
     {
+      "name": "大规模",
+      "value": 28
+    },
+    {
       "name": "机器",
       "value": 27
     },
@@ -3781,10 +3781,6 @@
     {
       "name": "RAG",
       "value": 26
-    },
-    {
-      "name": "一门",
-      "value": 25
     },
     {
       "name": "分布式",
@@ -3799,12 +3795,16 @@
       "value": 25
     },
     {
+      "name": "一门",
+      "value": 24
+    },
+    {
       "name": "北京",
       "value": 24
     }
   ],
   "stats": {
     "total": 160,
-    "update_time": "2026-07-10 03:31:05"
+    "update_time": "2026-07-11 02:47:07"
   }
 }
