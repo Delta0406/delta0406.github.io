@@ -393,29 +393,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2034114867123875840",
-      "RecruitPostId": 118615,
-      "RecruitPostName": "大语言模型应用工程师（Agent方向）",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "腾讯云",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责智能Agent系统的设计、开发与全链路优化，以满足复杂的ToB业务需求；\r\n2.精通并应用提示词工程，设计并优化适用于不同场景的交互流程、思维链及智能体技能，确保任务执行的精确性与可靠性；\r\n3.主导知识库系统，如：Agentic Rag 等的构建与优化，集成企业内部知识库，提升模型在垂直领域的专业能力；\r\n4.将大模型能力封装为标准化、可复用的工具与组件，构建并沉淀AI应用能力中台；\r\n5.负责Agent系统的性能调优、效果评估与线上问题排查，保障系统稳定高效运行；\r\n6.编写严谨的技术文档，沉淀技术方案与最佳实践，并与产品、业务团队紧密协作，推动技术方案的产品化落地。",
-      "LastUpdateTime": "2026年07月13日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2034114867123875840",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2034114867123875840",
-      "Requirement": "1.计算机科学、人工智能、软件工程或相关专业本科及以上学历；\r\n2.具备一年及以上大语言模型（如GPT、LLaMA、Claude等）应用开发经验，有实际Agent或RAG项目经验；\r\n3.深入理解提示词工程，能够独立完成复杂场景的提示设计与迭代优化；\r\n4.掌握RAG技术原理及实践，熟悉从文本处理、向量检索到答案生成的完整流程；\r\n5.熟练掌握JavaScript/TypeScript或Python，具备良好的编程习惯与工程实现能力；\r\n6.对AI技术有浓厚兴趣，具备出色的自主学习能力、逻辑思维与跨团队沟通协作能力。"
-    },
-    {
-      "Id": 0,
       "PostId": "2029338859304808448",
       "RecruitPostId": 118178,
       "RecruitPostName": "腾讯云乐享-全栈Agent研发工程师",
@@ -933,7 +910,7 @@
       "ProductName": "企业微信SaaS",
       "CategoryName": "技术",
       "Responsibility": "1.负责Agent开发框架的设计与实现，构建支持多智能体系统（Multi-Agent System）的协作、决策与工具调用能力，提供高效、可扩展的框架支撑复杂任务执行；\r\n2.开发框架核心模块（如任务调度、通信协议、工具集成等），实现Agent的自主规划、推理（CoT/ToT）及上下文管理能力，优化框架的易用性与性能；\r\n3.设计并实现标准化接口与协议（如MCP、A2A、FunctionCall），支持Agent与外部系统、工具的无缝交互，提升框架的生态兼容性；\r\n4.集成与优化现有Agent架构（Multi-Agent、ReAct/PlanAct/CodeAct等），构建模块化、可插拔的框架体系，满足不同场景的定制化需求；\r\n5.负责框架的性能优化与稳定性维护，通过工程手段（如异步处理、资源调度等）提升框架的吞吐量与并发能力，降低资源消耗；\r\n6.协作算法团队落地算法成果，将研究成果转化为工程实现，推动Agent框架在业务场景中的高效部署与迭代。",
-      "LastUpdateTime": "2026年07月01日",
+      "LastUpdateTime": "2026年07月16日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2028299866760966144",
       "SourceID": 1,
       "IsCollect": false,
@@ -1149,6 +1126,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1915242132004782080",
       "Requirement": "1.本科及以上学历，计算机、软件工程、人工智能等相关专业优先；\r\n2.具备扎实的工程能力，熟悉数据结构、基础算法和系统设计，具备良好的代码质量意识；\r\n3.精通 Go/Python 至少一种语言，具备高并发、分布式服务、任务调度或工作流系统开发经验；\r\n4.熟悉至少一种主流 Agent 框架或产品，如 Claude Code、Codex、LangGraph、OpenCode、AutoGen、Coze 或自研 Agent 框架；\r\n5.深入理解 LLM Function Calling、Tool Use、MCP、ReAct、Plan-and-Execute、Skill、Memory、上下文工程等 Agent 核心范式；\r\n6.有智能体应用完整落地经验，能够独立完成从需求分析、方案设计、开发实现、评测优化到上线迭代的闭环；\r\n7.具备数据建设、指令微调、模型评测或模型应用优化经验者优先；\r\n8.对智能体产品保持热情与好奇心，持续关注业界领先 Agent 公司及其产品演进、技术方向和应用趋势。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2069242484575350784",
+      "RecruitPostId": 120711,
+      "RecruitPostName": "微信小游戏-AI应用开发-游戏代码理解方向",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "小游戏",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责小游戏代码理解Agent工作流, 持续优化迭代效果，形成平台化基础能力，赋能各个业务方向；\r\n2.负责小游戏运行时特征平台建设，提升代码特征分析和制作的效率；\r\n3.参与AI玩小游戏 (autoplay,playable)项目落地, 构建 Agent工作流，做好多品类游戏适配；\r\n4.搭建能力评估体系，量化验证技术效果，跟进联调与效果迭代。",
+      "LastUpdateTime": "2026年07月14日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2069242484575350784",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2069242484575350784",
+      "Requirement": "1.首重软素质，自驱务实，不畏困难，执行力强，具备独立 owner 意识；\n2.计算机相关专业，3年内前端 / 游戏开发 / AI 应用研发经验；\n3.熟悉Agent设计模式，有复杂 Agent 开发及调优的实际经验的优先；\n4.加分项:\n熟悉小游戏开发能力及框架；\n具备 代码静态分析 / 游戏逆向 / 代码理解相关实践；\n有 AI评测平台及能力建设经验。"
     },
     {
       "Id": 0,
@@ -1888,29 +1888,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2030831082567528448",
-      "RecruitPostId": 118324,
-      "RecruitPostName": "《王者荣耀世界》资深后台开发工程师",
-      "CountryName": "中国",
-      "LocationName": "成都",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "王者荣耀",
-      "CategoryName": "技术",
-      "Responsibility": "1.服务器核心业务逻辑开发；\r\n2.参与服务器端的架构设计和实现；\r\n3.负责大型多人在线玩法的服务器方案设计和实现；\r\n4.负责对服务器端承载、稳定性、安全性、效能等多方面进行优化。",
-      "LastUpdateTime": "2026年07月08日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2030831082567528448",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "五年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2030831082567528448",
-      "Requirement": "1.本科及以上学历，5年以上游戏服务器研发工作经验，精通C/C++开发/设计经验；\r\n2.熟练掌握Linux操作系统下的服务器程序开发，熟练掌握数据库调优、多线程编程、服务器通信等知识点至少一种；\r\n3.对主流引擎UE4、U3D等有熟练使用经验者优先；\r\n4.有 DS开发经验者优先；\r\n5.有成功上线的大型多人在线游戏、开放大世界游戏、大型MMO服务器开发经验优先；\r\n6.对海量、高性能、分布式开发有经验者优先；\r\n7.热爱游戏行业，具备良好的沟通能力、团队协作能力，自驱力强，抗压能力强。"
-    },
-    {
-      "Id": 0,
       "PostId": "2030831073021292544",
       "RecruitPostId": 118319,
       "RecruitPostName": "《王者荣耀世界》资深后台开发工程师",
@@ -1930,6 +1907,29 @@
       "RequireWorkYearsName": "五年以上工作经验",
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2030831073021292544",
+      "Requirement": "1.本科及以上学历，5年以上游戏服务器研发工作经验，精通C/C++开发/设计经验；\r\n2.熟练掌握Linux操作系统下的服务器程序开发，熟练掌握数据库调优、多线程编程、服务器通信等知识点至少一种；\r\n3.对主流引擎UE4、U3D等有熟练使用经验者优先；\r\n4.有 DS开发经验者优先；\r\n5.有成功上线的大型多人在线游戏、开放大世界游戏、大型MMO服务器开发经验优先；\r\n6.对海量、高性能、分布式开发有经验者优先；\r\n7.热爱游戏行业，具备良好的沟通能力、团队协作能力，自驱力强，抗压能力强。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2030831082567528448",
+      "RecruitPostId": 118324,
+      "RecruitPostName": "《王者荣耀世界》资深后台开发工程师",
+      "CountryName": "中国",
+      "LocationName": "成都",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "王者荣耀",
+      "CategoryName": "技术",
+      "Responsibility": "1.服务器核心业务逻辑开发；\r\n2.参与服务器端的架构设计和实现；\r\n3.负责大型多人在线玩法的服务器方案设计和实现；\r\n4.负责对服务器端承载、稳定性、安全性、效能等多方面进行优化。",
+      "LastUpdateTime": "2026年07月08日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2030831082567528448",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "五年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2030831082567528448",
       "Requirement": "1.本科及以上学历，5年以上游戏服务器研发工作经验，精通C/C++开发/设计经验；\r\n2.熟练掌握Linux操作系统下的服务器程序开发，熟练掌握数据库调优、多线程编程、服务器通信等知识点至少一种；\r\n3.对主流引擎UE4、U3D等有熟练使用经验者优先；\r\n4.有 DS开发经验者优先；\r\n5.有成功上线的大型多人在线游戏、开放大世界游戏、大型MMO服务器开发经验优先；\r\n6.对海量、高性能、分布式开发有经验者优先；\r\n7.热爱游戏行业，具备良好的沟通能力、团队协作能力，自驱力强，抗压能力强。"
     },
     {
@@ -2785,6 +2785,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2077298521521958912",
+      "RecruitPostId": 121200,
+      "RecruitPostName": "腾讯云-可观测与运维平台高级研发工程师（深圳/杭州/北京/上海）",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯云",
+      "CategoryName": "技术",
+      "Responsibility": "1.AI原生产品演进：负责可观测与运维平台的架构研发。探索大模型与多Agent落地，推动平台向智能化、意图驱动（Intent-Driven）及自然语言交互（LUI）的新一代产品形态演进；\n2.数据基础设施研发：负责高并发指标、日志、链路（Metrics, Log, Trace） 海量数据流水线的泛在采集、高性能多维存储与计算组件研发，持续优化系统性能与稳定性；\n3.智能运维能力构建：利用AI重构并升级海量告警智能降噪、自适应动态拓扑、智能根因定位（RCA）及ChatOps交互式运维等核心产品能力，实现端到端智能闭环。",
+      "LastUpdateTime": "2026年07月16日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2077298521521958912",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2077298521521958912",
+      "Requirement": "1.经验与素养：计算机本科及以上，2年以上云计算、大数据或可观测性研发经验；精通Java/ Golang/ Rust/ C++至少一种后端语言，深入理解 Linux 底层与分布式设计；\n2.领域技术纵深：熟练掌握可观测与大数据生态技术（如存储类 ClickHouse、VM、InfluxDB，计算类 Flink、Spark 等），有开源社区贡献者优先；\n3.运维领域深刻认知：理解可观测性本质，具备多源异构数据语义关联与拓扑对齐的全局视野；认知传统运维痛点（告警风暴、配置地狱等），能准确识别哪些场景适合AI提效（如RCA、智能巡检），哪些场景须坚守确定性规则；\n4.AI原生交付能力：工程落地：熟练掌握大模型API、Prompt 工程及 RAG，有使用主流或自研 Agent框架实现复杂工程的端到端交付经验；架构思维：具备将 AI 作为系统核心组件的设计思维，理解并能解决实际生产中大模型的工程局限性（幻觉、成本、时延）；前沿工具：深度践行 AI辅助编程，熟练运用 Claude Code、CodeBuddy、Codex 等下一代 AI编码 Agent 工具，具备极高的个人交付效率；\n5.云原生与资质：熟悉 Kubernetes生态。通过腾讯云从业资格证或同等认证者优先。"
+    },
+    {
+      "Id": 0,
       "PostId": "1958073224923336704",
       "RecruitPostId": 114265,
       "RecruitPostName": "机器学习平台研发工程师（深圳/北京/上海）",
@@ -3314,29 +3337,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2040982129101406208",
-      "RecruitPostId": 119066,
-      "RecruitPostName": "微信-AI应用开发工程师",
-      "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "WXG公共",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责微信后台的基础功能开发，涉及到朋友圈、微信豆、听一听、红包封面等微信基础功能开发；\r\n2.负责微信 AI平台中分布式计算平台、特征生成平台、大模型推理平台等中台功能开发。",
-      "LastUpdateTime": "2026年06月11日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2040982129101406208",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2040982129101406208",
-      "Requirement": "1.需要熟悉一门编译类语言（C++ 更好），有一年或以上服务端开发经验；\r\n2.有高并发、高可靠的海量服务开发经验者优先；\r\n3.有 Ray等分布式计算框架相关开发经验者优先；\r\n4.有AI应用架构和大模型推理优化相关开发经验者优先；\r\n5.有 OI、ACM-ICPC 参赛背景者优先；\r\n6.希望你热爱编程，喜欢钻研技术，愿意深入思考。"
-    },
-    {
-      "Id": 0,
       "PostId": "2043890003045679104",
       "RecruitPostId": 119308,
       "RecruitPostName": "游戏AI-数据挖掘算法专家",
@@ -3472,6 +3472,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2037425093965148160",
       "Requirement": "1.熟悉Linux开发环境，掌握Python/C++等语言，具备良好的编程基础以及系统设计能力；\r\n2.熟悉GPU或SIMD编程体系架构，了解LLM、AIGC等模型结构，能够使用nvpro、nsys等profiler工具；\r\n3.精通主流训练推理框架和加速技术，包括但不限于：Pytorch、Megatron、DeepSpeed、VLLM、Sglang等；\r\n4.具有系统性分析模型性能瓶颈的能力，熟悉从算子调用，到模型训练推理，再到结果返回的功能定义和具体逻辑；\r\n5.具备良好的技术热情和责任感，优秀的分析解决问题能力、良好的团队意识和沟通能力。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2055136913035276288",
+      "RecruitPostId": 120053,
+      "RecruitPostName": "AW项目组-AI产品前端工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "预算专用-AW",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责Web应用核心开发，搭建高质量可复用的前端架构及组件体系；\r\n2.负责前端状态管理与样式系统，保障数据流清晰、界面一致；\r\n3.集成各类复杂交互组件，保障良好用户体验；\r\n4.参与前端游戏相关开发，处理Canvas渲染、触控交互及动画；\r\n5.编写测试、维护组件文档，保障代码质量与可维护性；\r\n6.对接LLM API，参与AI对话界面及Agent工作流前端实现。",
+      "LastUpdateTime": "2026年07月16日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2055136913035276288",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2055136913035276288",
+      "Requirement": "1.精通TypeScript、主流前端框架及构建工具，有monorepo架构实践经验；\n2.熟练掌握前端状态管理、样式解决方案，能搭建可复用设计系统；\n3.熟悉HTML5 Canvas/WebGL，有互动内容或小游戏开发经验；\n4.具备良好工程素养，重视代码质量、错误处理、日志规范及国际化；\n5.理解Feature-First架构及DDD分层思想，能实现全链路类型安全；\n6.深度运用AI编程工具，高效驾驭AI辅助工作流，契合团队Vibe Coding核心模式。"
     },
     {
       "Id": 0,
@@ -3613,29 +3636,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2072184951805231104",
-      "RecruitPostId": 120842,
-      "RecruitPostName": "QClaw-AI大模型算法高级工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "安全管家",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责QClaw核心AI能力建设：智能体协同、LLM微调与优化、Agentic Workflow落地、多模态任务处理；\r\n2.设计AI应用隐私保护机制、Agent沙箱安全评级等算法能力，构建安全可信的AI系统；\r\n3.搭建可解释的算法评估体系与归因链路，通过数据驱动实现天/周/月级合理迭代优化；\r\n4.紧跟前沿AI技术趋势，探索AI创新应用，协同团队在技术深度与广度上持续突破。",
-      "LastUpdateTime": "2026年07月01日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2072184951805231104",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "五年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2072184951805231104",
-      "Requirement": "1.本科及以上学历，5年以上AI算法研发经验；\r\n2.熟练掌握至少一种编程语言（Python/C++/Golang/Java/JS/TS），具备优秀工程能力；\r\n3.在深度学习、大模型、多模态、强化学习等方向有扎实积累，具备从0到1主导项目落地经验；\r\n4.熟悉主流深度学习框架（PyTorch/TensorFlow），对Prompt Engineering、Agentic Workflow、GRPO、PPO有实践经验；\r\n5.有Agent系统、Memory系统、多智能体协同等领域经验，熟悉云业务场景。"
-    },
-    {
-      "Id": 0,
       "PostId": "1993142612818808832",
       "RecruitPostId": 116183,
       "RecruitPostName": "《王者荣耀》资深AI全栈工程师",
@@ -3656,28 +3656,51 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1993142612818808832",
       "Requirement": "1.具备扎实的软件工程与系统设计能力，有生产级服务/平台交付经验；\r\n2.有非常强的工程能力并且非常熟悉主流的agentic coding工具比如cursor和claude code；\r\n3.在llm应用井喷的时代，基建相关的能力非常重要，希望候选人有相关的背景和经验；\r\n4.希望候选人有足够强的研究能力， 至少能独立在搜索引擎和llm辅助下深入研究一个话题并且给出解决方案。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2067065225080913920",
+      "RecruitPostId": 120603,
+      "RecruitPostName": "光子 AI-可控视频生成研究员",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "预算专用-光子技术发展部公共产品",
+      "CategoryName": "技术",
+      "Responsibility": "1.设计多模态可控生成框架，支持键盘/手柄/轨迹/语音等多种输入；\n2.研究稀疏控制信号下的高保真生成，探索条件控制范式在视频域的拓展；\n3.实现轨迹控制、相机控制、运动控制、姿态控制的解耦与组合；\n4.针对不同游戏类型设计专用控制模块；\n5.研发多人协同操控视频生成能力，实现低延迟响应与帧间状态保持；\n6.与引擎/Agent 团队协作，定义可控信号的标准化接口；\n7.推动可控生成与 RL 后训练的联合优化。",
+      "LastUpdateTime": "2026年06月23日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2067065225080913920",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2067065225080913920",
+      "Requirement": "1.AI 相关博士，计算机视觉/深度学习方向；\n2.精通条件生成模型及多人多通道操控技术，熟悉扩散模型原理；\n3.有相机控制、轨迹控制、姿态控制相关项目经验；\n4.理解游戏引擎的输入输出逻辑与帧同步机制；\n5.熟练使用 Python/PyTorch，有可控视频生成或条件生成相关方向论文；\n6.有游戏 AI 或游戏开发经验者优先；\n7.有实时/交互式视频生成项目经验者优先。"
     }
   ],
   "cloud": [
     {
       "name": "AI",
-      "value": 178
+      "value": 187
     },
     {
       "name": "AGENT",
-      "value": 146
+      "value": 147
     },
     {
       "name": "扎实",
-      "value": 73
+      "value": 72
     },
     {
       "name": "主流",
-      "value": 53
+      "value": 54
     },
     {
       "name": "PYTHON",
-      "value": 52
+      "value": 51
     },
     {
       "name": "LLM",
@@ -3688,16 +3711,12 @@
       "value": 46
     },
     {
-      "name": "LINUX",
-      "value": 42
-    },
-    {
       "name": "工具",
-      "value": 41
+      "value": 45
     },
     {
-      "name": "并发",
-      "value": 40
+      "name": "LINUX",
+      "value": 43
     },
     {
       "name": "落地",
@@ -3708,19 +3727,27 @@
       "value": 40
     },
     {
+      "name": "并发",
+      "value": 39
+    },
+    {
       "name": "数据库",
       "value": 33
     },
     {
       "name": "实际",
-      "value": 31
+      "value": 32
     },
     {
       "name": "环境",
       "value": 31
     },
     {
-      "name": "人工智能",
+      "name": "产品",
+      "value": 30
+    },
+    {
+      "name": "核心",
       "value": 30
     },
     {
@@ -3732,11 +3759,7 @@
       "value": 30
     },
     {
-      "name": "产品",
-      "value": 29
-    },
-    {
-      "name": "核心",
+      "name": "人工智能",
       "value": 29
     },
     {
@@ -3748,40 +3771,40 @@
       "value": 28
     },
     {
+      "name": "分布式",
+      "value": 26
+    },
+    {
       "name": "分布式系统",
       "value": 26
     },
     {
-      "name": "一门",
+      "name": "北京",
       "value": 25
     },
     {
-      "name": "分布式",
-      "value": 25
+      "name": "一门",
+      "value": 24
+    },
+    {
+      "name": "深度",
+      "value": 24
+    },
+    {
+      "name": "领域",
+      "value": 24
     },
     {
       "name": "专业本科",
-      "value": 25
-    },
-    {
-      "name": "RAG",
-      "value": 25
-    },
-    {
-      "name": "北京",
       "value": 24
     },
     {
       "name": "大型",
       "value": 24
-    },
-    {
-      "name": "大规模",
-      "value": 24
     }
   ],
   "stats": {
-    "total": 159,
-    "update_time": "2026-07-16 02:43:48"
+    "total": 160,
+    "update_time": "2026-07-17 02:46:53"
   }
 }
