@@ -1497,6 +1497,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2087100746268065792",
+      "RecruitPostId": 121785,
+      "RecruitPostName": "QQ-#社交平台后台研发工程师#",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "PCG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "QQ",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责QQ平台社交业务（如空间、群、关系链等）的后台架构设计与优化，保障系统高可用、高性能及可扩展性；\n2.主导社交业务模块的迭代开发，深度参与需求分析、技术评审及方案落地，解决复杂业务场景下的技术挑战；\n3.与产品、运营及跨团队紧密协作，深入理解业务需求，通过技术创新推动业务目标达成；\n4.参与技术规划与方案设计，跟踪行业前沿技术趋势，将合适的技术引入业务场景提升整体竞争力。",
+      "LastUpdateTime": "2026年08月11日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2087100746268065792",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2087100746268065792",
+      "Requirement": "1.计算机相关专业本科及以上学历，1年以上互联网后台研发经验，扎实的编程基础，熟练掌握Golang或C++至少一门语言；\n2.熟悉微服务架构设计与治理，具备分布式系统开发经验，熟悉常用中间件（如Redis、Kafka、MySQL等）及高并发场景下的性能调优；\n3.有1年以上海量用户服务或复杂系统开发经验，熟悉社交类产品业务逻辑者优先；\n4.具备优秀的逻辑思维与问题分析能力，能独立定位并解决复杂技术问题，对技术细节有极致追求；\n5.良好的沟通协作能力与团队合作精神，能够主动推动跨团队协作，对产品体验与技术创新有热情；\n6.积极拥抱新技术，有AI/LLM等技术在业务中落地实践经验者优先。"
+    },
+    {
+      "Id": 0,
       "PostId": "2084242179768893440",
       "RecruitPostId": 121629,
       "RecruitPostName": "微信-后台开发工程师-AI方向",
@@ -2233,29 +2256,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2010916224795561984",
-      "RecruitPostId": 117262,
-      "RecruitPostName": "微信小店-后台开发工程师-推荐系统方向",
-      "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "微信交易平台",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责微信小店的推荐系统后台工作，深入参与微信小店在各场景下的推荐业务；\r\n2.针对业务特性，持续优化推荐链路性能；\r\n3.共同参与产品设计，负责新特性的后台系统设计与实现，保障系统的稳定运行。",
-      "LastUpdateTime": "2026年07月21日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2010916224795561984",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2010916224795561984",
-      "Requirement": "1.本科及以上学历，计算机相关专业；\r\n2.1年以上Linux/Unix后台开发工作经验，有推荐系统开发经验者优先；\r\n3.精通C/C++开发语言、常用算法和数据结构，具备扎实的编程基础；\r\n4.熟悉TCP/UDP协议网络编程编程、shell脚本，能够熟练运用相关技术；\r\n5.具有高并发、高性能服务系统设计经验及能力，能够应对复杂业务场景；\r\n6.有海量服务、高性能、分布式系统设计及开发经验者优先；\r\n7.良好的学习能力、沟通能力、团队协作能力、分析问题解决问题能力，责任心强。"
-    },
-    {
-      "Id": 0,
       "PostId": "2001689019871813632",
       "RecruitPostId": 116695,
       "RecruitPostName": "腾讯云研发效能-后端开发工程师",
@@ -2267,7 +2267,7 @@
       "ProductName": "腾讯云",
       "CategoryName": "技术",
       "Responsibility": "1.负责项目团队CICD流水线建设和日常维护；\r\n2.支持项目代码管理、构建管理、版本发布规范化建设；\r\n3.负责项目团队研发过程改进、研效提升方案制定和落地实践。",
-      "LastUpdateTime": "2026年07月28日",
+      "LastUpdateTime": "2026年08月12日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2001689019871813632",
       "SourceID": 1,
       "IsCollect": false,
@@ -2506,29 +2506,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2071405433486225408",
       "Requirement": "1.本科及以上学历，计算机科学、软件工程、人工智能等相关专业；\r\n2.3年及以上后端开发或平台工程经验，精通Go/C++中至少一种，有大规模系统实战经验；\r\n3.有复杂平台系统的架构设计经验，能在性能、可用性、可扩展性之间做出合理权衡；\r\n4.对新技术保持高度敏锐——面对新工具、新框架、新范式时，能在短时间内完成从了解到上手到产出的闭环。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2017120081338851328",
-      "RecruitPostId": 117650,
-      "RecruitPostName": "微信视频号-推荐大模型后台开发工程师-加热系统",
-      "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "加热",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责微信视频号加热的推荐工程开发与迭代，支持加热功能的推荐侧业务逻辑开发；\r\n2.协同算法、数据同学，推进模型与算法的工程优化与落地，提升加热推荐准确性和商业化收益；\r\n3.优化加热推荐链路的架构与效率，提升系统稳定性、扩展性与性能，保障高并发、低延迟的在线推荐能力；\r\n4.持续跟踪业界前沿技术，探索并引入推荐与广告的新特性，不断提升系统能力与研发效能，打造业界领先的广告推荐系统。",
-      "LastUpdateTime": "2026年08月03日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2017120081338851328",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2017120081338851328",
-      "Requirement": "1.计算机相关专业本科及以上学历，1年以上后端开发或机器学习工程相关经验；\n2.熟悉Linux开发环境，熟悉至少一门编程语言（如C/C++），深入理解数据结构与算法，善于通过编程解决实际问题；\n3.具备良好的问题分析和解决能力，能够独立设计和实现复杂功能模块；\n4.具备良好的团队协作能力和沟通能力，能够与跨职能团队高效合作；积极主动，勇于接受挑战；\n5.有搜索、广告、推荐等相关后台开发经验者优先。"
     },
     {
       "Id": 0,
@@ -3521,6 +3498,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2035224448499609600",
+      "RecruitPostId": 118718,
+      "RecruitPostName": "边缘AI推理研发工程师(深圳)",
+      "CountryName": "中国",
+      "LocationName": "北京",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯云（TEG）",
+      "CategoryName": "技术",
+      "Responsibility": "推理方向：\n1.面向低延迟交互场景打造极致低延迟推理系统，通过调度、传输、计算优化，深度优化端到端推理延迟；\n2.设计开发一站式 Serverless AI 推理平台，结合边缘云 Serverless 生态支持一站式边缘 AI 应用，提升实时语音交互等低延迟 AI 应用场景的用户体验；\n缓存方向：\n1.面向低延迟交互场景打造 KVCache 缓存系统，通过 KVCache 卸载、传输、压缩优化，深度优化端到端推理延迟，提升实时语音交互等低延迟 AI 应用场景的用户体验；\n2.设计开发边缘推理 KVCache 平台，结合边缘云 Serverless 生态支持一站式边缘 AI 应用，通过 KVCache 复用、分层存储、跨请求共享等技术提升推理性能。",
+      "LastUpdateTime": "2026年08月12日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2035224448499609600",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2035224448499609600",
+      "Requirement": "推理方向：\n1.有 AI 推理在工业上大规模落地的经验，熟悉 LLM 的模型架构和常用的推理加速方法；\n2.熟悉 GPU/TPU 架构，并且能根据硬件架构合理设计上层算力调度、推理加速等相关软件栈，充分发挥硬件算力；\n3.熟悉 sglang、vLLM、TensorRT-LLM 等常用推理框架，理解框架的设计和推理加速方法，了解异构芯片的适配过程；\n\n缓存方向：\n1.有 KVCache 优化或 AI 推理在工业上大规模落地的经验，熟悉 LLM 的模型架构和常用的推理加速方法，理解 KVCache 机制对推理性能的影响；\n2.熟悉 SGLang、vLLM、TensorRT-LLM 等常用推理框架，理解框架的 KVCache 设计和推理加速方法；\n3.熟悉低延迟硬盘IO优化和网络传输优化，包括但不限于Linux异步IO框架、RDMA高性能网络传输协议等。"
+    },
+    {
+      "Id": 0,
       "PostId": "1995314539217969152",
       "RecruitPostId": 116312,
       "RecruitPostName": "游戏AI-LLM大模型算法研究员",
@@ -3636,29 +3636,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2035224448499609600",
-      "RecruitPostId": 118718,
-      "RecruitPostName": "边缘AI推理研发工程师(深圳)",
-      "CountryName": "中国",
-      "LocationName": "北京",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "腾讯云（TEG）",
-      "CategoryName": "技术",
-      "Responsibility": "推理方向：\n1.面向低延迟交互场景打造极致低延迟推理系统，通过调度、传输、计算优化，深度优化端到端推理延迟；\n2.设计开发一站式 Serverless AI 推理平台，结合边缘云 Serverless 生态支持一站式边缘 AI 应用，提升实时语音交互等低延迟 AI 应用场景的用户体验；\n缓存方向：\n1.面向低延迟交互场景打造 KVCache 缓存系统，通过 KVCache 卸载、传输、压缩优化，深度优化端到端推理延迟，提升实时语音交互等低延迟 AI 应用场景的用户体验；\n2.设计开发边缘推理 KVCache 平台，结合边缘云 Serverless 生态支持一站式边缘 AI 应用，通过 KVCache 复用、分层存储、跨请求共享等技术提升推理性能。",
-      "LastUpdateTime": "2026年07月22日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2035224448499609600",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2035224448499609600",
-      "Requirement": "推理方向：\n1.有 AI 推理在工业上大规模落地的经验，熟悉 LLM 的模型架构和常用的推理加速方法；\n2.熟悉 GPU/TPU 架构，并且能根据硬件架构合理设计上层算力调度、推理加速等相关软件栈，充分发挥硬件算力；\n3.熟悉 sglang、vLLM、TensorRT-LLM 等常用推理框架，理解框架的设计和推理加速方法，了解异构芯片的适配过程；\n\n缓存方向：\n1.有 KVCache 优化或 AI 推理在工业上大规模落地的经验，熟悉 LLM 的模型架构和常用的推理加速方法，理解 KVCache 机制对推理性能的影响；\n2.熟悉 SGLang、vLLM、TensorRT-LLM 等常用推理框架，理解框架的 KVCache 设计和推理加速方法；\n3.熟悉低延迟硬盘IO优化和网络传输优化，包括但不限于Linux异步IO框架、RDMA高性能网络传输协议等。"
-    },
-    {
-      "Id": 0,
       "PostId": "2079115540219211776",
       "RecruitPostId": 121324,
       "RecruitPostName": "AI协作产品全栈开发工程师",
@@ -3684,7 +3661,7 @@
   "cloud": [
     {
       "name": "AI",
-      "value": 204
+      "value": 205
     },
     {
       "name": "AGENT",
@@ -3704,11 +3681,11 @@
     },
     {
       "name": "落地",
-      "value": 53
+      "value": 54
     },
     {
       "name": "LLM",
-      "value": 51
+      "value": 52
     },
     {
       "name": "主流",
@@ -3719,32 +3696,24 @@
       "value": 48
     },
     {
-      "name": "LINUX",
-      "value": 44
-    },
-    {
       "name": "并发",
       "value": 42
     },
     {
+      "name": "LINUX",
+      "value": 42
+    },
+    {
       "name": "微信",
-      "value": 39
+      "value": 37
+    },
+    {
+      "name": "产品",
+      "value": 34
     },
     {
       "name": "JAVA",
       "value": 34
-    },
-    {
-      "name": "产品",
-      "value": 33
-    },
-    {
-      "name": "实际",
-      "value": 31
-    },
-    {
-      "name": "环境",
-      "value": 31
     },
     {
       "name": "RAG",
@@ -3755,15 +3724,15 @@
       "value": 30
     },
     {
-      "name": "网络",
-      "value": 29
+      "name": "实际",
+      "value": 30
+    },
+    {
+      "name": "环境",
+      "value": 30
     },
     {
       "name": "人工智能",
-      "value": 29
-    },
-    {
-      "name": "数据结构",
       "value": 29
     },
     {
@@ -3773,6 +3742,10 @@
     {
       "name": "智能",
       "value": 29
+    },
+    {
+      "name": "网络",
+      "value": 28
     },
     {
       "name": "分布式",
@@ -3799,12 +3772,16 @@
       "value": 27
     },
     {
+      "name": "数据结构",
+      "value": 27
+    },
+    {
       "name": "大规模",
       "value": 27
     }
   ],
   "stats": {
-    "total": 160,
-    "update_time": "2026-08-11 01:51:32"
+    "total": 159,
+    "update_time": "2026-08-12 02:03:35"
   }
 }
