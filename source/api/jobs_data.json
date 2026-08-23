@@ -3268,29 +3268,6 @@
     },
     {
       "Id": 0,
-      "PostId": "1982705847465299968",
-      "RecruitPostId": 115586,
-      "RecruitPostName": "WeGame游戏平台-AI算法研究",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "WeGame平台公共",
-      "CategoryName": "技术",
-      "Responsibility": "1.结合游戏平台业务垂直场景，负责深度学习和大语言模型的训练精调、调优及部署，及智能体Agent开发；\n2.负责大规模平台用户行为数据集的ETL及特征工程，构建高效数据流水线，落地到用户画像体系并服务到线上AI应用；\n3.跟踪和研究前沿AI技术（如LLM、VLM、SFT、DPO、RAG、MCP等），推动技术落地业务发挥价值；\n4.与技术团队协作，优化算法模型和服务性能，满足产品AI价值落地要求。",
-      "LastUpdateTime": "2026年07月29日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1982705847465299968",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1982705847465299968",
-      "Requirement": "1.计算机科学、人工智能或数学专业硕士及以上学历，3年以上机器学习或深度学习、LLM/VLM相关开发经验，熟悉经典模型和优化算法；\n2.扎实的机器学习基础和LLM底层核心架构；\n3.具备一定大语言模型应用的模型微调和优化经验，如幻觉问题解决思路提炼和有效落地；\n4.熟悉Linux开发环境和Python语言，了解PyTorch/TensorFlow框架；\n5.良好的沟通能力和团队协作精神，能够清晰表达复杂技术概念，具备解决复杂问题的能力，善于创新思考；\n6.喜欢游戏并具备一定游戏经验。"
-    },
-    {
-      "Id": 0,
       "PostId": "2037467994921271296",
       "RecruitPostId": 118911,
       "RecruitPostName": "企业微信-AI应用后台开发工程师-AI大模型应用（成都/北京）",
@@ -3311,6 +3288,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2037467994921271296",
       "Requirement": "1.计算机/人工智能相关专业，1年以上工程开发经验；\r\n2.具备良好的编程能力，熟悉C++/Python，有1年以上Linux/Unix后台开发工作经验；\r\n3.了解大模型相关技术原理与基础知识，具备AI系统开发经验者优先；\r\n4.具备良好的问题分析解决能力、责任心强。"
+    },
+    {
+      "Id": 0,
+      "PostId": "1982705847465299968",
+      "RecruitPostId": 115586,
+      "RecruitPostName": "WeGame游戏平台-AI算法研究",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "WeGame平台公共",
+      "CategoryName": "技术",
+      "Responsibility": "1.结合游戏平台业务垂直场景，负责深度学习和大语言模型的训练精调、调优及部署，及智能体Agent开发；\n2.负责大规模平台用户行为数据集的ETL及特征工程，构建高效数据流水线，落地到用户画像体系并服务到线上AI应用；\n3.跟踪和研究前沿AI技术（如LLM、VLM、SFT、DPO、RAG、MCP等），推动技术落地业务发挥价值；\n4.与技术团队协作，优化算法模型和服务性能，满足产品AI价值落地要求。",
+      "LastUpdateTime": "2026年07月29日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1982705847465299968",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1982705847465299968",
+      "Requirement": "1.计算机科学、人工智能或数学专业硕士及以上学历，3年以上机器学习或深度学习、LLM/VLM相关开发经验，熟悉经典模型和优化算法；\n2.扎实的机器学习基础和LLM底层核心架构；\n3.具备一定大语言模型应用的模型微调和优化经验，如幻觉问题解决思路提炼和有效落地；\n4.熟悉Linux开发环境和Python语言，了解PyTorch/TensorFlow框架；\n5.良好的沟通能力和团队协作精神，能够清晰表达复杂技术概念，具备解决复杂问题的能力，善于创新思考；\n6.喜欢游戏并具备一定游戏经验。"
     },
     {
       "Id": 0,
@@ -3736,6 +3736,6 @@
   ],
   "stats": {
     "total": 157,
-    "update_time": "2026-08-22 01:18:05"
+    "update_time": "2026-08-23 01:25:12"
   }
 }
