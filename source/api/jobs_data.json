@@ -784,29 +784,6 @@
     },
     {
       "Id": 0,
-      "PostId": "1976549654753599488",
-      "RecruitPostId": 115181,
-      "RecruitPostName": "企业微信-大模型算法工程师-Agent应用（广州/北京）",
-      "CountryName": "中国",
-      "LocationName": "成都",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "企业微信SaaS",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责构建具备自主决策、协作与工具调用能力的多智能体系统（Multi-Agent System），推动大模型从\"对话式 AI\"向\"任务执行体\"演进，解决自动化经营、服务等复杂场景下的自动化问题；\r\n2.深入研究并应用 LLM 的复杂推理技术，持续优化办公场景中长链路、高难度任务的执行效果，赋予 Agent 独立探索与解决问题的能力；\r\n3.主导企微现有能力的 Agent 化改造与对外能力开放，推动 Agent 在企业对外服务、内部经营等复杂场景中的深度落地；\r\n4.运用规划、推理与上下文工程等方法，提升大模型的指令遵循能力，以及知识边界探索与抗干扰能力。",
-      "LastUpdateTime": "2026年08月28日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1976549654753599488",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1976549654753599488",
-      "Requirement": "1.计算机、机器学习等相关专业，硕士及以上学历，具备扎实的计算机与算法基础；\r\n2.对大模型和 Agent 有较深入理解：熟悉主流 Agent 架构与范式（Multi-Agent 架构，ReAct / Plan-and-Act / CodeAct 等推理-行动范式）、上下文工程与管理（Context Engineering / Management）；熟悉常见的 LLM 应用范式、提示工程、评估框架、Agent 框架与检索（RAG）框架；\r\n3.具备多智能体系统、复杂任务 Agent、办公 / 经营服务场景的落地经验，或熟悉 Post-training（SFT、RL）训练优化者优先；\r\n4.在 ACL、EMNLP、NeurIPS 等顶尖会议上发表过论文，或为优秀机器学习开源项目做出过贡献者优先。"
-    },
-    {
-      "Id": 0,
       "PostId": "2092447906002022400",
       "RecruitPostId": 122107,
       "RecruitPostName": "金融科技-Agent架构设计与推理性能优化工程师",
@@ -827,6 +804,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2092447906002022400",
       "Requirement": "1.· 具备扎实的后台工程能力，有行业 成熟 Agent框架的实战经验；\n2.· 熟悉大模型推理框架，有相关优化经验（vLLM、sglang等）；\n3.· 有卡推理适配和集群化推理调度经验者优先；\n4.· 有持续的一线技术优化实战经验，能独立承担Agent设计与核心模块开发，对Agent的上下文工程、工具调用、Skill设计有深入理解，了解最新上下文设计原则；\n5.· 计算机、人工智能等相关专业本科及以上学历，有顶会论文或开源项目贡献者优先。"
+    },
+    {
+      "Id": 0,
+      "PostId": "1976549654753599488",
+      "RecruitPostId": 115181,
+      "RecruitPostName": "企业微信-大模型算法工程师-Agent应用（广州/北京）",
+      "CountryName": "中国",
+      "LocationName": "成都",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "企业微信SaaS",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责构建具备自主决策、协作与工具调用能力的多智能体系统（Multi-Agent System），推动大模型从\"对话式 AI\"向\"任务执行体\"演进，解决自动化经营、服务等复杂场景下的自动化问题；\r\n2.深入研究并应用 LLM 的复杂推理技术，持续优化办公场景中长链路、高难度任务的执行效果，赋予 Agent 独立探索与解决问题的能力；\r\n3.主导企微现有能力的 Agent 化改造与对外能力开放，推动 Agent 在企业对外服务、内部经营等复杂场景中的深度落地；\r\n4.运用规划、推理与上下文工程等方法，提升大模型的指令遵循能力，以及知识边界探索与抗干扰能力。",
+      "LastUpdateTime": "2026年08月28日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1976549654753599488",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1976549654753599488",
+      "Requirement": "1.计算机、机器学习等相关专业，硕士及以上学历，具备扎实的计算机与算法基础；\r\n2.对大模型和 Agent 有较深入理解：熟悉主流 Agent 架构与范式（Multi-Agent 架构，ReAct / Plan-and-Act / CodeAct 等推理-行动范式）、上下文工程与管理（Context Engineering / Management）；熟悉常见的 LLM 应用范式、提示工程、评估框架、Agent 框架与检索（RAG）框架；\r\n3.具备多智能体系统、复杂任务 Agent、办公 / 经营服务场景的落地经验，或熟悉 Post-training（SFT、RL）训练优化者优先；\r\n4.在 ACL、EMNLP、NeurIPS 等顶尖会议上发表过论文，或为优秀机器学习开源项目做出过贡献者优先。"
     },
     {
       "Id": 0,
@@ -3084,6 +3084,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2093312681103765504",
+      "RecruitPostId": 1290810242916347904,
+      "RecruitPostName": "Large Model AI Infrastructure Intern 108093",
+      "CountryName": "英国",
+      "LocationName": "英国-远程",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "",
+      "CategoryName": "技术",
+      "Responsibility": "Business Unit\nTechnology Engineering Group (TEG) is responsible for supporting the company and its business groups on technology and operational platforms, as well as the construction and operation of R&D management and data centers, TEG provides users with a full range of customer services. As the operator of the largest networking, devices, and data center in Asia,TEG also leads the Tencent Technology Committee in strengthening infrastructure R&D through internal and distributed open source collaboration, constructing new platforms and supporting business innovation.\n\nWhat the Role Entails\n1. Address issues related to computational capacity limitations, communication delays, and the scalability of distributed systems, in accordance with business needs.\n2. Collaborate with algorithm, hardware, and operations teams to develop efficient and stable computing infrastructure.\n\nWho We Look For\n1. Solid foundation in computer architecture; familiarity with parallel computing and the design of data-intensive systems.\n2. Strong mathematical skills, including linear algebra, numerical analysis, and optimization of algorithm complexity.\nPreferred Qualifications/Additional Notes\n1. Experience with inference frameworks such as TensorRT or Triton Inference Server is a plus.\n2. In-depth understanding of TCP/IP and RDMA protocol stacks; familiarity with DPDK/SPDK development is also beneficial. Those with experience in optimizing networks within supercomputing centers or cloud computing environments are preferred.\n3. Knowledge of the Transformer architecture and the main procedures involved in training large models.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: United Kingdom",
+      "LastUpdateTime": "2026年08月28日",
+      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/United-Kingdom/Large-Model-AI-Infrastructure-Intern_R108093",
+      "SourceID": 4,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2093312681103765504",
+      "Requirement": "岗位要求详情请见上方岗位职责内说明"
+    },
+    {
+      "Id": 0,
       "PostId": "2056633439326748672",
       "RecruitPostId": 120136,
       "RecruitPostName": "AI渲染研究员",
@@ -3337,29 +3360,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2037467994921271296",
-      "RecruitPostId": 118911,
-      "RecruitPostName": "企业微信-AI应用后台开发工程师-AI大模型应用（成都/北京）",
-      "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "企业微信SaaS",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责企业微信AI应用后台系统的设计、开发与迭代，集成大模型能力，为企业用户提供智能对话、RAG检索增强、任务自动化等场景服务；\n2.构建高可用、低延迟的模型调用与服务调度框架，优化AI请求链路的稳定性与性能；\n3.负责RAG流程各环节的需求研发与性能调优，持续提升检索与生成效果；\n4.与AI产品、算法团队紧密协作，推动LLM功能在企微生态中的落地，扩展AI应用能力矩阵；\n5.负责分布式后台服务的功能开发、容灾设计与性能调优，保障系统在高并发场景下的可靠性。",
-      "LastUpdateTime": "2026年08月28日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2037467994921271296",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2037467994921271296",
-      "Requirement": "1.计算机/人工智能相关专业，1年以上AI应用开发经验；\n2.具备良好的编程能力，精通C++，有3年以上Linux/Unix后台开发工作经验；\n3.了解大模型相关技术原理与基础知识，具备RAG等相关开发经验者优先；\n4.沟通能力强、良好的学习能力、团队协作能力，分析问题解决问题能力强，责任心强；\n5.对探索前沿技术有热情，具备独立探索前沿技术的能力；\n6.拥有ToB项目开发经验者优先。"
-    },
-    {
-      "Id": 0,
       "PostId": "1982705847465299968",
       "RecruitPostId": 115586,
       "RecruitPostName": "WeGame游戏平台-AI算法研究",
@@ -3380,6 +3380,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1982705847465299968",
       "Requirement": "1.计算机科学、人工智能或数学专业硕士及以上学历，3年以上机器学习或深度学习、LLM/VLM相关开发经验，熟悉经典模型和优化算法；\n2.扎实的机器学习基础和LLM底层核心架构；\n3.具备一定大语言模型应用的模型微调和优化经验，如幻觉问题解决思路提炼和有效落地；\n4.熟悉Linux开发环境和Python语言，了解PyTorch/TensorFlow框架；\n5.良好的沟通能力和团队协作精神，能够清晰表达复杂技术概念，具备解决复杂问题的能力，善于创新思考；\n6.喜欢游戏并具备一定游戏经验。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2037467994921271296",
+      "RecruitPostId": 118911,
+      "RecruitPostName": "企业微信-AI应用后台开发工程师-AI大模型应用（成都/北京）",
+      "CountryName": "中国",
+      "LocationName": "广州",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "企业微信SaaS",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责企业微信AI应用后台系统的设计、开发与迭代，集成大模型能力，为企业用户提供智能对话、RAG检索增强、任务自动化等场景服务；\n2.构建高可用、低延迟的模型调用与服务调度框架，优化AI请求链路的稳定性与性能；\n3.负责RAG流程各环节的需求研发与性能调优，持续提升检索与生成效果；\n4.与AI产品、算法团队紧密协作，推动LLM功能在企微生态中的落地，扩展AI应用能力矩阵；\n5.负责分布式后台服务的功能开发、容灾设计与性能调优，保障系统在高并发场景下的可靠性。",
+      "LastUpdateTime": "2026年08月28日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2037467994921271296",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2037467994921271296",
+      "Requirement": "1.计算机/人工智能相关专业，1年以上AI应用开发经验；\n2.具备良好的编程能力，精通C++，有3年以上Linux/Unix后台开发工作经验；\n3.了解大模型相关技术原理与基础知识，具备RAG等相关开发经验者优先；\n4.沟通能力强、良好的学习能力、团队协作能力，分析问题解决问题能力强，责任心强；\n5.对探索前沿技术有热情，具备独立探索前沿技术的能力；\n6.拥有ToB项目开发经验者优先。"
     },
     {
       "Id": 0,
@@ -3725,35 +3748,12 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1988341027420921856",
       "Requirement": "岗位要求详情请见上方岗位职责内说明"
-    },
-    {
-      "Id": 0,
-      "PostId": "2074084898423095296",
-      "RecruitPostId": 120968,
-      "RecruitPostName": "边缘AI推理研发工程师（深圳）",
-      "CountryName": "中国",
-      "LocationName": "北京",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "腾讯云（TEG）",
-      "CategoryName": "技术",
-      "Responsibility": "推理方向：\n1.面向低延迟交互场景打造极致低延迟推理系统，通过调度、传输、计算优化，深度优化端到端推理延迟；\n2.设计开发一站式 Serverless AI 推理平台，结合边缘云 Serverless 生态支持一站式边缘 AI 应用，提升实时语音交互等低延迟 AI 应用场景的用户体验；\n缓存方向：\n1.面向低延迟交互场景打造 KVCache 缓存系统，通过 KVCache 卸载、传输、压缩优化，深度优化端到端推理延迟，提升实时语音交互等低延迟 AI 应用场景的用户体验；\n2.设计开发边缘推理 KVCache 平台，结合边缘云 Serverless 生态支持一站式边缘 AI 应用，通过 KVCache 复用、分层存储、跨请求共享等技术提升推理性能。",
-      "LastUpdateTime": "2026年07月08日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2074084898423095296",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2074084898423095296",
-      "Requirement": "推理方向：\n1.有 AI 推理在工业上大规模落地的经验，熟悉 LLM 的模型架构和常用的推理加速方法；\n2.熟悉 GPU/TPU 架构，并且能根据硬件架构合理设计上层算力调度、推理加速等相关软件栈，充分发挥硬件算力；\n3.熟悉 sglang、vLLM、TensorRT-LLM 等常用推理框架，理解框架的设计和推理加速方法，了解异构芯片的适配过程；\n缓存方向：\n1.有 KVCache 优化或 AI 推理在工业上大规模落地的经验，熟悉 LLM 的模型架构和常用的推理加速方法，理解 KVCache 机制对推理性能的影响；\n2.熟悉 SGLang、vLLM、TensorRT-LLM 等常用推理框架，理解框架的 KVCache 设计和推理加速方法；\n3.熟悉低延迟硬盘IO优化和网络传输优化，包括但不限于Linux异步IO框架、RDMA高性能网络传输协议等。"
     }
   ],
   "cloud": [
     {
       "name": "AI",
-      "value": 202
+      "value": 200
     },
     {
       "name": "AGENT",
@@ -3772,20 +3772,20 @@
       "value": 54
     },
     {
-      "name": "落地",
-      "value": 53
-    },
-    {
       "name": "主流",
       "value": 52
     },
     {
-      "name": "LLM",
-      "value": 49
+      "name": "落地",
+      "value": 51
     },
     {
       "name": "GO",
       "value": 48
+    },
+    {
+      "name": "LLM",
+      "value": 45
     },
     {
       "name": "微信",
@@ -3794,10 +3794,6 @@
     {
       "name": "并发",
       "value": 42
-    },
-    {
-      "name": "LINUX",
-      "value": 34
     },
     {
       "name": "JAVA",
@@ -3809,6 +3805,10 @@
     },
     {
       "name": "人工智能",
+      "value": 33
+    },
+    {
+      "name": "LINUX",
       "value": 33
     },
     {
@@ -3852,10 +3852,6 @@
       "value": 28
     },
     {
-      "name": "网络",
-      "value": 27
-    },
-    {
       "name": "全栈",
       "value": 27
     },
@@ -3870,10 +3866,14 @@
     {
       "name": "机器",
       "value": 27
+    },
+    {
+      "name": "环境",
+      "value": 27
     }
   ],
   "stats": {
     "total": 163,
-    "update_time": "2026-08-28 10:07:16"
+    "update_time": "2026-08-29 06:05:30"
   }
 }
