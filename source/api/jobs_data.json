@@ -3291,29 +3291,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2078031995237220352",
-      "RecruitPostId": 10002878,
-      "RecruitPostName": "Tencent Cloud - AI Native Cloud Solution Architect (Indonesia)",
-      "CountryName": "印度尼西亚",
-      "LocationName": "雅加达",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "",
-      "CategoryName": "技术",
-      "Responsibility": "Business Unit\nCloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.\n\nWhat the Role Entails\nAs a Senior Solution Architect at Tencent Cloud in Indonesia, you will play a pivotal role in driving the adoption and success of Tencent Cloud services in the region. This position requires a blend of technical acumen, customer-facing skills, and strategic thinking. You will work closely with clients and partners to understand their needs, develop tailored cloud solutions, and ensure successful implementation. Your expertise will contribute to shaping Tencent Cloud’s product offerings and go-to-market strategies, making a significant impact on the business landscape in Indonesia.\n\nWhat You Can Do Here\n1. Accelerate your growth with an international perspective, engage with top-tier Southeast Asia customers, and deeply participate in the most cutting-edge AI needs of the Southeast Asia market and the continuously evolving cloud industry solutions.\n2. Master the latest cloud product capabilities in a full-stack manner — across IaaS, AI, audio/video, security and other product lines. Through project co-building with Southeast Asia customers, continuously improve human-AI collaboration capability and customer project success efficiency.\n3. Work closely with a diverse, excellent team in Southeast Asia, and jointly embark on a rapidly changing high-growth journey.Serve as the customer's technical consulting expert. Lead Tencent Cloud pre-sales analysis, bidding document authoring, and customer solution communication, and strive to obtain support from the customer's technical decision-making level.\nDeeply explore and follow up on the landing of customer needs. Combined with Tencent Cloud public cloud, private cloud, container, big data, audio/video, AI and other product capabilities, design technical solutions for Indonesia SVIP customers and follow up on delivery, continuously strengthening differentiated competitive advantages.\nPossess an AI-Native perspective, be proficient in Tencent Cloud AI product knowledge and effectively promote it. Use AI capabilities to complete project POCs and demos, accelerate migration and delivery, and monitor SVIP customer business quality.\nPromote scaled business growth in key markets. On a daily basis, collect real feedback and industry common needs from Indonesia customers, and drive continuous iteration and optimization of cloud products and AI tools.\n\nWho We Look For\nBachelor's degree or above; majors in computer science, information technology, telecommunications engineering and other related fields are preferred.\n5+ years of experience in cloud computing pre-sales or solution-related work, covering pre-sales research, bidding document authoring, POC implementation, delivery acceptance, and other project phases.\nFamiliar with mainstream public cloud platforms, such as Tencent Cloud, Alibaba Cloud, AWS, Azure, GCP, etc. Have experience using AI technology to assist and drive projects; familiar with at least one AI Agent application and have effectively applied it in work.\nExtremely strong pressure resistance and resilience. Proactively tackle project technical risks and AI implementation challenges, with no shirking or escaping. Take real business results as the sole orientation, and refuse to stay only at paper-level solutions.\nExcellent cross-cultural communication and collaboration ability; fluent English with no barriers to business communication; adapt to the collaboration rhythm of multi-country teams. Thai language proficiency is preferred.\nStrong proactive collaboration awareness; willing to undertake cross-department collaborative work, with no division of work boundaries, and project success as the core goal.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Indonesia-Jakarta",
-      "LastUpdateTime": "2026年07月17日",
-      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Indonesia-Jakarta/Tencent-Cloud---AI-Native-Cloud-Solution-Architect--Indonesia-_R107743",
-      "SourceID": 4,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2078031995237220352",
-      "Requirement": "岗位要求详情请见上方岗位职责内说明"
-    },
-    {
-      "Id": 0,
       "PostId": "2067162375395655680",
       "RecruitPostId": 120632,
       "RecruitPostName": "QQ-#AI搜索算法工程师#",
@@ -3748,12 +3725,35 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1988341027420921856",
       "Requirement": "岗位要求详情请见上方岗位职责内说明"
+    },
+    {
+      "Id": 0,
+      "PostId": "2074084898423095296",
+      "RecruitPostId": 120968,
+      "RecruitPostName": "边缘AI推理研发工程师（深圳）",
+      "CountryName": "中国",
+      "LocationName": "北京",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯云（TEG）",
+      "CategoryName": "技术",
+      "Responsibility": "推理方向：\n1.面向低延迟交互场景打造极致低延迟推理系统，通过调度、传输、计算优化，深度优化端到端推理延迟；\n2.设计开发一站式 Serverless AI 推理平台，结合边缘云 Serverless 生态支持一站式边缘 AI 应用，提升实时语音交互等低延迟 AI 应用场景的用户体验；\n缓存方向：\n1.面向低延迟交互场景打造 KVCache 缓存系统，通过 KVCache 卸载、传输、压缩优化，深度优化端到端推理延迟，提升实时语音交互等低延迟 AI 应用场景的用户体验；\n2.设计开发边缘推理 KVCache 平台，结合边缘云 Serverless 生态支持一站式边缘 AI 应用，通过 KVCache 复用、分层存储、跨请求共享等技术提升推理性能。",
+      "LastUpdateTime": "2026年07月08日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2074084898423095296",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2074084898423095296",
+      "Requirement": "推理方向：\n1.有 AI 推理在工业上大规模落地的经验，熟悉 LLM 的模型架构和常用的推理加速方法；\n2.熟悉 GPU/TPU 架构，并且能根据硬件架构合理设计上层算力调度、推理加速等相关软件栈，充分发挥硬件算力；\n3.熟悉 sglang、vLLM、TensorRT-LLM 等常用推理框架，理解框架的设计和推理加速方法，了解异构芯片的适配过程；\n缓存方向：\n1.有 KVCache 优化或 AI 推理在工业上大规模落地的经验，熟悉 LLM 的模型架构和常用的推理加速方法，理解 KVCache 机制对推理性能的影响；\n2.熟悉 SGLang、vLLM、TensorRT-LLM 等常用推理框架，理解框架的 KVCache 设计和推理加速方法；\n3.熟悉低延迟硬盘IO优化和网络传输优化，包括但不限于Linux异步IO框架、RDMA高性能网络传输协议等。"
     }
   ],
   "cloud": [
     {
       "name": "AI",
-      "value": 200
+      "value": 202
     },
     {
       "name": "AGENT",
@@ -3772,20 +3772,20 @@
       "value": 54
     },
     {
+      "name": "落地",
+      "value": 53
+    },
+    {
       "name": "主流",
       "value": 52
     },
     {
-      "name": "落地",
-      "value": 51
+      "name": "LLM",
+      "value": 49
     },
     {
       "name": "GO",
       "value": 48
-    },
-    {
-      "name": "LLM",
-      "value": 45
     },
     {
       "name": "微信",
@@ -3794,6 +3794,10 @@
     {
       "name": "并发",
       "value": 42
+    },
+    {
+      "name": "LINUX",
+      "value": 34
     },
     {
       "name": "JAVA",
@@ -3805,10 +3809,6 @@
     },
     {
       "name": "人工智能",
-      "value": 33
-    },
-    {
-      "name": "LINUX",
       "value": 33
     },
     {
@@ -3852,6 +3852,10 @@
       "value": 28
     },
     {
+      "name": "网络",
+      "value": 27
+    },
+    {
       "name": "全栈",
       "value": 27
     },
@@ -3866,14 +3870,10 @@
     {
       "name": "机器",
       "value": 27
-    },
-    {
-      "name": "环境",
-      "value": 27
     }
   ],
   "stats": {
     "total": 163,
-    "update_time": "2026-08-29 06:05:30"
+    "update_time": "2026-08-30 04:12:48"
   }
 }
