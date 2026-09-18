@@ -439,6 +439,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2082754347585941504",
+      "RecruitPostId": 121558,
+      "RecruitPostName": "混元Agent评测Infra工程师（北京/上海/深圳）",
+      "CountryName": "中国",
+      "LocationName": "北京",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "混元-模型算法",
+      "CategoryName": "技术",
+      "Responsibility": "1.构建评测运行底座：统筹沙盒环境、依赖管理、网络访问、并发调度等关键能力建设，保障大规模评测在生产环境下的稳定、可复现与高效运行；\n2.保障评测质量与可观测性：从 Harness 与打分逻辑出发，确保平台化改造后评测结果的准确可信，并建立完善的诊断与问题归因能力；\n3.衔接算法与工程：深入理解各 Benchmark 所考察的模型能力维度，作为算法与平台之间的技术桥梁，推动评测需求高质量落地。",
+      "LastUpdateTime": "2026年09月18日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2082754347585941504",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2082754347585941504",
+      "Requirement": "1.计算机相关专业本科及以上学历，3年及以上后端 / 平台 / Infra 研发经验；\n2.精通至少一门主流后端语言（Python / Go / Java 等），主导过中大型平台或系统的设计与落地，具备优秀的系统设计与工程实现能力；\n3.熟悉容器化与沙盒隔离、分布式系统、任务调度与并发控制，有大规模任务编排或性能优化经验；熟悉网络通信与代理机制，能处理外部接口访问与稳定性问题；\n4.具备丰富的跨团队协作经验，能在算法、平台、底层基础设施等多方之间有效拉通与推进；具备较强的技术主导力与 Owner 意识，面对复杂不确定问题有冲劲、能扛事、能落地。"
+    },
+    {
+      "Id": 0,
       "PostId": "2082710396749393920",
       "RecruitPostId": 121549,
       "RecruitPostName": "微信小程序-AI Agent 算法工程师-Coding方向",
@@ -577,29 +600,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2082754347585941504",
-      "RecruitPostId": 121558,
-      "RecruitPostName": "混元Agent评测Infra工程师（北京/上海/深圳）",
-      "CountryName": "中国",
-      "LocationName": "北京",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "混元-模型算法",
-      "CategoryName": "技术",
-      "Responsibility": "1.构建评测运行底座：统筹沙盒环境、依赖管理、网络访问、并发调度等关键能力建设，保障大规模评测在生产环境下的稳定、可复现与高效运行；\n2.保障评测质量与可观测性：从 Harness 与打分逻辑出发，确保平台化改造后评测结果的准确可信，并建立完善的诊断与问题归因能力；\n3.衔接算法与工程：深入理解各 Benchmark 所考察的模型能力维度，作为算法与平台之间的技术桥梁，推动评测需求高质量落地。",
-      "LastUpdateTime": "2026年07月31日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2082754347585941504",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2082754347585941504",
-      "Requirement": "1.计算机相关专业本科及以上学历，3年及以上后端 / 平台 / Infra 研发经验；\n2.精通至少一门主流后端语言（Python / Go / Java 等），主导过中大型平台或系统的设计与落地，具备优秀的系统设计与工程实现能力；\n3.熟悉容器化与沙盒隔离、分布式系统、任务调度与并发控制，有大规模任务编排或性能优化经验；熟悉网络通信与代理机制，能处理外部接口访问与稳定性问题；\n4.具备丰富的跨团队协作经验，能在算法、平台、底层基础设施等多方之间有效拉通与推进；具备较强的技术主导力与 Owner 意识，面对复杂不确定问题有冲劲、能扛事、能落地。"
-    },
-    {
-      "Id": 0,
       "PostId": "2072330805853728768",
       "RecruitPostId": 120862,
       "RecruitPostName": "腾讯游戏-UE引擎高级Agent开发工程师",
@@ -726,7 +726,7 @@
       "ProductName": "游戏",
       "CategoryName": "技术",
       "Responsibility": "1.探索研究多模态理解、生成式、强化学习等前沿技术；\r\n2.负责 Agent框架的设计与开发，及其在游戏场景搭建中的应用落地；\r\n3.探索Agent底座的后训练，包括但不限于推理规划、记忆管理、工具调用、多轮决策等能力的提升。",
-      "LastUpdateTime": "2026年09月09日",
+      "LastUpdateTime": "2026年09月17日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043890152685858816",
       "SourceID": 1,
       "IsCollect": false,
@@ -1083,29 +1083,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2038877531406499840",
-      "RecruitPostId": 118982,
-      "RecruitPostName": "《三角洲行动》-AI应用开发工程师-游戏研发方向",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "ProjectD-手游APP",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责搭建AI Agent基础设施；\r\n2.负责项目中AI Agent的调度与稳定性等优化；\r\n3.负责具体提效AI Agent功能开发。",
-      "LastUpdateTime": "2026年09月04日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2038877531406499840",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2038877531406499840",
-      "Requirement": "1.具备至少1年的大型游戏项目研发经验；\n2.熟练使用AI Coding工具；\n3.熟练掌握AI相关的基本知识，对AI Agent有深入理解；\n4.具备良好的沟通能力，能从其他人的日常工作中挖掘适合用AI Agent的提效点；\n5.有优秀的学习能力，善于沟通，热爱游戏事业。"
-    },
-    {
-      "Id": 0,
       "PostId": "2080545165247950848",
       "RecruitPostId": 121419,
       "RecruitPostName": "混元大模型数据算法工程师（数据飞轮）（深圳）",
@@ -1149,6 +1126,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2038450103123079168",
       "Requirement": "1.本科及以上学历，计算机或相关专业，具备  年及以上后端或平台研发经验；\r\n2.熟练掌握 Go，深入理解并发编程、Context、网络编程、性能优化及工程化实践；\r\n3.熟悉 HTTP、WebSocket、gRPC，以及 MySQL/PostgreSQL、Redis、消息队列和对象存储等常用后端技术；\r\n4.熟悉 Docker、Kubernetes 和 Linux，深入理解容器生命周期、镜像、网络、存储、资源隔离和调度机制；\r\n5.具备较强的系统抽象能力，能够为不同 Agent、任务、工具和执行环境设计统一且可扩展的接口；\r\n6.对 AI Agent、数据生产与标注、Agent 轨迹或环境交互有较强兴趣和理解。"
+    },
+    {
+      "Id": 0,
+      "PostId": "1915242132004782080",
+      "RecruitPostId": 111552,
+      "RecruitPostName": "策略算法工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "云智能",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责智能体 Harness Engineering 核心能力建设，包括 Agent Loop、多 Agent 协作、Memory、Skill、任务规划、工具调用、状态管理、异常恢复等关键模块设计与实现，提升 Agent 稳定性、可控性与任务完成质量；\r\n2.负责 Prompt Engineering 与 Prompt 调优，提升智能体在复杂企业场景下的准确性、鲁棒性和可解释性；\r\n3.使用 Go/Python 构建高并发 Agent 服务框架与调度系统，包括任务编排、工作流引擎、队列消费、资源调度和稳定性治理；\r\n4.建设智能体评估与观测体系，包括任务成功率、工具调用准确率、成本、延迟、TTFT、上下文利用率、可解释性等核心指标；\r\n5.持续分析 Bad Case，定位 Agent 在规划、工具调用、上下文、记忆、Prompt、模型能力等环节的问题，并推动优化迭代；\r\n6.与产品、平台和业务团队协作，交付面向企业场景的高质量智能体能力。",
+      "LastUpdateTime": "2026年09月02日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1915242132004782080",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1915242132004782080",
+      "Requirement": "1.本科及以上学历，计算机、软件工程、人工智能等相关专业优先；\r\n2.具备扎实的工程能力，熟悉数据结构、基础算法和系统设计，具备良好的代码质量意识；\r\n3.精通 Go/Python 至少一种语言，具备高并发、分布式服务、任务调度或工作流系统开发经验；\r\n4.熟悉至少一种主流 Agent 框架或产品，如 Claude Code、Codex、LangGraph、OpenCode、AutoGen、Coze 或自研 Agent 框架；\r\n5.深入理解 LLM Function Calling、Tool Use、MCP、ReAct、Plan-and-Execute、Skill、Memory、上下文工程等 Agent 核心范式；\r\n6.有智能体应用完整落地经验，能够独立完成从需求分析、方案设计、开发实现、评测优化到上线迭代的闭环；\r\n7.具备数据建设、指令微调、模型评测或模型应用优化经验者优先；\r\n8.对智能体产品保持热情与好奇心，持续关注业界领先 Agent 公司及其产品演进、技术方向和应用趋势。"
     },
     {
       "Id": 0,
@@ -1819,6 +1819,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2043623808224620544",
+      "RecruitPostId": 119266,
+      "RecruitPostName": "J3-UE5微恐射击-后台开发（UE5 DS方向）",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "CFH-手游APP",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责UE5引擎开发的射击游戏对战服务（DS）的性能评估、监测、优化方案制定及落地实施；\r\n2.负责UE5对战服务器的调度、网络质量优化及用户体验提升；\r\n3.开发和优化射击游戏对战AI Bot功能，包括但不限于感知、寻路、物理、网络同步等；\r\n4.机器学习和数据化分析等技术的应用，提升AI和对战效果的实际落地。",
+      "LastUpdateTime": "2026年09月18日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043623808224620544",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2043623808224620544",
+      "Requirement": "1.精通C++和至少一种数据处理脚本语言，数据结构、算法、网络等基础扎实，熟悉Linux环境下的高新能服务开发、命令、调试分析工具；\r\n2.具备较强的分析、解决问题的能力，认可游戏行业，善于沟通协作，具有较强的探索精神和、优化意识和自驱力；\r\n3.拥有2年以上UE4/UE5相关开发经验，或游戏玩法、BotAI或数据应用相关的开发经验。"
+    },
+    {
+      "Id": 0,
       "PostId": "2080545389475442688",
       "RecruitPostId": 121420,
       "RecruitPostName": "智能体-后台开发高级工程师-CodeBuddy/WorkBuddy",
@@ -1908,29 +1931,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1993913287074537472",
       "Requirement": "1.计算机相关专业本科及以上学历，具备扎实的编程基础；\n2.精通C/C++、Lua语言，具备良好的编程习惯；\n3.熟练掌握数据结构、数据库、高并发等后台技能项，具备良好的问题解决能力；\n4.具备良好的沟通协作能力，能够承受一定的工作压力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2043623808224620544",
-      "RecruitPostId": 119266,
-      "RecruitPostName": "J3-UE5微恐射击-后台开发（UE5 DS方向）",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "CFH-手游APP",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责UE5引擎开发的射击游戏对战服务（DS）的性能评估、监测、优化方案制定及落地实施；\r\n2.负责UE5对战服务器的调度、网络质量优化及用户体验提升；\r\n3.开发和优化射击游戏对战AI Bot功能，包括但不限于感知、寻路、物理、网络同步等；\r\n4.机器学习和数据化分析等技术的应用，提升AI和对战效果的实际落地。",
-      "LastUpdateTime": "2026年08月14日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043623808224620544",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2043623808224620544",
-      "Requirement": "1.精通C++和至少一种数据处理脚本语言，数据结构、算法、网络等基础扎实，熟悉Linux环境下的高新能服务开发、命令、调试分析工具；\r\n2.具备较强的分析、解决问题的能力，认可游戏行业，善于沟通协作，具有较强的探索精神和、优化意识和自驱力；\r\n3.拥有2年以上UE4/UE5相关开发经验，或游戏玩法、BotAI或数据应用相关的开发经验。"
     },
     {
       "Id": 0,
@@ -2394,26 +2394,26 @@
     },
     {
       "Id": 0,
-      "PostId": "2060340495615442944",
-      "RecruitPostId": 120303,
-      "RecruitPostName": "微信-数据工程师-基础功能",
+      "PostId": "2097954502169767936",
+      "RecruitPostId": 122462,
+      "RecruitPostName": "AI数据工程开发",
       "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
       "ComCode": "",
       "ComName": "",
-      "ProductName": "微信APP基础体验",
+      "ProductName": "腾讯云",
       "CategoryName": "技术",
-      "Responsibility": "1.负责微信基础功能的业务数据采集、实时与离线数仓设计与指标体系建设，提供及时、稳定、可信的数据支撑；\r\n2.优化现有数据流程，提高数据处理效率和质量；\r\n3.负责面向业务方的数据资产建设，沉淀清晰、稳定、可靠的公共数据模型和指标口径，完善数据说明与使用规范。",
-      "LastUpdateTime": "2026年09月14日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2060340495615442944",
+      "Responsibility": "1.负责云采购供应领域的 AI 数据与智能应用平台建设，围绕规划、采购、供应保障、库存与风险分析等场景，打造行业标杆 AI 产品，推动 AI 能力规模化落地；\r\n2.围绕 AI 场景构建面向智能应用的数据体系，包括数据资产组织、业务语义建模、Schema 增强与知识沉淀等能力，使供应链数据能够被 AI Agent 和业务应用准确理解、高效消费；\r\n3.推动数据与业务能力的服务化、标准化，建设统一的数据消费与工具调用能力，包括 API、MCP Tool、CLI、Skill、Workflow 等，实现能力的可调用、可组合与可复用；\r\n4.主导复杂平台架构设计与关键技术方案落地，完善 AI Agent 编排、异步任务、服务治理与可观测性等工程能力，保障平台的稳定性、性能、安全性和可扩展性；\r\n5.与云供应、采购及运营团队紧密协作，深入理解服务器与关键部件的业务场景和数据口径，将业务需求沉淀为平台化能力，持续推动云供应链 AI 产品与数据基础设施演进。",
+      "LastUpdateTime": "2026年09月17日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2097954502169767936",
       "SourceID": 1,
       "IsCollect": false,
       "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
+      "RequireWorkYearsName": "五年以上工作经验",
       "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2060340495615442944",
-      "Requirement": "1.2 年以上 PB 级大数据研发经验，精通 Hadoop 生态、Spark 调优及 Flink 实时开发；\r\n2.熟悉实时/离线数据仓库体系建设，有数仓系统优化/数据治理相关经验优先；\r\n3.熟悉 Doris/StarRocks 等 OLAP 引擎及 Hudi/Iceberg 湖仓技术，具备选型与落地能力；\r\n4.学习能力强，具备良好的跨团队（产品/算法/后端）沟通与协同能力。"
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2097954502169767936",
+      "Requirement": "1.本科及以上学历，计算机、软件工程、数据科学等相关专业，能力突出者可适当放宽；\r\n2.具备 5 年以上后端或平台研发经验，熟悉 Python，拥有扎实的编码、调试和系统设计能力；\r\n3.熟悉数据库与数据处理，具备良好的 SQL 能力，能够理解复杂数据模型、指标口径及分析查询；\r\n4.具备 API、异步任务、缓存、消息队列、权限控制、服务治理等后端系统开发经验；\r\n5.有大模型应用开发经验，理解 Agent、RAG、工具调用、Workflow 等基本机制，并具备真实项目落地经历；\r\n6.具备较强的问题定位和稳定性治理能力，能够系统处理模型调用、工具执行、数据准确性及长任务运行等复杂问题；\r\n7.具备良好的业务抽象和沟通能力，能够从模糊需求中识别核心问题，并独立推动方案设计、开发、上线和持续优化；\r\n8.对 AI 辅助研发有深入实践，能够熟练使用 AI 编程工具提升开发、测试、排障和文档沉淀效率。"
     },
     {
       "Id": 0,
@@ -3015,29 +3015,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2056633439326748672",
-      "RecruitPostId": 120136,
-      "RecruitPostName": "AI渲染研究员",
-      "CountryName": "中国",
-      "LocationName": "上海",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "先锋云算力基础服务",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责多模态游戏资产内容生成与增强相关算法的研发，通过大模型的训练、微调等手段，提升世界模型的清晰度、补全缺失内容；\r\n2.探索多模态大模型与AIGC技术在游戏领域的应用，通过AI技术能力对世界模型进行二次编辑改造；\r\n3.探索和推进有影响力的AI技术研究和在具体业务场景中的应用。",
-      "LastUpdateTime": "2026年08月17日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2056633439326748672",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "不限",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2056633439326748672",
-      "Requirement": "1.数学、计算机、机器学习、人工智能等相关专业硕士研究生及以上学历；\r\n2.精通至少一种技术语言，包括但不限于Python、C/C++等；\r\n3.具有扎实的计算机视觉、计算机图形学或机器学习算法基础；\r\n4.具有多模态大模型的研究和开发经验，具备生成式大模型（如Diffusion Models、GANs）的训练、微调（Fine-tuning）及LoRA/ControlNet等外挂模块的实操经验。"
-    },
-    {
-      "Id": 0,
       "PostId": "2085083500498829312",
       "RecruitPostId": 1282581062340743168,
       "RecruitPostName": "WeChat - Data & AI Analytics Intern 107929",
@@ -3104,6 +3081,29 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2078318774758584320",
       "Requirement": "1.计算机相关专业，有安全审核经验者优先；\r\n2.编程与数据分析能力扎实，具备良好的数据敏感度和业务问题抽象能力；\r\n3.有机器学习/深度学习基础，熟悉大模型技术栈，有微调 / Prompt / RAG / Agent 实践经验者优先；\r\n4.热爱游戏，认可游戏安全价值，愿意深耕安全领域；\r\n5.自驱力、主动性好、沟通能力好。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2100605726455148544",
+      "RecruitPostId": 10002993,
+      "RecruitPostName": "Tencent Cloud - AI Native Cloud Solution Architect (Thailand)",
+      "CountryName": "泰国",
+      "LocationName": "曼谷",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "",
+      "CategoryName": "技术",
+      "Responsibility": "Business Unit\nCloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.\n\nWhat the Role Entails\nWhat You Can Do Here\n1. Accelerate your growth with an international perspective, engage with top-tier Southeast Asia customers, and deeply participate in the most cutting-edge AI needs of the Southeast Asia market and the continuously evolving cloud industry solutions.\n2. Master the latest cloud product capabilities in a full-stack manner — across IaaS, AI, audio/video, security and other product lines. Through project co-building with Southeast Asia customers, continuously improve human-AI collaboration capability and customer project success efficiency.\n3. Work closely with a diverse, excellent team in Southeast Asia, and jointly embark on a rapidly changing high-growth journey.\nServe as the customer's technical consulting expert. Lead Tencent Cloud pre-sales analysis, bidding document authoring, and customer solution communication, and strive to obtain support from the customer's technical decision-making level.\nDeeply explore and follow up on the landing of customer needs. Combined with Tencent Cloud public cloud, private cloud, container, big data, audio/video, AI and other product capabilities, design technical solutions for Thailand SVIP customers and follow up on delivery, continuously strengthening differentiated competitive advantages.\nPossess an AI-Native perspective, be proficient in Tencent Cloud AI product knowledge and effectively promote it. Use AI capabilities to complete project POCs and demos, accelerate migration and delivery, and monitor SVIP customer business quality.\nPromote scaled business growth in key markets. On a daily basis, collect real feedback and industry common needs from Thailand customers, and drive continuous iteration and optimization of cloud products and AI tools.\n\nWho We Look For\nBachelor's degree or above; majors in computer science, information technology, telecommunications engineering and other related fields are preferred.\n5+ years of experience in cloud computing pre-sales or solution-related work, covering pre-sales research, bidding document authoring, POC implementation, delivery acceptance, and other project phases.\nFamiliar with mainstream public cloud platforms, such as Tencent Cloud, Alibaba Cloud, AWS, Azure, GCP, etc. Have experience using AI technology to assist and drive projects; familiar with at least one AI Agent application and have effectively applied it in work.\nExtremely strong pressure resistance and resilience. Proactively tackle project technical risks and AI implementation challenges, with no shirking or escaping. Take real business results as the sole orientation, and refuse to stay only at paper-level solutions.\nExcellent cross-cultural communication and collaboration ability; fluent English with no barriers to business communication; adapt to the collaboration rhythm of multi-country teams. Thai language proficiency is preferred.\nStrong proactive collaboration awareness; willing to undertake cross-department collaborative work, with no division of work boundaries, and project success as the core goal.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Thailand-Bangkok",
+      "LastUpdateTime": "2026年09月17日",
+      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Thailand-Bangkok/Tencent-Cloud---AI-Native-Cloud-Solution-Architect--Thailand-_R108142",
+      "SourceID": 4,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2100605726455148544",
+      "Requirement": "岗位要求详情请见上方岗位职责内说明"
     },
     {
       "Id": 0,
@@ -3684,50 +3684,50 @@
   "cloud": [
     {
       "name": "AI",
-      "value": 192
+      "value": 190
     },
     {
       "name": "AGENT",
-      "value": 167
+      "value": 170
     },
     {
       "name": "扎实",
-      "value": 93
-    },
-    {
-      "name": "PYTHON",
-      "value": 59
+      "value": 94
     },
     {
       "name": "工具",
-      "value": 58
+      "value": 60
+    },
+    {
+      "name": "PYTHON",
+      "value": 60
     },
     {
       "name": "主流",
-      "value": 54
+      "value": 55
     },
     {
       "name": "落地",
-      "value": 53
+      "value": 54
     },
     {
       "name": "GO",
-      "value": 46
+      "value": 47
     },
     {
       "name": "LINUX",
       "value": 42
     },
     {
-      "name": "微信",
+      "name": "并发",
       "value": 39
     },
     {
-      "name": "并发",
-      "value": 38
+      "name": "LLM",
+      "value": 39
     },
     {
-      "name": "LLM",
+      "name": "微信",
       "value": 38
     },
     {
@@ -3736,7 +3736,7 @@
     },
     {
       "name": "数据结构",
-      "value": 35
+      "value": 36
     },
     {
       "name": "深度",
@@ -3745,6 +3745,10 @@
     {
       "name": "JAVA",
       "value": 34
+    },
+    {
+      "name": "核心",
+      "value": 33
     },
     {
       "name": "专业本科",
@@ -3759,7 +3763,7 @@
       "value": 31
     },
     {
-      "name": "核心",
+      "name": "产品",
       "value": 31
     },
     {
@@ -3767,11 +3771,11 @@
       "value": 30
     },
     {
-      "name": "深圳",
+      "name": "代码",
       "value": 29
     },
     {
-      "name": "产品",
+      "name": "深圳",
       "value": 29
     },
     {
@@ -3779,7 +3783,7 @@
       "value": 29
     },
     {
-      "name": "代码",
+      "name": "评测",
       "value": 28
     },
     {
@@ -3787,24 +3791,20 @@
       "value": 28
     },
     {
-      "name": "人工智能",
-      "value": 27
-    },
-    {
       "name": "RAG",
-      "value": 27
+      "value": 28
     },
     {
       "name": "机制",
-      "value": 26
+      "value": 27
     },
     {
-      "name": "评测",
-      "value": 26
+      "name": "人工智能",
+      "value": 27
     }
   ],
   "stats": {
     "total": 160,
-    "update_time": "2026-09-17 03:55:14"
+    "update_time": "2026-09-18 03:41:47"
   }
 }
