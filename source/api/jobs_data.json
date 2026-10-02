@@ -2923,6 +2923,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2105679157043310592",
+      "RecruitPostId": 10003001,
+      "RecruitPostName": "Senior AI Infrastructure Engineer",
+      "CountryName": "美国",
+      "LocationName": "帕罗奥多",
+      "BGName": "Overseas Functional System",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "",
+      "CategoryName": "技术",
+      "Responsibility": "About the Hiring Team\nTencent Overseas IT has the mission to empower Tencent’s rapid global growth with future ready, global IT platforms, applications and services. We are chartered to lead the Overseas IT strategy, architecture, roadmap and execution. Satisfying our internal/external customers and becoming a world class global IT team are our top aspirations.\n\nWhat the Role Entails\nRole Summary\nWe are looking for an experienced Senior AI Infrastructure Engineer to join our team. This role owns the technical evaluation and end-to-end execution of AI infrastructure deployments — from data center due diligence and solution review, through cross- functional delivery coordination, to ongoing operations of production AI environments. You will act as a key technical owner bridging internal stakeholders and external  partners, ensuring infrastructure is delivered on time, to spec, and operated reliably at scale.Key Responsibilities• Conduct on-site data center assessments to evaluate whether candidate facilities meet AI infrastructure requirements.\n• Review and validate AI infrastructure solution designs, identifying technical risks, gaps, and cost/performance trade-offs before sign-off.\n• Coordinate with external partners, driving timelines, resolving technical issues, and ensuring deliverables meet internal requirements.\n• Partner with internal business and engineering teams to translate requirements into deliverable technical specifications.\n• Participate in and eventually take ownership of day-2 operations for live AI\nenvironments — monitoring, incident response, capacity/health checks, firmware and lifecycle management, coordinating hardware maintenance as needed.\n• Build and improve operational standards, runbooks, and documentation for\ninfrastructure delivery and operations to enable consistent execution across regions.\n• Provide technical guidance and mentorship to junior engineers/interns on hardware diagnostics, cluster tooling, and best practices.\n• Track and report on project status and risks to management.\n\nWho We Look For\nRequirements• Bachelor's or Master's degree in Computer Science, Computer Engineering, Electrical Engineering, or a related field.\n• 5+ years of experience in data center infrastructure, infrastructure deployment, or infrastructure operations.\n• Solid understanding of high-performance compute server hardware, high-speed\nnetworking (e.g., InfiniBand/RoCE), storage systems, and data center power & cooling fundamentals.\n• Proven experience evaluating data center facilities and reviewing technical proposals for compute infrastructure.\n• Strong track record coordinating complex, multi-party technical projects to closure, including working effectively with external partners and cross-regional teams.\n• Hands-on experience with cluster orchestration and management tools (e.g., Slurm, Kubernetes) and Linux system administration.\n• Proficiency in scripting/automation (Python, Bash; Ansible/Terraform a plus).\n• Familiarity with observability/monitoring stacks (Prometheus, Grafana, ELK) and DCIM tooling.\n• Bilingual proficiency in English and Mandarin highly preferred\n• Strong ownership mentality, able to independently drive projects with minimal\nsupervision.\nPreferred Qualifications• Experience with high-performance storage / parallel file systems (e.g., Lustre,\nGPFS/Spectrum Scale, WekaFS, VAST, Ceph) in AI infrastructure environments.\n• Experience deploying/operating large-scale AI compute environments in a hyperscale or cloud environment.\n• Data center or infrastructure certifications.\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $124,800.00 to $283,800.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
+      "LastUpdateTime": "2026年10月01日",
+      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Senior-AI-Infrastructure-Engineer_R108182",
+      "SourceID": 4,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2105679157043310592",
+      "Requirement": "岗位要求详情请见上方岗位职责内说明"
+    },
+    {
+      "Id": 0,
       "PostId": "1985607970624524288",
       "RecruitPostId": 1183105531715366912,
       "RecruitPostName": "ゲームAIリサーチインターン｜Game AI Research Intern 106377",
@@ -3679,35 +3702,12 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1988470014939914240",
       "Requirement": "1.计算机相关专业本科及以上学历，3年以上游戏客户端开发经验；\r\n2.熟练使用C++/Lua，对Unreal（UE4/UE5）引擎有深入理解和实践经验，有主导过核心模块的开发经验；\r\n3.具备良好的问题分析和解决能力，能深入解决疑难技术问题；\r\n4.具备一定抗压能力，责任心强，有良好的团队沟通和协作能力，做事情使命必达；\r\n5.具备游戏客户端性能优化者优先，具备深度学习模型涉及的工程和算法性能优化经验者优先；\r\n6.热爱游戏，关注用户体验。对AI技术在游戏内的应用有实践经验或有自己独到的理解，充满好奇心的优先。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2052018398480740352",
-      "RecruitPostId": 119808,
-      "RecruitPostName": "《三角洲行动》-游戏AI开发工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "ProjectD-手游APP",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责手游以及端游的各类型NPC，Bot，基于强化的拟人AI等AI的行为和表现开发；\r\n2.开发，实现，以及优化AI相关的各种系统，包括但不限于感知，寻路，动作，同步等；\r\n3.参与AI的行为与动作表现设计，与动作，策划团队紧密协作，使其符合品质要求；\r\n4.调试并修复与AI相关的问题，对AI品质负责；\r\n5.解决与优化AI的各项性能问题与系统瓶颈；\r\n6.负责构建精确的AI数值分析体系，并持续迭代AI的投放效果。",
-      "LastUpdateTime": "2026年09月04日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052018398480740352",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2052018398480740352",
-      "Requirement": "1.重点：热爱游戏，善于沟通，强自驱力，参与过或了解FPS类游戏AI；\n2.具备2年以上Unreal Engine4或者5的开发经验；\n3.精通C++/蓝图，熟练使用UE AI工具：行为树，AI感知等；\n4.具备扎实的计算机系统知识。熟悉Linux系统，有良好的数据结构和算法基础。了解计算机网络；\n5.具备良好的问题分析和解决能力，能全流程把握方案的设计，实现，测试，上线。"
     }
   ],
   "cloud": [
     {
       "name": "AI",
-      "value": 197
+      "value": 194
     },
     {
       "name": "AGENT",
@@ -3715,11 +3715,11 @@
     },
     {
       "name": "扎实",
-      "value": 96
+      "value": 95
     },
     {
       "name": "工具",
-      "value": 61
+      "value": 60
     },
     {
       "name": "PYTHON",
@@ -3742,11 +3742,11 @@
       "value": 43
     },
     {
-      "name": "LINUX",
-      "value": 43
+      "name": "并发",
+      "value": 42
     },
     {
-      "name": "并发",
+      "name": "LINUX",
       "value": 42
     },
     {
@@ -3759,7 +3759,7 @@
     },
     {
       "name": "数据结构",
-      "value": 36
+      "value": 35
     },
     {
       "name": "大规模",
@@ -3828,6 +3828,6 @@
   ],
   "stats": {
     "total": 161,
-    "update_time": "2026-10-01 04:42:27"
+    "update_time": "2026-10-02 04:34:31"
   }
 }
