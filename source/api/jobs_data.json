@@ -2854,29 +2854,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2039211190525263872",
-      "RecruitPostId": 10002685,
-      "RecruitPostName": "AIプログラマー｜AI Programmer",
-      "CountryName": "日本",
-      "LocationName": "东京",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "",
-      "CategoryName": "技术",
-      "Responsibility": "チーム紹介/About the Hiring Team\nライトスピード・ジャパンは、世界中のオーディエンス向けにオリジナルのAAA級アクションゲームタイトルの制作に特化しているゲーム開発スタジオです。著名なゲームディレクターとして知られる伊津野英昭（いつの ひであき）が率いる当スタジオは、東京と大阪の2つの拠点で活動しています。\n柔軟で包括的な職場環境を提供し、ゲーム制作の限界を押し広げる才能と情熱にあふれるゲームクリエイターの参加を非常に歓迎しています。\nLightSpeed Japan Studio is a game development studio dedicated to crafting original AAA action game titles for global audiences. Led by industry veteran Hideaki Itsuno, the studio operates across two locations in Tokyo and Osaka.\nThe studio offers a flexible and inclusive work environment and actively welcomes game creators who are full of talent and passion for pushing the boundaries of game development.\n\n仕事内容/What the Role Entails\n仕事内容 \n1. プレイヤーキャラの 行動AIの設計・実装（戦闘AI・探索AI等）\n2. Behavior Tree、Utility AI、State Machine などを用いた AIアーキテクチャ構築\n3. Navigation Mesh、Pathfindingの実装・改善\n4. 囲み・包囲・回避行動など 高度な戦術行動のロジック設計\n5. レベルデザイナー、ゲームデザイナーとの連携によるAI仕様の検討\n6. AI挙動のデバッグ、挙動調整、パフォーマンス最適化\n7. UE5を利用した AI関連システムの拡張およびツール改善\n8. 学習系AI（ML、強化学習など）の導入経験がある場合は、\n9. NPC行動最適化やテスト自動化への応用も担当可能\n\n応募資格/Who We Look For\n応募条件 \n1. C++ を用いたゲーム開発実務経験\n2. コンシューマーゲーム、もしくは中～大規模タイトルでのAI開発経験\n3. Behavior Tree、State Machine等を用いた AIロジックの実装経験\n4. Navigation、Pathfinding、Movement 制御の基礎理解\n5. ゲームデザインの意図を汲み取りAI仕様に落とし込むコミュニケーション力\n6. デバッグ能力、およびAI挙動改善のための分析力\n7. 人型AI/仲間AI経験がある\n8. Behavior Tree、Utility AI、State Machine、GOAP (Goal-Oriented Action Planning):などを用いた AIアーキテクチャ構築（意思決定）経験\n9. Navigation Mesh、Pathfinding、steering行動、フォーメーション移動の実装・改善経験\n10. 集団制御・メタAI：個々のAIではなく、ゲーム全体（敵・仲間AI・NPC）の管理経験 11. 会話システム：リアルタイムのキャラクター同士の雑談会話、戦闘会話などの開発経験\n\n一緒に働く魅力/Why Join Us?\n勤務地\n大阪（JR大阪駅JP TOWER OSAKA）、東京（虎ノ門ヒルズビジネスタワー）※希望に添います\n賃金\n年収額：応相談（昇給/賞与あり）\n※経験・スキル等を考慮し、当社規定により優遇します。\n※一般社員の場合、固定残業代月35時間分が含まれます。\n管理職の場合、固定残業代10時間分が含まれます。\n労働時間・休日\n就業時間 09:30 ~ 18:30　 休憩時間 60分\nフレックスタイムあり\n完全週休２日制（土日・祝日）\n有給休暇：入社初年度は、入社月により期間按分付与。在籍年数踏まえて最大22日\n年末年始休暇（12/30～1/3）\n病気休暇（有給）：12日/年（有給休暇とは別途付与）\n福利厚生\n＜各種保険＞\n健康保険 、雇用保険、 労災保険、 厚生年金保険、 総合福祉団体定期保険（GTL）\n業務災害安心総合保険（GPA）、団体長期障害所得補償保険（GLTD）\n海外旅行保険\n＜各種手当＞\n通勤手当(上限5万円/月) 、通信手当（上限1万円/月）、 自己啓発手当（上限2万円/月）、 平日に出社した場合食事補助1800円/日、定期健診手当（上限7万5千円/年1回）\n＜支援制度・その他待遇＞\nフリードリンクコーナー 、ギフトカード（お盆、正月の2回支給、2万円/1回）\n従業員支援プログラム(EAP) 、慶弔見舞金 、永年勤続賞/休暇\nこの求人広告に記載されているポリシー（給与、福利厚生、労働条件などを含むがこれに限らない）は、会社のリアルタイムポリシーに応じて調整される可能性があります。\n\n平等な雇用機会を重視するテンセント/Equal Employment Opportunity at Tencent\nテンセントは、雇用機会の均等を最重要視しています。私たちは、多様性がイノベーションを促進し、ユーザーやコミュニティに対してより良いサービスを提供する原動力になると確信しています。\n社員一人ひとりが十分なサポートを受け、自身の目標と会社の目標を共に達成できるよう、モチベーションを高められる環境づくりを大切にしています。\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Japan-Osaka | Japan-Tokyo-Business Tower",
-      "LastUpdateTime": "2026年05月10日",
-      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Japan-Tokyo-Business-Tower/AI-AI-Programmer_R107230-1",
-      "SourceID": 4,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2039211190525263872",
-      "Requirement": "岗位要求详情请见上方岗位职责内说明"
-    },
-    {
-      "Id": 0,
       "PostId": "2066702542833893376",
       "RecruitPostId": 120583,
       "RecruitPostName": "光子 AI-AI Infra工程师",
@@ -2965,29 +2942,6 @@
       "RequireWorkYearsName": "",
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1985607970624524288",
-      "Requirement": "岗位要求详情请见上方岗位职责内说明"
-    },
-    {
-      "Id": 0,
-      "PostId": "2046368371460698112",
-      "RecruitPostId": 10002730,
-      "RecruitPostName": "Sr. Cloud AI Infrastructure Engineer",
-      "CountryName": "美国",
-      "LocationName": "帕罗奥多",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "",
-      "CategoryName": "技术",
-      "Responsibility": "Business Unit\n\nWhat the Role Entails\n1.Architecture Research: Conduct in-depth research into the underlying hardware logic of various AI accelerators; evaluate the power-efficiency ratio and suitability of different heterogeneous architectures in the context of Large Language Model (LLM) inference and training.\n2.Operator & Performance Optimization: Design and optimize high-performance operator libraries for large-scale cloud computing environments; resolve long-tail latency issues in hardware scheduling, memory management, and distributed communication.\n3.Interconnect Architecture Definition: Define the interconnect architecture ; drive the virtualization, standardized access, and efficient pooling of heterogeneous computing resources in the cloud.\n4.Technology Trend Analysis: Monitor global trends in semiconductors and accelerators; perform feasibility studies and experimental validation for the implementation of emerging technologies within cloud infrastructure.\n\nWho We Look For\n1.Education: Master’s or Ph.D. degree in Computer Engineering, Electronic Engineering, Microelectronics, or a related field.\n2.Core Expertise: Expertise in GPGPU architectures or other mainstream AI accelerator architectures.\n3.Programming & Frameworks: Proficient in parallel computing frameworks; deep understanding of low-level operator development languages (e.g., CUDA, Triton).\n4.Network & Distributed Systems: Solid understanding of large-scale distributed systems, cluster topologies (e.g., Fat-tree, Torus), and high-performance network protocols.\n5.Industry Insight: Familiar with the architectural evolution of global leading computing enterprises; ability to objectively analyze the technical pros/cons and engineering challenges of different architectural paths.\n6.Experience: Experience in the application, optimization, or architectural design of ultra-large-scale accelerator clusters is preferred.\n7.Framework Optimization: Experience in the low-level adaptation and performance tuning of mainstream deep learning frameworks (e.g., PyTorch, TensorFlow) is preferred.\nLocation State(s)\nUS-California-Palo Alto\nThe expected base pay range for this position in the location(s) listed above is $145,100.00 to $273,200.00 per year. Actual pay may vary depending on job-related knowledge, skills, and experience.\nEmployees hired for this position may be eligible for a sign on payment, relocation package, and restricted stock units, which will be evaluated on a case-by-case basis.\nSubject to the terms and conditions of the plans in effect, hired applicants are also eligible for medical, dental, vision, life and disability benefits, and participation in the Company’s 401(k) plan. The Employee is also eligible for up to 15 to 25 days of vacation per year (depending on the employee’s tenure), up to 13 days of holidays throughout the calendar year, and up to 10 days of paid sick leave per year.\nYour benefits may be adjusted to reflect your location, employment status, duration of employment with the company, and position level. Benefits may also be pro-rated for those who start working during the calendar year.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: US-California-Palo Alto",
-      "LastUpdateTime": "2026年07月02日",
-      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/US-California-Palo-Alto/Sr-Cloud-AI-Infrastructure-Engineer_R107333",
-      "SourceID": 4,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2046368371460698112",
       "Requirement": "岗位要求详情请见上方岗位职责内说明"
     },
     {
@@ -3702,12 +3656,35 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1988470014939914240",
       "Requirement": "1.计算机相关专业本科及以上学历，3年以上游戏客户端开发经验；\r\n2.熟练使用C++/Lua，对Unreal（UE4/UE5）引擎有深入理解和实践经验，有主导过核心模块的开发经验；\r\n3.具备良好的问题分析和解决能力，能深入解决疑难技术问题；\r\n4.具备一定抗压能力，责任心强，有良好的团队沟通和协作能力，做事情使命必达；\r\n5.具备游戏客户端性能优化者优先，具备深度学习模型涉及的工程和算法性能优化经验者优先；\r\n6.热爱游戏，关注用户体验。对AI技术在游戏内的应用有实践经验或有自己独到的理解，充满好奇心的优先。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2052018398480740352",
+      "RecruitPostId": 119808,
+      "RecruitPostName": "《三角洲行动》-游戏AI开发工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "ProjectD-手游APP",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责手游以及端游的各类型NPC，Bot，基于强化的拟人AI等AI的行为和表现开发；\r\n2.开发，实现，以及优化AI相关的各种系统，包括但不限于感知，寻路，动作，同步等；\r\n3.参与AI的行为与动作表现设计，与动作，策划团队紧密协作，使其符合品质要求；\r\n4.调试并修复与AI相关的问题，对AI品质负责；\r\n5.解决与优化AI的各项性能问题与系统瓶颈；\r\n6.负责构建精确的AI数值分析体系，并持续迭代AI的投放效果。",
+      "LastUpdateTime": "2026年09月04日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2052018398480740352",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2052018398480740352",
+      "Requirement": "1.重点：热爱游戏，善于沟通，强自驱力，参与过或了解FPS类游戏AI；\n2.具备2年以上Unreal Engine4或者5的开发经验；\n3.精通C++/蓝图，熟练使用UE AI工具：行为树，AI感知等；\n4.具备扎实的计算机系统知识。熟悉Linux系统，有良好的数据结构和算法基础。了解计算机网络；\n5.具备良好的问题分析和解决能力，能全流程把握方案的设计，实现，测试，上线。"
     }
   ],
   "cloud": [
     {
       "name": "AI",
-      "value": 194
+      "value": 195
     },
     {
       "name": "AGENT",
@@ -3715,11 +3692,11 @@
     },
     {
       "name": "扎实",
-      "value": 95
+      "value": 96
     },
     {
       "name": "工具",
-      "value": 60
+      "value": 61
     },
     {
       "name": "PYTHON",
@@ -3742,11 +3719,11 @@
       "value": 43
     },
     {
-      "name": "并发",
-      "value": 42
+      "name": "LINUX",
+      "value": 43
     },
     {
-      "name": "LINUX",
+      "name": "并发",
       "value": 42
     },
     {
@@ -3759,7 +3736,7 @@
     },
     {
       "name": "数据结构",
-      "value": 35
+      "value": 36
     },
     {
       "name": "大规模",
@@ -3827,7 +3804,7 @@
     }
   ],
   "stats": {
-    "total": 161,
-    "update_time": "2026-10-02 04:34:31"
+    "total": 160,
+    "update_time": "2026-10-03 04:16:54"
   }
 }
