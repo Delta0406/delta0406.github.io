@@ -2900,6 +2900,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2107672308637417472",
+      "RecruitPostId": 1305169870017396736,
+      "RecruitPostName": "AI Compute Intern 108149",
+      "CountryName": "新加坡",
+      "LocationName": "新加坡",
+      "BGName": "Overseas Functional System",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "",
+      "CategoryName": "技术",
+      "Responsibility": "About the Hiring Team\nTencent Overseas IT has the mission to empower Tencent’s rapid global growth with future ready, global IT platforms, applications and services. We are chartered to lead the Overseas IT strategy, architecture, roadmap and execution. Satisfying our internal/external customers and becoming a world class global IT team are our top aspirations.\n\nWhat the Role Entails\nRole SummaryWe are seeking a motivated Network Site Reliability Engineer (SRE) Intern to join our AI Compute team, supporting the daily operations and maintenance of AI-accelerated high-performance computing (HPC) infrastructure. In this role, you will work closely with internal business team and vendor's engineering team to build and operate clusters. This is a hands-on opportunity to gain direct exposure to cutting-edge AI infrastructure.\n \nTeam IntroductionThe AI Compute Centre sits within Tencent's Overseas IT department, acting as the bridge between internal AI infrastructure demand and the external resources that fulfil it. We play key roles in the full lifecycle of AI infrastructure clusters — from requirement gathering and capacity planning, through architectural design and development, to delivery, operations, and DevOps — across regions worldwide.\nKey Responsibilities● Support the deployment, configuration, and maintenance of high-end servers, storage servers, networking equipment, and software components in secure environments.\n● Assist with hardware diagnostics, system functionality checks, and firmware updates as required.\n● Collaborate with engineering teams to help deliver tailored customer environments (e.g., bare-metal systems, HPC clusters, Kubernetes, Slurm, etc.).\n● Provide first-line engineering support for onsite operational issues, including troubleshooting hardware, network, and software problems, and firmware compliance.\n● Document incident details, resolutions, and lessons learned to improve future problem-solving.\n● Maintain clear, accurate, and up-to-date documentation to support knowledge sharing across the team.\n● Participate in team meetings and knowledge-sharing sessions to foster collaboration and continuous learning.\n\nWho We Look For\n● Currently pursuing or recently completed a Bachelor's or Master's degree in computer engineering, computer science, or a related technical field.\n● Basic understanding of server hardware, firmware lifecycle, and Linux environments, with an awareness of physical and system-level security standards.\n● Exposure to scripting languages such as Bash or Python.\n● Familiarity with — or strong interest in — configuration management, CI/CD tools, workload managers, and cluster software (e.g., Slurm, Kubernetes, BCM), and observability tools (e.g., Prometheus, Grafana, ELK).\n● Assist senior engineers in checking cluster network connectivity, including InfiniBand or RoCE links. Run predefined tests, collect results, and flag link or performance anomalies.\n● Monitor dashboards for compute, storage, and management networks. Help record bandwidth, latency, and RDMA test results, and compare them with agreed baselines.\n● Support AI infrastructure incident investigations by collecting switch, NIC, and host logs, updating incident records, and tracking vendor follow-up actions under guidance.\n● Ability to work both independently and as part of a team.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Singapore-CapitaSky",
+      "LastUpdateTime": "2026年10月06日",
+      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Singapore-CapitaSky/AI-Compute-Intern_R108149",
+      "SourceID": 4,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2107672308637417472",
+      "Requirement": "岗位要求详情请见上方岗位职责内说明"
+    },
+    {
+      "Id": 0,
       "PostId": "2105679157043310592",
       "RecruitPostId": 10003001,
       "RecruitPostName": "Senior AI Infrastructure Engineer",
@@ -3684,7 +3707,7 @@
   "cloud": [
     {
       "name": "AI",
-      "value": 195
+      "value": 196
     },
     {
       "name": "AGENT",
@@ -3804,7 +3827,7 @@
     }
   ],
   "stats": {
-    "total": 160,
-    "update_time": "2026-10-06 05:22:17"
+    "total": 161,
+    "update_time": "2026-10-07 04:50:59"
   }
 }
