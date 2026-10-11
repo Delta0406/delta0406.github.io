@@ -117,6 +117,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2104475912140664832",
+      "RecruitPostId": 122847,
+      "RecruitPostName": "腾讯营销-AI Agent 架构师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CDG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯广告",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责搭建平台级商家智能经营统一Agent 超级中枢（超级大脑），作为全域经营核心调度底座，围绕用户意图理解、经营任务智能拆解、自主决策能力建设，统一收口全场景智能体的调度、治理与能力规范，构建商家AI自主经营操作系统；\n2.主导多子 Agent 集群编排与智能调度体系，针对私域客服、线索转化、直播、小店交易、线下到店等场景搭建垂直场景智能体，通过中枢大脑实现跨场景技能编排、任务调度与协同作业，打破场景孤岛，形成全域协同经营范式；\n3.搭建跨层全局记忆与上下文体系，构建 B 端商家经营记忆、C 端用户交互记忆双引擎，实现跨对话、跨场景、跨周期的记忆复用与上下文连贯，解决传统AI服务碎片化、认知不连续的痛点；\n4.设计 B/C 端资产双向共享与复用机制，依托大模型构建经营知识库、商家资产库、用户行为资产库，沉淀经营经验与用户偏好，双向赋能智能体意图识别、个性化经营、智能诊断与自动化执行；\n5.落地大模型工程与智能体工具链体系，统一封装投放、分析、转化等工具能力，标准化 Toolcall 调用与技能编排，形成「意图识别-任务拆解-工具执行-复盘沉淀」的全链路自主经营闭环。",
+      "LastUpdateTime": "2026年10月10日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2104475912140664832",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2104475912140664832",
+      "Requirement": "1.本科及以上学历，计算机、人工智能、软件工程等相关专业，3年以上大模型智能体（Agent）平台落地实战经验，有中大型平台级AI产品架构设计经验者优先；\n2.深度理解企业级B端智能体架构，精通智能体编排、长期记忆管理、自动化任务调度、工具链调用核心技术体系，具备完整的AI系统落地经验；\n3.具备复杂多场景 AI 系统架构设计能力，可独立搭建统一智能体中台、多智能体协同调度、对话管理、行业知识库体系，具备从0到1搭建 AI 业务平台的完整经历；\n4.具备极强的跨团队推进、复杂方案设计、技术风险预判能力，可在平台生态约束、数据合规风控约束下，设计可落地、可分阶段迭代的最优技术方案。"
+    },
+    {
+      "Id": 0,
       "PostId": "2088194556695855104",
       "RecruitPostId": 121857,
       "RecruitPostName": "AI Agent测试开发工程师",
@@ -646,29 +669,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2006202335759585280",
-      "RecruitPostId": 116944,
-      "RecruitPostName": "微信基础-后端开发工程师-Agent（北京/广州）",
-      "CountryName": "中国",
-      "LocationName": "北京",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "微信AI助手",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责微信端产品Agent方向的系统建设与开发工作；\r\n2.设计和搭建Agent架构与工作流，优化推理效率，提升产品端体验；\r\n3.接入微信生态体系，支持多种插件与工具能力；\r\n4.持续跟踪AI发展趋势，尤其是大语言模型领域的前沿进展，并将相关成果应用于Agent AI的研发中。",
-      "LastUpdateTime": "2026年09月30日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2006202335759585280",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2006202335759585280",
-      "Requirement": "1.计算机相关专业本科及以上学历，熟悉大模型应用技术栈；\r\n2.具备2年以上Python/C++开发经验，熟悉MQ、Cache、DB、ES等常用中间件；\r\n3.了解LLM推理原理，具有多Agent架构相关开发经验者优先；\r\n4.具备记忆、RAG、上下文工程等相关技术经验者更佳；\r\n5.具备良好的问题分析与解决能力，能快速学习前沿技术；善于发现和解决问题，具有团队合作精神。"
-    },
-    {
-      "Id": 0,
       "PostId": "2068624480498003968",
       "RecruitPostId": 120673,
       "RecruitPostName": "浏览器内核与自动化工程师（AI Agent领域）",
@@ -1071,7 +1071,7 @@
       "ProductName": "混元-工程平台",
       "CategoryName": "技术",
       "Responsibility": "1.负责 Agent 数据生产、标注与评测平台的后端架构设计和核心服务研发；\r\n2.设计统一的任务与轨迹数据模型，描述任务指令、初始环境、工具权限、Agent Action、环境 Observation、中间状态、最终结果及验证规则；\r\n3.建设完整的数据生产工作流，并建设 Coding 与 Agentic Work 数据生产能力、Computer Use、Mobile Use数据生产和标注能力；\r\n4.与基础设施团队协作，接入并应用容器、MicroVM、虚拟桌面等沙箱能力，完成环境创建、快照恢复、动态路由、资源控制和生命周期管理；\r\n5.深入理解沙箱的隔离、网络、存储和安全机制，推动解决环境复现、启动性能、凭证注入、不可信代码执行及数据泄漏等问题；\r\n6.建设平台的多租户、任务调度、权限控制、故障重试、数据追溯和可观测性能力；\r\n7.与算法、数据、标注、前端及基础设施团队协作，将训练和评测需求转化为稳定、规模化的数据生产能力。",
-      "LastUpdateTime": "2026年10月08日",
+      "LastUpdateTime": "2026年10月10日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2038450103123079168",
       "SourceID": 1,
       "IsCollect": false,
@@ -1520,6 +1520,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2087100746268065792",
+      "RecruitPostId": 121785,
+      "RecruitPostName": "QQ-#社交平台后台研发工程师#",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "PCG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "QQ",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责QQ平台社交业务（如空间、群、关系链等）的后台架构设计与优化，保障系统高可用、高性能及可扩展性；\n2.主导社交业务模块的迭代开发，深度参与需求分析、技术评审及方案落地，解决复杂业务场景下的技术挑战；\n3.与产品、运营及跨团队紧密协作，深入理解业务需求，通过技术创新推动业务目标达成；\n4.参与技术规划与方案设计，跟踪行业前沿技术趋势，将合适的技术引入业务场景提升整体竞争力。",
+      "LastUpdateTime": "2026年10月10日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2087100746268065792",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2087100746268065792",
+      "Requirement": "1.计算机相关专业本科及以上学历，1年以上互联网后台研发经验，扎实的编程基础，熟练掌握Golang或C++至少一门语言；\n2.熟悉微服务架构设计与治理，具备分布式系统开发经验，熟悉常用中间件（如Redis、Kafka、MySQL等）及高并发场景下的性能调优；\n3.有1年以上海量用户服务或复杂系统开发经验，熟悉社交类产品业务逻辑者优先；\n4.具备优秀的逻辑思维与问题分析能力，能独立定位并解决复杂技术问题，对技术细节有极致追求；\n5.良好的沟通协作能力与团队合作精神，能够主动推动跨团队协作，对产品体验与技术创新有热情；\n6.积极拥抱新技术，有AI/LLM等技术在业务中落地实践经验者优先。"
+    },
+    {
+      "Id": 0,
       "PostId": "2074478776548507648",
       "RecruitPostId": 120995,
       "RecruitPostName": "TAB实验中台-#后台开发工程师#",
@@ -1609,29 +1632,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2070158764278984704",
       "Requirement": "1.计算机相关专业本科及以上学历，熟悉Linux OS，2年以上C++开发经验；\n2.熟悉基本后台组件原理和具备实操经验，如redis/kv/docker等；\n3.具备良好的沟通能力和团队协作精神，熟练使用coding agent。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2087100746268065792",
-      "RecruitPostId": 121785,
-      "RecruitPostName": "QQ-#社交平台后台研发工程师#",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "PCG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "QQ",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责QQ平台社交业务（如空间、群、关系链等）的后台架构设计与优化，保障系统高可用、高性能及可扩展性；\n2.主导社交业务模块的迭代开发，深度参与需求分析、技术评审及方案落地，解决复杂业务场景下的技术挑战；\n3.与产品、运营及跨团队紧密协作，深入理解业务需求，通过技术创新推动业务目标达成；\n4.参与技术规划与方案设计，跟踪行业前沿技术趋势，将合适的技术引入业务场景提升整体竞争力。",
-      "LastUpdateTime": "2026年09月07日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2087100746268065792",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2087100746268065792",
-      "Requirement": "1.计算机相关专业本科及以上学历，1年以上互联网后台研发经验，扎实的编程基础，熟练掌握Golang或C++至少一门语言；\n2.熟悉微服务架构设计与治理，具备分布式系统开发经验，熟悉常用中间件（如Redis、Kafka、MySQL等）及高并发场景下的性能调优；\n3.有1年以上海量用户服务或复杂系统开发经验，熟悉社交类产品业务逻辑者优先；\n4.具备优秀的逻辑思维与问题分析能力，能独立定位并解决复杂技术问题，对技术细节有极致追求；\n5.良好的沟通协作能力与团队合作精神，能够主动推动跨团队协作，对产品体验与技术创新有热情；\n6.积极拥抱新技术，有AI/LLM等技术在业务中落地实践经验者优先。"
     },
     {
       "Id": 0,
@@ -2819,7 +2819,7 @@
       "ProductName": "TEG公共",
       "CategoryName": "技术",
       "Responsibility": "1.负责设计与演进业界领先的大模型在线推理平台，构建支撑亿级日调用量的高性能、高可用、高扩展的服务体系，为公司AI业务提供坚实的推理能力基座；\r\n2.负责设计高性能推理服务架构，结合推理引擎与底层硬件的核心特性，优化动态调度、资源管理等核心后台策略，实现服务性能与成本效益的最优化；\r\n3.负责研发标准化的推理服务框架与配套工具链，打通从模型研发、性能优化到线上部署的全链路流程，提升推理服务工程化落地效率；\r\n4.负责构建平台的高可用架构与可观测性体系，落地故障容灾、限流熔断等核心能力，为容量规划、应急响应提供数据与技术支撑，保障服务的可靠性。",
-      "LastUpdateTime": "2026年10月08日",
+      "LastUpdateTime": "2026年10月11日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1955829491829985280",
       "SourceID": 1,
       "IsCollect": false,
@@ -2865,7 +2865,7 @@
       "ProductName": "腾讯云",
       "CategoryName": "技术",
       "Responsibility": "1.AI原生产品演进：负责可观测与运维平台的架构研发。探索大模型与多Agent落地，推动平台向智能化、意图驱动（Intent-Driven）及自然语言交互（LUI）的新一代产品形态演进；\n2.数据基础设施研发：负责高并发指标、日志、链路（Metrics, Log, Trace） 海量数据流水线的泛在采集、高性能多维存储与计算组件研发，持续优化系统性能与稳定性；\n3.智能运维能力构建：利用AI重构并升级海量告警智能降噪、自适应动态拓扑、智能根因定位（RCA）及ChatOps交互式运维等核心产品能力，实现端到端智能闭环。",
-      "LastUpdateTime": "2026年10月09日",
+      "LastUpdateTime": "2026年10月10日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2077298521521958912",
       "SourceID": 1,
       "IsCollect": false,
@@ -3196,29 +3196,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2040982131504738304",
       "Requirement": "1.需要熟悉一门编译类语言（C++ 更好），有一年或以上服务端开发经验；\r\n2.有高并发、高可靠的海量服务开发经验者优先；\r\n3.有 Ray等分布式计算框架相关开发经验者优先；\r\n4.有AI应用架构和大模型推理优化相关开发经验者优先；\r\n5.有 OI、ACM-ICPC 参赛背景者优先；\r\n6.希望你热爱编程，喜欢钻研技术，愿意深入思考。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1982705847465299968",
-      "RecruitPostId": 115586,
-      "RecruitPostName": "WeGame游戏平台-AI算法研究",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "WeGame平台公共",
-      "CategoryName": "技术",
-      "Responsibility": "1.结合游戏平台业务垂直场景，负责深度学习和大语言模型的训练精调、调优及部署，及智能体Agent开发；\n2.负责大规模平台用户行为数据集的ETL及特征工程，构建高效数据流水线，落地到用户画像体系并服务到线上AI应用；\n3.跟踪和研究前沿AI技术（如LLM、VLM、SFT、DPO、RAG、MCP等），推动技术落地业务发挥价值；\n4.与技术团队协作，优化算法模型和服务性能，满足产品AI价值落地要求。",
-      "LastUpdateTime": "2026年08月28日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1982705847465299968",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1982705847465299968",
-      "Requirement": "1.计算机科学、人工智能或数学专业硕士及以上学历，3年以上机器学习或深度学习、LLM/VLM相关开发经验，熟悉经典模型和优化算法；\n2.扎实的机器学习基础和LLM底层核心架构；\n3.具备一定大语言模型应用的模型微调和优化经验，如幻觉问题解决思路提炼和有效落地；\n4.熟悉Linux开发环境和Python语言，了解PyTorch/TensorFlow框架；\n5.良好的沟通能力和团队协作精神，能够清晰表达复杂技术概念，具备解决复杂问题的能力，善于创新思考；\n6.喜欢游戏并具备一定游戏经验。"
     },
     {
       "Id": 0,
@@ -3753,7 +3730,7 @@
   "cloud": [
     {
       "name": "AI",
-      "value": 191
+      "value": 195
     },
     {
       "name": "AGENT",
@@ -3761,15 +3738,15 @@
     },
     {
       "name": "扎实",
-      "value": 96
+      "value": 95
     },
     {
       "name": "工具",
-      "value": 65
+      "value": 66
     },
     {
       "name": "PYTHON",
-      "value": 64
+      "value": 62
     },
     {
       "name": "主流",
@@ -3777,19 +3754,19 @@
     },
     {
       "name": "落地",
-      "value": 56
+      "value": 58
     },
     {
       "name": "GO",
       "value": 46
     },
     {
-      "name": "LLM",
-      "value": 45
+      "name": "LINUX",
+      "value": 43
     },
     {
-      "name": "LINUX",
-      "value": 44
+      "name": "LLM",
+      "value": 42
     },
     {
       "name": "并发",
@@ -3797,11 +3774,11 @@
     },
     {
       "name": "微信",
-      "value": 37
+      "value": 36
     },
     {
       "name": "北京",
-      "value": 36
+      "value": 35
     },
     {
       "name": "JAVA",
@@ -3820,15 +3797,19 @@
       "value": 32
     },
     {
-      "name": "环境",
-      "value": 32
-    },
-    {
       "name": "深度",
       "value": 32
     },
     {
       "name": "大规模",
+      "value": 31
+    },
+    {
+      "name": "产品",
+      "value": 31
+    },
+    {
+      "name": "环境",
       "value": 31
     },
     {
@@ -3840,23 +3821,19 @@
       "value": 31
     },
     {
-      "name": "核心",
-      "value": 30
-    },
-    {
-      "name": "产品",
-      "value": 30
-    },
-    {
-      "name": "专业本科",
-      "value": 29
-    },
-    {
       "name": "测试",
       "value": 29
     },
     {
       "name": "场景",
+      "value": 29
+    },
+    {
+      "name": "核心",
+      "value": 29
+    },
+    {
+      "name": "专业本科",
       "value": 28
     },
     {
@@ -3864,16 +3841,16 @@
       "value": 28
     },
     {
-      "name": "实际",
-      "value": 26
+      "name": "智能",
+      "value": 27
     },
     {
-      "name": "掌握",
+      "name": "实际",
       "value": 26
     }
   ],
   "stats": {
-    "total": 163,
-    "update_time": "2026-10-10 04:50:33"
+    "total": 162,
+    "update_time": "2026-10-11 04:36:07"
   }
 }
