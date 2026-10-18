@@ -2049,6 +2049,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1966029487942553600",
+      "RecruitPostId": 114747,
+      "RecruitPostName": "微信小程序-后台开发工程师-境外方向",
+      "CountryName": "中国",
+      "LocationName": "广州",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "小程序",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责小程序境外能力建设，解决境外使用及来华用户痛点，如境外支付、搜索发现、访问优化、多语言等，同时负责探索更多境外本地化、国际化能力。",
+      "LastUpdateTime": "2026年10月17日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1966029487942553600",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1966029487942553600",
+      "Requirement": "1.本科以上学历，计算机相关专业；\r\n2.具有较强的学习能力，熟悉数据结构和算法；\r\n3.熟悉Linux环境下的C/C++开发；\r\n4.熟练掌握高并发，性能优化，服务稳定性等后台开发常识；\r\n5.有大数据或AI相关技术研究及实践基础优先；\r\n6.有境外相关工作生活经验更佳。"
+    },
+    {
+      "Id": 0,
       "PostId": "2108399576695353344",
       "RecruitPostId": 122926,
       "RecruitPostName": "Kinfra 后台开发工程师(文档解析和RAG方向)",
@@ -2161,29 +2184,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2101877681489625088",
       "Requirement": "1. 精通Go/C++的一种或多种，基础扎实，熟悉Linux下服务开发、命令、调试分析工具等；\r\n2. 熟悉TCP/IP、各类数据库原理，有网络编程、数据库编程经验；\r\n3. 具备大型项目、大规模高可用微服务设计、开发经验；\r\n4. 具备较强的分析和解决问题能力，认可游戏行业，有较强的沟通协作、优化意识、自驱力；\r\n5. 有UE引擎、射击游戏服务相关开发、优化经验优先。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1966029487942553600",
-      "RecruitPostId": 114747,
-      "RecruitPostName": "微信小程序-后台开发工程师-境外方向",
-      "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "小程序",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责小程序境外能力建设，解决境外使用及来华用户痛点，如境外支付、搜索发现、访问优化、多语言等，同时负责探索更多境外本地化、国际化能力。",
-      "LastUpdateTime": "2026年09月16日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1966029487942553600",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1966029487942553600",
-      "Requirement": "1.本科以上学历，计算机相关专业；\r\n2.具有较强的学习能力，熟悉数据结构和算法；\r\n3.熟悉Linux环境下的C/C++开发；\r\n4.熟练掌握高并发，性能优化，服务稳定性等后台开发常识；\r\n5.有大数据或AI相关技术研究及实践基础优先；\r\n6.有境外相关工作生活经验更佳。"
     },
     {
       "Id": 0,
@@ -3164,7 +3164,7 @@
       "ProductName": "云架构平台",
       "CategoryName": "技术",
       "Responsibility": "1.负责芯片软件栈（算子库、图编译器、运行时、推理框架）的测试工作，包括测试策略制定、用例设计开发、测试执行与质量评估；\r\n2.负责芯片软件栈测试体系建设：引入业界成熟的分层测试、精度基准、性能基准与回归体系方法论，能结合自研芯片架构特点落地；\r\n3.设计并开发自动化测试框架和工具链，覆盖算子精度验证、模型推理正确性、性能与稳定性评测；\r\n4.分析测试中发现的问题，跨栈定位根因（算子实现/编译器优化/运行时/驱动），推动问题闭环；\r\n5.持续优化测试流程、方法和工具，提升团队测试效能。",
-      "LastUpdateTime": "2026年09月20日",
+      "LastUpdateTime": "2026年10月17日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044704007120912384",
       "SourceID": 1,
       "IsCollect": false,
@@ -3943,6 +3943,6 @@
   ],
   "stats": {
     "total": 166,
-    "update_time": "2026-10-17 03:25:24"
+    "update_time": "2026-10-18 03:31:17"
   }
 }
