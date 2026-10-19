@@ -1635,6 +1635,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2078639812935593984",
+      "RecruitPostId": 121305,
+      "RecruitPostName": "微信-后台开发工程师-电商方向",
+      "CountryName": "中国",
+      "LocationName": "广州",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "WXG公共",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责微信电商交易等场景中在线检索能力建设，完善 InfinityKV 全文检索及向量检索能力，保障业务平稳运行；\r\n2.负责 HTAP、全局查询等场景下的复杂查询能力建设，推进查询引擎性能优化与稳定性建设；\r\n3.参与分析型数据库 DuckDB 等列存能力的代码融入与适配，并与业务及上下游团队协作，持续推进分析型查询链路相关技术建设。",
+      "LastUpdateTime": "2026年10月19日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2078639812935593984",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2078639812935593984",
+      "Requirement": "1.本科及以上学历，计算机科学、软件工程或相关专业；\r\n2.具备扎实的 C/C++ 编程基础，熟悉高性能后台系统或底层系统开发，有大规模后台系统研发经验者优先；\r\n3.熟悉主流数据库、查询引擎或全文检索相关技术，如 MySQL、ClickHouse、Elasticsearch、DuckDB，以及倒排索引、分词、相关性排序等；\r\n4.具备 HTAP、OLAP 或复杂查询引擎研发、性能优化、稳定性建设、一定的AI能力（AI检索、mcp）经验者优先；\r\n5.具备良好的问题分析与解决能力、沟通协作能力和专项推进能力。"
+    },
+    {
+      "Id": 0,
       "PostId": "2034611270900154368",
       "RecruitPostId": 118678,
       "RecruitPostName": "腾讯云-MaaS高级后台研发工程师",
@@ -1773,26 +1796,26 @@
     },
     {
       "Id": 0,
-      "PostId": "2078639812935593984",
-      "RecruitPostId": 121305,
-      "RecruitPostName": "微信-后台开发工程师-电商方向",
+      "PostId": "2043623808224620544",
+      "RecruitPostId": 119266,
+      "RecruitPostName": "J3-UE5微恐射击-后台开发（UE5 DS方向）",
       "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
+      "LocationName": "深圳",
+      "BGName": "IEG",
       "ComCode": "",
       "ComName": "",
-      "ProductName": "WXG公共",
+      "ProductName": "CFH-手游APP",
       "CategoryName": "技术",
-      "Responsibility": "1.负责微信电商交易等场景中在线检索能力建设，完善 InfinityKV 全文检索及向量检索能力，保障业务平稳运行；\r\n2.负责 HTAP、全局查询等场景下的复杂查询能力建设，推进查询引擎性能优化与稳定性建设；\r\n3.参与分析型数据库 DuckDB 等列存能力的代码融入与适配，并与业务及上下游团队协作，持续推进分析型查询链路相关技术建设。",
-      "LastUpdateTime": "2026年08月21日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2078639812935593984",
+      "Responsibility": "1.负责UE5引擎开发的射击游戏对战服务（DS）的性能评估、监测、优化方案制定及落地实施；\r\n2.负责UE5对战服务器的调度、网络质量优化及用户体验提升；\r\n3.开发和优化射击游戏对战AI Bot功能，包括但不限于感知、寻路、物理、网络同步等；\r\n4.机器学习和数据化分析等技术的应用，提升AI和对战效果的实际落地。",
+      "LastUpdateTime": "2026年10月19日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043623808224620544",
       "SourceID": 1,
       "IsCollect": false,
       "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
+      "RequireWorkYearsName": "两年以上工作经验",
       "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2078639812935593984",
-      "Requirement": "1.本科及以上学历，计算机科学、软件工程或相关专业；\r\n2.具备扎实的 C/C++ 编程基础，熟悉高性能后台系统或底层系统开发，有大规模后台系统研发经验者优先；\r\n3.熟悉主流数据库、查询引擎或全文检索相关技术，如 MySQL、ClickHouse、Elasticsearch、DuckDB，以及倒排索引、分词、相关性排序等；\r\n4.具备 HTAP、OLAP 或复杂查询引擎研发、性能优化、稳定性建设、一定的AI能力（AI检索、mcp）经验者优先；\r\n5.具备良好的问题分析与解决能力、沟通协作能力和专项推进能力。"
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2043623808224620544",
+      "Requirement": "1.精通C++和至少一种数据处理脚本语言，数据结构、算法、网络等基础扎实，熟悉Linux环境下的高新能服务开发、命令、调试分析工具；\r\n2.具备较强的分析、解决问题的能力，认可游戏行业，善于沟通协作，具有较强的探索精神和、优化意识和自驱力；\r\n3.拥有2年以上UE4/UE5相关开发经验，或游戏玩法、BotAI或数据应用相关的开发经验。"
     },
     {
       "Id": 0,
@@ -1908,29 +1931,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1993913287074537472",
       "Requirement": "1.计算机相关专业本科及以上学历，具备扎实的编程基础；\n2.精通C/C++、Lua语言，具备良好的编程习惯；\n3.熟练掌握数据结构、数据库、高并发等后台技能项，具备良好的问题解决能力；\n4.具备良好的沟通协作能力，能够承受一定的工作压力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2043623808224620544",
-      "RecruitPostId": 119266,
-      "RecruitPostName": "J3-UE5微恐射击-后台开发（UE5 DS方向）",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "CFH-手游APP",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责UE5引擎开发的射击游戏对战服务（DS）的性能评估、监测、优化方案制定及落地实施；\r\n2.负责UE5对战服务器的调度、网络质量优化及用户体验提升；\r\n3.开发和优化射击游戏对战AI Bot功能，包括但不限于感知、寻路、物理、网络同步等；\r\n4.机器学习和数据化分析等技术的应用，提升AI和对战效果的实际落地。",
-      "LastUpdateTime": "2026年09月18日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043623808224620544",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2043623808224620544",
-      "Requirement": "1.精通C++和至少一种数据处理脚本语言，数据结构、算法、网络等基础扎实，熟悉Linux环境下的高新能服务开发、命令、调试分析工具；\r\n2.具备较强的分析、解决问题的能力，认可游戏行业，善于沟通协作，具有较强的探索精神和、优化意识和自驱力；\r\n3.拥有2年以上UE4/UE5相关开发经验，或游戏玩法、BotAI或数据应用相关的开发经验。"
     },
     {
       "Id": 0,
@@ -2233,26 +2233,26 @@
     },
     {
       "Id": 0,
-      "PostId": "2061001586997637120",
-      "RecruitPostId": 120308,
-      "RecruitPostName": "AI协作工具产品后台研发高级工程师岗位",
+      "PostId": "2112015183055601664",
+      "RecruitPostId": 123160,
+      "RecruitPostName": "企业微信-AI应用后台开发工程师-开放平台",
       "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "CSIG",
+      "LocationName": "广州",
+      "BGName": "WXG",
       "ComCode": "",
       "ComName": "",
-      "ProductName": "腾讯文档C端",
+      "ProductName": "企业微信SaaS",
       "CategoryName": "技术",
-      "Responsibility": "1.产品需求研发 + 基础架构研发工程师，综合角色；\r\n2.负责AI协作工具产品用户端产品需求研发工作，包括技术基建、研发效能提升、全局架构优化，产品需求开发等工作；\r\n3.负责AI协作工具产品用户端后台功能开发和性能优化。",
-      "LastUpdateTime": "2026年10月13日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2061001586997637120",
+      "Responsibility": "1.负责企业微信 AI 开放能力的后台设计与开发，包括 Agent 工程、对外 CLI 能力开放、A2A（Agent-to-Agent）协议接入等核心模块；\r\n2.参与 AI 相关后台服务的架构设计和技术选型，优化服务性能，保证高并发、低延时；\r\n3.负责线上服务的日常运维和性能优化，搭建完善的监控、告警和链路追踪，保证系统可维护、可扩展、稳定可靠；\r\n4.参与技术难题攻关和线上问题定位，持续沉淀通用组件和最佳实践。",
+      "LastUpdateTime": "2026年10月19日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2112015183055601664",
       "SourceID": 1,
       "IsCollect": false,
       "IsValid": true,
-      "RequireWorkYearsName": "五年以上工作经验",
+      "RequireWorkYearsName": "两年以上工作经验",
       "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2061001586997637120",
-      "Requirement": "1.本科以上学历，计算机相关专业，5 年以上 Golang/C/C++ 分布式系统开发经历；\r\n2.责任心强、抗压能力强，有较强的逻辑思维、学习、沟通能力，工作能全局闭环；\r\n3.热爱技术，有较强的学习意愿与能力，具备良好的分析解决问题能力，能独立承担任务，有项目进度把控能力；\r\n4.熟悉多进程多线程编程，熟悉 TCP/IP，熟悉 Linux 网络编程和高并发，高可用设计范式；\r\n5.熟悉 MySQL 数据库，NoSQL 存储，Kafka 等中间件；\r\n6.熟悉常用的开源组件，包括 K8S 集群的搭建与运维，各种存储中间件的搭建与运维，并了解其内部原理。"
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2112015183055601664",
+      "Requirement": "1.计算机或相关专业本科及以上学历，2 年以上后台开发经验；有 AI 应用开发经验（如 LLM 应用、Agent 框架、MCP/A2A 协议等）者优先；\r\n2.精通 C++，数据结构和算法基础扎实，熟悉 Linux 环境下的开发；\r\n3.熟悉分布式系统和微服务架构，有高并发、大规模在线服务的设计和开发经验；\r\n4.计算机基础扎实，熟悉 TCP/IP、HTTP、WebSocket 等网络协议，熟悉常用存储引擎（MySQL/Redis/KV等）和消息队列；\r\n5.逻辑思维和问题解决能力强，能独立分析、定位和解决复杂技术问题；\r\n6.沟通协作能力好，有责任心和主动性，能跨团队高效推动项目落地；\r\n7.关注 AI 技术前沿，对大模型应用和 AI 开放生态有热情和自己的思考者优先。"
     },
     {
       "Id": 0,
@@ -3176,6 +3176,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2111749161903894528",
+      "RecruitPostId": 10003022,
+      "RecruitPostName": "Tencent Cloud - AI Native Cloud Solution Architect (Indonesia)",
+      "CountryName": "印度尼西亚",
+      "LocationName": "雅加达",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "",
+      "CategoryName": "技术",
+      "Responsibility": "Business Unit\nCloud & Smart Industries Group (CSIG) is responsible for promoting the company's cloud and industry Internet strategy. CSIG explores the interactions between users and industries to create innovative solutions for smart industries via technological advancements such as cloud, AI, and network security. While driving the digitalization of retail, medical, education, transportation and other industries, CSIG helps companies serve users in smarter ways, building a new ecosystem of intelligent industries that connect users and businesses.\n\nWhat the Role Entails\nServe as the customer's technical consulting expert. Lead Tencent Cloud pre-sales analysis, bidding document authoring, and customer solution communication, and strive to obtain support from the customer's technical decision-making level.\nDeeply explore and follow up on the landing of customer needs. Combined with Tencent Cloud public cloud, private cloud, container, big data, audio/video, AI and other product capabilities, design technical solutions for Indonesia SVIP customers and follow up on delivery, continuously strengthening differentiated competitive advantages.\nPossess an AI-Native perspective, be proficient in Tencent Cloud AI product knowledge and effectively promote it. Use AI capabilities to complete project POCs and demos, accelerate migration and delivery, and monitor SVIP customer business quality.\nPromote scaled business growth in key markets. On a daily basis, collect real feedback and industry common needs from Indonesia customers, and drive continuous iteration and optimization of cloud products and AI tools.\n\nWho We Look For\nBachelor's degree or above; majors in computer science, information technology, telecommunications engineering and other related fields are preferred.\n5+ years of experience in cloud computing pre-sales or solution-related work, covering pre-sales research, bidding document authoring, POC implementation, delivery acceptance, and other project phases.\nFamiliar with mainstream public cloud platforms, such as Tencent Cloud, Alibaba Cloud, AWS, Azure, GCP, etc. Have experience using AI technology to assist and drive projects; familiar with at least one AI Agent application and have effectively applied it in work.\nExtremely strong pressure resistance and resilience. Proactively tackle project technical risks and AI implementation challenges, with no shirking or escaping. Take real business results as the sole orientation, and refuse to stay only at paper-level solutions.\nExcellent cross-cultural communication and collaboration ability; fluent English with no barriers to business communication; adapt to the collaboration rhythm of multi-country teams. Thai language proficiency is preferred.\nStrong proactive collaboration awareness; willing to undertake cross-department collaborative work, with no division of work boundaries, and project success as the core goal.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: Indonesia-Jakarta",
+      "LastUpdateTime": "2026年10月18日",
+      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/Indonesia-Jakarta/Tencent-Cloud---AI-Native-Cloud-Solution-Architect--Indonesia-_R108273",
+      "SourceID": 4,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2111749161903894528",
+      "Requirement": "岗位要求详情请见上方岗位职责内说明"
+    },
+    {
+      "Id": 0,
       "PostId": "2100407810012655616",
       "RecruitPostId": 122625,
       "RecruitPostName": "AI游戏研发工程师",
@@ -3314,6 +3337,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2082102980622069760",
+      "RecruitPostId": 121515,
+      "RecruitPostName": "WAND AI音视频算法工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "音视频PaaS",
+      "CategoryName": "技术",
+      "Responsibility": "1.提升多模态大模型的基础能力或下游任务能力，包括多模态理解、多模态生成和编辑、生成式图像&视频处理等方向的实际表现；\r\n2.在模型研发和算法链路上取得突破，在通用或特定场景下的性能表现取得行业领先优势，同时提升算法在实际业务中的稳定性，推动算法在实际业务上的落地；\r\n3.跟踪行业最新技术发展，探索行业领先技术在实际产品和业务上的应用和改进。",
+      "LastUpdateTime": "2026年10月19日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2082102980622069760",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "五年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2082102980622069760",
+      "Requirement": "1.计算机/软件/人工智能/数学等相关专业优先；\r\n2.有优秀的数理逻辑能力和算法功底，对主流算法和先进架构有清晰的认识和理解；\r\n3.有丰富的多模态大模型研发和落地经验，有多模态理解/生成/编辑等相关方向的落地项目经验；\r\n4.有高水平会议或期刊发表记录者（包括TPAMI、TIP、IJCV、CVPR、ICCV、ECCV、NeurIPS、ICML、AAAI、IJCAI、KDD等）或有优异算法竞赛排名者优先。"
+    },
+    {
+      "Id": 0,
       "PostId": "2040982131504738304",
       "RecruitPostId": 119067,
       "RecruitPostName": "微信-AI应用开发工程师",
@@ -3357,29 +3403,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2037467994921271296",
       "Requirement": "1.计算机/人工智能相关专业，1年以上AI应用开发经验；\n2.具备良好的编程能力，精通C++，有3年以上Linux/Unix后台开发工作经验；\n3.了解大模型相关技术原理与基础知识，具备RAG等相关开发经验者优先；\n4.沟通能力强、良好的学习能力、团队协作能力，分析问题解决问题能力强，责任心强；\n5.对探索前沿技术有热情，具备独立探索前沿技术的能力；\n6.拥有ToB项目开发经验者优先。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2082102980622069760",
-      "RecruitPostId": 121515,
-      "RecruitPostName": "WAND AI音视频算法工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "CSIG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "音视频PaaS",
-      "CategoryName": "技术",
-      "Responsibility": "1.提升多模态大模型的基础能力或下游任务能力，包括多模态理解、多模态生成和编辑、生成式图像&视频处理等方向的实际表现；\r\n2.在模型研发和算法链路上取得突破，在通用或特定场景下的性能表现取得行业领先优势，同时提升算法在实际业务中的稳定性，推动算法在实际业务上的落地；\r\n3.跟踪行业最新技术发展，探索行业领先技术在实际产品和业务上的应用和改进。",
-      "LastUpdateTime": "2026年08月10日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2082102980622069760",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "五年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2082102980622069760",
-      "Requirement": "1.计算机/软件/人工智能/数学等相关专业优先；\r\n2.有优秀的数理逻辑能力和算法功底，对主流算法和先进架构有清晰的认识和理解；\r\n3.有丰富的多模态大模型研发和落地经验，有多模态理解/生成/编辑等相关方向的落地项目经验；\r\n4.有高水平会议或期刊发表记录者（包括TPAMI、TIP、IJCV、CVPR、ICCV、ECCV、NeurIPS、ICML、AAAI、IJCAI、KDD等）或有优异算法竞赛排名者优先。"
     },
     {
       "Id": 0,
@@ -3794,47 +3817,24 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2037425084771237888",
       "Requirement": "1.熟悉 Linux 开发环境，扎实掌握 C++/Python，具备良好的代码能力和工程能力；\r\n2.熟悉异构计算或高性能计算基础，理解并行编程、向量化、线程/任务调度、访存优化等基本原理；\r\n3.熟悉 PyTorch、TensorFlow 等主流深度学习框架；\r\n4.具备性能瓶颈定位与调优能力，具备profile和debug工具使用经验。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2108391501406056448",
-      "RecruitPostId": 122924,
-      "RecruitPostName": "#DevOps AI 应用开发工程师#（北京/深圳）",
-      "CountryName": "中国",
-      "LocationName": "北京",
-      "BGName": "PCG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "CICD服务",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责 DevOps 平台 AI 研发全流程产品的开发和设计；\r\n2.担任团队核心研发角色，主导技术方案设计与功能开发；\r\n3.持续优化系统架构与产品体验，提升 AI 产品的易用性和业务落地效果；\r\n4.跨团队高效协同，独立输出产品方案与执行计划，推动功能迭代高质量落地。",
-      "LastUpdateTime": "2026年10月09日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2108391501406056448",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2108391501406056448",
-      "Requirement": "1.熟练掌握 Python、Go 或 C++ 中至少一种语言，熟练使用 shell 和 K8S；\r\n2.熟悉 DevOps 领域 AI 产品与工具开发，有大模型应用落地经验者优先；\r\n3.具备优秀的学习能力与逻辑思维，能快速掌握大模型相关应用技术并应用于实际场景；\r\n4.拥有良好的跨团队沟通与协作能力，可高效推动项目交付。"
     }
   ],
   "cloud": [
     {
       "name": "AI",
-      "value": 201
+      "value": 203
     },
     {
       "name": "AGENT",
-      "value": 180
+      "value": 181
     },
     {
       "name": "扎实",
-      "value": 85
+      "value": 87
     },
     {
       "name": "工具",
-      "value": 64
+      "value": 62
     },
     {
       "name": "落地",
@@ -3842,23 +3842,23 @@
     },
     {
       "name": "PYTHON",
-      "value": 60
+      "value": 59
     },
     {
       "name": "主流",
       "value": 53
     },
     {
-      "name": "GO",
-      "value": 44
-    },
-    {
       "name": "LINUX",
       "value": 44
     },
     {
+      "name": "GO",
+      "value": 43
+    },
+    {
       "name": "LLM",
-      "value": 39
+      "value": 40
     },
     {
       "name": "并发",
@@ -3869,11 +3869,11 @@
       "value": 38
     },
     {
-      "name": "分布式系统",
-      "value": 35
+      "name": "微信",
+      "value": 36
     },
     {
-      "name": "微信",
+      "name": "分布式系统",
       "value": 35
     },
     {
@@ -3881,11 +3881,15 @@
       "value": 33
     },
     {
-      "name": "网络",
+      "name": "数据结构",
       "value": 33
     },
     {
-      "name": "数据结构",
+      "name": "大规模",
+      "value": 32
+    },
+    {
+      "name": "网络",
       "value": 32
     },
     {
@@ -3893,27 +3897,15 @@
       "value": 32
     },
     {
-      "name": "大规模",
-      "value": 31
-    },
-    {
-      "name": "产品",
-      "value": 31
-    },
-    {
-      "name": "北京",
-      "value": 31
-    },
-    {
       "name": "专业本科",
-      "value": 30
+      "value": 31
     },
     {
       "name": "核心",
       "value": 30
     },
     {
-      "name": "数据库",
+      "name": "北京",
       "value": 30
     },
     {
@@ -3921,28 +3913,36 @@
       "value": 29
     },
     {
-      "name": "掌握",
+      "name": "产品",
       "value": 29
+    },
+    {
+      "name": "数据库",
+      "value": 29
+    },
+    {
+      "name": "掌握",
+      "value": 28
     },
     {
       "name": "深圳",
-      "value": 29
+      "value": 28
     },
     {
       "name": "场景",
-      "value": 27
+      "value": 26
+    },
+    {
+      "name": "环境",
+      "value": 26
     },
     {
       "name": "开源",
-      "value": 26
-    },
-    {
-      "name": "解决问题",
-      "value": 26
+      "value": 25
     }
   ],
   "stats": {
     "total": 166,
-    "update_time": "2026-10-18 03:31:17"
+    "update_time": "2026-10-19 03:42:31"
   }
 }
