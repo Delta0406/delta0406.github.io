@@ -2,29 +2,6 @@
   "jobs": [
     {
       "Id": 0,
-      "PostId": "2112851436600733696",
-      "RecruitPostId": 1310348998031048704,
-      "RecruitPostName": "LLM & Agent Research Intern 108285",
-      "CountryName": "英国",
-      "LocationName": "伦敦",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "",
-      "CategoryName": "技术",
-      "Responsibility": "Business Unit\nLIGHTSPEED STUDIOS is made up of passionate players who advance the art & science of game development through great stories, great gameplay, and advanced technology. We are focused on bringing next generation experiences to gamers who want to enjoy them anywhere, anytime, across multiple genres and devices.\n\nAbout the Hiring Team\nLightspeed Tech Center is a R&D department under Lightspeed Studios which develop PUBG Mobile and other high-quality games. Our Tech Center leads the research, exploration, and discovery of innovative technologies and provides technical services for all games during all phases of life cycle, including engine, audio, QA, AI, next generation game, technical cooperation, etc.\n\nWhat the Role Entails\nLightSpeed Studios is one of the world’s most innovative and successful game developers. With team across China, United States, Singapore, Canada, United Kingdom, France, Japan, South Korea, New Zealand, and United Arab Emirates. We are expanding to more countries.\nFounded in 2008, LightSpeed Studios has created over 50 games across multiple platforms and genres for over 4 billion registered users. It is the co-developer of worldwide hits PUBG MOBILE, Apex Legends Mobile, and League of Legends: Wild Rift (Chinese Version).1. Drive and contribute to cutting-edge research projects in LLM/Agent/NLP.\n2. Develop benchmarks and baselines using publicly available datasets.\n3. Train large language models (LLMs) on innovative, practical tasks.\n4. Publish research findings at leading NLP/ML/AI conferences and in top journals.\n\nWho We Look For\n1. Currently in the PhD degree in NLP, Machine Learning, or a related area, or recently submitted the thesis. Candidates who have completed a Master's degree and have received a PhD offer in a relevant field will also be considered.\n2. At least one publication in a top-tier NLP/ML conference or journal (e.g., ACL, NAACL, EMNLP, EACL, NeurIPS, ICLR, ICML).\n3. Hands-on experience with Python and deep learning libraries, especially PyTorch, Hugging Face, and Transformers.\n4. Experience in one or more of the following areas: supervised fine-tuning of LLMs, LLM self-learning, LLM efficiency, LLM-based AI agents, or LLM applications in gaming, reasoning, or mathematical tasks.\n5. Available for a 6 months full-time internship.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: United Kingdom-London",
-      "LastUpdateTime": "2026年10月21日",
-      "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/United-Kingdom-London/LLM---Agent-Research-Intern_R108285",
-      "SourceID": 4,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2112851436600733696",
-      "Requirement": "岗位要求详情请见上方岗位职责内说明"
-    },
-    {
-      "Id": 0,
       "PostId": "2110299617324351488",
       "RecruitPostId": 1307797179061764096,
       "RecruitPostName": "LLM Agent Research Intern 108250",
@@ -209,6 +186,52 @@
     },
     {
       "Id": 0,
+      "PostId": "2086743606953160704",
+      "RecruitPostId": 121758,
+      "RecruitPostName": "Agent Infra高级研发工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "研发管理",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责面向模型训练/研究场景下的中台基础设施建设，如沙盒平台、数据分析平台、Oncall平台、统一代理等公共服务的开发；\r\n2.解决各基础设施平台的性能、稳定性问题，持续优化业务流程、保障模型训练链路的准确、高效执行；\r\n3.与模型算法侧紧密协作，了解模型训练场景下的全链路流程与痛点，设计解决方案并最终落地。",
+      "LastUpdateTime": "2026年10月22日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2086743606953160704",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2086743606953160704",
+      "Requirement": "1.熟悉 Go/Python 语言，熟悉 Docker、Kubernetes、数据库、缓存、消息队列、CI/CD等后端开发技术；\r\n2.熟悉大模型与 Agent ，理解模型调用、工具调用、上下文管理、任务执行、日志 Trace 和效果评估；\r\n3.具备良好的软件工程能力，重视模块化设计、测试、日志、性能和稳定性治理；\r\n4.具备良好的复杂问题分析与解决能力，具备全局视野与数据、产品思维者优先；\r\n5.能高效利用行业前沿 AI 工具提升研发效率，并能与各团队良好协同，推进方案落地。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2110629918290395136",
+      "RecruitPostId": 123095,
+      "RecruitPostName": "微信游戏-AI Agent工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "小游戏",
+      "CategoryName": "技术",
+      "Responsibility": "1.深度贡献 AI Native 工作流建设，覆盖产研全链条，应用到微信游戏、小游戏、游戏直播等业务领域加速研发迭代；\r\n2.巧构建多智能体系统，打通多AI系统与通用研发工具，沉淀业务知识和软件工程实践经验；\r\n3.关注业内前沿AI工程应用，探索新研发模式，推进落地应用效果。",
+      "LastUpdateTime": "2026年10月22日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2110629918290395136",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2110629918290395136",
+      "Requirement": "1.计算机相关专业，本科及以上学历，扎实的计算机理论基础，2年及以上工程开发经验；\r\n2.丰富的软件工程经验及熟练的全栈编程技能，有完整的项目架构设计经验，熟练掌握两门以上编程语言，覆盖PC/移动端/服务端技术栈为佳；\r\n3.掌握大模型架构基本原理，具备多Agent、Skills、MCP实战经验，且在某个具体领域有所成效；\r\n4.极度热情的技术追求，有自行探索的项目为佳。"
+    },
+    {
+      "Id": 0,
       "PostId": "2088194556695855104",
       "RecruitPostId": 121857,
       "RecruitPostName": "AI Agent测试开发工程师",
@@ -321,29 +344,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2029862287371825152",
       "Requirement": "1.计算机相关专业本科及以上学历；\r\n2.3年以上互联网后台开发经验；\r\n3.熟练掌握 Linux 环境下 Golang/Python/C/C++/Rust 中的一种或几种；\r\n4.熟练掌握常见的数据结构和算法；\r\n5.熟悉网络的基本原理，如 TCP/IP 协议、HTTP 协议、gRPC 等；\r\n6.具有较好的团队合作和沟通能力（我们很看重团队精神，团队氛围非常融洽）；\r\n7.有日志服务平台或可观测平台开发经验优先；\r\n8.有 AI Agent 可观测平台和采集端能力建设经验优先（如 OpenTelemetry 探针开发、GenAI 语义规范实践、Agent 链路追踪等）；\r\n9.有 OpenTelemetry、Prometheus 等可观测生态实践经验优先；\r\n10.熟悉 AI Coding 工具（如 Cursor、Claude Code 等）并有实际工程落地经验优先。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2086743606953160704",
-      "RecruitPostId": 121758,
-      "RecruitPostName": "Agent Infra高级研发工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "研发管理",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责大模型 Agent 评估、强化学习和数据制造所需的大规模沙盒平台建设；\r\n2.负责面向模型训练/研究场景下 Agent 框架的研发与维护，支持强化学习、数据生成、自动化评估和实验复现等业务需求；\r\n3.解决高并发任务执行场景下全链路的性能、稳定性问题，与业务紧密协作，优化相关任务流程、建设配套的平台基础设施，保障训练/实验/评估等流程高效、准确执行；\r\n4.支持各类评估 bench 及运行环境接入。",
-      "LastUpdateTime": "2026年09月21日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2086743606953160704",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2086743606953160704",
-      "Requirement": "1.精通 Python，具备扎实的软件工程能力与系统设计能力，能在复杂系统中推进架构落地；\r\n2.熟悉大模型与 Agent 相关应用技术，理解模型调用、工具调用、上下文管理、任务执行、日志 Trace 和结果评估等核心链路；\r\n3.熟悉 Go 语言，熟悉 Linux、Docker、Kubernetes、容器网络、镜像构建、CPU / 内存 / 集群调度中的多项；\r\n4.了解大模型训练流程和基本原理；\r\n5.具备良好的软件工程能力，重视模块化设计、测试、日志、性能和稳定性治理；\r\n6.具备良好的问题分析与解决能力，能高效利用行业前沿 AI 工具提升研发效率，并能与算法和平台团队协作推进落地。"
     },
     {
       "Id": 0,
@@ -462,6 +462,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2091788011841957888",
+      "RecruitPostId": 122042,
+      "RecruitPostName": "微信搜索-电商agent算法专家",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "搜一搜",
+      "CategoryName": "技术",
+      "Responsibility": "1.参与微信电商搜索Agent能力优化，围绕用户“找商品、做决策、成交易”等需求，建设从意图理解、任务规划、信息检索、商品推荐到答案生成的完整链路；\r\n2.负责 Agentic Search 架构设计与优化，结合大语言模型、RAG、搜索排序及工具调用技术，提升复杂需求理解、商品检索、对比选购和个性化推荐效果；\r\n3.负责大模型后训练及能力优化，包括 SFT、偏好优化、强化学习、知识蒸馏、拒绝采样、Reward 设计等，持续提升 Agent 的任务完成率、答案质量和业务转化效果。",
+      "LastUpdateTime": "2026年10月22日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2091788011841957888",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "不限",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2091788011841957888",
+      "Requirement": "1.计算机、人工智能、数学、统计学或相关专业本科及以上学历，具备扎实的机器学习、深度学习和自然语言处理基础；\r\n2.熟悉大语言模型、Agent、RAG、搜索或推荐系统中的至少一个方向，有相关算法研发或线上落地经验；\r\n3.熟悉大模型训练与后训练流程，掌握 SFT、偏好学习或强化学习等方法中的一种或多种；对训练数据构建、评测和模型迭代有系统理解；\r\n4.熟练使用 Python，熟悉 PyTorch、Transformers 等主流深度学习框架，具备良好的算法实现和工程落地能力；\r\n5.具备较强的数据分析和实验能力，能够从业务问题出发完成问题定义、方案设计、实验验证和上线迭代。"
+    },
+    {
+      "Id": 0,
       "PostId": "2026845083588001792",
       "RecruitPostId": 117948,
       "RecruitPostName": "AI应用开发工程师-Agent方向",
@@ -505,29 +528,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2034114862627581952",
       "Requirement": "1.本科及以上学历，计算机、人工智能、软件工程等相关专业；\r\n2.具备 1 年及以上大语言模型应用开发经验，有 Agent 或 RAG 项目经验；\r\n3.理解提示词工程，能独立完成复杂场景的提示设计与优化；\r\n4.熟悉 RAG 基本原理与实践流程；\r\n5.熟练掌握 Python 或 JavaScript / TypeScript，具备良好的工程能力；\r\n6.对 AI 技术有热情，具备抗压能力，具备良好的学习能力、逻辑思维和协作能力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2091788011841957888",
-      "RecruitPostId": 122042,
-      "RecruitPostName": "微信搜索-电商agent算法专家",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "搜一搜",
-      "CategoryName": "技术",
-      "Responsibility": "1.参与微信电商搜索Agent能力优化，围绕用户“找商品、做决策、成交易”等需求，建设从意图理解、任务规划、信息检索、商品推荐到答案生成的完整链路；\r\n2.负责 Agentic Search 架构设计与优化，结合大语言模型、RAG、搜索排序及工具调用技术，提升复杂需求理解、商品检索、对比选购和个性化推荐效果；\r\n3.负责大模型后训练及能力优化，包括 SFT、偏好优化、强化学习、知识蒸馏、拒绝采样、Reward 设计等，持续提升 Agent 的任务完成率、答案质量和业务转化效果。",
-      "LastUpdateTime": "2026年09月03日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2091788011841957888",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "不限",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2091788011841957888",
-      "Requirement": "1.计算机、人工智能、数学、统计学或相关专业本科及以上学历，具备扎实的机器学习、深度学习和自然语言处理基础；\r\n2.熟悉大语言模型、Agent、RAG、搜索或推荐系统中的至少一个方向，有相关算法研发或线上落地经验；\r\n3.熟悉大模型训练与后训练流程，掌握 SFT、偏好学习或强化学习等方法中的一种或多种；对训练数据构建、评测和模型迭代有系统理解；\r\n4.熟练使用 Python，熟悉 PyTorch、Transformers 等主流深度学习框架，具备良好的算法实现和工程落地能力；\r\n5.具备较强的数据分析和实验能力，能够从业务问题出发完成问题定义、方案设计、实验验证和上线迭代。"
     },
     {
       "Id": 0,
@@ -1163,7 +1163,7 @@
       "ProductName": "SOCH-端手互通",
       "CategoryName": "技术",
       "Responsibility": "1.参与《狩》项目专属 DS 架构设计与核心系统研发，主导多人联机玩法的服务端落地、性能优化与安全体系建设；\r\n2.从底层引擎到上层业务全流程把控，打造高可用、高并发、高安全的工业化 DS 服务端。",
-      "LastUpdateTime": "2026年10月15日",
+      "LastUpdateTime": "2026年10月23日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2059160518509379584",
       "SourceID": 1,
       "IsCollect": false,
@@ -2716,6 +2716,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2110621118984531968",
+      "RecruitPostId": 123088,
+      "RecruitPostName": "微信基础-大模型应用开发工程师",
+      "CountryName": "中国",
+      "LocationName": "北京",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "微信APP基础体验",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责微信生态内大模型智能应用的后端架构设计与核心系统开发；\r\n2.设计和实现高性能、高可用的Agent系统、长上下文对话引擎及多模态交互管道，支撑亿级用户的高并发、低延迟访问；\r\n3.探索和落地大模型领域的先进工程实践，包括但不限于智能体（Agent）工作流、模型微调、推理优化与成本管控，持续提升产品智能化水平与用户体验。",
+      "LastUpdateTime": "2026年10月22日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2110621118984531968",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "不限",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2110621118984531968",
+      "Requirement": "1.对大型语言模型（LLM）及其应用开发（如RAG、Agent、Function Calling）有深入理解和实践经验；\r\n2.具备优秀的C++语言编程能力和扎实的系统设计能力，熟悉主流Web后端框架与高可用架构；\r\n3.了解LangChain、dify等LLM应用开发框架，并有实际生产项目经验；\r\n4.熟悉服务端基础技术，包括但不限于数据库、消息队列、缓存、容器化等，具备复杂系统的开发和维护能力；\r\n5.具备良好的产品意识、沟通能力和团队协作精神，能高效协同产品、算法与前端团队，将业务需求转化为稳定可靠的技术方案。"
+    },
+    {
+      "Id": 0,
       "PostId": "2042427588500160512",
       "RecruitPostId": 119194,
       "RecruitPostName": "大数据调度工具开发专家/架构师（DataOps 方向）（深圳/北京）",
@@ -3293,7 +3316,7 @@
       "Id": 0,
       "PostId": "2110692196108910592",
       "RecruitPostId": 1308189757473030144,
-      "RecruitPostName": "Game Development Tools Intern (AI Focus) 108251",
+      "RecruitPostName": "Game UI & Tools Intern (AI Focus) 108251",
       "CountryName": "英国",
       "LocationName": "伦敦",
       "BGName": "IEG",
@@ -3301,8 +3324,8 @@
       "ComName": "",
       "ProductName": "",
       "CategoryName": "技术",
-      "Responsibility": "About the Hiring Team\nLevel Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world.\nWe are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.\n\nWhat the Role Entails\nWe are exploring how AI can improve game development workflows and are looking for an intern with a solid game development background and an interest in AI-powered tools.- Help design and build game development tools, editor plugins, and workflow automation.\n- Use Unreal Engine, Unity, or similar engines to improve workflows such as UI production, content creation, collaboration, or testing.\n- Explore and prototype practical uses of LLMs, AI agents, and related technologies in game development.\n\nWho We Look For\n- Hands-on project experience with Unreal Engine, Unity, or another game engine, with a solid understanding of game development workflows.\n- Proficiency in at least one of C++, C#, Python, or TypeScript, with strong problem-solving and implementation skills.\n- Interest in developer productivity tools, editor extensions, automation, or AI applications.\n- Able to learn independently, build prototypes, and troubleshoot technical issues.\n- Apply with resume and portfolio.\n- Available for a minimum 5 months full-time internship.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: United Kingdom-London",
-      "LastUpdateTime": "2026年10月15日",
+      "Responsibility": "About the Hiring Team\nLevel Infinite is Tencent’s global gaming brand. It is a global game publisher offering a comprehensive network of services for games, development teams, and studios around the world.\nWe are dedicated to delivering engaging and original gaming experiences to a worldwide audience, whenever and wherever they choose to play while building a community that fosters inclusivity, connection, and accessibility. Level Infinite also provides a wide range of services and resources to our network of developers and partner studios around the world to help them unlock the true potential of their games.\n\nWhat the Role Entails\n- We're exploring how AI can improve game development workflows, starting with game UI. We're looking for an intern who can build UI in Unreal Engine or Unity, understands what designers hand over (Figma, PSD), and wants to shorten the path from mockup to in-game screen.- Build and iterate on in-game UI in Unreal Engine (UMG / Widget Blueprints) or Unity (uGUI / UI Toolkit / Prefabs).\n- Develop tools, editor plugins, and automation for the UI production pipeline.\n- Work from Figma files and PSDs — asset export, atlases, 9-slice, adaptive layout, UI states.\n- Prototype AI applications for UI production, automated UI QA, and other practical uses of LLMs and multimodal models.\n\nWho We Look For\n- Hands-on experience building UI in Unreal Engine or Unity (UMG, Widget Blueprints, Prefabs, uGUI, or UI Toolkit).\n- Understanding of the UI art pipeline, comfortable working from Figma / Photoshop** files and collaborating with designers.\n- Proficiency in at least one of C++, C#, Python, or TypeScript.\n- Interest in editor tools, automation, and AI applications; able to learn independently and ship prototypes.\n- Apply with resume and portfolio.\n- Available for a minimum 5 months full-time internship.\n\nEqual Employment Opportunity at Tencent\nAs an equal opportunity employer, we firmly believe that diverse voices fuel our innovation and allow us to better serve our users and the community. We foster an environment where every employee of Tencent feels supported and inspired to achieve individual and common goals.\r\nWork Location: United Kingdom-London",
+      "LastUpdateTime": "2026年10月22日",
       "PostURL": "https://tencent.wd1.myworkdayjobs.com/Tencent_Careers/job/United-Kingdom-London/Game-Development-Tools-Intern--AI-Focus-_R108251",
       "SourceID": 4,
       "IsCollect": false,
@@ -3380,29 +3403,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2111749161903894528",
       "Requirement": "岗位要求详情请见上方岗位职责内说明"
-    },
-    {
-      "Id": 0,
-      "PostId": "2100407810012655616",
-      "RecruitPostId": 122625,
-      "RecruitPostName": "AI游戏研发工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "WeGame平台公共",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责 AI 能力在游戏运行时的工程落地，包括实时对话 NPC、动态玩法事件触发、AI 生成内容等核心模块的设计与实现；\r\n2.与内容安全团队协作，设计 AI 生成内容的审核串联方案，确保生成内容满足平台合规要求并控制在延迟预算内；\r\n3.参与面向第三方游戏开发者的 AI 能力开放接口设计，定义 SDK 层的功能暴露方式与调用规范；\r\n4.负责 AI 游玩 Agent 的工程实现，用于自动化覆盖率测试、异常输入压测及游戏行为模拟；\r\n5.跟进 AI 生成技术前沿进展，结合项目实际场景进行技术选型与可行性验证。",
-      "LastUpdateTime": "2026年09月24日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2100407810012655616",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2100407810012655616",
-      "Requirement": "1.本科及以上学历，计算机、软件工程或相关专业；\r\n2.具备游戏研发全流程经验，完整经历过至少一款游戏从立项到上线的全过程，能清晰描述各阶段的职责、技术挑战及解决方案；\r\n3.熟练使用当前主流 AI 工具进行游戏开发，包括 AI 编程助手、AI 美术资产生成、AI 音频生成等，能将 AI 工具有效融入实际研发流程并显著提升产出效率；\r\n4.熟练掌握 UE5 或 Unity 的游戏逻辑开发，具备实际的 C++ 或 C# 游戏系统代码编写能力；\r\n5.有将 LLM 或生成模型接入游戏运行时的工程经验，理解延迟控制、幂等处理、降级策略等在游戏帧循环中的实际意义；\r\n6.熟悉跨系统集成与接口设计，有 SDK 封装或引擎插件开发经验者优先。"
     },
     {
       "Id": 0,
@@ -3912,6 +3912,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2069315805996302336",
+      "RecruitPostId": 120718,
+      "RecruitPostName": "微信-客户端开发工程师-AI方向",
+      "CountryName": "中国",
+      "LocationName": "广州",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "微信AI助手",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责微信 AI 小微的客户端的业务功能开发及新方向探索；\n2.负责微信跨平台开发基础设施的开发；\n3.负责搭建质量监控平台，优化业务性能。",
+      "LastUpdateTime": "2026年10月22日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2069315805996302336",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "不限",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2069315805996302336",
+      "Requirement": "1.具有扎实的编程功底，良好的设计能力和编程习惯；熟悉 ObjC/Swift/Java/Kotlin/ArkTs/C++ 至少一门语言，对 iOS/Android/鸿蒙 等具体平台有深入了解；\r\n2.有扎实的计算机理论基础，熟悉常用数据结构与算法；\r\n3.具备强烈的技术热情和良好的学习能力、分析问题解决问题能力，善于合作，乐于分享，责任心强；\r\n4.有移动客户端多平台开发经验者优先。"
+    },
+    {
+      "Id": 0,
       "PostId": "1988470014939914240",
       "RecruitPostId": 115972,
       "RecruitPostName": "游戏AI-游戏客户端开发工程师",
@@ -3955,55 +3978,32 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2067104290106945536",
       "Requirement": "1.硕士及以上学历，优秀的代码能力、精通常用数据结构和算法；\n2.扎实的深度学习算法基础，熟悉深度学习框架和分布式训练推理加速；\n3.出色的问题分析和解决能力，能深入解决大模型训练和应用存在的问题；\n4.责任心强，良好的业务意识，团队合作能力和沟通协调能力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2067065220651728896",
-      "RecruitPostId": 120601,
-      "RecruitPostName": "光子 AI-3D 内容合成数据研究员",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "预算专用-光子技术发展部公共产品",
-      "CategoryName": "技术",
-      "Responsibility": "1.基于 UE5/Unity/Houdini/Blender 搭建合成数据生产管线，完成场景配置、相机轨迹、灯光等全流程开发；\n2.实现 procedural content generation 批量生产场景，构建 3D 资产管理系统；\n3.自动导出引擎数据：GBuffer、语义分割、3D primitives、相机参数、optical flow 等，输出多视角同步采集数据；\n4.优化批量渲染效率，建立合成资产复用机制，降低单条视频成本；\n5.跟踪业界合成数据做法，探索 sim2real domain randomization 在视频生成中的应用。",
-      "LastUpdateTime": "2026年10月15日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2067065220651728896",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2067065220651728896",
-      "Requirement": "1.硕士及以上学历，图形学、游戏开发或 3D 视觉方向；\n2.精通 UE5/Unity，能进行 Blueprint/C++/脚本级别开发；\n3.熟悉渲染管线，理解 GBuffer 数据结构；\n4.有批量化数据生成或 PCG 经验，熟练使用 Python/PyTorch；\n5.熟悉 USD/Houdini/Omniverse，有可微渲染使用经验者优先；\n6.有图形学、Diffusion 或 3D 视觉相关方向顶会论文者优先。"
     }
   ],
   "cloud": [
     {
       "name": "AI",
-      "value": 205
+      "value": 200
     },
     {
       "name": "AGENT",
-      "value": 182
+      "value": 184
     },
     {
       "name": "扎实",
-      "value": 93
+      "value": 96
     },
     {
       "name": "落地",
-      "value": 68
+      "value": 67
     },
     {
       "name": "工具",
-      "value": 68
+      "value": 66
     },
     {
       "name": "PYTHON",
-      "value": 63
+      "value": 62
     },
     {
       "name": "主流",
@@ -4011,7 +4011,7 @@
     },
     {
       "name": "LINUX",
-      "value": 49
+      "value": 48
     },
     {
       "name": "LLM",
@@ -4026,35 +4026,35 @@
       "value": 43
     },
     {
-      "name": "分布式系统",
-      "value": 40
+      "name": "微信",
+      "value": 42
     },
     {
-      "name": "微信",
-      "value": 39
+      "name": "分布式系统",
+      "value": 40
     },
     {
       "name": "深度",
       "value": 39
     },
     {
-      "name": "网络",
-      "value": 37
-    },
-    {
       "name": "数据结构",
       "value": 36
     },
     {
-      "name": "JAVA",
-      "value": 35
+      "name": "网络",
+      "value": 36
     },
     {
-      "name": "代码",
-      "value": 34
+      "name": "JAVA",
+      "value": 36
     },
     {
       "name": "专业本科",
+      "value": 33
+    },
+    {
+      "name": "代码",
       "value": 33
     },
     {
@@ -4062,7 +4062,7 @@
       "value": 32
     },
     {
-      "name": "核心",
+      "name": "产品",
       "value": 31
     },
     {
@@ -4070,15 +4070,19 @@
       "value": 31
     },
     {
+      "name": "数据库",
+      "value": 30
+    },
+    {
       "name": "北京",
       "value": 30
     },
     {
-      "name": "产品",
-      "value": 28
+      "name": "核心",
+      "value": 30
     },
     {
-      "name": "数据库",
+      "name": "RAG",
       "value": 28
     },
     {
@@ -4090,20 +4094,16 @@
       "value": 27
     },
     {
-      "name": "深圳",
-      "value": 27
-    },
-    {
-      "name": "RAG",
-      "value": 27
-    },
-    {
       "name": "掌握",
-      "value": 26
+      "value": 27
+    },
+    {
+      "name": "解决问题",
+      "value": 27
     }
   ],
   "stats": {
     "total": 173,
-    "update_time": "2026-10-22 03:43:53"
+    "update_time": "2026-10-23 03:47:53"
   }
 }
