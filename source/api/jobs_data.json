@@ -473,7 +473,7 @@
       "ProductName": "企业微信SaaS",
       "CategoryName": "技术",
       "Responsibility": "1.负责企微 Agent Harness 核心引擎的设计与开发，包括 AgentLoop（推理-行动循环）、工具编排、指令调度、运行环境等核心能力，支撑上层多产品的能力落地；\r\n2.建设 Context Engineering 能力，包括多轮对话上下文压缩、Skill 体系、跨会话 Long-term Memory、知识检索、长任务状态快照与恢复，持续优化 token efficiency；\r\n3.独立完成端到端全栈交付，打通前端交互、后端服务、数据存储到部署运维的完整链路，负责从想法验证到生产可用的全过程；\r\n4.构建 Harness 开发者工具与可视化平台，包括执行轨迹回放、上下文编排器、工具注册中心、评测数据管理后台等，提升团队研发与调优效率；\r\n5.搭建 Agent 评测体系，通过评测数据、运行 Trace 和用户反馈定位问题，推动模型、Prompt、Context、Tool 等策略持续迭代优化；\r\n6.持续优化 Harness 运行时与工程架构，探索 Prefix Cache、流式输出（SSE/WebSocket）、任务队列、沙箱执行、可观测性等基础设施能力，保障多租户高并发场景下的稳定性与可扩展性；\r\n7.参与AI 能力的探索与落地，与算法/产品团队紧密协作，将 Context Engineering、Long-term Memory、Multi-Agent Coordination 等研究成果工程化到基础设施层，并沉淀为稳定、通用的工程能力。",
-      "LastUpdateTime": "2026年11月09日",
+      "LastUpdateTime": "2026年11月13日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2039169824982204416",
       "SourceID": 1,
       "IsCollect": false,
@@ -991,6 +991,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2066810094796058624",
+      "RecruitPostId": 120593,
+      "RecruitPostName": "AI后台开发工程师",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "游戏",
+      "CategoryName": "技术",
+      "Responsibility": "1.参与游戏 AI 应用的基础设施建设，负责 GameAgent 后台系统核心框架组件开发；支持游戏智能 NPC、UGC 等 LLM 驱动的 GameAgent 业务落地，并完善 GameAgent 统一基础设施；\r\n2.负责大模型应用的全链路工程化与开发运营体系建设，通过自动化、平台化、智能化（AI 提效）推动团队研发效能系统性提升；\r\n3.负责后台架构和性能优化工作，保障服务高并发、低延迟、高可用，与算法、产品团队协作，完成游戏AI产品的预研探索、工程化落地与实际上线。",
+      "LastUpdateTime": "2026年11月13日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2066810094796058624",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2066810094796058624",
+      "Requirement": "1.计算机及相关专业本科以上学历，2年以上开发经验，具备扎实的计算机基础；\n2.精通 Go/Python/C++ 中至少一种语言，熟练使用 Linux + Shell 开发环境；\n3.熟悉分布式系统与微服务架构，有高并发、大规模后台服务开发及性能优化经验；\n4.掌握大模型应用及 Agent 系统架构原理，理解 Agent Infra 核心概念与技术范式（如 RAG、Agent Runtime、记忆管理、编排管理、多智能体协作等），有相关场景实战经验者优先；\n5.熟练运用 Agent 工作流和智能化工具链驱动日常工作，有 AI 提效实践经验者优先；\n6.熟悉常见 Agent 开发框架与工程工具（如 LangChain / Eino / Hermes Agent），有工程化实践经验者优先；\n7.工作认真负责，自驱力强，逻辑清晰，具备良好的问题解决能力与跨团队沟通协作能力。"
+    },
+    {
+      "Id": 0,
       "PostId": "2065072071381270528",
       "RecruitPostId": 120529,
       "RecruitPostName": "腾讯云 -AgentRuntime研发负责人(深圳/北京)",
@@ -1014,26 +1037,26 @@
     },
     {
       "Id": 0,
-      "PostId": "2066810094796058624",
-      "RecruitPostId": 120593,
-      "RecruitPostName": "AI后台开发工程师",
+      "PostId": "2118617283625664512",
+      "RecruitPostId": 123592,
+      "RecruitPostName": "WorkBuddy-企业智能体高级全栈研发工程师",
       "CountryName": "中国",
       "LocationName": "深圳",
-      "BGName": "TEG",
+      "BGName": "CSIG",
       "ComCode": "",
       "ComName": "",
-      "ProductName": "游戏",
+      "ProductName": "腾讯云-Codebuddy-B端专用",
       "CategoryName": "技术",
-      "Responsibility": "1.参与游戏 AI 应用的基础设施建设，负责 GameAgent 后台系统核心框架组件开发；支持游戏智能 NPC、UGC 等 LLM 驱动的 GameAgent 业务落地，并完善 GameAgent 统一基础设施；\r\n2.负责大模型应用的全链路工程化与开发运营体系建设，通过自动化、平台化、智能化（AI 提效）推动团队研发效能系统性提升；\r\n3.负责后台架构和性能优化工作，保障服务高并发、低延迟、高可用，与算法、产品团队协作，完成游戏AI产品的预研探索、工程化落地与实际上线。",
-      "LastUpdateTime": "2026年10月14日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2066810094796058624",
+      "Responsibility": "1.Managed Agents 产品研发：负责 WorkBuddy Managed Agents 产品的全链路研发工作，覆盖 Agent 使用、编排、运行、治理、评测等核心能力，联动 WorkBuddy / CodeBuddy 构建企业托管智能体能力与产品；\r\n2.企业架构设计与演进：参与企业专属部署架构的设计与演进，负责产品标准化、多产品融合、多租户隔离、模型服务接口与数据交互等方向的技术方案规划与评审，输出高质量设计文档，协调各团队推动落地，保证企业环境下的合规与隔离能力；\r\n3.质量与性能治理：构建代码质量与线上质量监控体系，主导性能优化、稳定性治理与体验提升，持续优化推理效率与资源消耗，提高企业级产品的内建质量与可运维性；\r\n4.业务赋能与工程 Harness 建设：支持公司内外部业务基于 Managed Agents 平台快速构建自己的 Agent 应用与工作流，沉淀 AI 编程范式（spec-driven / context engineering / harness）方法论与工具链；构建代码生成、测试、评测、发布的自动化 harness，把研发效能做成可复用的内部底座，让业务用 AI 高效驾驭大规模研发；\r\n5.产品交付与流程标准化：推动企业版研发流程标准化，制定迭代计划并把控交付节奏，保证功能在多客户、多环境下按时高质量交付。",
+      "LastUpdateTime": "2026年11月13日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2118617283625664512",
       "SourceID": 1,
       "IsCollect": false,
       "IsValid": true,
       "RequireWorkYearsName": "三年以上工作经验",
       "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2066810094796058624",
-      "Requirement": "1.计算机及相关专业本科以上学历，2年以上开发经验，具备扎实的计算机基础；\n2.精通 Go/Python/C++ 中至少一种语言，熟练使用 Linux + Shell 开发环境；\n3.熟悉分布式系统与微服务架构，有高并发、大规模后台服务开发及性能优化经验；\n4.掌握大模型应用及 Agent 系统架构原理，理解 Agent Infra 核心概念与技术范式（如 RAG、Agent Runtime、记忆管理、编排管理、多智能体协作等），有相关场景实战经验者优先；\n5.熟练运用 Agent 工作流和智能化工具链驱动日常工作，有 AI 提效实践经验者优先；\n6.熟悉常见 Agent 开发框架与工程工具（如 LangChain / Eino / Hermes Agent），有工程化实践经验者优先；\n7.工作认真负责，自驱力强，逻辑清晰，具备良好的问题解决能力与跨团队沟通协作能力。"
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2118617283625664512",
+      "Requirement": "1.计算机相关专业本科及以上学历，3 年以上后端开发经验，主导过复杂系统的全生命周期研发；\r\n2.精通 Node.js 与 Go 两种服务端技术栈，熟悉 Python 者优先；\r\n3.具备出色的工程方案规划能力，能够践行 Clean Architecture / Domain-Driven Design 原则的设计文档；\r\n4.有 Agent 应用开发经验，熟悉 Agent 架构设计、Prompt 工程、Context 工程、RAG 应用、大模型推理服务化等 AI 工程化流程，能独立完成一个 Agent 从设计到上线；\r\n5.熟悉 Managed Agent 平台侧研发，掌握 Agent Runtime 与沙箱隔离执行环境（Firecracker / gVisor / E2B 等）、Runtime 生命周期管理、MCP / A2A / ACP 等 Agent 开放协议、主 Agent + Sub-agents 多智能体编排框架、OpenTelemetry Trace / Agent Eval / Guardrail 等可观测与评测体系者优先；\r\n6.善用 AI 提升生产力，能高效驾驭 AI Coding 编程范式（把 AI 当作可委派的执行单元，而非补全工具），在 spec / context / harness 层面有方法论；\r\n7.有 To B 产品、企业级 SaaS / PaaS /私有化部署交付相关经验者优先；\r\n8.熟悉分布式系统设计，掌握微服务、容器化、CI/CD、高并发与高可用等工程实践，具备大规模在线服务的性能优化与稳定性治理经验者优先；\r\n9.强烈的 owner 意识，具备优秀的跨团队协同能力，主导过 5 人以上研发团队协作经验优先；\r\n10.加分项。"
     },
     {
       "Id": 0,
@@ -1117,7 +1140,7 @@
       "ProductName": "微信交易平台",
       "CategoryName": "技术",
       "Responsibility": "1.负责电商相关基建的开发工作，涵盖客服、售后、物流等模块；\n2.主动推动团队技术基建的持续迭代和优化，完善团队AI Agent基建，提升团队研效。",
-      "LastUpdateTime": "2026年11月12日",
+      "LastUpdateTime": "2026年11月13日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2077293041282105344",
       "SourceID": 1,
       "IsCollect": false,
@@ -1126,29 +1149,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2077293041282105344",
       "Requirement": "1.至少1年以上全栈开发经验，具备扎实的代码、算法和数据结构基础；\n2.逻辑思维清晰，有负责心，对技术保持探索和热情；\n3.熟练掌握至少一套前端开发框架（Vue/React）和Node.js服务端框架(Express/Koa/Nestjs)，并了解其工作原理；\n4.了解全栈开发流程，包括前端工程化、服务部署、监控等全流程；\n5.了解AI Agent工作原理，有AI Agent研发经验者优先。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2080545046582702080",
-      "RecruitPostId": 121416,
-      "RecruitPostName": "AI记忆系统研发专家/工程师（上海/北京/深圳）",
-      "CountryName": "中国",
-      "LocationName": "上海",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "云架构平台",
-      "CategoryName": "技术",
-      "Responsibility": "1.设计研发Agent记忆系统，涵盖多种记忆类型（如core memory、episodic memory、semantic memory、procedural memory等等），理解不同记忆类型的适用场景和交互方式；\r\n2.构建记忆的写入、整合与检索 pipeline：从原始对话或多模态输入中提取关键信息，进行去重、合并、冲突消解，并以高效方式存储和索引；\r\n3.实现记忆的生命周期管理机制，包括记忆衰减、过期淘汰、重要性排序，以及基于使用频率或时间的动态权重调整；\r\n4.搭建混合检索系统，结合向量和文本检索，支持对话上下文感知的记忆召回；\r\n5.设计多智能体协作架构，让不同的memory agent各司其职（如用户画像agent、事件记录agent、知识图谱agent），通过 meta-agent 进行统一调度；\r\n6.支持多模态记忆输入，处理文本、图像、公式等类型信息，并统一编码进记忆系统；\r\n7.构建记忆系统的评估体系 —— 如何衡量记忆的准确性、召回率、时效性以及对下游任务的提升效果。",
-      "LastUpdateTime": "2026年10月22日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2080545046582702080",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2080545046582702080",
-      "Requirement": "1.本科及以上学历，计算机相关专业，1年以上工作经验，精通Python/Go/C++等至少一门语言；\r\n2.有Agent memory系统的实际开发经验，理解记忆系统的架构设计、存储策略和检索优化；\r\n3.熟悉 LLM agent 框架生态（如 LangChain、LlamaIndex、Letta/MemGPT、AutoGen 等），理解 agent 如何与记忆模块交互；\r\n4.对认知科学中的记忆模型有基本了解（episodic/semantic/procedural memory），能够将这些概念工程化落地；\r\n5.有向量数据库/索引库的实践经验（如Milvus、Qdrant、Faiss等），熟悉向量模型的选型和优化；\r\n6.具备良好的系统设计能力，较强的问题解决与团队协作能力；具备强烈的技术好奇心和自驱力，渴望在技术深度与广度上持续突破。"
     },
     {
       "Id": 0,
@@ -2704,7 +2704,7 @@
       "ProductName": "大数据(数据计算平台部)",
       "CategoryName": "技术",
       "Responsibility": "1.设计并实现高性能、高可用的分布式任务调度引擎，支持分钟级百万任务调度；\r\n2.构建分布式调度系统的高可用架构，实现故障自动转移与恢复；\r\n3.设计并实现监控告警体系，推动调度系统的可观测性建设；\r\n4.推动代码质量、单元测试和工程规范落地。",
-      "LastUpdateTime": "2026年10月21日",
+      "LastUpdateTime": "2026年11月13日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2042427588500160512",
       "SourceID": 1,
       "IsCollect": false,
@@ -3049,7 +3049,7 @@
       "ProductName": "预算专用-光子技术发展部公共产品",
       "CategoryName": "技术",
       "Responsibility": "1.模型训练和推理平台开发；\n2.研究并应用模型优化技术到训练流程和在线服务中，提高运行时性能，降低资源占用；\n3.业务侧模型部署和评测；\n4.团队 gpu 资源管理与调度。",
-      "LastUpdateTime": "2026年11月12日",
+      "LastUpdateTime": "2026年11月13日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2066702542833893376",
       "SourceID": 1,
       "IsCollect": false,
@@ -3245,29 +3245,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2044704007120912384",
-      "RecruitPostId": 119404,
-      "RecruitPostName": "AI芯片软件测试开发工程师-AI软件测试方向",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "云架构平台",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责芯片软件栈（算子库、图编译器、运行时、推理框架）的测试工作，包括测试策略制定、用例设计开发、测试执行与质量评估；\r\n2.负责芯片软件栈测试体系建设：引入业界成熟的分层测试、精度基准、性能基准与回归体系方法论，能结合自研芯片架构特点落地；\r\n3.设计并开发自动化测试框架和工具链，覆盖算子精度验证、模型推理正确性、性能与稳定性评测；\r\n4.分析测试中发现的问题，跨栈定位根因（算子实现/编译器优化/运行时/驱动），推动问题闭环；\r\n5.持续优化测试流程、方法和工具，提升团队测试效能。",
-      "LastUpdateTime": "2026年11月10日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2044704007120912384",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2044704007120912384",
-      "Requirement": "1.本科及以上学历，计算机相关专业；\r\n2.3年以上测试开发相关工作经验，有英伟达等头部芯片/GPU公司软件栈测试经验者优先；\r\n3.精通 Python 或 C++，具备大规模自动化测试框架的设计与开发经验；\r\n4.深入理解深度学习框架（PyTorch/TensorFlow）与模型推理全流程，熟悉算子实现与验证方法；\r\n5.熟悉 GPU/CUDA 软件栈分层结构（Driver/Runtime/cuDNN/CUTLASS 等），理解其测试关注点；\r\n6.优秀的根因分析与跨栈定位能力，以及良好的质量意识。"
-    },
-    {
-      "Id": 0,
       "PostId": "2109482480603148288",
       "RecruitPostId": 122983,
       "RecruitPostName": "AI研效高级工程师",
@@ -3452,6 +3429,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2043890003045679104",
+      "RecruitPostId": 119308,
+      "RecruitPostName": "游戏AI-数据挖掘算法专家",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "游戏",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责大数据在游戏AI等相关领域的算法与产品化等工作，包括但不限于如下方向：用户增长、因果推断、匹配系统、归因分析、千人千面体验流、商业活动/道具个性化推荐等；\r\n2.负责前沿技术跟进，能够识别技术的有效性并快速应用；\r\n3.负责具体项目落地，运用大数据+AI为项目带来可观的收益。",
+      "LastUpdateTime": "2026年11月13日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043890003045679104",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "五年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2043890003045679104",
+      "Requirement": "1.硕士及以上学历，7年以上数据相关工作经验，3年以上带项目、或带团队的经验；\r\n2.具备良好的数据挖掘经验，对大数据应用有深入理解，有相关项目成功的经历；\r\n3.优秀的逻辑思维能力，善于分析和解决问题；良好的沟通表达能力与团队协作能力；\r\n4.具备市场分析、竞品分析能力、责任感强。"
+    },
+    {
+      "Id": 0,
       "PostId": "1788096480758734848",
       "RecruitPostId": 104954,
       "RecruitPostName": "光子 AI-游戏数据科学专家",
@@ -3564,29 +3564,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2110571397318356992",
       "Requirement": "岗位要求详情请见上方岗位职责内说明"
-    },
-    {
-      "Id": 0,
-      "PostId": "2043890003045679104",
-      "RecruitPostId": 119308,
-      "RecruitPostName": "游戏AI-数据挖掘算法专家",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "游戏",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责大数据在游戏AI等相关领域的算法与产品化等工作，包括但不限于如下方向：用户增长、因果推断、匹配系统、归因分析、千人千面体验流、商业活动/道具个性化推荐等；\r\n2.负责前沿技术跟进，能够识别技术的有效性并快速应用；\r\n3.负责具体项目落地，运用大数据+AI为项目带来可观的收益。",
-      "LastUpdateTime": "2026年10月14日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2043890003045679104",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "五年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2043890003045679104",
-      "Requirement": "1.硕士及以上学历，7年以上数据相关工作经验，3年以上带项目、或带团队的经验；\r\n2.具备良好的数据挖掘经验，对大数据应用有深入理解，有相关项目成功的经历；\r\n3.优秀的逻辑思维能力，善于分析和解决问题；良好的沟通表达能力与团队协作能力；\r\n4.具备市场分析、竞品分析能力、责任感强。"
     },
     {
       "Id": 0,
@@ -3863,28 +3840,51 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2069315805996302336",
       "Requirement": "1.具有扎实的编程功底，良好的设计能力和编程习惯；熟悉 ObjC/Swift/Java/Kotlin/ArkTs/C++ 至少一门语言，对 iOS/Android/鸿蒙 等具体平台有深入了解；\r\n2.有扎实的计算机理论基础，熟悉常用数据结构与算法；\r\n3.具备强烈的技术热情和良好的学习能力、分析问题解决问题能力，善于合作，乐于分享，责任心强；\r\n4.有移动客户端多平台开发经验者优先。"
+    },
+    {
+      "Id": 0,
+      "PostId": "2067104290106945536",
+      "RecruitPostId": 120622,
+      "RecruitPostName": "光子 AI-大语言模型Coding算法专家",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "预算专用-光子技术发展部公共产品",
+      "CategoryName": "技术",
+      "Responsibility": "1.参与Coding方向的大模型算法研发，构建能够理解复杂代码任务，完成游戏场景软件工程任务的智能体系统；\n2.提升Code Agent在代码能力、指令遵循、长程任务执行等方向上的核心能力；\n3.参与大模型预训练与后训练优化，包括但不限于数据构建、SFT、RL算法、Reward设计，持续提升模型Coding能力；\n4.构建面向游戏场景的评测体系与数据闭环，包括Benchmark、数据回流和针对性能力优化。",
+      "LastUpdateTime": "2026年10月15日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2067104290106945536",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "五年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2067104290106945536",
+      "Requirement": "1.硕士及以上学历，优秀的代码能力、精通常用数据结构和算法；\n2.扎实的深度学习算法基础，熟悉深度学习框架和分布式训练推理加速；\n3.出色的问题分析和解决能力，能深入解决大模型训练和应用存在的问题；\n4.责任心强，良好的业务意识，团队合作能力和沟通协调能力。"
     }
   ],
   "cloud": [
     {
       "name": "AI",
-      "value": 201
+      "value": 203
     },
     {
       "name": "AGENT",
-      "value": 183
+      "value": 188
     },
     {
       "name": "扎实",
-      "value": 96
+      "value": 97
     },
     {
       "name": "工具",
-      "value": 65
+      "value": 66
     },
     {
       "name": "PYTHON",
-      "value": 61
+      "value": 60
     },
     {
       "name": "主流",
@@ -3892,11 +3892,11 @@
     },
     {
       "name": "落地",
-      "value": 55
+      "value": 54
     },
     {
       "name": "LLM",
-      "value": 50
+      "value": 49
     },
     {
       "name": "LINUX",
@@ -3904,7 +3904,7 @@
     },
     {
       "name": "并发",
-      "value": 41
+      "value": 42
     },
     {
       "name": "GO",
@@ -3916,23 +3916,27 @@
     },
     {
       "name": "分布式系统",
-      "value": 36
+      "value": 37
     },
     {
       "name": "代码",
-      "value": 33
+      "value": 34
+    },
+    {
+      "name": "数据结构",
+      "value": 34
     },
     {
       "name": "深度",
       "value": 33
     },
     {
-      "name": "数据结构",
+      "name": "JAVA",
       "value": 33
     },
     {
-      "name": "JAVA",
-      "value": 33
+      "name": "产品",
+      "value": 32
     },
     {
       "name": "核心",
@@ -3943,15 +3947,11 @@
       "value": 32
     },
     {
-      "name": "数据库",
-      "value": 32
-    },
-    {
       "name": "网络",
       "value": 32
     },
     {
-      "name": "产品",
+      "name": "数据库",
       "value": 31
     },
     {
@@ -3967,28 +3967,28 @@
       "value": 29
     },
     {
-      "name": "大规模",
+      "name": "专业本科",
       "value": 28
     },
     {
-      "name": "专业本科",
-      "value": 27
+      "name": "大规模",
+      "value": 28
     },
     {
       "name": "推动",
       "value": 27
     },
     {
-      "name": "开源",
+      "name": "评测",
       "value": 27
     },
     {
-      "name": "场景",
+      "name": "开源",
       "value": 27
     }
   ],
   "stats": {
     "total": 168,
-    "update_time": "2026-11-13 05:33:22"
+    "update_time": "2026-11-14 05:24:52"
   }
 }
