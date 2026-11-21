@@ -1497,29 +1497,6 @@
     },
     {
       "Id": 0,
-      "PostId": "2070158764278984704",
-      "RecruitPostId": 120756,
-      "RecruitPostName": "微信视频号-推荐后台工程师",
-      "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "视频号短视频",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责定位视频号推荐工程性能瓶颈和提供系统性解决方案，包括但不限于召回、粗排、精排、重排、混排等；\n2.负责牵引视频号推荐系统候选规模、模型参数规模ScalingUp，提高算力利用效率，降低推荐延迟；\n3.负责视频号推荐工程团队agent的设计、开发、落地和优化。",
-      "LastUpdateTime": "2026年10月27日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2070158764278984704",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2070158764278984704",
-      "Requirement": "1.计算机相关专业本科及以上学历，熟悉Linux OS，2年以上C++开发经验；\n2.熟悉基本后台组件原理和具备实操经验，如redis/kv/docker等；\n3.具备良好的沟通能力和团队协作精神，熟练使用coding agent。"
-    },
-    {
-      "Id": 0,
       "PostId": "2078639812935593984",
       "RecruitPostId": 121305,
       "RecruitPostName": "微信-后台开发工程师-电商方向",
@@ -1658,6 +1635,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2101877445857820672",
+      "RecruitPostId": 122741,
+      "RecruitPostName": "J3-UE5微恐射击-后台开发（UE5 DS方向）",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "新品FL-手游APP",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责UE5引擎开发的射击游戏对战服务（DS）的性能评估、监测、优化方案制定及落地实施；\r\n2.负责UE5对战服务器的调度、网络质量优化及用户体验提升；\r\n3.开发和优化射击游戏对战AI Bot功能，包括但不限于感知、寻路、物理、网络同步等；\r\n4.机器学习和数据化分析等技术的应用，提升AI和对战效果的实际落地。",
+      "LastUpdateTime": "2026年11月20日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2101877445857820672",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2101877445857820672",
+      "Requirement": "1.精通C++和至少一种数据处理脚本语言，数据结构、算法、网络等基础扎实，熟悉Linux环境下的高新能服务开发、命令、调试分析工具；\r\n2.具备较强的分析、解决问题的能力，认可游戏行业，善于沟通协作，具有较强的探索精神和、优化意识和自驱力；\r\n3.拥有2年以上UE4/UE5相关开发经验，或游戏玩法、BotAI或数据应用相关的开发经验。"
+    },
+    {
+      "Id": 0,
       "PostId": "2109972730605645824",
       "RecruitPostId": 123021,
       "RecruitPostName": "AI协作工具后台研发高级工程师",
@@ -1669,7 +1669,7 @@
       "ProductName": "腾讯文档C端",
       "CategoryName": "技术",
       "Responsibility": "1.产品需求研发 + 基础架构研发工程师，综合角色；\n2.负责腾讯AI网盘用户端产品需求研发工作，包括技术基建、研发效能提升、全局架构优化，产品需求开发等工作；\n3.负责腾讯AI网盘用户端后台功能开发和性能优化。",
-      "LastUpdateTime": "2026年11月17日",
+      "LastUpdateTime": "2026年11月20日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2109972730605645824",
       "SourceID": 1,
       "IsCollect": false,
@@ -1724,29 +1724,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1993913287074537472",
       "Requirement": "1.计算机相关专业本科及以上学历，具备扎实的编程基础；\n2.精通C/C++、Lua语言，具备良好的编程习惯；\n3.熟练掌握数据结构、数据库、高并发等后台技能项，具备良好的问题解决能力；\n4.具备良好的沟通协作能力，能够承受一定的工作压力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2101877445857820672",
-      "RecruitPostId": 122741,
-      "RecruitPostName": "J3-UE5微恐射击-后台开发（UE5 DS方向）",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "新品FL-手游APP",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责UE5引擎开发的射击游戏对战服务（DS）的性能评估、监测、优化方案制定及落地实施；\r\n2.负责UE5对战服务器的调度、网络质量优化及用户体验提升；\r\n3.开发和优化射击游戏对战AI Bot功能，包括但不限于感知、寻路、物理、网络同步等；\r\n4.机器学习和数据化分析等技术的应用，提升AI和对战效果的实际落地。",
-      "LastUpdateTime": "2026年10月19日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2101877445857820672",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2101877445857820672",
-      "Requirement": "1.精通C++和至少一种数据处理脚本语言，数据结构、算法、网络等基础扎实，熟悉Linux环境下的高新能服务开发、命令、调试分析工具；\r\n2.具备较强的分析、解决问题的能力，认可游戏行业，善于沟通协作，具有较强的探索精神和、优化意识和自驱力；\r\n3.拥有2年以上UE4/UE5相关开发经验，或游戏玩法、BotAI或数据应用相关的开发经验。"
     },
     {
       "Id": 0,
@@ -1888,6 +1865,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2101877681489625088",
+      "RecruitPostId": 122742,
+      "RecruitPostName": "J3-UE5微恐射击-后台开发-新星引力计划",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "IEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "CFH-手游APP",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责商业化、活跃等游戏服务和支付、社交等服务组件的需求分析、设计、开发和维护；\r\n2.负责大规模游戏服务器集群的架构设计、开发、优化，服务上线准备和上线后维护；\r\n3.提升服务的可扩展性、高可用、开发/运行效率，工具开发，数据分析、调优等；\r\n4.参与UE5射击游戏对战AI开发，UE5的对战服务器调度、性能和体验优化等。",
+      "LastUpdateTime": "2026年11月20日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2101877681489625088",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "一年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2101877681489625088",
+      "Requirement": "1. 精通Go/C++的一种或多种，基础扎实，熟悉Linux下服务开发、命令、调试分析工具等；\r\n2. 熟悉TCP/IP、各类数据库原理，有网络编程、数据库编程经验；\r\n3. 具备大型项目、大规模高可用微服务设计、开发经验；\r\n4. 具备较强的分析和解决问题能力，认可游戏行业，有较强的沟通协作、优化意识、自驱力；\r\n5. 有UE引擎、射击游戏服务相关开发、优化经验优先。"
+    },
+    {
+      "Id": 0,
       "PostId": "2093322000989859840",
       "RecruitPostId": 122172,
       "RecruitPostName": "企业微信-后台高级开发工程师-（成都）",
@@ -2000,29 +2000,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2101890746188738560",
       "Requirement": "1.本科及以上学历，计算机相关专业，6年及以上后台开发经验；\r\n2.精通至少一门后端开发语言（Go / C++ / Java / Python），具备扎实的数据结构与算法功底，熟悉分布式系统设计；\r\n3.具备大数据平台建设经验，熟悉 Hadoop / Spark / Flink / Kafka 等离线与实时计算生态，有 TB / PB 级规模数据的处理与优化经验；\r\n4.有大型平台实时、离线数据体系建设经验，熟悉数仓分层建模、特征工程、数据治理，理解 实时离线一体架构；\r\n5.具备高并发、高可用服务的设计与落地经验，熟悉微服务架构、缓存、消息队列、限流降级等核心手段，有百万级 QPS 服务经验者优先；\r\n6.良好的数据敏感度与业务理解力，能从数据中发现问题、定位根因并推动落地解决；\r\n7.良好的沟通协作与技术方案表达能力，有跨团队推动项目落地的经验。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2101877681489625088",
-      "RecruitPostId": 122742,
-      "RecruitPostName": "J3-UE5微恐射击-后台开发-新星引力计划",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "CFH-手游APP",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责商业化、活跃等游戏服务和支付、社交等服务组件的需求分析、设计、开发和维护；\r\n2.负责大规模游戏服务器集群的架构设计、开发、优化，服务上线准备和上线后维护；\r\n3.提升服务的可扩展性、高可用、开发/运行效率，工具开发，数据分析、调优等；\r\n4.参与UE5射击游戏对战AI开发，UE5的对战服务器调度、性能和体验优化等。",
-      "LastUpdateTime": "2026年09月21日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2101877681489625088",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2101877681489625088",
-      "Requirement": "1. 精通Go/C++的一种或多种，基础扎实，熟悉Linux下服务开发、命令、调试分析工具等；\r\n2. 熟悉TCP/IP、各类数据库原理，有网络编程、数据库编程经验；\r\n3. 具备大型项目、大规模高可用微服务设计、开发经验；\r\n4. 具备较强的分析和解决问题能力，认可游戏行业，有较强的沟通协作、优化意识、自驱力；\r\n5. 有UE引擎、射击游戏服务相关开发、优化经验优先。"
     },
     {
       "Id": 0,
@@ -2279,6 +2256,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2074396169051746304",
+      "RecruitPostId": 120981,
+      "RecruitPostName": "大数据平台后台开发工程师/技术专家(深圳/北京）",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "TEG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "大数据(数据计算平台部)",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责大数据开发平台的设计实现，负责千万级 CPU 调度、PB 级存储规模下的超大规模大数据平台（如计算引擎、任务调度系统、数据接入等）的核心后端开发；保障系统在高并发、高吞吐场景下的极致稳定性与性能；\r\n2.参与到需求评审、技术方案设计、编码实现、代码CR、功能测试等研发全流程工作；\r\n3.与产品经理、测试运维等相关团队紧密协作，推动平台能力的高效快速落地；\r\n4.持续优化系统架构，沉淀平台级公共服务组件，促进平台研发迭代效率，进一步提升系统性能和稳定性。",
+      "LastUpdateTime": "2026年11月12日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2074396169051746304",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2074396169051746304",
+      "Requirement": "1.计算机或相关专业本科及以上学历，3年以上大数据平台开发经验，熟悉 Linux / Unix 开发环境；\r\n2.精通java，熟悉Python/Go至少一门语言。精通Spring Boot、Redis、MQ等框架和中间件，深刻理解JVM调优、分布式系统原理、多线程与高并发技术，并能在大数据平台组件开发、性能调优等场景中熟练应用；\r\n3.深入理解Hadoop、Spark、Flink等主流大数据框架的核心原理和架构。了解或直接参与过Dataworks、Databricks等业界同类产品的技术架构，主导或核心参与过复杂项目架构设计、技术选型或开源项目贡献者优先；\r\n4.具备良好代码编写和CodeReview习惯，优秀的的逻辑思维、沟通表达能力与团队合作意识，积极主动学习了解业界新技术新动态，善于总结分享，有\"Vibe Coding\"成熟经验是加分项。"
+    },
+    {
+      "Id": 0,
       "PostId": "2098594908700061696",
       "RecruitPostId": 122525,
       "RecruitPostName": "云mall-java后端开发工程师-电商",
@@ -2428,7 +2428,7 @@
       "ProductName": "公共",
       "CategoryName": "技术",
       "Responsibility": "1.平台架构与研发：负责游戏宿主页、运营与配置管理、活动与账号等核心 Web 系统的架构设计和研发，持续优化接口、数据存储及系统性能；\r\n2.全栈与多端业务建设：负责管理后台、H5、PC 页面等业务场景建设，保障活动高峰和核心业务场景下的稳定性、可扩展性和交付效率；\r\n3.构建产物接入与规范：制定构建产物接入规范，包括能力探测结果格式、构建清单（Wasm 与资产哈希、着色器档位）、遥测字段、降档与拒绝进入的规则；与产物提供方对接并推动落实；\r\n4.研发支撑平台建设：建设配置管理、资源打包与分发、代码管理、CI 看板等内部工具和平台，降低前端、后端及业务团队的重复工作成本；\r\n5.工程体系：推动 Code Review、CI/CD、自动化测试、监控告警、灰度发布及故障复盘等工程机制，对系统稳定性和交付质量负责；\r\n6.团队管理：负责团队目标拆解、项目节奏、人员培养和技术梯队建设，指导资深研发解决复杂问题，承担跨前端、后端与业务团队的技术协同。",
-      "LastUpdateTime": "2026年11月17日",
+      "LastUpdateTime": "2026年11月20日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2119986711848206336",
       "SourceID": 1,
       "IsCollect": false,
@@ -2759,29 +2759,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2112508942931374080",
       "Requirement": "1.本科及以上，计算机、软件工程等相关专业优先；\n2.扎实后端研发能力，熟练掌握Golang/Java/Python/C++至少一门编程语言，可独立开发稳定性平台与自动化工具；\n3.熟悉分布式高可用架构，理解限流熔断、故障隔离、重试超时等容错机制，能分析故障链路、设计恢复方案；\n4.在可观测、告警、变更发布、故障自愈、SRE工程任一方向有平台化落地经验；\n5.具备线上故障排查、性能分析能力，熟悉灰度、回滚、兼容性方案设计；\n6.主动识别稳定性风险，擅长跨团队协作，推动故障处置与持续优化，对线上可用性负责；\n7.有云平台、高可用系统、SRE/DevOps 平台研发经验优先；MaaS、大模型推理相关经验加分。"
-    },
-    {
-      "Id": 0,
-      "PostId": "2110211598940549120",
-      "RecruitPostId": 123055,
-      "RecruitPostName": "运营开发工程师",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "TEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "大数据(数据计算平台部)",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责运营支撑平台的架构设计、功能开发与持续优化，保障系统高可用、高扩展性，支撑业务快速迭代与大规模访问需求；\r\n2.参与核心服务的日常迭代与稳定性保障，包括性能调优、容量规划、故障排查与容灾演练，具备大型分布式系统的研发和线上维护能力；\r\n3.基于 Flink、Ray 等计算框架，开发并优化实时流式处理、异步任务调度、批量数据处理及并行计算模块，提升系统整体吞吐与实时响应能力；\r\n4.熟练使用 MySQL、ClickHouse 等数据库技术，完成数据模型设计、查询优化及海量数据的高效读写，支撑运营数据分析与决策场景；\r\n5.在 Linux 环境下进行服务端程序开发、部署与调优，具备良好的 Shell 脚本编写能力，能独立定位并解决复杂线上问题；\r\n6.与产品、运营、数据等团队紧密配合，将业务需求转化为技术方案，推动功能高质量交付。",
-      "LastUpdateTime": "2026年11月17日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2110211598940549120",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "三年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=2110211598940549120",
-      "Requirement": "1.计算机相关专业本科及以上学历，3年以上系统开发经验，有大型服务研发维护经验；\r\n2.至少熟练掌握一门后端语言（Python / Go / Java / C++ 等），编码规范良好；\r\n3.数据库：熟悉 MySQL 性能调优；有 ClickHouse 等列式数据库经验，能编写高效 OLAP 查询；\r\n4.实时/分布式计算：熟悉 Flink（窗口、状态、Checkpoint 等核心机制）；了解 Ray（Actor 模型、任务调度）；\r\n5.大型服务：熟悉高并发、高可用系统设计，掌握限流、熔断、降级、负载均衡等稳定性保障手段；\r\n6.基础能力：熟练使用 Linux；理解微服务、消息队列（Kafka 等）、缓存（Redis）等组件；熟悉 Git、Docker、CI/CD；\r\n7.加分项：有云原生（K8s）、运营技术、广告技术、实时数据平台相关经验者优先。"
     },
     {
       "Id": 0,
@@ -3872,7 +3849,7 @@
     },
     {
       "name": "AGENT",
-      "value": 186
+      "value": 185
     },
     {
       "name": "扎实",
@@ -3892,11 +3869,11 @@
     },
     {
       "name": "主流",
-      "value": 51
+      "value": 52
     },
     {
       "name": "LINUX",
-      "value": 50
+      "value": 49
     },
     {
       "name": "LLM",
@@ -3911,11 +3888,11 @@
       "value": 42
     },
     {
-      "name": "微信",
+      "name": "分布式系统",
       "value": 38
     },
     {
-      "name": "分布式系统",
+      "name": "微信",
       "value": 37
     },
     {
@@ -3924,10 +3901,10 @@
     },
     {
       "name": "代码",
-      "value": 33
+      "value": 34
     },
     {
-      "name": "机制",
+      "name": "核心",
       "value": 32
     },
     {
@@ -3935,7 +3912,7 @@
       "value": 31
     },
     {
-      "name": "核心",
+      "name": "机制",
       "value": 31
     },
     {
@@ -3959,11 +3936,15 @@
       "value": 28
     },
     {
-      "name": "数据库",
-      "value": 28
+      "name": "评测",
+      "value": 27
     },
     {
-      "name": "评测",
+      "name": "场景",
+      "value": 27
+    },
+    {
+      "name": "北京",
       "value": 27
     },
     {
@@ -3975,20 +3956,16 @@
       "value": 26
     },
     {
-      "name": "原生",
+      "name": "开源",
       "value": 26
     },
     {
-      "name": "场景",
-      "value": 26
-    },
-    {
-      "name": "北京",
+      "name": "数据库",
       "value": 26
     }
   ],
   "stats": {
-    "total": 168,
-    "update_time": "2026-11-20 06:09:17"
+    "total": 167,
+    "update_time": "2026-11-21 06:00:45"
   }
 }
