@@ -439,6 +439,29 @@
     },
     {
       "Id": 0,
+      "PostId": "1934984932162117632",
+      "RecruitPostId": 112765,
+      "RecruitPostName": "WeTalk-大模型应用研发工程师-（Agent Harness）",
+      "CountryName": "中国",
+      "LocationName": "广州",
+      "BGName": "WXG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "wetalk",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责 WeTalk Agent Harness 的设计与开发，包括 Agent Loop、编排和运行环境等核心能力；\r\n2.建设 Context Engineering 能力，包括上下文压缩、Skill、跨会话 Memory、检索和长任务状态管理；\r\n3.搭建 Agent 评测体系，通过评测数据、运行 Trace 和用户反馈定位问题，推动模型、Prompt、Context、Tool 等策略持续优化；\r\n4.参与 WeTalk AI 能力的探索与落地，并将业务实践沉淀为稳定、通用的工程能力。",
+      "LastUpdateTime": "2026年11月27日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1934984932162117632",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "两年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=1934984932162117632",
+      "Requirement": "1.岗位要求；\r\n2.熟悉 Go、Python、Node.js 中至少一种语言，具备扎实的编码和系统设计能力；\r\n3.熟悉常见后端技术和基础设施，如 MySQL、Redis、Pulsar 等；\r\n4.了解 LLM、Agent、Tool Use、MCP、Memory 等技术，对大模型应用有实践或浓厚兴趣；\r\n5.具备良好的工程素养、沟通能力和责任心，能够在快速探索中推进项目落地。"
+    },
+    {
+      "Id": 0,
       "PostId": "2088141385873141760",
       "RecruitPostId": 121842,
       "RecruitPostName": "腾讯金融-AI Agent 研发高级工程师",
@@ -459,29 +482,6 @@
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=2088141385873141760",
       "Requirement": "1.本科及以上学历，4年及以上开发经验，具备扎实的计算机基础和良好的代码能力，熟悉 Python / TypeScript / Go 中至少一种编程语言；\r\n2.有 AI Agent 或 LLM 应用的实际开发和优化经验，熟悉主流 Agent 框架，深入理解 Agent运行核心机制；\r\n3.负责评测体系架构和分层评测指标设计，具备 Badcase 归因与推动迭代能力；\r\n4.具备评测体系建设经验，能设计分层评测指标，能对 Badcase 进行分析并推动迭代；\r\n5.熟悉云原生、分布式系统等工程体系，能够独立完成系统设计、模块开发与系统优化；\r\n6.理解 LLM 原理（Transformer、Attention 机制），熟悉主流推理框架（vLLM、SGLang等）。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1934984932162117632",
-      "RecruitPostId": 112765,
-      "RecruitPostName": "WeTalk-大模型应用研发工程师-（Agent Harness）",
-      "CountryName": "中国",
-      "LocationName": "广州",
-      "BGName": "WXG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "wetalk",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责 WeTalk Agent Harness 的设计与开发，包括 Agent Loop、编排和运行环境等核心能力；\r\n2.建设 Context Engineering 能力，包括上下文压缩、Skill、跨会话 Memory、检索和长任务状态管理；\r\n3.搭建 Agent 评测体系，通过评测数据、运行 Trace 和用户反馈定位问题，推动模型、Prompt、Context、Tool 等策略持续优化；\r\n4.参与 WeTalk AI 能力的探索与落地，并将业务实践沉淀为稳定、通用的工程能力。",
-      "LastUpdateTime": "2026年11月06日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1934984932162117632",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "两年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1934984932162117632",
-      "Requirement": "1.岗位要求；\r\n2.熟悉 Go、Python、Node.js 中至少一种语言，具备扎实的编码和系统设计能力；\r\n3.熟悉常见后端技术和基础设施，如 MySQL、Redis、Pulsar 等；\r\n4.了解 LLM、Agent、Tool Use、MCP、Memory 等技术，对大模型应用有实践或浓厚兴趣；\r\n5.具备良好的工程素养、沟通能力和责任心，能够在快速探索中推进项目落地。"
     },
     {
       "Id": 0,
@@ -588,7 +588,7 @@
       "ProductName": "小程序",
       "CategoryName": "技术",
       "Responsibility": "1.负责Agent开发框架的设计与实现，构建支持Multi-Agent的分布式架构，提供高效、可扩展的框架支撑小工具线上业务以及算法模型训练；\r\n2.负责小工具业务以及模型训练的沙箱环境、云环境、消息链路、数据存储、账号等基础建设的架构设计；\r\n3.负责框架的性能优化与稳定性维护，支持全链路质量建设，保障整体小工具线上业务以及训练架构高扩展、保障业务逻辑的高可用和高性能、保障线上数据的一致性；\r\n4.协作算法团队落地算法成果，将研究成果转化为工程实现，设计并支持算法团队进行大模型/Agent分布式训练的架构，推动Agent框架在业务场景中的高效部署与迭代。",
-      "LastUpdateTime": "2026年11月26日",
+      "LastUpdateTime": "2026年11月27日",
       "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2082710402210381824",
       "SourceID": 1,
       "IsCollect": false,
@@ -1957,6 +1957,29 @@
     },
     {
       "Id": 0,
+      "PostId": "2126213163232964608",
+      "RecruitPostId": 123905,
+      "RecruitPostName": "腾讯云-MaaS高级后台研发工程师(北/上/深/成)",
+      "CountryName": "中国",
+      "LocationName": "深圳",
+      "BGName": "CSIG",
+      "ComCode": "",
+      "ComName": "",
+      "ProductName": "腾讯云-云原生",
+      "CategoryName": "技术",
+      "Responsibility": "1.负责腾讯云MaaS核心平台研发，涵盖模型托管、在线推理、微调训练、数据预处理、Prompt工程、安全审核等全链路系统设计与实现；\n2.负责MaaS产品API网关、SDK、控制台、任务调度系统、监控告警、计费计量等模块开发，保障系统高可用、高稳定、可扩展；\n3.协同算法、产品、算力、安全团队，完成模型适配、性能优化、工程化封装、合规加固，推动混元及第三方模型快速上线与稳定服务；\n4.跟踪业界大模型工程化、云原生、分布式系统技术趋势，持续优化架构，提升研发效率与产品竞争力。",
+      "LastUpdateTime": "2026年11月27日",
+      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=2126213163232964608",
+      "SourceID": 1,
+      "IsCollect": false,
+      "IsValid": true,
+      "RequireWorkYearsName": "三年以上工作经验",
+      "company": "腾讯",
+      "link": "https://careers.tencent.com/jobdesc.html?postId=2126213163232964608",
+      "Requirement": "1.本科及以上学历，计算机、软件工程、人工智能等相关专业，3 年及以上云原生/AI工程化研发经验；\n2.精通至少一种主流语言（Golang/Java/Python），具备扎实的数据结构、算法、操作系统、网络基础，有高并发分布式系统实践优先；\n3.熟悉云原生技术栈：K8s、Docker、微服务、RPC/HTTP、消息队列、数据库、缓存，有云厂商或中间件研发经验优先；\n4.了解大模型全流程：训练、微调、RAG、推理引擎、量化、蒸馏、向量数据库等，有MaaS/LLM Inference服务开发经验优先；\n5.熟悉AI Infra：GPU使用与优化、异构算力纳管、分布式任务调度、性能压测与调优，有大规模模型服务上线运维经验优先；\n6.具备良好的系统设计、问题定位与跨团队协作能力，能独立负责复杂模块 / 系统，执行力强；\n7.对AGI与MaaS有强烈热情，学习能力强，关注混元、DeepSeek 等主流模型及行业竞品，愿意长期深耕 AI 工程化领域；\n8.有AI 安全合规、内容审核、企业级私有化交付、金融/政务等高安全要求场景经验者优先。"
+    },
+    {
+      "Id": 0,
       "PostId": "2010916224795561984",
       "RecruitPostId": 117262,
       "RecruitPostName": "微信小店-后台开发工程师-推荐系统方向",
@@ -2252,29 +2275,6 @@
       "RequireWorkYearsName": "一年以上工作经验",
       "company": "腾讯",
       "link": "https://careers.tencent.com/jobdesc.html?postId=1996725660873285632",
-      "Requirement": "1.计算机相关专业本科及以上学历，具备扎实的编程基础；\n2.精通C/C++、Lua语言，具备良好的编程习惯；\n3.熟练掌握数据结构、数据库、高并发等后台技能项，具备良好的问题解决能力；\n4.具备良好的沟通协作能力，能够承受一定的工作压力。"
-    },
-    {
-      "Id": 0,
-      "PostId": "1991009056084615168",
-      "RecruitPostId": 116081,
-      "RecruitPostName": "PUBG Mobile-游戏后台开发工程师(UGC方向)-新星引力计划",
-      "CountryName": "中国",
-      "LocationName": "深圳",
-      "BGName": "IEG",
-      "ComCode": "",
-      "ComName": "",
-      "ProductName": "PUBG Mobile-全球不分明细",
-      "CategoryName": "技术",
-      "Responsibility": "1.负责PUBGM项目UGC平台的后台架构设计和功能开发；\n2.负责海量用户全球同服的游戏后台开发运维攻坚；\n3.参与AIGC、推荐算法到UGC游戏项目中的运用落地；\n4.与团队成员充分沟通，紧密合作，确保项目顺利推进。",
-      "LastUpdateTime": "2026年11月02日",
-      "PostURL": "http://careers.tencent.com/jobdesc.html?postId=1991009056084615168",
-      "SourceID": 1,
-      "IsCollect": false,
-      "IsValid": true,
-      "RequireWorkYearsName": "一年以上工作经验",
-      "company": "腾讯",
-      "link": "https://careers.tencent.com/jobdesc.html?postId=1991009056084615168",
       "Requirement": "1.计算机相关专业本科及以上学历，具备扎实的编程基础；\n2.精通C/C++、Lua语言，具备良好的编程习惯；\n3.熟练掌握数据结构、数据库、高并发等后台技能项，具备良好的问题解决能力；\n4.具备良好的沟通协作能力，能够承受一定的工作压力。"
     },
     {
@@ -3799,7 +3799,7 @@
   "cloud": [
     {
       "name": "AI",
-      "value": 182
+      "value": 186
     },
     {
       "name": "AGENT",
@@ -3815,11 +3815,11 @@
     },
     {
       "name": "PYTHON",
-      "value": 60
+      "value": 61
     },
     {
       "name": "主流",
-      "value": 51
+      "value": 53
     },
     {
       "name": "落地",
@@ -3830,11 +3830,11 @@
       "value": 45
     },
     {
-      "name": "并发",
-      "value": 42
+      "name": "LLM",
+      "value": 43
     },
     {
-      "name": "LLM",
+      "name": "并发",
       "value": 42
     },
     {
@@ -3842,15 +3842,19 @@
       "value": 40
     },
     {
+      "name": "网络",
+      "value": 37
+    },
+    {
       "name": "微信",
       "value": 36
     },
     {
-      "name": "网络",
-      "value": 36
+      "name": "代码",
+      "value": 35
     },
     {
-      "name": "代码",
+      "name": "分布式系统",
       "value": 35
     },
     {
@@ -3859,10 +3863,6 @@
     },
     {
       "name": "评测",
-      "value": 34
-    },
-    {
-      "name": "分布式系统",
       "value": 34
     },
     {
@@ -3883,10 +3883,14 @@
     },
     {
       "name": "JAVA",
-      "value": 29
+      "value": 30
     },
     {
       "name": "解决问题",
+      "value": 28
+    },
+    {
+      "name": "安全",
       "value": 28
     },
     {
@@ -3902,24 +3906,20 @@
       "value": 27
     },
     {
-      "name": "专业本科",
-      "value": 27
-    },
-    {
       "name": "调用",
       "value": 26
     },
     {
-      "name": "安全",
+      "name": "专业本科",
       "value": 26
     },
     {
       "name": "大规模",
-      "value": 25
+      "value": 26
     }
   ],
   "stats": {
     "total": 165,
-    "update_time": "2026-11-27 07:13:28"
+    "update_time": "2026-11-28 06:46:49"
   }
 }
